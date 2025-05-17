@@ -1,14 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:wght@400;700&display=swap');
 
-/* --- Tailwind Base --- */
-/* --- Tailwind Layers --- */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@@ -61,92 +61,75 @@
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-montserrat;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-heading;
   }
 }
+
 
 /* --- Primary Button --- */
 .btn-primary {
