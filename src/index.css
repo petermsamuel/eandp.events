@@ -5,16 +5,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    @apply bg-background text-foreground font-montserrat;
-  }
-
-  h1, h2, h3, h4 {
-    @apply font-heading;
-  }
-}
-
 /* --- Primary Button --- */
 .btn-primary {
   background-color: #1a1a26;
@@ -27,58 +17,4 @@
 .btn-primary:hover {
   background-color: #2a2a3a;
   color: white;
-}
-
-/* --- Glow Button Wrapper --- */
-.glow-button-wrapper {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 3px;
-  border-radius: 9999px;
-  text-align: center;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  background-color: transparent;
-}
-
-/* --- Orbit Ring --- */
-.glow-ring {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 9999px;
-  background: conic-gradient(
-    from 0deg,
-    transparent,
-    #c9a75d,
-    transparent,
-    #c9a75d,
-    transparent
-  );
-  animation: borderOrbit 2.5s linear infinite;
-  filter: blur(4px);
-  z-index: 0;
-  pointer-events: none;
-}
-
-/* --- Actual Button --- */
-.glow-button-inner {
-  position: relative;
-  z-index: 10;
-  background-color: #1c1f2b;
-  color: white;
-  padding: 0.75rem 2rem;
-  font-weight: 600;
-  border-radius: 9999px;
-  text-align: center;
-  display: inline-block;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.glow-button-inner:hover {
-  background-color: #2a2a2a;
-
-  }
 }
