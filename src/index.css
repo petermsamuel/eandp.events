@@ -6,6 +6,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/* --- Base Typography Overrides --- */
+@layer base {
+  html {
+    font-family: "Sorts Mill Goudy", serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Cinzel", serif;
+  }
+
+  strong, b {
+    font-weight: 700;
+  }
+}
+
 /* --- Custom Styles --- */
 
 /* --- Primary Button --- */
