@@ -1,12 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:wght@300;400;500;600;700&display=swap');
+
+/* --- Tailwind Base --- */
+/* --- Tailwind Layers --- */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@@ -61,92 +61,75 @@
+  }
+}
 
-/* Optional custom class */
+/* --- Primary Button --- */
 .btn-primary {
   background-color: #1a1a26;
   color: white;
+  border: 2px solid #1a1a26;
   padding: 0.75rem 2rem;
   font-weight: 600;
-  border: 2px solid #1a1a26;
+/* --- Glow Button Wrapper --- */
+.glow-button-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 9999px;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: transparent;
+}
+
+.btn-primary:hover {
+  background-color: #2a2a3a;
+  color: white;
+}
+
+/* --- Glow Button Styles --- */
+.glow-button-wrapper {
+  position: relative;
+  display: inline-block;
+  padding: 4px;
+/* --- Orbit Ring --- */
+.glow-ring {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: conic-gradient(from 0deg, #c9a75d 0%, transparent 25%, #c9a75d 50%, transparent 75%, #c9a75d 100%);
+  animation: borderOrbit 2.5s linear infinite;
+  filter: blur(4px);
+  background: conic-gradient(
+    from 0deg,
+    transparent,
+    #c9a75d,
+    transparent,
+    #c9a75d,
+    transparent
+  );
+  z-index: 0;
+  animation: borderOrbit 2.5s linear infinite;
+  pointer-events: none;
+}
+
+/* --- Actual Button --- */
+.glow-button-inner {
+  position: relative;
+  z-index: 10;
+  background-color: #1a1a26;
+  background-color: #1c1f2b;
+  color: white;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.glow-button-inner:hover {
+  background-color: #2a2a2a;
+}
+
+/* --- Keyframes must be global, outside @layer --- */
+@keyframes borderOrbit {
+  0% {
+    background: conic-gradient(from 0deg, #c9a75d 0%, transparent 25%, #c9a75d 50%, transparent 75%, #c9a75d 100%);
+  }
+  100% {
+    background: conic-gradient(from 360deg, #c9a75d 0%, transparent 25%, #c9a75d 50%, transparent 75%, #c9a75d 100%);
+  }
+}
+
+/* --- Utilities Layer: Optional Custom Glow Background --- */
+@layer utilities {
+  .bg-glow {
+    background: radial-gradient(
+      circle at center,
+      rgba(255, 0, 0, 0.6) 0%,
+      rgba(255, 0, 0, 0.3) 40%,
+      transparent 70%
+    background: conic-gradient(
+      from 0deg,
+      transparent,
+      #c9a75d,
+      transparent,
+      #c9a75d,
+      transparent
+    );
+    animation: pulseGlow 2.5s ease-in-out infinite;
+  }
+}
+
+/* --- Global Keyframe Animations --- */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes spinGlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    background: conic-gradient(
+      from 360deg,
+      transparent,
+      #c9a75d,
+      transparent,
+      #c9a75d,
+      transparent
+    );
+  }
 }
