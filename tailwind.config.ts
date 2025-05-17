@@ -17,7 +17,7 @@ const config: Config = {
     "blur-xl",
     "group-hover:scale-105",
     "group-hover:shadow-lg",
-    "animate-border-orbit", // ✅ match this with animation key name
+    "animate-border-orbit",
   ],
   theme: {
     container: {
@@ -29,21 +29,18 @@ const config: Config = {
     },
     extend: {
       colors: {
-        // Core theme tokens
         background: "#ffffff",
         foreground: "#1a1a1a",
         border: "#e5e7eb",
         input: "#f3f4f6",
         ring: "#d1d5db",
 
-        // Brand colors
         gold: "#c9a75d",
         navy: "#1c1f2b",
         charcoal: "#2a2a2a",
         emerald: "#50C878",
         ruby: "#E0115F",
 
-        // Grouped UI tokens
         primary: {
           DEFAULT: "#1a1a26",
           foreground: "#ffffff",
@@ -83,18 +80,15 @@ const config: Config = {
           ring: "#3b3b3b",
         },
       },
-
       fontFamily: {
         heading: ['"Playfair Display"', "serif"],
         montserrat: ["Montserrat", "sans-serif"],
       },
-
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-
       keyframes: {
         pulseGlow: {
           "0%, 100%": {
@@ -112,15 +106,23 @@ const config: Config = {
         },
         borderOrbit: {
           "0%": {
-            background: "conic-gradient(from 0deg, transparent, #c9a75d, transparent, #c9a75d, transparent)",
+            background:
+              "conic-gradient(from 0deg, transparent, #c9a75d, transparent, #c9a75d, transparent)",
           },
           "100%": {
-            background: "conic-gradient(from 360deg, transparent, #c9a75d, transparent, #c9a75d, transparent)",
+            background:
+              "conic-gradient(from 360deg, transparent, #c9a75d, transparent, #c9a75d, transparent)",
           },
         },
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height:
+      },
+      animation: {
+        "pulse-glow": "pulseGlow 2.5s ease-in-out infinite",
+        "spin-glow": "spinGlow 2s linear infinite",
+        "border-orbit": "borderOrbit 2.5s linear infinite",
+      },
+    },
+  },
+  plugins: [],
+};
+
+export default config;
