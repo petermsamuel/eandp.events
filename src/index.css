@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* --- Primary Button --- */
 .btn-primary {
   background-color: #1a1a26;
   color: white;
