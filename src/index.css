@@ -79,67 +79,6 @@
 
 .glow-button-inner:hover {
   background-color: #2a2a2a;
-}
 
-/* --- Keyframes must be global, outside @layer --- */
-@keyframes borderOrbit {
-  0% {
-    background: conic-gradient(from 0deg, #c9a75d 0%, transparent 25%, #c9a75d 50%, transparent 75%, #c9a75d 100%);
-  }
-  100% {
-    background: conic-gradient(from 360deg, #c9a75d 0%, transparent 25%, #c9a75d 50%, transparent 75%, #c9a75d 100%);
-  }
-}
-
-/* --- Utilities Layer --- */
-@layer utilities {
-  .bg-glow {
-    background-image:
-      radial-gradient(
-        circle at center,
-        rgba(255, 0, 0, 0.6) 0%,
-        rgba(255, 0, 0, 0.3) 40%,
-        transparent 70%
-      ),
-      conic-gradient(
-        from 0deg,
-        transparent,
-        #c9a75d,
-        transparent,
-        #c9a75d,
-        transparent
-      );
-    animation: pulseGlow 2.5s ease-in-out infinite;
-  }
-}
-
-
-
-/* --- Global Keyframe Animations --- */
-@keyframes pulseGlow {
-  0%, 100% {
-    opacity: 0.6;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.05);
-  }
-}
-
-@keyframes spinGlow {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-    background: conic-gradient(
-      from 360deg,
-      transparent,
-      #c9a75d,
-      transparent,
-      #c9a75d,
-      transparent
-    );
   }
 }
