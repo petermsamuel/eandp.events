@@ -81,8 +81,9 @@ const config: Config = {
         },
       },
       fontFamily: {
-        heading: ['"Playfair Display"', "serif"],
-        montserrat: ["Montserrat", "sans-serif"],
+        heading: ["Cinzel", "serif"],
+        body: ['"Sorts Mill Goudy"', "serif"],
+        montserrat: ["Montserrat", "sans-serif"], // optional if still used
       },
       borderRadius: {
         lg: "var(--radius)",
