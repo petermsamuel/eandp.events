@@ -62,7 +62,6 @@
     @apply bg-[#2a2a2a];
   }
 
-  /* --- Section Title --- */
   .section-title {
     @apply text-4xl font-extrabold text-left text-foreground leading-snug tracking-tight pb-2;
     position: relative;
@@ -73,13 +72,13 @@
     display: block;
     width: 3rem;
     height: 0.25rem;
-    background-color: #c9a75d; /* gold */
+    background-color: #c9a75d;
     margin: 0.75rem auto 0;
     border-radius: 9999px;
   }
 }
 
-/* --- Utilities Layer --- */
+/* --- Utilities Layer: Optional Glow BG & Watermark --- */
 @layer utilities {
   .bg-glow {
     background: radial-gradient(
@@ -92,7 +91,7 @@
   }
 
   .lion-watermark {
-    background-image: url('/path/to/your/lion-watermark.png'); /* Adjust path */
+    background-image: url('assets/lion-bg.svg'); /* From public folder */
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
