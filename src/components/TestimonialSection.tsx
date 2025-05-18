@@ -50,6 +50,7 @@ const testimonials = [
     role: ""
   }
 ];
+
 const TestimonialSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -60,49 +61,40 @@ const TestimonialSection = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const nextTestimonial = () => {
-    setActiveIndex((prev) => (prev + 1) % testimonials.length);
-  };
-
-  const prevTestimonial = () => {
-    setActiveIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-  };
-
-  const selectTestimonial = (index: number) => {
-    setActiveIndex(index);
-  };
+  const nextTestimonial = () => setActiveIndex((prev) => (prev + 1) % testimonials.length);
+  const prevTestimonial = () => setActiveIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  const selectTestimonial = (index: number) => setActiveIndex(index);
 
   return (
     <section id="testimonials" className="section-container bg-transparent pt-16 pb-24">
-      {/* Moved OUTSIDE of the card */}
-      <div className="max-w-4xl mx-auto mb-12">
-        <h2 className="section-title text-left">When You Know You Chose the Right Planner</h2>
+      {/* Section Heading */}
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="section-title text-left mb-4">
+          When You Know You Chose the Right Planner
+        </h2>
       </div>
 
-      <div className="max-w-4xl mx-auto bg-white/80 p-6 md:p-10 rounded-lg shadow-md py-20">
-        <div className="relative mt-8">
-          {/* Quotation mark */}
-          <div className="absolute top-6 left-6 text-6xl text-gold opacity-20">"</div>
+      {/* Testimonial Card */}
+      <div className="max-w-6xl mx-auto bg-white/80 p-6 md:p-10 rounded-lg shadow-md relative">
+        {/* Quotation mark */}
+        <div className="absolute top-6 left-6 text-6xl text-gold opacity-20 z-0">"</div>
 
-          <div className="min-h-[320px] md:min-h-[240px] flex flex-col justify-between relative z-10">
-            <p className="text-gray-700 mb-8">
-              {testimonials[activeIndex].text}
-            </p>
+        <div className="relative z-10 flex flex-col justify-between">
+          <p className="text-gray-700 mb-8">{testimonials[activeIndex].text}</p>
 
-            <div className="flex items-center mt-4">
-              <div className="h-10 w-10 bg-gold rounded-full flex items-center justify-center text-white font-bold">
-                {testimonials[activeIndex].name.charAt(0)}
-              </div>
-              <div className="ml-3">
-                <p className="font-semibold">{testimonials[activeIndex].name}</p>
-                {testimonials[activeIndex].role && (
-                  <p className="text-sm text-gray-600">{testimonials[activeIndex].role}</p>
-                )}
-              </div>
+          <div className="flex items-center mt-4">
+            <div className="h-10 w-10 bg-gold rounded-full flex items-center justify-center text-white font-bold">
+              {testimonials[activeIndex].name.charAt(0)}
+            </div>
+            <div className="ml-3">
+              <p className="font-semibold">{testimonials[activeIndex].name}</p>
+              {testimonials[activeIndex].role && (
+                <p className="text-sm text-gray-600">{testimonials[activeIndex].role}</p>
+              )}
             </div>
           </div>
 
-          {/* Navigation controls */}
+          {/* Navigation */}
           <div className="flex justify-between items-center mt-8">
             <button
               onClick={prevTestimonial}
