@@ -68,12 +68,12 @@
 
 .section-title::after {
   content: "";
-  position: absolute;
-  bottom: -0.5rem;
-  left: 0;
-  width: 3rem;
+  display: block;
+  width: 6rem; /* longer gold line */
   height: 0.25rem;
-  background-color: #c9a75d;
+  background-color: #c9a75d; /* gold */
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem; /* ✅ space between line and subheading */
   border-radius: 9999px;
 }
 }
