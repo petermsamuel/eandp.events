@@ -11,14 +11,15 @@ import AdditionalCtaSection from "../components/AdditionalCtaSection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 
+
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col relative lion-watermark">
-      {/* Navbar always at the top */}
+    <div className="min-h-screen flex flex-col relative overflow-hidden">
       <Navbar />
 
-      {/* Main content */}
-      <main className="flex-1">
+      <div className="absolute inset-0 lion-watermark z-0" />
+
+      <main className="flex-1 relative z-10">
         <HeroSection />
         <WhatWeDoSection />
         <FeaturedSection />
@@ -29,10 +30,10 @@ const Index = () => {
         <ContactSection />
       </main>
 
-      {/* Footer always at the bottom */}
       <Footer />
     </div>
   );
 };
+
 
 export default Index;
