@@ -21,73 +21,75 @@
   }
 }
 
-/* --- Custom Styles --- */
+/* --- Custom Component Styles --- */
+@layer components {
+  .btn-primary {
+    @apply bg-[#1a1a26] text-white border-2 border-[#1a1a26] px-6 py-3 font-semibold;
+  }
 
-/* --- Primary Button --- */
-.btn-primary {
-  background-color: #1a1a26;
-  color: white;
-  border: 2px solid #1a1a26;
-  padding: 0.75rem 2rem;
-  font-weight: 600;
+  .btn-primary:hover {
+    @apply bg-[#2a2a3a] text-white;
+  }
+
+  .glow-button-wrapper {
+    @apply relative inline-flex items-center justify-center p-1 rounded-full text-center transition-colors bg-transparent;
+  }
+
+  .glow-ring {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 9999px;
+    background: conic-gradient(
+      from 0deg,
+      #c9a75d 0%,
+      transparent 25%,
+      #c9a75d 50%,
+      transparent 75%,
+      #c9a75d 100%
+    );
+    animation: borderOrbit 2.5s linear infinite;
+    filter: blur(4px);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .glow-button-inner {
+    @apply relative z-10 bg-[#1c1f2b] text-white px-6 py-3 font-semibold rounded-full text-center inline-block no-underline transition-colors;
+  }
+
+  .glow-button-inner:hover {
+    @apply bg-[#2a2a2a];
+  }
+
+  /* --- Section Title --- */
+  .section-title {
+    @apply text-4xl font-extrabold text-center text-foreground leading-snug tracking-tight pb-2;
+    position: relative;
+  }
+
+  .section-title::after {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 0.25rem;
+    background-color: #c9a75d; /* gold */
+    margin: 0.75rem auto 0;
+    border-radius: 9999px;
+  }
 }
 
-/* --- Primary Button Hover --- */
-.btn-primary:hover {
-  background-color: #2a2a3a;
-  color: white;
-}
-
-/* --- Glow Button Wrapper --- */
-.glow-button-wrapper {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 4px;
-  border-radius: 9999px;
-  text-align: center;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  background-color: transparent;
-}
-
-/* --- Glow Ring Animation --- */
-.glow-ring {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 9999px;
-  background: conic-gradient(
-    from 0deg,
-    #c9a75d 0%,
-    transparent 25%,
-    #c9a75d 50%,
-    transparent 75%,
-    #c9a75d 100%
-  );
-  animation: borderOrbit 2.5s linear infinite;
-  filter: blur(4px);
-  z-index: 0;
-  pointer-events: none;
-}
-
-/* --- Glow Button Inner --- */
-.glow-button-inner {
-  position: relative;
-  z-index: 10;
-  background-color: #1c1f2b;
-  color: white;
-  padding: 0.75rem 2rem;
-  font-weight: 600;
-  border-radius: 9999px;
-  text-align: center;
-  display: inline-block;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.glow-button-inner:hover {
-  background-color: #2a2a2a;
+/* --- Utilities Layer: Optional Glow BG --- */
+@layer utilities {
+  .bg-glow {
+    background: radial-gradient(
+      circle at center,
+      rgba(255, 0, 0, 0.6) 0%,
+      rgba(255, 0, 0, 0.3) 40%,
+      transparent 70%
+    );
+    animation: pulseGlow 2.5s ease-in-out infinite;
+  }
 }
 
 /* --- Global Keyframes --- */
@@ -131,18 +133,5 @@
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-
-/* --- Utilities Layer: Optional Glow BG --- */
-@layer utilities {
-  .bg-glow {
-    background: radial-gradient(
-      circle at center,
-      rgba(255, 0, 0, 0.6) 0%,
-      rgba(255, 0, 0, 0.3) 40%,
-      transparent 70%
-    );
-    animation: pulseGlow 2.5s ease-in-out infinite;
   }
 }
