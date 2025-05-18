@@ -69,7 +69,7 @@ const TestimonialSection = () => {
     <section id="testimonials" className="section-container bg-transparent pt-16 pb-24">
       {/* Section Heading */}
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="section-title text-left mb-4">
+        <h2 className="section-title text-center mb-4">
           When You Know You Chose the Right Planner
         </h2>
       </div>
