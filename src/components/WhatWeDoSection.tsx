@@ -7,7 +7,7 @@ const WhatWeDoSection = () => {
         Execution You Can Trust. Events You’ll Remember.
       </h2>
 
-  <p className="text-lg mb-12 w-full max-w-none px-4 md:px-0 text-left">
+      <p className="text-lg mb-12 max-w-3xl">
         Your event is more than a date on a calendar — it’s a milestone, a
         message, a memory in motion. We step in before the overwhelm, bringing
         strategic structure to emotional moments, brand goals, or multi-day
