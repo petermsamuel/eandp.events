@@ -90,12 +90,13 @@
     animation: pulseGlow 2.5s ease-in-out infinite;
   }
 
+@layer utilities {
   .lion-watermark {
-    background-image: url('/lion-bg.svg'); /* From public folder */
+    background-image: url('/lion-bg.svg');
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    opacity: 0.05;
+    background-position: center top;
+    background-size: 60%;
+    opacity: 0.04; /* keep it subtle */
     pointer-events: none;
     z-index: 0;
   }
