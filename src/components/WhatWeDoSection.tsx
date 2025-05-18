@@ -16,34 +16,32 @@ const WhatWeDoSection = () => {
         </p>
       </div>
 
-      <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto px-4">
-        {/* Corporate Card */}
-<a
-  href="/corporate.html"
-  className="bg-white/80 p-6 md:p-10 rounded-lg shadow-md backdrop-blur-sm border border-gray-200 transition-shadow hover:shadow-lg"
->
+     <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto px-4">
+  {/* Corporate Card */}
+  <div className="bg-white/80 backdrop-blur-sm p-6 md:p-10 rounded-lg shadow-md">
+    <a href="/corporate.html" className="block transition-shadow hover:shadow-lg">
+      <h3 className="text-2xl font-semibold mb-4 flex items-center">
+        <span className="text-gold mr-2">✨</span> Corporate
+      </h3>
+      <p className="text-gray-700">
+        You need results, not risk. We execute high-impact events that reflect your brand, serve your goals, and leave a lasting impression...
+      </p>
+    </a>
+  </div>
 
-          <h3 className="text-2xl font-semibold mb-4 flex items-center">
-            <span className="text-gold mr-2">✨</span> Corporate
-          </h3>
-          <p className="text-gray-700">
-            You need results, not risk. We execute high-impact events that reflect your brand, serve your goals, and leave a lasting impression. Whether it’s a product launch or a leadership retreat, we keep everything on schedule, on message, and under control.
-          </p>
-        </a>
+  {/* Weddings Card */}
+  <div className="bg-white/80 backdrop-blur-sm p-6 md:p-10 rounded-lg shadow-md">
+    <a href="/weddings.html" className="block transition-shadow hover:shadow-lg">
+      <h3 className="text-2xl font-semibold mb-4 flex items-center">
+        <span className="text-gold mr-2">✨</span> Weddings
+      </h3>
+      <p className="text-gray-700">
+        We specialize in South Asian and multicultural weddings—events that require deep cultural fluency...
+      </p>
+    </a>
+  </div>
+</div>
 
-        {/* Weddings Card */}
-        <a
-          href="/weddings.html"
-            className="bg-white/80 p-6 md:p-10 rounded-lg shadow-md backdrop-blur-sm border border-gray-200 transition-shadow hover:shadow-lg"
-        >
-          <h3 className="text-2xl font-semibold mb-4 flex items-center">
-            <span className="text-gold mr-2">✨</span> Weddings
-          </h3>
-          <p className="text-gray-700">
-            We specialize in South Asian and multicultural weddings—events that require deep cultural fluency, logistical expertise, and careful communication. From multi-day celebrations to modern fusions, we make the complex feel effortless.
-          </p>
-        </a>
-      </div>
     </section>
   );
 };
