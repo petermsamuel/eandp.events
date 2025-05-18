@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
+
 const testimonials = [
-  {
+ {
     id: 1,
     text: "Peter Samuel really provides world-class service. I worked extensively with Peter on a number of global United Nations programs, working with corporate executives and high-ranking government officials and dignitaries from over 20-30 countries around the world represented at each event. Peter provided exceptional strategic direction and corporate planning, exquisite event management, and impeccable attention to detail. He pulled off events seamlessly and flawlessly and delegates were always impressed. Peter's attention to customer service is exceptional and he is so responsive and unflappable in even the most complex of situations. More than a safe pair of hands that I could rely on with complete confidence; he is also a true maestro that could orchestrate any event we threw at him with perfection. An absolute joy to work with him!",
     name: "Sebastian",
@@ -49,16 +50,13 @@ const testimonials = [
     role: ""
   }
 ];
-
-
 const TestimonialSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  // Auto-rotate every 7 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % testimonials.length);
-    }, 7000); // change speed here
+    }, 7000);
     return () => clearInterval(interval);
   }, []);
 
@@ -76,9 +74,12 @@ const TestimonialSection = () => {
 
   return (
     <section id="testimonials" className="section-container bg-transparent pt-16 pb-24">
-      <div className="max-w-4xl mx-auto bg-white/80 p-6 md:p-10 rounded-lg shadow-md py-20">
+      {/* Moved OUTSIDE of the card */}
+      <div className="max-w-4xl mx-auto mb-12">
         <h2 className="section-title text-left">When You Know You Chose the Right Planner</h2>
+      </div>
 
+      <div className="max-w-4xl mx-auto bg-white/80 p-6 md:p-10 rounded-lg shadow-md py-20">
         <div className="relative mt-8">
           {/* Quotation mark */}
           <div className="absolute top-6 left-6 text-6xl text-gold opacity-20">"</div>
