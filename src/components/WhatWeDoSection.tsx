@@ -7,7 +7,7 @@ const WhatWeDoSection = () => {
       className="relative z-10 section-container bg-transparent py-20"
     >
       <div className="max-w-4xl mx-auto text-center px-4">
-        <h2 className="section-title text-left">
+        <h2 className="section-title">
           Execution You Can Trust. Events You’ll Remember.
         </h2>
 
