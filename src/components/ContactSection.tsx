@@ -35,7 +35,7 @@ const ContactSection = () => {
       href="mailto:info@events-ep.com"
       className="text-gold hover:underline"
     >
-      info@events-ep.com
+      info@eandp.events
     </a>
     . You'll get a response from a real person — not a bot, not a sales script.
   </p>
