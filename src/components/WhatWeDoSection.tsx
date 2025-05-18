@@ -2,7 +2,7 @@ import React from "react";
 
 const WhatWeDoSection = () => {
   return (
-    <section id="what-we-do" className="section-container bg-transparent py-20">
+    <section id="what-we-do" className="section-container bg-white/80 backdrop-blur-sm py-20">
       <div className="max-w-4xl mx-auto text-center px-4">
         <h2 className="section-title text-left">
           Execution You Can Trust. Events You’ll Remember.
