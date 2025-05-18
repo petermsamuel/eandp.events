@@ -63,17 +63,16 @@
   }
 
 .section-title {
-  @apply text-4xl font-extrabold text-foreground leading-snug tracking-tight pb-2 relative inline-block text-center;
+  @apply text-4xl font-extrabold text-foreground leading-snug tracking-tight pb-2 relative block text-center;
 }
 
 .section-title::after {
   content: "";
   display: block;
-  width: 6rem; /* longer gold line */
+  width: 6rem;
   height: 0.25rem;
-  background-color: #c9a75d; /* gold */
-  margin-top: 0.75rem;
-  margin-bottom: 1.5rem; /* ✅ space between line and subheading */
+  background-color: #c9a75d;
+  margin: 0.75rem auto 1.5rem auto; /* top auto bottom auto */
   border-radius: 9999px;
 }
 }
