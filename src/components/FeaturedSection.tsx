@@ -5,7 +5,9 @@ const FeaturedSection = () => {
   return (
     <section id="featured" className="section-container bg-charcoal text-white py-20">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="section-title">Trusted by the People Who Know Excellence</h2>
+        <h2 className="section-title text-white">
+  Trusted by the People Who Know Excellence
+</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
           <div className="flex flex-col items-center">
