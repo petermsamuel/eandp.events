@@ -6,7 +6,7 @@ const AdditionalCtaSection = () => {
 
       {/* Full-width heading */}
       <div className="px-4 md:px-8 max-w-7xl mx-auto">
-        <h2 className="section-title text-left">
+        <h2 className="section-title text-center">
           You Can Be the One Holding It All Together — or the One Fully Living It.
         </h2>
       </div>
