@@ -64,7 +64,7 @@
 
   /* --- Section Title --- */
   .section-title {
-    @apply text-4xl font-extrabold text-center text-foreground leading-snug tracking-tight pb-2;
+    @apply text-4xl font-extrabold text-left text-foreground leading-snug tracking-tight pb-2;
     position: relative;
   }
 
