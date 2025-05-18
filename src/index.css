@@ -6,9 +6,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* --- Base Typography Overrides --- */
-
 @layer base {
   html {
     font-family: "Sorts Mill Goudy", serif;
@@ -81,7 +79,7 @@
   }
 }
 
-/* --- Utilities Layer: Optional Glow BG --- */
+/* --- Utilities Layer --- */
 @layer utilities {
   .bg-glow {
     background: radial-gradient(
@@ -91,6 +89,16 @@
       transparent 70%
     );
     animation: pulseGlow 2.5s ease-in-out infinite;
+  }
+
+  .lion-watermark {
+    background-image: url('/path/to/your/lion-watermark.png'); /* Adjust path */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 0;
   }
 }
 
