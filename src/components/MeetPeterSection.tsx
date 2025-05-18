@@ -4,7 +4,7 @@ const MeetPeterSection = () => {
   return (
     <section id="meet-peter" className="section-container bg-transparent py-20">
       <div className="max-w-6xl mx-auto">
-        <h2 className="section-title">
+        <h2 className="section-title text-center">
           Hi, I'm Peter. I Don’t Just Plan Events—I Run Them.
         </h2>
 
