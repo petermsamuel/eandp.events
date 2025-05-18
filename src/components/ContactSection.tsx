@@ -28,20 +28,18 @@ const ContactSection = () => {
 
 
 
-
-        <div className="mt-8">
-          <p className="text-sm text-gray-600 max-w-md mx-auto">
-            Or email us at{" "}
-            <a
-              href="mailto:info@events-ep.com"
-              className="text-gold hover:underline"
-            >
-              info@events-ep.com
-            </a>
-            . You'll get a response from a real person — not a bot, not a sales
-            script.
-          </p>
-        </div>
+<div className="mt-8 mb-16">
+  <p className="text-base text-gray-700 max-w-md mx-auto">
+    Or email us at{" "}
+    <a
+      href="mailto:info@events-ep.com"
+      className="text-gold hover:underline"
+    >
+      info@events-ep.com
+    </a>
+    . You'll get a response from a real person — not a bot, not a sales script.
+  </p>
+</div>
       </div>
     </section>
   );
