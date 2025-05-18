@@ -62,20 +62,22 @@
     @apply bg-[#2a2a2a];
   }
 
-  .section-title {
-    @apply text-4xl font-extrabold text-left text-foreground leading-snug tracking-tight pb-2;
-    position: relative;
-  }
+.section-title {
+  @apply text-4xl font-extrabold text-foreground leading-snug tracking-tight pb-2;
+  position: relative;
+  display: inline-block; /* This is the magic */
+}
 
 .section-title::after {
   content: "";
   display: block;
-  width: 6rem; /* longer gold line */
   height: 0.25rem;
-  background-color: #c9a75d; /* gold */
-  margin-top: 0.75rem;
-  margin-bottom: 1.5rem; /* ✅ space between line and subheading */
+  background-color: #c9a75d;
   border-radius: 9999px;
+  margin-top: 0.75rem;
+
+  /* dynamic width to match text or fixed if you prefer */
+  width: 100%; /* match text width exactly */
 }
 }
 
