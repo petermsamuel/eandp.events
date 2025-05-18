@@ -76,7 +76,7 @@ const TestimonialSection = () => {
 
   return (
     <section id="testimonials" className="section-container bg-transparent">
-      <div className="max-w-4xl mx-auto bg-white/80 p-6 md:p-10 rounded-lg shadow-md">
+      <div className="max-w-4xl mx-auto bg-white/80 p-6 md:p-10 rounded-lg shadow-md py-20">
         <h2 className="section-title">When You Know You Chose the Right Planner</h2>
 
         <div className="relative mt-8">
