@@ -91,7 +91,7 @@
   }
 
   .lion-watermark {
-    background-image: url('assets/lion-bg.svg'); /* From public folder */
+    background-image: url('src/assets/lion-bg.svg'); /* From public folder */
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
