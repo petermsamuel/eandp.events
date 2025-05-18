@@ -6,7 +6,29 @@
 @tailwind components;
 @tailwind utilities;
 
+/* --- Base Layer --- */
+@layer base {
+  html {
+    @apply relative;
+  }
+
+  html::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('/lovable-uploads/lion-bg.svg') no-repeat center top;
+    background-size: 60%;
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+
 /* --- Base Typography Overrides --- */
+
 @layer base {
   html {
     font-family: "Sorts Mill Goudy", serif;
