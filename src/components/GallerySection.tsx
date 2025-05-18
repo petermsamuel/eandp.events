@@ -12,7 +12,7 @@ const GallerySection = () => {
   ];
 
   return (
-    <section id="gallery" className="section-container bg-charcoal text-white py-20">
+    <section id="gallery" className="section-container bg-charcoal text-white">
       <div className="max-w-6xl mx-auto">
         <h2 className="section-title text-white text-center"> Where Vision Meets Precision</h2>
         <p className="text-lg mb-12 max-w-3xl">
