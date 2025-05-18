@@ -3,7 +3,7 @@ import React from "react";
 
 const FeaturedSection = () => {
   return (
-    <section id="featured" className="section-container bg-charcoal text-white">
+    <section id="featured" className="section-container bg-charcoal text-white py-20">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="section-title">Trusted by the People Who Know Excellence</h2>
         
