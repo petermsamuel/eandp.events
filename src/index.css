@@ -89,17 +89,23 @@
     );
     animation: pulseGlow 2.5s ease-in-out infinite;
   }
-
+  
   .lion-watermark {
-    background-image: url('/lion-bg.svg');
+    background-image: url('/lovable-uploads/lion-bg.svg');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 60%;
-    opacity: 0.04; /* keep it subtle */
+    opacity: 0.04; /* nice and subtle */
     pointer-events: none;
-    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
   }
 }
+
 
 /* --- Global Keyframes --- */
 @keyframes borderOrbit {
