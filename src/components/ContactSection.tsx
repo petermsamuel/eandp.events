@@ -4,7 +4,7 @@ const ContactSection = () => {
   return (
     <section id="contact" className="section-container bg-transparent">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="section-title">Still Reading? Book the Call.</h2>
+        <h2 className="section-title text-center">Still Reading? Book the Call.</h2>
         <p className="text-lg mb-12 max-w-2xl mx-auto">
           If you're ready for clarity, let's talk.
           <br />
