@@ -19,9 +19,9 @@ const WhatWeDoSection = () => {
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto px-4">
         {/* Corporate Card */}
         <a
-          href="/corporate.html"
-          className="bg-white/80 backdrop-blur-sm p-8 rounded-md border border-gray-100 hover:shadow-lg transition-shadow"
-        >
+  href="/corporate.html"
+  className="bg-white/80 backdrop-blur-sm p-6 md:p-10 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+>
           <h3 className="text-2xl font-semibold mb-4 flex items-center">
             <span className="text-gold mr-2">✨</span> Corporate
           </h3>
@@ -33,7 +33,7 @@ const WhatWeDoSection = () => {
         {/* Weddings Card */}
         <a
           href="/weddings.html"
-          className="bg-white/80 backdrop-blur-sm p-8 rounded-md border border-gray-100 hover:shadow-lg transition-shadow"
+           className="bg-white/80 backdrop-blur-sm p-6 md:p-10 rounded-lg shadow-md hover:shadow-lg transition-shadow"
         >
           <h3 className="text-2xl font-semibold mb-4 flex items-center">
             <span className="text-gold mr-2">✨</span> Weddings
