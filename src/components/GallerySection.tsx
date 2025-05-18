@@ -12,9 +12,9 @@ const GallerySection = () => {
   ];
 
   return (
-    <section id="gallery" className="section-container bg-charcoal text-white">
+    <section id="gallery" className="section-container bg-charcoal text-white py-20">
       <div className="max-w-6xl mx-auto">
-        <h2 className="section-title"> Where Vision Meets Precision</h2>
+        <h2 className="section-title text-white text-center"> Where Vision Meets Precision</h2>
         <p className="text-lg mb-12 max-w-3xl">
           Every moment in this gallery reflects thoughtful planning, cultural understanding, and seamless execution.
 No styled shoots. No chaos. Just real events, led with clarity and care.
