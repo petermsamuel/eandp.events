@@ -3,8 +3,8 @@ import React from "react";
 const WhatWeDoSection = () => {
   return (
     <section id="what-we-do" className="section-container bg-trasparent py-20">
-      <div className="max-w-4xl mx-auto text-left px-4">
-        <h2 className="section-title">
+      <div className="max-w-4xl mx-auto text-center px-4">
+        <h2 className="section-title text-left">
           Execution You Can Trust. Events You’ll Remember.
         </h2>
 
