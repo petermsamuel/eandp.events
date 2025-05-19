@@ -93,11 +93,12 @@
   }
   
   .lion-watermark {
+    /* existing styles */
     background-image: url('/lovable-uploads/lion-bg.svg');
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 60%;
-    opacity: 0.15; /* nice and subtle */
+    background-size: clamp(200px, 60%, 800px);
+    opacity: 0.15;
     pointer-events: none;
     position: fixed;
     top: 0;
@@ -105,8 +106,22 @@
     width: 100vw;
     height: 100vh;
     z-index: -10;
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+
+  @media (max-width: 768px) {
+    .lion-watermark {
+      display: none !important; /* 🔒 override completely */
+      width: 0 !important;
+      height: 0 !important;
+      overflow: hidden !important;
+      background: none !important;
+    }
   }
 }
+
 
 
 /* --- Global Keyframes --- */
