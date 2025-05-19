@@ -35,24 +35,27 @@
     @apply relative inline-flex items-center justify-center p-1 rounded-full text-center transition-colors bg-transparent;
   }
 
-  .glow-ring {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 9999px;
-    background: conic-gradient(
-      from 0deg,
-      #c9a75d 0%,
-      transparent 25%,
-      #c9a75d 50%,
-      transparent 75%,
-      #c9a75d 100%
-    );
-    animation: borderOrbit 2.5s linear infinite;
-    filter: blur(4px);
-    z-index: 0;
-    pointer-events: none;
-  }
+ .glow-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: conic-gradient(
+    from 0deg,
+    #c9a75d 0%,
+    transparent 25%,
+    #c9a75d 50%,
+    transparent 75%,
+    #c9a75d 100%
+  );
+  animation: borderOrbit 2.5s linear infinite;
+  filter: blur(4px);
+  z-index: 0;
+  pointer-events: none;
+
+  /* ✅ Add this: */
+  max-width: 100%;
+  overflow: hidden;
+}
 
   .glow-button-inner {
     @apply relative z-10 bg-[#1c1f2b] text-white px-6 py-3 font-semibold rounded-full text-center inline-block no-underline transition-colors;
