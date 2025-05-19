@@ -104,7 +104,7 @@ html, body {
   background-image: url('/lovable-uploads/lion-bg.svg');
   background-repeat: no-repeat;
   background-position: center top;
-background-size: clamp(200px, 60%, 800px);
+  background-size: clamp(200px, 60%, 800px);
   opacity: 0.15;
   pointer-events: none;
   position: fixed;
@@ -116,8 +116,13 @@ background-size: clamp(200px, 60%, 800px);
   will-change: transform;
   transform: translateZ(0);
   backface-visibility: hidden;
+
+  /* 👇 Add this */
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
-}
+
 
 
 /* --- Global Keyframes --- */
