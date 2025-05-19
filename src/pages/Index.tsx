@@ -14,25 +14,29 @@ import Footer from "../components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col relative overflow-hidden overflow-x-hidden">
-      <Navbar />
+    <>
+      {/* ✅ Moved OUTSIDE layout structure */}
+      <div className="lion-watermark" />
 
-      <div className="absolute inset-0 lion-watermark z-0" />
+      <div className="min-h-screen flex flex-col relative overflow-hidden">
+        <Navbar />
 
-      <main className="flex-1 relative z-10">
-        <HeroSection />
-        <WhatWeDoSection />
-        <FeaturedSection />
-        <MeetPeterSection />
-        <TestimonialSection />
-        <GallerySection />
-        <AdditionalCtaSection />
-        <ContactSection />
-      </main>
+        <main className="flex-1 relative z-10">
+          <HeroSection />
+          <WhatWeDoSection />
+          <FeaturedSection />
+          <MeetPeterSection />
+          <TestimonialSection />
+          <GallerySection />
+          <AdditionalCtaSection />
+          <ContactSection />
+        </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 };
+
 
 export default Index;
