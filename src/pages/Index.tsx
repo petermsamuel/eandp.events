@@ -14,7 +14,7 @@ import Footer from "../components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col relative overflow-hidden">
+    <div className="min-h-screen flex flex-col relative overflow-hidden overflow-x-hidden">
       <Navbar />
 
       <div className="absolute inset-0 lion-watermark z-0" />
@@ -34,6 +34,5 @@ const Index = () => {
     </div>
   );
 };
-
 
 export default Index;
