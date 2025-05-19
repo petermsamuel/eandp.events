@@ -20,17 +20,19 @@ const ContactSection = () => {
           Let's build a plan you trust—without the overwhelm.
         </p>
 
-<div className="w-full flex justify-center overflow-hidden">
-  <div className="glow-button-wrapper">
-    <div className="glow-ring" />
-    <a
-      href="https://cal.com/ryanmcmullen/15min"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="glow-button-inner"
-    >
-      Book Your Free Clarity Call
-    </a>
+<div className="w-full flex justify-center">
+  <div className="max-w-[320px] w-full">
+    <div className="glow-button-wrapper">
+      <div className="glow-ring" />
+      <a
+        href="https://cal.com/ryanmcmullen/15min"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="glow-button-inner"
+      >
+        Book Your Free Clarity Call
+      </a>
+    </div>
   </div>
 </div>
 
