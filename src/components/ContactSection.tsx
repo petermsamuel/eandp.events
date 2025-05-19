@@ -36,7 +36,6 @@ const ContactSection = () => {
   </div>
 </div>
 
-
         {/* Email Text */}
         <div className="mt-8 mb-4">
           <p className="text-base text-white/80 max-w-md mx-auto">
