@@ -14,11 +14,11 @@ import Footer from "../components/Footer";
 
 const Index = () => {
   return (
-    <>
-      {/* ✅ Moved OUTSIDE layout structure */}
+    <div className="relative overflow-x-hidden">
+      {/* ✅ Background watermark is fixed-position and behind everything */}
       <div className="lion-watermark" />
 
-      <div className="min-h-screen flex flex-col relative overflow-hidden">
+      <div className="min-h-screen flex flex-col">
         <Navbar />
 
         <main className="flex-1 relative z-10">
@@ -34,9 +34,8 @@ const Index = () => {
 
         <Footer />
       </div>
-    </>
+    </div>
   );
 };
-
 
 export default Index;
