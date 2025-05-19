@@ -1,22 +1,18 @@
-const Index = () => {
-  return (
-    <div className="min-h-screen flex flex-col relative overflow-hidden overflow-x-hidden">
-      <Navbar />
+import { Toaster } from "@/components/ui/toaster";
+import { Toaster as Sonner } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Index from "./pages/Index"; // make sure this is a default export
+import NotFound from "./pages/NotFound";
 
-      <div className="absolute inset-0 lion-watermark z-0" />
+const App = () => (
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Index />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  </BrowserRouter>
+);
 
-      <main className="flex-1 relative z-10">
-        <HeroSection />
-        <WhatWeDoSection />
-        <FeaturedSection />
-        <MeetPeterSection />
-        <TestimonialSection />
-        <GallerySection />
-        <AdditionalCtaSection />
-        <ContactSection />
-      </main>
-
-      <Footer />
-    </div>
-  );
-};
+export default App;
