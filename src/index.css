@@ -96,21 +96,20 @@ html, body {
     );
     animation: pulseGlow 2.5s ease-in-out infinite;
   }
-  
   .lion-watermark {
-    background-image: url('/lovable-uploads/lion-bg.svg');
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 60%;
-    opacity: 0.15; /* nice and subtle */
-    pointer-events: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-  }
+  background-image: url('/lovable-uploads/lion-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 60%;
+  opacity: 0.15;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh; /* mobile-safe full viewport */
+  z-index: -10;
+}
 }
 
 
