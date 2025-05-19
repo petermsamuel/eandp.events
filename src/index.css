@@ -168,3 +168,8 @@ html, body {
     transform: rotate(360deg);
   }
 }
+
+* {
+  outline: 1px solid rgba(255, 0, 0, 0.3);
+}
+
