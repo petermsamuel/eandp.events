@@ -19,31 +19,21 @@ const ContactSection = () => {
           Planning your wedding or event shouldn't feel like managing a crisis.
           Let's build a plan you trust—without the overwhelm.
         </p>
-<div className="relative z-10 max-w-4xl mx-auto text-center">
-  {/* … heading + copy … */}
 
-- <div className="w-full flex justify-center">
--   <div className="max-w-[320px] w-full">
--     <div className="glow-button-wrapper">
--       <div className="glow-ring" />
--       <a className="glow-button-inner">Book Your Free Clarity Call</a>
--     </div>
--   </div>
-- </div>
-+ <div className="flex justify-center">
-+   <div className="glow-button-wrapper">
-+     <div className="glow-ring" />
-+     <a
-+       href="https://cal.com/ryanmcmullen/15min"
-+       target="_blank"
-+       rel="noopener noreferrer"
-+       className="glow-button-inner"
-+     >
-+       Book Your Free Clarity Call
-+     </a>
-+   </div>
-+ </div>
-
+        {/* ✅ Button (fixed and simplified) */}
+        <div className="flex justify-center">
+          <div className="glow-button-wrapper">
+            <div className="glow-ring" />
+            <a
+              href="https://cal.com/ryanmcmullen/15min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glow-button-inner"
+            >
+              Book Your Free Clarity Call
+            </a>
+          </div>
+        </div>
 
         {/* Email Text */}
         <div className="mt-8 mb-4">
