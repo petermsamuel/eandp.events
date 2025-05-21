@@ -82,6 +82,90 @@
 }
 
 /* --- Utilities Layer: Optional Glow BG & Watermark --- */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:wght@300;400;500;600;700&display=swap');
+
+
+/* --- Tailwind Directives --- */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- Base Typography Overrides --- */
+@layer base {
+  html {
+    font-family: "Sorts Mill Goudy", serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Cinzel", serif;
+  }
+
+  strong, b {
+    font-weight: 700;
+  }
+}
+
+/* --- Custom Component Styles --- */
+@layer components {
+  .btn-primary {
+    @apply bg-[#1a1a26] text-white border-2 border-[#1a1a26] px-6 py-3 font-semibold;
+  }
+
+  .btn-primary:hover {
+    @apply bg-[#2a2a3a] text-white;
+  }
+
+  .glow-button-wrapper {
+    @apply relative inline-flex items-center justify-center p-1 rounded-full text-center transition-colors bg-transparent;
+  }
+
+ .glow-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: conic-gradient(
+    from 0deg,
+    #c9a75d 0%,
+    transparent 25%,
+    #c9a75d 50%,
+    transparent 75%,
+    #c9a75d 100%
+  );
+ /* animation: borderOrbit 2.5s linear infinite; */
+  filter: blur(4px);
+  z-index: 0;
+  pointer-events: none;
+
+  /* ✅ Add this: */
+  max-width: 100%;
+  overflow: hidden;
+}
+
+  .glow-button-inner {
+    @apply relative z-10 bg-[#1c1f2b] text-white px-6 py-3 font-semibold rounded-full text-center inline-block no-underline transition-colors;
+  }
+
+  .glow-button-inner:hover {
+    @apply bg-[#2a2a2a];
+  }
+
+.section-title {
+  @apply text-4xl font-extrabold text-foreground leading-snug tracking-tight pb-2 relative block text-center;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 6rem;
+  height: 0.25rem;
+  background-color: #c9a75d;
+  margin: 0.75rem auto 1.5rem auto; /* top auto bottom auto */
+  border-radius: 9999px;
+}
+}
+
+/* --- Utilities Layer: Optional Glow BG & Watermark --- */
 @layer utilities {
   .bg-glow {
     background: radial-gradient(
@@ -126,6 +210,52 @@
   }
 }
 */
+
+
+
+/* --- Global Keyframes --- */
+ @keyframes borderOrbit {
+  0% {
+    background: conic-gradient(
+      from 0deg,
+      #c9a75d 0%,
+      transparent 25%,
+      #c9a75d 50%,
+      transparent 75%,
+      #c9a75d 100%
+    );
+  } 
+  100% {
+    background: conic-gradient(
+      from 360deg,
+      #c9a75d 0%,
+      transparent 25%,
+      #c9a75d 50%,
+      transparent 75%,
+      #c9a75d 100%
+    );
+  }
+} 
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes spinGlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 
 
