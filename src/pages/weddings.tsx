@@ -107,7 +107,7 @@ const Weddings = () => {
           <div className="space-y-16">
             {["Plan with Precision", "Align the Details", "Execute with Ownership"].map((title, index) => (
               <div key={title} className="flex flex-col md:flex-row items-start gap-6">
-                <div className="h-14 w-14 bg-black rounded-full flex items-center justify-center flex-shrink-0 md:mt-2">
+                <div className="h-14 w-14 bg-transparent rounded-full flex items-center justify-center flex-shrink-0 md:mt-2">
                   <span className="text-white text-xl font-bold">{index + 1}</span>
                 </div>
                 <div>
