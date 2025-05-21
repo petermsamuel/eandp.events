@@ -42,7 +42,7 @@ const AdditionalCtaSection = () => {
         </div> 
 
         {/* With E&P Events */}
-  {/*   <div className="bg-[#faf8f3] border border-green-500 p-6 rounded-2xl shadow-md shadow-black/10 min-h-[460px]">
+  <div className="bg-[#faf8f3] border border-green-500 p-6 rounded-2xl shadow-md shadow-black/10 min-h-[460px]">
           <h3 className="text-xl font-semibold text-green-700 mb-4">With E&P Events</h3>
           <ul className="list-disc list-inside space-y-2 text-neutral-700 text-base">
             <li>We take ownership — so you don’t have to carry the mental load alone.</li>
@@ -51,7 +51,7 @@ const AdditionalCtaSection = () => {
             <li>You can finally exhale—your peace, your time, and your budget are protected from surprises.</li>
 <li>You’re calm. Fully in the moment. And when you look back? You don’t just remember what it looked like — you remember how it <span className="italic">felt</span>.</li>
           </ul>
-        </div> */}
+        </div>
 
       </div>
     </section>
