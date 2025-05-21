@@ -5,47 +5,55 @@ import NavBarWeddings from "@/components/NavBarWeddings";
 
 const Weddings = () => {
   return (
-    <div className="min-h-screen bg-white flex flex-col">
- <NavBarWeddings />
+    <>
+      {/* Lion watermark in global fixed layer */}
+      <div className="lion-watermark" aria-hidden="true" />
 
-<div className="lion-watermark" aria-hidden="true" />
+      <div className="min-h-screen bg-white flex flex-col">
+        <NavBarWeddings />
+        
+        {/* Hero Section */}
+        <section
+          id="hero"
+          className="relative min-h-screen flex items-center justify-center pt-24 pb-12 px-6 md:px-12 lg:px-16 bg-cover bg-center text-white"
+          style={{
+            backgroundImage:
+              "url('/lovable-uploads/0d69fd76-5bed-40b1-8935-d005fb4b5c77.png')",
+          }}
+        >
+          <div className="absolute inset-0 bg-black/60 z-0" />
+          <div className="relative z-10 max-w-4xl text-center">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+              Your Wedding Deserves More Than a Checklist. It Deserves Leadership.
+            </h1>
+            <p className="text-lg md:text-xl max-w-3xl mb-10 text-white/90">
+              From the sangeet to the send-off, we don’t just plan — we protect your vision, your culture, and your joy.
+            </p>
+            <a href="#cta" className="glow-button-wrapper">
+              <div className="glow-ring" />
+              <span className="glow-button-inner">Lead With Confidence</span>
+            </a>
+          </div>
 
-
-      {/* Hero Section */}
-  <section
-  id="hero"
-  className="relative min-h-screen flex items-center justify-center pt-24 pb-12 px-6 md:px-12 lg:px-16 bg-cover bg-center text-white"
-  style={{     backgroundImage: "url('/lovable-uploads/0d69fd76-5bed-40b1-8935-d005fb4b5c77.png')" }}
->
-  <div className="absolute inset-0 bg-black/60 z-0" />
-
-  <div className="relative z-10 max-w-4xl text-center">
-    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-      Your Wedding Deserves More Than a Checklist. It Deserves Leadership.
-    </h1>
-    <p className="text-lg md:text-xl max-w-3xl mb-10 text-white/90">
-      From the sangeet to the send-off, we don't just plan — we protect your vision, your culture, and your joy.
-    </p>
-    <a href="#cta" className="glow-button-wrapper">
-      <div className="glow-ring" />
-      <span className="glow-button-inner">Lead With Confidence</span>
-    </a>
-  </div>
-
-  <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-    <a href="#what-we-do" aria-label="Scroll down">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-6 w-6 text-white"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-      </svg>
-    </a>
-  </div>
-</section>
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+            <a href="#what-we-do" aria-label="Scroll down">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                />
+              </svg>
+            </a>
+          </div>
+        </section>
 
  
 
