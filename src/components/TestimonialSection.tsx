@@ -70,7 +70,7 @@ const TestimonialSection = () => {
       {/* Section Heading */}
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="section-title text-center mb-4">
-          When You Know You Chose the Right Planner
+          When You Know You Picked the Right Planner
         </h2>
       </div>
 
