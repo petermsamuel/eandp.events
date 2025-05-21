@@ -30,7 +30,7 @@ const MeetPeterSection = () => {
               With over a decade of experience and a formal background in project management,
               I bring structure, clarity, and cultural empathy to everything I touch.  From intimate ceremonies to productions with over 1,500 guests, I’ve led events at every scale—
     without losing sight of what matters most.
-              But more than credentials—what drives me is justice.
+              But more than credentials, what drives me is justice.
             </p>
 
             <blockquote className="italic border-l-4 border-gold pl-4 text-gray-800">
