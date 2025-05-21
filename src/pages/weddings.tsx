@@ -1,10 +1,13 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Check, Globe, Users } from "lucide-react";
+import NavbarWeddings from "@/components/NavbarWeddings";
 
 const Weddings = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col">
+ <NavbarWeddings />
+
       {/* Hero Section */}
       <section id="hero" className="py-20 px-6 md:px-12 lg:px-16 flex flex-col items-center text-center">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 max-w-4xl">
