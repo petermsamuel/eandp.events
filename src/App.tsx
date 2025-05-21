@@ -9,11 +9,11 @@ import NotFound from "./pages/NotFound";
 const App = () => (
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Index />} />
-      <Route path="*" element={<NotFound />} />
-        <Route path="/weddings" element={<WeddingsPage />} />
-        <Route path="/corporate" element={<CorporatePage />} />
-    </Routes>
+  <Route path="/" element={<Index />} />
+  <Route path="/weddings" element={<WeddingsPage />} />
+  <Route path="/corporate" element={<CorporatePage />} />
+  <Route path="*" element={<NotFound />} />
+</Routes>
   </BrowserRouter>
 );
 
