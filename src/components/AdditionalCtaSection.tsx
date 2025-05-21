@@ -30,7 +30,7 @@ const AdditionalCtaSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mt-12 px-4 md:px-6 lg:px-8">
         
         {/* On Your Own */}
-        <div className="bg-[#f0e9e5] border border-red-500 p-6 rounded-2xl shadow-md shadow-black/10">
+        <div className="bg-[#f0e9e5] border border-red-500 p-6 rounded-2xl shadow-md shadow-black/10 min-h-[460px]">
           <h3 className="text-xl font-semibold text-red-700 mb-4">On Your Own</h3>
           <ul className="list-disc list-inside space-y-2 text-neutral-700 text-base">
             <li>Weeks disappear into a blur of to-do lists, WhatsApp threads, and late-night decision-making.</li>
@@ -42,7 +42,7 @@ const AdditionalCtaSection = () => {
         </div>
 
         {/* With E&P Events */}
-        <div className="bg-[#faf8f3] border border-green-500 p-6 rounded-2xl shadow-md shadow-black/10">
+        <div className="bg-[#faf8f3] border border-green-500 p-6 rounded-2xl shadow-md shadow-black/10 min-h-[460px]">
           <h3 className="text-xl font-semibold text-green-700 mb-4">With E&P Events</h3>
           <ul className="list-disc list-inside space-y-2 text-neutral-700 text-base">
             <li>We take ownership — so you don’t have to carry the mental load alone.</li>
