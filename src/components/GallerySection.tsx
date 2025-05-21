@@ -19,7 +19,7 @@ const GallerySection = () => {
        <div className="text-center text-white space-y-4 text-lg md:text-xl">
   <p>Every photo here is from a real event—not a styled shoot.</p>
   <p>Real families. Real timelines. Real harmony.</p>
-  <p>What you’re seeing is leadership in motion.</p>
+  <p>Leadership in motion.</p>
 </div>
 
 
