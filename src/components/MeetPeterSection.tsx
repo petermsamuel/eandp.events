@@ -25,14 +25,14 @@ const MeetPeterSection = () => {
             <p className="text-lg mb-4">
            Hi, I’m Peter—Director of E&P Events.
 I don’t just plan events. I run them.
-
-With over a decade of experience and a formal background in project management, I bring structure, clarity, and cultural empathy to everything I touch.
-But more than credentials—what drives me is justice.
-
-“I’ve seen it too often—clients spending tens of thousands only to be overwhelmed, disappointed, or outright taken advantage of. That’s not just unfair. It’s unacceptable.
-I believe hosting an event should feel empowering. Celebratory. Safe. That’s why I lead like it’s mine—so you can enjoy it like it’s yours.”
-
-You’ll feel my impact not in what I say—but in how your day flows: calm, seamless, and exactly as you hoped.
+<br></br>
+<br>With over a decade of experience and a formal background in project management, I bring structure, clarity, and cultural empathy to everything I touch.
+But more than credentials—what drives me is justice.</br>
+<br></br>
+<br>“I’ve seen it too often—clients spending tens of thousands only to be overwhelmed, disappointed, or outright taken advantage of. That’s not just unfair. It’s unacceptable.
+I believe hosting an event should feel empowering. Celebratory. Safe. That’s why I lead like it’s mine—so you can enjoy it like it’s yours.”</br>
+<br>
+<br>You’ll feel my impact not in what I say—but in how your day flows: calm, seamless, and exactly as you hoped.</br>
 
             </p>
 
