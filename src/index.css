@@ -117,16 +117,16 @@
   }
 
 
-  @media (max-width: 768px) {
-    .lion-watermark {
-      display: none !important; /* 🔒 override completely */
-      width: 0 !important;
+/*  @media (max-width: 768px) {
+    .lion-watermark { 
+      display: none !important; /* 🔒 override completely */ */
+/*      width: 0 !important;
       height: 0 !important;
       overflow: hidden !important;
       background: none !important;
     }
   }
-}
+} */
 
 
 /* --- Global Keyframes --- */
