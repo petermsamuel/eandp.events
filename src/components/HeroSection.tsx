@@ -29,13 +29,14 @@ const HeroSection = () => {
       Whether you’re navigating family dynamics or brand goals, we build a plan that holds—so you can be fully present.
     </p>
 
-    <a
-      href="#contact"
-      className="btn btn-primary bg-navy text-white text-lg rounded-full px-6 py-3 inline-flex items-center justify-center text-center leading-snug"
-    >
-      Stop Managing. Start Celebrating.
-    </a>
-  </div>
+<div className="flex justify-center">
+  <a
+    href="#contact"
+         className="btn btn-primary bg-navy text-white text-lg rounded-full px-6 py-3 inline-flex items-center justify-center text-center leading-snug
+  >
+    Stop Managing. Start Celebrating.
+  </a>
+</div>
       
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
         <a href="#what-we-do" aria-label="Scroll down">
