@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Check, Globe, Users, Image, Calendar, Handshake } from "lucide-react";
+import { Check, Flame, Users, Image, Calendar, Handshake } from "lucide-react";
 
 const Weddings = () => {
   return (
@@ -38,7 +38,7 @@ const Weddings = () => {
             
             <div className="flex flex-col items-center text-center p-6 bg-white shadow-sm rounded-lg">
               <div className="h-14 w-14 bg-emerald-100 rounded-full flex items-center justify-center mb-4">
-                <Globe className="h-7 w-7 text-emerald-700" />
+                <Flame className="h-7 w-7 text-emerald-700" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Cultural nuances?</h3>
               <p className="text-lg">Fluent.</p>
