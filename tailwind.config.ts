@@ -18,6 +18,8 @@ const config: Config = {
     "group-hover:scale-105",
     "group-hover:shadow-lg",
     "animate-border-orbit",
+    "text-emerald-700",
+    "bg-emerald-100",
   ],
   theme: {
     container: {
