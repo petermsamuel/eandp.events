@@ -204,13 +204,15 @@ const Weddings = () => {
       </p>
     </div>
 
-    {/* Back to Main */}
+       {/* Back to Main */}
     <div className="mt-8">
       <a href="/" className="text-gold underline">← Back to Main</a>
-          </div>
     </div>
+  </div>
+</section>
+    </div> {/* closes .min-h-screen */}
   </>
-);
+  );
 };
 
 export default Weddings;
