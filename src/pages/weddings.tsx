@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Check, Globe, Users } from "lucide-react";
-import NavbarWeddings from "@/components/NavBarWeddings";
+import NavBarWeddings from "@/components/NavBarWeddings";
 
 const Weddings = () => {
   return (
