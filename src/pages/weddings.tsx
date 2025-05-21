@@ -84,7 +84,7 @@ const Weddings = () => {
 <section
   id="testimonial"
   className="py-20 px-6 md:px-12 lg:px-16"
-  style={{ backgroundColor: "#faf8f3" }}
+  style={{ backgroundColor: "#2a2a2a" }}
 >
   <div className="max-w-5xl mx-auto text-center">
     <h2 className="section-title text-white">What Couples Say</h2>
