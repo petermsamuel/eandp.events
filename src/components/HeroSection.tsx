@@ -14,20 +14,21 @@ const HeroSection = () => {
       
       <div className="container mx-auto max-w-4xl text-center z-10 animate-fade-in">
         <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-white">
-         Your Event Deserves a Leader—Not Another To-Do List.
+         Still Holding It All Together By Yourself? You Shouldn’t Have To.
         </h1>
         <p className="text-lg md:text-xl mb-10 text-white max-w-3xl mx-auto">
-          Whether you're planning a South Asian wedding or a corporate production, you shouldn't have to be the one holding everything together.
+          Weddings rooted in tradition. Corporate events built to impress.
+At E&P Events, we don’t just plan—we take ownership.
         </p>
 
         <p className="text-lg md:text-xl mb-10 text-white max-w-3xl mx-auto">
-          At E&P Events, we bring leadership, logistics, and cultural intelligence to every event—weddings rooted in tradition, launches built to impress, and everything in between.
+          We lead with strategy, protect your vision, and bring cultural fluency to every detail. Whether you’re navigating family dynamics or brand goals, we build a plan that holds—so you can be fully present.
         </p>
        <a
   href="#contact"
   className="btn btn-primary bg-navy text-white text-lg rounded-full px-6 py-3 inline-flex items-center justify-center text-center leading-snug"
 >
-  No Pressure. Just a Plan.
+ Stop Managing. Start Celebrating.
 </a>
       </div>
       
