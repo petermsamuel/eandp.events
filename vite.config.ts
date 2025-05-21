@@ -24,4 +24,12 @@ export default defineConfig(({ mode }) => ({
       },
     },
   },
+defineConfig({
+  // ... existing config
+  build: {
+    // Add this to force full cache-busting
+    sourcemap: true, // optional but helps Netlify detect changes
+    emptyOutDir: true, // <--- ensures old files are cleared between builds
+  },
+}
 }));
