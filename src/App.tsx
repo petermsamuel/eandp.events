@@ -1,19 +1,17 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index"; // make sure this is a default export
+import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import WeddingsPage from "./pages/weddings";
+import CorporatePage from "./pages/corporate";
 
 const App = () => (
   <BrowserRouter>
     <Routes>
-  <Route path="/" element={<Index />} />
-  <Route path="/weddings" element={<WeddingsPage />} />
-  <Route path="/corporate" element={<CorporatePage />} />
-  <Route path="*" element={<NotFound />} />
-</Routes>
+      <Route path="/" element={<Index />} />
+      <Route path="/weddings" element={<WeddingsPage />} />
+      <Route path="/corporate" element={<CorporatePage />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   </BrowserRouter>
 );
 
