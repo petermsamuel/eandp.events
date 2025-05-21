@@ -93,9 +93,9 @@
     animation: pulseGlow 2.5s ease-in-out infinite;
   }
   
-  .lion-watermark {
+/*  .lion-watermark { */
     /* existing styles */
-    background-image: url('/lovable-uploads/lion-bg.svg');
+  /*  background-image: url('/lovable-uploads/lion-bg.svg');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: clamp(200px, 60%, 800px);
@@ -110,7 +110,7 @@
     will-change: transform;
     transform: translateZ(0);
     backface-visibility: hidden;
-  }
+  } */
 
   .contain-layout {
     contain: layout paint;
@@ -130,7 +130,7 @@
 
 
 /* --- Global Keyframes --- */
-/* @keyframes borderOrbit {
+ @keyframes borderOrbit {
   0% {
     background: conic-gradient(
       from 0deg,
@@ -151,7 +151,7 @@
       #c9a75d 100%
     );
   }
-} */
+} 
 
 @keyframes pulseGlow {
   0%, 100% {
