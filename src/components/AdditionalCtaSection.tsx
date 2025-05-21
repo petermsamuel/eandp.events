@@ -34,7 +34,7 @@ const AdditionalCtaSection = () => {
           <h3 className="text-xl font-semibold text-red-700 mb-4">On Your Own</h3>
           <ul className="list-disc list-inside space-y-2 text-neutral-700 text-base">
             <li>Weeks disappear into a blur of to-do lists, WhatsApp threads, and late-night decision-making.</li>
-            <li>You miss time with the people you love — because the wedding becomes your full-time job.</li>
+            <li>You miss time with the people you love — because the event becomes your full-time job.</li>
             <li>You’re carrying family expectations, cultural pressure, and vendor confusion on your back.</li>
             <li>The day arrives. You’re exhausted. Still problem-solving in full glam.</li>
             <li>You smile for the photos, but your memories are a haze of stress.</li>
