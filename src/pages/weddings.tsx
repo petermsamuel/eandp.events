@@ -100,14 +100,14 @@ const Weddings = () => {
       </section>
 
       {/* How It Works Section */}
-      <section id="how-it-works" className="py-20 px-6 md:px-12 lg:px-16">
+<section id="how-it-works" className="bg-transparent py-20 px-6 md:px-12 lg:px-16">
         <div className="max-w-5xl mx-auto">
           <h2 className="section-title">How It Works</h2>
 
           <div className="space-y-16">
             {["Plan with Precision", "Align the Details", "Execute with Ownership"].map((title, index) => (
               <div key={title} className="flex flex-col md:flex-row items-start gap-6">
-                <div className="h-14 w-14 bg-transparent rounded-full flex items-center justify-center flex-shrink-0 md:mt-2">
+                <div className="h-14 w-14 bg-black rounded-full flex items-center justify-center flex-shrink-0 md:mt-2">
                   <span className="text-white text-xl font-bold">{index + 1}</span>
                 </div>
                 <div>
