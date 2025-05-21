@@ -9,24 +9,36 @@ const Weddings = () => {
  <NavBarWeddings />
 
       {/* Hero Section */}
-      <section id="hero" className="py-20 px-6 md:px-12 lg:px-16 flex flex-col items-center text-center">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 max-w-4xl">
-          Your Wedding Deserves More Than a Checklist. It Deserves Leadership.
-        </h1>
-        <p className="text-lg md:text-xl max-w-3xl mb-10">
-          From the sangeet to the send-off, we don't just plan — we protect your vision, your culture, and your joy.
-        </p>
+      <section
+  id="hero"
+  className="relative py-20 px-6 md:px-12 lg:px-16 flex flex-col items-center text-center text-white overflow-hidden"
+  style={{
+    backgroundImage: "url('/lovable-uploads/0d69fd76-5bed-40b1-8935-d005fb4b5c77.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  {/* Optional dark overlay for readability */}
+  <div className="absolute inset-0 bg-black/60 z-0" />
 
+  {/* Hero Content */}
+  <div className="relative z-10">
+    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 max-w-4xl">
+      Your Wedding Deserves More Than a Checklist. It Deserves Leadership.
+    </h1>
+    <p className="text-lg md:text-xl max-w-3xl mb-10">
+      From the sangeet to the send-off, we don't just plan — we protect your vision, your culture, and your joy.
+    </p>
 
-<a href="#cta" className="glow-button-wrapper">
-  <div className="glow-ring" />
-  <span className="glow-button-inner">
-    Lead With Confidence
-  </span>
-</a>
+    <a href="#cta" className="glow-button-wrapper">
+      <div className="glow-ring" />
+      <span className="glow-button-inner">
+        Lead With Confidence
+      </span>
+    </a>
+  </div>
+</section>
 
-
-      </section>
 
       {/* What You Need, What We Do Section */}
  <section
