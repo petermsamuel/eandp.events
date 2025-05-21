@@ -115,7 +115,6 @@
   .contain-layout {
     contain: layout paint;
   }
-}
 
 
   @media (max-width: 768px) {
@@ -127,7 +126,6 @@
       background: none !important;
     }
   }
-}
 
 
 
