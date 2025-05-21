@@ -14,9 +14,15 @@ const GallerySection = () => {
   return (
     <section id="gallery" className="section-container bg-charcoal text-white py-20">
       <div className="max-w-6xl mx-auto">
-        <h2 className="section-title text-white text-center"> Where Vision Meets Precision</h2>
+        <h2 className="section-title text-white text-center"> Precision You Can See. Peace You Can Feel.</h2>
       <p className="text-lg mb-12 text-center">
-          Every moment in this gallery reflects thoughtful planning, cultural understanding, and seamless execution. No styled shoots. No chaos. Just real events, led with clarity and care.
+       <div className="text-center text-white space-y-4 text-lg md:text-xl">
+  <p>Every photo here is from a real event—not a styled shoot.</p>
+  <p>Real families. Real timelines. Real harmony.</p>
+  <p>What you’re seeing is leadership in motion.</p>
+</div>
+
+
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
