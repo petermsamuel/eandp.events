@@ -55,7 +55,6 @@ const Weddings = () => {
               <p className="text-lg">Navigated.</p>
             </div>
           </div>
-        </div>
       </section>
 
       {/* How It Works Section */}
