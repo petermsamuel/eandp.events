@@ -207,11 +207,10 @@ const Weddings = () => {
     {/* Back to Main */}
     <div className="mt-8">
       <a href="/" className="text-gold underline">← Back to Main</a>
+          </div>
     </div>
-  </div>
-</section>
-    </div>
-  );
+  </>
+);
 };
 
 export default Weddings;
