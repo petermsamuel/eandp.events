@@ -5,7 +5,7 @@ const MeetPeterSection = () => {
     <section id="meet-peter" className="section-container bg-transparent py-20">
       <div className="max-w-6xl mx-auto">
         <h2 className="section-title mx-auto">
-          Hi, I'm Peter. I Don’t Just Plan Events—I Run Them.
+        Your Event’s Calm Commander
         </h2>
 
         <div className="flex flex-col md:flex-row gap-12 items-center">
@@ -23,13 +23,17 @@ const MeetPeterSection = () => {
           {/* Text Content */}
           <div className="md:w-2/3">
             <p className="text-lg mb-4">
-              As the Director of E&P Events, my job is to bring order to what
-              often feels like chaos. With a formal background in Project
-              Management, over a decade in high-pressure event planning, and
-              deep experience with South Asian and multicultural weddings, I’m
-              not guessing—I’m executing. Clients trust me because I lead
-              calmly, communicate clearly, and make sure nothing gets
-              missed—even when things change.
+           Hi, I’m Peter—Director of E&P Events.
+I don’t just plan events. I run them.
+
+With over a decade of experience and a formal background in project management, I bring structure, clarity, and cultural empathy to everything I touch.
+But more than credentials—what drives me is justice.
+
+“I’ve seen it too often—clients spending tens of thousands only to be overwhelmed, disappointed, or outright taken advantage of. That’s not just unfair. It’s unacceptable.
+I believe hosting an event should feel empowering. Celebratory. Safe. That’s why I lead like it’s mine—so you can enjoy it like it’s yours.”
+
+You’ll feel my impact not in what I say—but in how your day flows: calm, seamless, and exactly as you hoped.
+
             </p>
 
             <p className="text-lg mb-4">
