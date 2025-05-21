@@ -28,7 +28,7 @@ const Weddings = () => {
             </p>
             <a href="#cta" className="glow-button-wrapper">
               <div className="glow-ring" />
-              <span className="glow-button-inner">Lead With Confidence</span>
+              <span className="glow-button-inner">No Pressure. Just A Plan.</span>
             </a>
           </div>
 
