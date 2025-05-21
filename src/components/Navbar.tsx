@@ -9,15 +9,39 @@ const Weddings = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section id="hero" className="pt-32 pb-20 px-6 md:px-12 lg:px-16 flex flex-col items-center text-center">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 max-w-4xl">
-          Your Wedding Deserves More Than a Checklist. It Deserves Leadership.
-        </h1>
-        <p className="text-lg md:text-xl max-w-3xl mb-10">
-          From the sangeet to the send-off, we don't just plan — we protect your vision, your culture, and your joy.
-        </p>
-        <Button className="px-6 py-6 text-lg h-auto">Book Your Free Clarity Call</Button>
-      </section>
+     <section
+  id="hero"
+  className="relative pt-32 pb-20 px-6 md:px-12 lg:px-16 flex flex-col items-center text-center bg-black text-white overflow-hidden"
+>
+  {/* Optional Glow */}
+  <div className="absolute inset-0 flex justify-center items-center pointer-events-none z-0">
+    <div className="w-[300px] h-[300px] bg-gold/10 rounded-full blur-[100px]" />
+  </div>
+
+  {/* Hero Content */}
+  <div className="relative z-10">
+    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 max-w-4xl">
+      Your Wedding Deserves More Than a Checklist. It Deserves Leadership.
+    </h1>
+    <p className="text-lg md:text-xl max-w-3xl mb-10 text-white/90">
+      From the sangeet to the send-off, we don't just plan — we protect your vision, your culture, and your joy.
+    </p>
+
+    {/* Glow CTA Button */}
+    <div className="glow-button-wrapper">
+      <div className="glow-ring" />
+      <a
+        href="https://cal.com/ryanmcmullen/15min"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="glow-button-inner"
+      >
+        Book Your Free Clarity Call
+      </a>
+    </div>
+  </div>
+</section>
+
 
       {/* What You Need, What We Do Section */}
       <section id="what-we-do" className="py-20 px-6 md:px-12 lg:px-16 bg-gray-50">
