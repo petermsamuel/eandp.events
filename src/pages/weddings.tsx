@@ -80,16 +80,21 @@ const Weddings = () => {
         </div>
       </section>
 
-      {/* Testimonial Section */}
-      <section id="testimonial" className="py-20 px-6 md:px-12 lg:px-16 bg-gray-900 text-white">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="section-title">What Couples Say</h2>
-          <blockquote className="text-xl md:text-2xl italic font-light mb-6 max-w-3xl mx-auto">
-            "I didn't realize how much stress I was carrying until Peter took over. Every detail was handled — and we actually enjoyed every moment."
-          </blockquote>
-          <p className="text-lg">&mdash; Mitali & Jay</p>
-        </div>
-      </section>
+     {/* Testimonial Section */}
+<section
+  id="testimonial"
+  className="py-20 px-6 md:px-12 lg:px-16"
+  style={{ backgroundColor: "#faf8f3" }}
+>
+  <div className="max-w-5xl mx-auto text-center">
+    <h2 className="section-title text-white">What Couples Say</h2>
+    <blockquote className="text-xl md:text-2xl italic font-light mb-6 max-w-3xl mx-auto text-white">
+      "I didn't realize how much stress I was carrying until Peter took over. Every detail was handled — and we actually enjoyed every moment."
+    </blockquote>
+    <p className="text-lg text-white">— Mitali & Jay</p>
+  </div>
+</section>
+
 
       {/* Gallery Section */}
       <section id="gallery" className="py-20 px-6 md:px-12 lg:px-16">
