@@ -27,7 +27,8 @@ const AdditionalCtaSection = () => {
       </div>
 
       {/* Comparison cards in centered container */}
-<div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mt-12 px-4 md:px-6 lg:px-8 transform-gpu will-change-transform">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mt-12 px-4 md:px-6 lg:px-8 transform-gpu will-change-transform contain-layout">
+
         {/* On Your Own */}
         <div className="bg-[#f0e9e5] border border-red-500 p-6 rounded-2xl shadow-md shadow-black/10 min-h-[460px]">
           <h3 className="text-xl font-semibold text-red-700 mb-4">On Your Own</h3>
