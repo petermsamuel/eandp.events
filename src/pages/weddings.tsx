@@ -9,7 +9,6 @@ const Weddings = () => {
  <NavBarWeddings />
 
       {/* Hero Section */}
-      <section
   <section
   id="hero"
   className="relative min-h-screen flex items-center justify-center pt-24 pb-12 px-6 md:px-12 lg:px-16 bg-cover bg-center text-white"
