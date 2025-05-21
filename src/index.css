@@ -140,7 +140,7 @@
       transparent 75%,
       #c9a75d 100%
     );
-  } */
+  } 
   100% {
     background: conic-gradient(
       from 360deg,
@@ -151,7 +151,7 @@
       #c9a75d 100%
     );
   }
-}
+} */
 
 @keyframes pulseGlow {
   0%, 100% {
