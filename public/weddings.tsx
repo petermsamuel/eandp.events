@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Check, Compass, Users, Image, Calendar, Handshake } from "lucide-react";
+import { Check, Globe, Users, Image, Calendar, Handshake } from "lucide-react";
 
 const Weddings = () => {
   return (
