@@ -3,31 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <title>Weddings | E&P Events</title>
- <style>
+<style>
     body {
       font-family: 'Georgia', serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
       color: #1a1a1a;
-      background: #fff;
     }
-
+    header.hero {
+      position: relative;
+      background: url('hero-wedding.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+    header.hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    header.hero h1,
+    header.hero p {
+      position: relative;
+      z-index: 2;
+    }
+    header.hero h1 {
+      font-size: 2.8rem;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
     .section {
       padding: 80px 20px;
-      max-width: 1000px;
+      max-width: 800px;
       margin: 0 auto;
       text-align: center;
     }
-
     .section h2 {
+      font-family: 'Georgia', serif;
       font-size: 1.8rem;
       text-transform: uppercase;
-      margin-bottom: 40px;
       position: relative;
       display: inline-block;
+      margin-bottom: 20px;
     }
-
     .section h2::after {
       content: "";
       display: block;
@@ -36,75 +57,45 @@
       background: goldenrod;
       margin: 10px auto 0;
     }
-
-    .features {
+    .section p, .section ul, .section li {
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: 1rem;
+      margin-bottom: 1em;
+    }
+    .dark-section {
+      background: #1a1a1a;
+      color: white;
+    }
+    .testimonial {
+      font-style: italic;
+    }
+    .cta {
+      background: #111;
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .cta h2 {
+      font-size: 1.6rem;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 200px;
+      margin: 10px;
+    }
+    .gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 40px;
-      margin-top: 40px;
-    }
-
-    .feature-block {
-      flex: 1 1 250px;
-      background: #f9f9f9;
-      border-radius: 12px;
-      padding: 30px 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      text-align: center;
-    }
-
-    .feature-block h3 {
-      font-size: 1.1rem;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .steps {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 40px;
-      margin-top: 40px;
-    }
-
-    .step {
-      max-width: 600px;
-      background: #f4f4f4;
-      padding: 20px 30px;
-      border-left: 5px solid goldenrod;
-      border-radius: 8px;
-      text-align: left;
-      position: relative;
-    }
-
-    .step::before {
-      content: attr(data-step);
-      position: absolute;
-      top: -10px;
-      left: -30px;
-      background: goldenrod;
-      color: white;
-      font-weight: bold;
-      width: 24px;
-      height: 24px;
-      text-align: center;
-      line-height: 24px;
-      border-radius: 50%;
-    }
-
-    .step h4 {
-      margin-top: 0;
-      font-size: 1.1rem;
-    }
-
-    .step p {
-      margin: 0.5em 0 0;
-      font-family: 'Helvetica Neue', sans-serif;
     }
   </style>
 </head>
 <body>
+
+<header class="hero">
+  <h1>Your Wedding Deserves More Than a Checklist. It Deserves Leadership.</h1>
+  <p>From the sangeet to the send-off, we don’t just plan—we protect your vision, your culture, and your joy.</p>
+</header>
 
 <section class="section">
   <h2>What You Need, What We Do</h2>
@@ -143,6 +134,27 @@
       <p>You’re not managing your wedding—you’re experiencing it.</p>
     </div>
   </div>
+</section>
+
+<section class="section dark-section">
+  <h2>Social Proof</h2>
+  <p class="testimonial">“I didn’t realize how much stress I was carrying until Peter took over. Every detail was handled—and we actually enjoyed every moment.”<br>—Mitali & Jay</p>
+</section>
+
+<section class="section">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="photo1.jpg" alt="Wedding photo 1">
+    <img src="photo2.jpg" alt="Wedding photo 2">
+    <img src="photo3.jpg" alt="Wedding photo 3">
+    <img src="photo4.jpg" alt="Wedding photo 4">
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Feel Seen. Feel Ready. Feel Present.</h2>
+  <p>Let’s create a wedding experience you’ll remember for how it felt—not just how it looked.</p>
+  <button style="padding: 10px 20px; background: goldenrod; border: none; font-size: 1rem;">👉 Book Your Free Clarity Call</button>
 </section>
 
 </body>
