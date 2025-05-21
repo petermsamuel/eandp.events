@@ -118,19 +118,25 @@ const Weddings = () => {
       </section>
 
       {/* Call to Action Section */}
-      <section id="cta" className="py-20 px-6 md:px-12 lg:px-16">
-   style={{ backgroundColor: "#2a2a2a" }}
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="section-title text=white">Feel Seen. Feel Ready. Feel Present.</h2>
-          <p className="text-lg mb-10 max-w-2xl mx-auto">
-            Let's create a wedding experience you'll remember for how it felt — not just how it looked.
-          </p>
-          <Button className="px-6 py-6 text-lg h-auto">👉 Book Your Free Clarity Call</Button>
-          <p className="mt-8 text-gray-600">
-            Or email us at info@events-ep.com. You'll get a response from a real person — not a bot, not a sales script.
-          </p>
-        </div>
-      </section>
+      <section
+  id="cta"
+  className="py-20 px-6 md:px-12 lg:px-16 text-white"
+  style={{ backgroundColor: "#2a2a2a" }}
+>
+  <div className="max-w-4xl mx-auto text-center">
+    <h2 className="section-title text-white">Feel Seen. Feel Ready. Feel Present.</h2>
+    <p className="text-lg mb-10 max-w-2xl mx-auto">
+      Let's create a wedding experience you'll remember for how it felt — not just how it looked.
+    </p>
+    <Button className="px-6 py-6 text-lg h-auto">👉 Book Your Free Clarity Call</Button>
+    <p className="mt-8 text-gray-300">
+      Or email us at info@events-ep.com. You'll get a response from a real person — not a bot, not a sales script.
+    </p>
+    <div className="mt-8">
+      <a href="/" className="text-gold underline">← Back to Main Site</a>
+    </div>
+  </div>
+</section>
     </div>
   );
 };
