@@ -130,7 +130,7 @@
 
 
 /* --- Global Keyframes --- */
-@keyframes borderOrbit {
+/* @keyframes borderOrbit {
   0% {
     background: conic-gradient(
       from 0deg,
@@ -139,7 +139,7 @@
       #c9a75d 50%,
       transparent 75%,
       #c9a75d 100%
-    );
+    ); */
   }
   100% {
     background: conic-gradient(
