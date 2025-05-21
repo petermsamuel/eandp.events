@@ -13,7 +13,7 @@ const HeroSection = () => {
       </div>
       
       <div className="container mx-auto max-w-4xl text-center z-10 animate-fade-in">
-        <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-white">
+<h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-white max-w-[42rem] mx-auto">
          Still Holding It All Together By Yourself? You Shouldn’t Have To.
         </h1>
         <p className="text-lg md:text-xl mb-10 text-white max-w-3xl mx-auto">
