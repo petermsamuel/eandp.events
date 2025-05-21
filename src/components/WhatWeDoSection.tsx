@@ -31,7 +31,7 @@ const WhatWeDoSection = () => {
 
         {/* Weddings Card */}
         <div className="bg-white/80 p-8 md:p-10 rounded-lg shadow-md transition-shadow hover:shadow-lg">
-          <a href="/weddings.tsx" className="block">
+          <a href="/weddings" className="block">
             <h3 className="text-2xl font-semibold mb-4 flex items-center">
               <span className="text-gold mr-2">✨</span> Weddings
             </h3>
