@@ -120,20 +120,49 @@ const Weddings = () => {
       </section>
 
       {/* Call to Action Section */}
-      <section
+<section
   id="cta"
-  className="py-20 px-6 md:px-12 lg:px-16 text-white"
-  style={{ backgroundColor: "#2a2a2a" }}
+  className="relative bg-[#2c2c2c] py-20 px-6 md:px-12 lg:px-16 text-white overflow-hidden"
 >
-  <div className="max-w-4xl mx-auto text-center">
+  {/* Radial background glow */}
+  <div className="absolute inset-0 flex justify-center items-center pointer-events-none z-0">
+    <div className="w-[300px] h-[300px] bg-gold/10 rounded-full blur-[100px]" />
+  </div>
+
+  <div className="relative z-10 max-w-4xl mx-auto text-center">
     <h2 className="section-title text-white">Feel Seen. Feel Ready. Feel Present.</h2>
-    <p className="text-lg mb-10 max-w-2xl mx-auto">
+    <p className="text-lg mb-10 max-w-2xl mx-auto text-white/90">
       Let's create a wedding experience you'll remember for how it felt — not just how it looked.
     </p>
-    <Button className="px-6 py-6 text-lg h-auto">👉 Book Your Free Clarity Call</Button>
-    <p className="mt-8 text-gray-300">
-      Or email us at info@events-ep.com. You'll get a response from a real person — not a bot, not a sales script.
-    </p>
+
+    {/* Glow CTA Button */}
+    <div className="glow-button-wrapper mx-auto">
+      <div className="glow-ring" />
+      <a
+        href="https://cal.com/ryanmcmullen/15min"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="glow-button-inner"
+      >
+        Book Your Free Clarity Call
+      </a>
+    </div>
+
+    {/* Email Text */}
+    <div className="mt-8">
+      <p className="text-base text-white/80 max-w-md mx-auto">
+        Or email us at{" "}
+        <a
+          href="mailto:info@eandp.events"
+          className="text-gold hover:underline"
+        >
+          info@eandp.events
+        </a>
+        . You'll get a response from a real person — not a bot, not a sales script.
+      </p>
+    </div>
+
+    {/* Back to Main */}
     <div className="mt-8">
       <a href="/" className="text-gold underline">← Back to Main</a>
     </div>
