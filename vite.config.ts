@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 import path from 'path';
 
-export default defineConfig(({ mode }) => ({
+export default defineConfig({
   server: {
     host: "::",
     port: 8080,
@@ -14,7 +14,9 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
-    manifest: true, // helpful for debugging & integrations
+    sourcemap: true,        // helps debugging & cache invalidation
+    emptyOutDir: true,      // ensures old build files are purged
+    manifest: true,
     assetsDir: "assets",
     rollupOptions: {
       output: {
@@ -24,12 +26,4 @@ export default defineConfig(({ mode }) => ({
       },
     },
   },
-defineConfig({
-  // ... existing config
-  build: {
-    // Add this to force full cache-busting
-    sourcemap: true, // optional but helps Netlify detect changes
-    emptyOutDir: true, // <--- ensures old files are cleared between builds
-  },
-}
-}));
+});
