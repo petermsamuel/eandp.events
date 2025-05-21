@@ -17,8 +17,11 @@ const Weddings = () => {
       </section>
 
       {/* What You Need, What We Do Section */}
-      <section id="what-we-do" className="py-20 px-6 md:px-12 lg:px-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
+ <section
+        id="what-we-do""
+        className="py-20 px-6 md:px-12 lg:px-16"
+        style={{ backgroundColor: "#2a2a2a" }}
+      >
           <div className="text-center mb-16">
             <h2 className="section-title">What You Need, What We Do</h2>
             <p className="text-lg max-w-3xl mx-auto">
