@@ -8,11 +8,11 @@ const WhatWeDoSection = () => {
     >
       <div className="max-w-4xl mx-auto text-center px-4">
         <h2 className="section-title">
-          Execution You Can Trust. Events You’ll Remember.
+       Strategic Execution for Once-in-a-Lifetime Moments
         </h2>
 
         <p className="text-lg mt-6 text-gray-700">
-          Your event is more than a date on a calendar — it’s a milestone, a message, a memory in motion. We step in before the overwhelm, bringing strategic structure to emotional moments, brand goals, or multi-day cultural celebrations. From vendor wrangling to timeline control, we deliver calm clarity every step of the way.
+          Your event is more than a date on a calendar — it’s a milestone, a message, a moment that needs to move with clarity and care. We don’t just “help” — we lead. Before the chaos starts. With structure, calm, and cultural intelligence.
         </p>
       </div>
 
@@ -24,7 +24,7 @@ const WhatWeDoSection = () => {
               <span className="text-gold mr-2">✨</span> Corporate
             </h3>
             <p className="text-gray-700">
-              You need results, not risk. We execute high-impact events that reflect your brand, serve your goals, and leave a lasting impression. Whether it’s a product launch or a leadership retreat, we keep everything on schedule, on message, and under control.
+              You need results, not risk. Whether it’s a seasonal celebration, executive summit, or high-stakes launch—our events are built to reflect your mission, deliver measurable impact, and keep the chaos contained.
             </p>
           </a>
         </div>
@@ -36,7 +36,7 @@ const WhatWeDoSection = () => {
               <span className="text-gold mr-2">✨</span> Weddings
             </h3>
             <p className="text-gray-700">
-              We specialize in South Asian and multicultural weddings—events that require deep cultural fluency, logistical expertise, and careful communication. From multi-day celebrations to modern fusions, we make the complex feel effortless.
+              We specialize in South Asian and fusion weddings—events with deep cultural layers, multiday logistics, and complex family expectations. From sangeets to baraats, we lead with lived experience and cultural fluency.
             </p>
           </a>
         </div>
