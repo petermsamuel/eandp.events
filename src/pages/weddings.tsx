@@ -8,6 +8,9 @@ const Weddings = () => {
     <div className="min-h-screen bg-white flex flex-col">
  <NavBarWeddings />
 
+<div className="lion-watermark" aria-hidden="true" />
+
+
       {/* Hero Section */}
   <section
   id="hero"
