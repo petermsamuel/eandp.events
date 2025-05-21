@@ -9,7 +9,6 @@ const App = () => (
     <Routes>
       <Route path="/" element={<Index />} />
       <Route path="/weddings" element={<WeddingsPage />} />
-      <Route path="/corporate" element={<CorporatePage />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   </BrowserRouter>
