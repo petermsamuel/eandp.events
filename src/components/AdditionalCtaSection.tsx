@@ -12,7 +12,7 @@ const AdditionalCtaSection = () => {
       </div>
 
       {/* Full-width subheading */}
-      {/*   <div className="text-left space-y-4 text-lg text-gray-800 px-4 md:px-8 max-w-7xl mx-auto mt-4">
+      <div className="text-left space-y-4 text-lg text-gray-800 px-4 md:px-8 max-w-7xl mx-auto mt-4">
         <p><em>“I didn’t realize how much this would take over my life.”</em></p>
         <p>
           When you're the one planning it all, the cost isn’t just in spreadsheets or vendor deposits. 
@@ -24,13 +24,13 @@ const AdditionalCtaSection = () => {
         <p>
           You don’t get to <em>feel</em> it. You’re too busy holding everything together.
         </p>
-      </div> */}
+      </div>
 
       {/* Comparison cards in centered container */}
 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mt-12 px-4 md:px-6 lg:px-8 transform-gpu will-change-transform contain-layout">
 
         {/* On Your Own */}
-        <div className="bg-[#f0e9e5] border border-red-500 p-6 rounded-2xl shadow-md shadow-black/10 min-h-[460px]">
+  {/*   <div className="bg-[#f0e9e5] border border-red-500 p-6 rounded-2xl shadow-md shadow-black/10 min-h-[460px]">
           <h3 className="text-xl font-semibold text-red-700 mb-4">On Your Own</h3>
           <ul className="list-disc list-inside space-y-2 text-neutral-700 text-base">
             <li>Weeks disappear into a blur of to-do lists, WhatsApp threads, and late-night decision-making.</li>
@@ -39,7 +39,7 @@ const AdditionalCtaSection = () => {
             <li>The day arrives. You’re exhausted and stressed, fielding vendor calls when you should be savoring the moment.</li>
             <li>You smile for the photos, but your memories are a haze of stress.</li>
           </ul>
-        </div>
+        </div> */}
 
         {/* With E&P Events */}
         <div className="bg-[#faf8f3] border border-green-500 p-6 rounded-2xl shadow-md shadow-black/10 min-h-[460px]">
