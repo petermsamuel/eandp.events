@@ -47,8 +47,8 @@ const AdditionalCtaSection = () => {
             <li>We take ownership — so you don’t have to carry the mental load alone.</li>
             <li>Your culture is honored. Your elders are supported. Your vision is protected.</li>
             <li>The details run smoothly because someone who understands what’s at stake is leading.</li>
-            <li>You can finally exhale—your peace, your time, and your budget are protected from surprises.</li>
-<li>You’re calm. Fully in the moment. And when you look back? You don’t just remember what it looked like — you remember how it <span className="italic">felt</span>.</li>
+            {/* <li>You can finally exhale—your peace, your time, and your budget are protected from surprises.</li>
+<li>You’re calm. Fully in the moment. And when you look back? You don’t just remember what it looked like — you remember how it <span className="italic">felt</span>.</li> */}
           </ul>
         </div>
 
