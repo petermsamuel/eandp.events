@@ -10,14 +10,13 @@ const ContactSection = () => {
 
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <h2 className="section-title text-center text-white">
-          Still Reading? Book the Call.
+         Still Here? That Says Something.
         </h2>
 
         <p className="text-lg mb-10 max-w-2xl mx-auto text-white/90">
           If you're ready for clarity, let's talk.
           <br />
-          Planning your wedding or event shouldn't feel like managing a crisis.
-          Let's build a plan you trust—without the overwhelm.
+       Let’s make your next move clear and stress-free.
         </p>
 
         {/* Glow CTA Button */}
@@ -36,14 +35,14 @@ const ContactSection = () => {
         {/* Email Text */}
         <div className="mt-8 mb-4">
           <p className="text-base text-white/80 max-w-md mx-auto">
-            Or email us at{" "}
+            Or reach out at{" "}
             <a
               href="mailto:info@events-ep.com"
               className="text-gold hover:underline"
             >
               info@eandp.events
             </a>
-            . You'll get a response from a real person — not a bot, not a sales script.
+            . No bots. No pressure. Just real conversation.
           </p>
         </div>
       </div>
