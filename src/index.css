@@ -110,14 +110,14 @@
     will-change: transform;
     transform: translateZ(0);
     backface-visibility: hidden;
-  } */
+  } 
 
   .contain-layout {
     contain: layout paint;
   }
 
 
-/*  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .lion-watermark { 
       display: none !important;
  width: 0 !important;
