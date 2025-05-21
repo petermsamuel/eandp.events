@@ -18,7 +18,7 @@ const Weddings = () => {
 
       {/* What You Need, What We Do Section */}
  <section
-        id="what-we-do""
+        id="what-we-do"
         className="py-20 px-6 md:px-12 lg:px-16"
         style={{ backgroundColor: "#2a2a2a" }}
       >
