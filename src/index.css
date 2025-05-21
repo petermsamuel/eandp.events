@@ -48,7 +48,7 @@
     transparent 75%,
     #c9a75d 100%
   );
-  animation: borderOrbit 2.5s linear infinite;
+ /* animation: borderOrbit 2.5s linear infinite; */
   filter: blur(4px);
   z-index: 0;
   pointer-events: none;
