@@ -32,7 +32,7 @@ const HeroSection = () => {
 <div className="flex justify-center">
   <a
     href="#contact"
-         className="btn btn-primary bg-navy text-white text-lg rounded-full px-6 py-3 inline-flex items-center justify-center text-center leading-snug
+  className="btn btn-primary bg-navy text-white text-lg rounded-full px-6 py-3 inline-flex items-center justify-center text-center leading-snug"
   >
     Stop Managing. Start Celebrating.
   </a>
