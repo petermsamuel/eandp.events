@@ -1,12 +1,12 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Check, Globe, Users } from "lucide-react";
-import NavbarWeddings from "@/components/NavbarWeddings";
+import NavbarWeddings from "@/components/NavBarWeddings";
 
 const Weddings = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col">
- <NavbarWeddings />
+ <NavBarWeddings />
 
       {/* Hero Section */}
       <section id="hero" className="py-20 px-6 md:px-12 lg:px-16 flex flex-col items-center text-center">
