@@ -16,7 +16,16 @@ const Weddings = () => {
         <p className="text-lg md:text-xl max-w-3xl mb-10">
           From the sangeet to the send-off, we don't just plan — we protect your vision, your culture, and your joy.
         </p>
-        <Button className="px-6 py-6 text-lg h-auto">Book Your Free Clarity Call</Button>
+
+
+<a href="#cta" className="glow-button-wrapper">
+  <div className="glow-ring" />
+  <span className="glow-button-inner">
+    Lead With Confidence
+  </span>
+</a>
+
+
       </section>
 
       {/* What You Need, What We Do Section */}
