@@ -72,25 +72,31 @@ const TestimonialSection = () => {
           When You Know You Picked the Right Planner
         </h2>
       </div>
-
-      <div className="max-w-6xl mx-auto bg-white/80 p-6 md:p-10 rounded-lg shadow-md relative h-[460px] md:h-[400px] overflow-hidden transition-all duration-500">
+     
+<div className="max-w-6xl mx-auto bg-white/80 p-6 md:p-10 rounded-lg shadow-md relative h-[520px] md:h-[480px] flex flex-col justify-between">
         <div className="absolute top-6 left-6 text-6xl text-gold opacity-20 z-0">"</div>
 
         <div className="relative z-10 flex flex-col justify-between h-full overflow-hidden">
-          <div key={activeIndex} className="transition-opacity duration-500 ease-in-out opacity-100">
-            <p className="text-gray-700 mb-8">{testimonials[activeIndex].text}</p>
+<div key={activeIndex} className="transition-opacity duration-500 ease-in-out opacity-100 flex flex-col justify-between h-full">
+  <div>
+    <p className="text-gray-700 mb-8 overflow-auto">{testimonials[activeIndex].text}</p>
+    <div className="flex items-center mt-4">
+      <div className="h-10 w-10 bg-gold rounded-full flex items-center justify-center text-white font-bold">
+        {testimonials[activeIndex].name.charAt(0)}
+      </div>
+      <div className="ml-3">
+        <p className="font-semibold">{testimonials[activeIndex].name}</p>
+        {testimonials[activeIndex].role && (
+          <p className="text-sm text-gray-600">{testimonials[activeIndex].role}</p>
+        )}
+      </div>
+    </div>
+  </div>
 
-            <div className="flex items-center mt-4">
-              <div className="h-10 w-10 bg-gold rounded-full flex items-center justify-center text-white font-bold">
-                {testimonials[activeIndex].name.charAt(0)}
-              </div>
-              <div className="ml-3">
-                <p className="font-semibold">{testimonials[activeIndex].name}</p>
-                {testimonials[activeIndex].role && (
-                  <p className="text-sm text-gray-600">{testimonials[activeIndex].role}</p>
-                )}
-              </div>
-            </div>
+  <div className="flex justify-between items-center mt-8">
+    {/* scroll buttons + dots unchanged */}
+  </div>
+</div>
 
             <div className="flex justify-between items-center mt-8">
               <button
