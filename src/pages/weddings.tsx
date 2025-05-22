@@ -132,7 +132,7 @@ const Weddings = () => {
           style={{ backgroundColor: "#2a2a2a" }}
         >
           <div className="max-w-5xl mx-auto text-center">
-            <h2 className="section-title text-white">What Couples Say</h2>
+            <h2 className="section-title text-white">What They're Saying</h2>
             <blockquote className="text-xl md:text-2xl italic font-light mb-6 max-w-3xl mx-auto text-white">
               "My family, friends, and vendors were all skeptical when I first mentioned I hired a planner, but once they saw how beautifully the wedding was executed, they were raving..."
             </blockquote>
