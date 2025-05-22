@@ -42,6 +42,8 @@ const config: Config = {
         ruby: "#E0115F",
         clay: '#7b6535',
         beige: '#f5f1ea',
+       blush: '#fdf6e3',
+      slategray: '#e6e6ea',
 
 
         primary: {
