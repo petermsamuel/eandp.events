@@ -27,25 +27,22 @@ const config: Config = {
         "2xl": "1400px",
       },
     },
-    extend: {
+       extend: {
       colors: {
         background: "#ffffff",
         foreground: "#1a1a1a",
         border: "#e5e7eb",
         input: "#f3f4f6",
         ring: "#d1d5db",
-    gold: '#c9a75d',
-    clay: '#7b6535',
-    beige: '#f5f1ea',
-  },
-}
-
 
         gold: "#c9a75d",
         navy: "#1c1f2b",
         charcoal: "#2a2a2a",
         emerald: "#50C878",
         ruby: "#E0115F",
+        clay: '#7b6535',
+        beige: '#f5f1ea',
+
 
         primary: {
           DEFAULT: "#1a1a26",
