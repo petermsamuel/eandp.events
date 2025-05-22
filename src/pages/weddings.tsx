@@ -74,30 +74,33 @@ const Weddings = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <div className="flex flex-col items-center text-center p-6 bg-white shadow-sm rounded-lg">
-              <div className="h-14 w-14 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                <Check className="h-7 w-7 text-green-700" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Multiday timelines?</h3>
-              <p className="text-lg">Covered.</p>
-            </div>
+  {/* Multiday Timelines */}
+  <div className="flex flex-col items-center text-center p-6 bg-white shadow-sm rounded-lg">
+    <div className="h-14 w-14 bg-[#f5f1ea] rounded-full flex items-center justify-center mb-4">
+      <Check className="h-7 w-7 text-gold" />
+    </div>
+    <h3 className="text-xl font-semibold mb-2 text-[#2a2a3a]">Multiday timelines?</h3>
+    <p className="text-lg text-[#7b6535]">Covered.</p>
+  </div>
 
-            <div className="flex flex-col items-center text-center p-6 bg-white shadow-sm rounded-lg">
-              <div className="h-14 w-14 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                <Globe className="h-7 w-7 text-blue-700" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Cultural nuances?</h3>
-              <p className="text-lg">Fluent.</p>
-            </div>
+  {/* Cultural Nuances */}
+  <div className="flex flex-col items-center text-center p-6 bg-white shadow-sm rounded-lg">
+    <div className="h-14 w-14 bg-[#f5f1ea] rounded-full flex items-center justify-center mb-4">
+      <Globe className="h-7 w-7 text-gold" />
+    </div>
+    <h3 className="text-xl font-semibold mb-2 text-[#2a2a3a]">Cultural nuances?</h3>
+    <p className="text-lg text-[#7b6535]">Fluent.</p>
+  </div>
 
-            <div className="flex flex-col items-center text-center p-6 bg-white shadow-sm rounded-lg">
-              <div className="h-14 w-14 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
-                <Users className="h-7 w-7 text-yellow-700" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Family dynamics?</h3>
-              <p className="text-lg">Navigated.</p>
-            </div>
-          </div>
+  {/* Family Dynamics */}
+  <div className="flex flex-col items-center text-center p-6 bg-white shadow-sm rounded-lg">
+    <div className="h-14 w-14 bg-[#f5f1ea] rounded-full flex items-center justify-center mb-4">
+      <Users className="h-7 w-7 text-gold" />
+    </div>
+    <h3 className="text-xl font-semibold mb-2 text-[#2a2a3a]">Family dynamics?</h3>
+    <p className="text-lg text-[#7b6535]">Navigated.</p>
+  </div>
+</div>
         </section>
 
         {/* How It Works Section */}
