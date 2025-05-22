@@ -34,7 +34,7 @@ const HeroSection = () => {
   href="#contact"
   className="btn btn-primary bg-navy text-white text-lg sm:text-base whitespace-nowrap rounded-full px-6 py-3 inline-flex items-center justify-center text-center leading-snug"
 >
-  Stop Managing. Start Celebrating.
+  Plan It Right. Remember It Forever.
 </a>
         </div>
       </div>
