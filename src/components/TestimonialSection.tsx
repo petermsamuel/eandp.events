@@ -55,11 +55,13 @@ const TestimonialSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % testimonials.length);
-    }, 7000);
-    return () => clearInterval(interval);
+    // 🔧 Temporarily disable auto-rotate for testing mobile scroll jump
+    // const interval = setInterval(() => {
+    //   setActiveIndex((prev) => (prev + 1) % testimonials.length);
+    // }, 7000);
+    // return () => clearInterval(interval);
   }, []);
+
 
   const nextTestimonial = () => setActiveIndex((prev) => (prev + 1) % testimonials.length);
   const prevTestimonial = () => setActiveIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
