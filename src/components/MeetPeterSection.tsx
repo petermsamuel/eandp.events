@@ -35,7 +35,7 @@ const MeetPeterSection = () => {
 
             <blockquote className="italic border-l-4 border-gold pl-4 text-gray-800">
               “I’ve seen it too often—clients spending tens of thousands only to be overwhelmed,
-              disappointed, or outright taken advantage of. That’s not just unfair. It’s unacceptable.
+              disappointed, or outright taken advantage of. That’s not just unfair, it’s unacceptable.
               I believe hosting an event should feel empowering. Celebratory. Safe.
               That’s why I lead like it’s mine—so you can enjoy it like it’s yours.”
             </blockquote>
