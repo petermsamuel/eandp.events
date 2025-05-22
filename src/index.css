@@ -90,7 +90,7 @@
     animation: pulseGlow 2.5s ease-in-out infinite;
   }
 
-  /*
+  
   .lion-watermark {
     background-image: url('/lovable-uploads/lion-bg.svg');
     background-repeat: no-repeat;
@@ -122,7 +122,7 @@
       background: none !important;
     }
   }
-  */
+  
 }
 
 /* --- Global Keyframes --- */
