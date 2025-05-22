@@ -32,11 +32,16 @@ const Weddings = () => {
     <p className="text-lg md:text-xl max-w-3xl mb-10 text-white/90 mx-auto">
       From the sangeet to the send-off, we don’t just plan — we protect your vision, your culture, and your joy.
     </p>
-    <a href="#cta" className="glow-button-wrapper">
-      <div className="glow-ring" />
-      <span className="glow-button-inner">Your Vision. Our Plan.</span>
-    </a>
-  </div>
+
+ <div className="flex justify-center">
+          <a
+  href="#cta"
+  className="btn btn-primary bg-navy text-white text-lg sm:text-base whitespace-nowrap rounded-full px-6 py-3 inline-flex items-center justify-center text-center leading-snug"
+>
+ Your Vision. Our Plan.
+</a>
+        </div>
+      </div>
 
   <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
     <a href="#what-we-do" aria-label="Scroll down">
