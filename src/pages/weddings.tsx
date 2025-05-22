@@ -134,9 +134,9 @@ const Weddings = () => {
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="section-title text-white">What Couples Say</h2>
             <blockquote className="text-xl md:text-2xl italic font-light mb-6 max-w-3xl mx-auto text-white">
-              "I didn't realize how much stress I was carrying until Peter took over. Every detail was handled — and we actually enjoyed every moment."
+              "My family, friends, and vendors were all skeptical when I first mentioned I hired a planner, but once they saw how beautifully the wedding was executed, they were raving..."
             </blockquote>
-            <p className="text-lg text-white">— Mitali & Jay</p>
+            <p className="text-lg text-white">— Sana</p>
           </div>
         </section>
 
