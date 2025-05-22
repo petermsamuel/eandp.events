@@ -54,13 +54,12 @@ const testimonials = [
 const TestimonialSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  useEffect(() => {
-    // 🔧 Temporarily disable auto-rotate for testing mobile scroll jump
-    // const interval = setInterval(() => {
-    //   setActiveIndex((prev) => (prev + 1) % testimonials.length);
-    // }, 7000);
-    // return () => clearInterval(interval);
-  }, []);
+ useEffect(() => {
+  const interval = setInterval(() => {
+    setActiveIndex((prev) => (prev + 1) % testimonials.length);
+  }, 7000);
+  return () => clearInterval(interval);
+}, []);
 
 
   const nextTestimonial = () => setActiveIndex((prev) => (prev + 1) % testimonials.length);
@@ -77,11 +76,11 @@ const TestimonialSection = () => {
       </div>
 
       {/* Testimonial Card */}
-      <div className="max-w-6xl mx-auto bg-white/80 p-6 md:p-10 rounded-lg shadow-md relative">
+<div className="max-w-6xl mx-auto bg-white/80 p-6 md:p-10 rounded-lg shadow-md relative min-h-[320px] md:min-h-[280px]">
         {/* Quotation mark */}
         <div className="absolute top-6 left-6 text-6xl text-gold opacity-20 z-0">"</div>
 
-        <div className="relative z-10 flex flex-col justify-between">
+  <div className="relative z-10 flex flex-col justify-between transition-opacity duration-500 ease-in-out">
           <p className="text-gray-700 mb-8">{testimonials[activeIndex].text}</p>
 
           <div className="flex items-center mt-4">
