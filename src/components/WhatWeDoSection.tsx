@@ -21,7 +21,7 @@ const WhatWeDoSection = () => {
         <div className="bg-white/80 p-8 md:p-10 rounded-lg shadow-md transition-shadow hover:shadow-lg">
           <a href="/corporate.html" className="block">
             <h3 className="text-2xl font-semibold mb-4 flex items-center">
-              <span className="text-gold mr-2">✨</span> Corporate
+              <span className="text-gold mr-2">✨</span> Let’s Lead Your Event
             </h3>
             <p className="text-gray-700">
               You need results, not risk. Whether it’s a seasonal celebration, executive summit, or high-stakes launch—our events are built to reflect your mission, deliver measurable impact, and keep the chaos contained.
@@ -33,7 +33,7 @@ const WhatWeDoSection = () => {
         <div className="bg-white/80 p-8 md:p-10 rounded-lg shadow-md transition-shadow hover:shadow-lg">
           <a href="/weddings" className="block">
             <h3 className="text-2xl font-semibold mb-4 flex items-center">
-              <span className="text-gold mr-2">✨</span> Weddings
+              <span className="text-gold mr-2">✨</span> Let’s Plan Your Wedding
             </h3>
             <p className="text-gray-700">
               We specialize in South Asian and fusion weddings—events with deep cultural layers, multiday logistics, and complex family expectations. From sangeets to baraats, we lead with lived experience and cultural fluency.
