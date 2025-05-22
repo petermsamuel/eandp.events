@@ -69,7 +69,7 @@ const Weddings = () => {
             <h2 className="section-title text-white">What You Need, What We Do</h2>
             <p className="text-lg max-w-3xl mx-auto text-white">
               Planning a South Asian or fusion wedding means balancing tradition, family, and a thousand decisions. 
-              Most planners help with logistics. We take ownership — so you can live in the moment instead of managing stress.
+              Most planners help with logistics. We take ownership — so you can live in the moment instead of managing it.
             </p>
           </div>
 
@@ -114,7 +114,7 @@ const Weddings = () => {
                   <div>
                     <h3 className="text-2xl font-semibold mb-3">{title}</h3>
                     <p className="text-lg">
-                      {index === 0 && "We start with your vision, then build a plan that respects tradition and ensures calm."}
+                      {index === 0 && "We start with your vision, then build a plan that respects tradition and ensures calm, not stress."}
                       {index === 1 && "From vendors to venues, every moving part gets locked into place."}
                       {index === 2 && "You're not managing your wedding — you're experiencing it."}
                     </p>
