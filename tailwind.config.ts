@@ -34,6 +34,12 @@ const config: Config = {
         border: "#e5e7eb",
         input: "#f3f4f6",
         ring: "#d1d5db",
+    gold: '#c9a75d',
+    clay: '#7b6535',
+    beige: '#f5f1ea',
+  },
+}
+
 
         gold: "#c9a75d",
         navy: "#1c1f2b",
