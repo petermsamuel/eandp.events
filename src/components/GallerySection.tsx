@@ -6,7 +6,7 @@ const GallerySection = () => {
     "/lovable-uploads/RAGartistry-1629-3.jpg",
     "/lovable-uploads/RAGartistry-9023-2.jpg",
     "/lovable-uploads/suparnasaurabh12.jpg",
-    "", 
+    "/lovable-uploads/Shivani_Sagar-3729.jpg", 
     "/lovable-uploads/keriadam-w0199-x3.jpg",
     "/lovable-uploads/fenglongphoto-7146-preview-jpeg.jpg"
   ];
