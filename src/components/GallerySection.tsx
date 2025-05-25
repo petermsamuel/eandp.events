@@ -3,12 +3,12 @@ import React from "react";
 
 const GallerySection = () => {
   const galleryImages = [
-    "/lovable-uploads/9b8fed6d-b6d7-4e9f-b159-569f754a501d.png",
-    "/lovable-uploads/706d55c4-c191-4e23-acde-485a5dc67d93.png",
-    "/lovable-uploads/0c4fcd2b-82e1-4a9e-a20a-e36e99c32f3f.png",
-    "/lovable-uploads/89a4d798-f07a-42c8-bba9-15123f9d6ecb.png", 
-    "/lovable-uploads/c053cec3-b569-472a-ae12-b070e928783a.png",
-    "/lovable-uploads/e6226374-8425-4144-b922-5cebef0240c4.png"
+    "/lovable-uploads/RAGartistry-1629-3.jpg",
+    "/lovable-uploads/RAGartistry-9023-2.jpg",
+    "/lovable-uploads/suparnasaurabh12.jpg",
+    "", 
+    "/lovable-uploads/keriadam-w0199-x3.jpg",
+    "/lovable-uploads/fenglongphoto-7146-preview-jpeg.jpg"
   ];
 
   return (
