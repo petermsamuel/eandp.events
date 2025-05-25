@@ -2,6 +2,8 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Check, Globe, Users } from "lucide-react";
 import NavBarWeddings from "@/components/NavBarWeddings";
+import { weddingGalleryImages } from "@/data/weddinggallery";
+
 
 const Weddings = () => {
   return (
@@ -157,15 +159,16 @@ const Weddings = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[1, 2, 3, 4, 5, 6].map((item) => (
-                <div key={item} className="aspect-[4/3] bg-gray-100 rounded-md overflow-hidden">
-                  <img
-                    src={`https://images.unsplash.com/photo-1600096194534-95cf5b9f035f?auto=format&fit=crop&w=600&q=80`}
-                    alt={`Wedding gallery image ${item}`}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
+             {weddingGalleryImages.map((image, index) => (
+  <div key={index} className="aspect-[4/3] bg-gray-100 rounded-md overflow-hidden">
+    <img
+      src={image.src}
+      alt={image.alt}
+      className="w-full h-full object-cover"
+      loading="lazy"
+    />
+  </div>
+))}
             </div>
           </div>
         </section>
