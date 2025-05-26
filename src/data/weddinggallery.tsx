@@ -34,7 +34,7 @@ export const weddingGalleryImages = [
     alt: "Suspended wedding cake adorned with cascading pink flowers and a gold ‘Mr & Mrs’ topper",
   },
   {
-    src: "/lovable-uploads/suparnasaurabh12.jpg",
+    src: "/lovable-uploads/suparnasaurabh12_cropped.jpg",
     alt: "South Asian couple gazing into each other’s eyes through soft, glowing lights at elegant wedding reception",
   },
   {
