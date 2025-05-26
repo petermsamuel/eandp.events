@@ -146,7 +146,7 @@ const Corporate = () => {
 
 
 {/* Featured Partners Section */}
-<section id="featured" className="section-container bg-white text-black py-20">
+<section id="partners" className="section-container bg-white text-black py-20">
   <div className="max-w-6xl mx-auto text-center">
     <h2 className="section-title text-black text-center mx-auto">
       Proven by Partnerships That Demand Precision
