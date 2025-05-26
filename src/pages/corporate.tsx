@@ -156,8 +156,8 @@ const Corporate = () => {
       <div className="flex flex-col items-center">
         <div className="w-40 h-40 flex items-center justify-center">
           <img 
-            src="/lovable-uploads/corporate-logo1.png" 
-            alt="Fortune 500 Client Logo" 
+            src="/lovable-uploads/emory-logo.jpeg" 
+            alt="Emory School of Nursing" 
             className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
           />
         </div>
@@ -166,8 +166,8 @@ const Corporate = () => {
       <div className="flex flex-col items-center">
         <div className="w-40 h-40 flex items-center justify-center">
           <img 
-            src="/lovable-uploads/corporate-logo2.png" 
-            alt="Global Summit Sponsor Logo" 
+            src="/lovable-uploads/LNRS_RGB_POS_300.png" 
+            alt="LexisNexis Risk Solutions" 
             className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
           />
         </div>
@@ -176,8 +176,18 @@ const Corporate = () => {
       <div className="flex flex-col items-center">
         <div className="w-40 h-40 flex items-center justify-center">
           <img 
-            src="/lovable-uploads/corporate-logo3.png" 
-            alt="United Nations Event Partner" 
+            src="/lovable-uploads/GCC-Logo.png" 
+            alt="GateCity Church" 
+            className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+          />
+        </div>
+      </div>
+
+ <div className="flex flex-col items-center">
+        <div className="w-40 h-40 flex items-center justify-center">
+          <img 
+            src="/lovable-uploads/FUT001_Logo_Screen_V2_RGB_B-c_black.png" 
+            alt="Futures Church" 
             className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
           />
         </div>
