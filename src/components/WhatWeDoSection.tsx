@@ -20,7 +20,7 @@ const WhatWeDoSection = () => {
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto px-4">
         {/* Corporate Card */}
         <div className="bg-white/80 p-8 md:p-10 rounded-lg shadow-md transition-shadow hover:shadow-lg">
-          <a href="/corporate.html" className="block">
+          <a href="/corporate" className="block">
             <h3 className="text-2xl font-semibold mb-4 flex items-center">
               <span className="h-10 w-10 mr-3 bg-[#e6e6ea] rounded-full flex items-center justify-center">
                 <Presentation className="h-6 w-6 text-[#1a1a26]" />
