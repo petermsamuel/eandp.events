@@ -20,7 +20,7 @@ const Corporate = () => {
 
           <div className="relative z-10 text-center w-full px-4">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-snug max-w-[75rem] mx-auto">
-              Your Event Deserves More Than Vendors and Vibes. It Deserves Strategy.
+              Your Event Deserves More Than a Run of Show. It Deserves Strategy.
             </h1>
           </div>
 
