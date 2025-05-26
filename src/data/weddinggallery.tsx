@@ -2,7 +2,7 @@
 
 export const weddingGalleryImages = [
   {
-    src: "/lovable-uploads/RAGartistry-1629-3.jpg",
+    src: "/lovable-uploads/RAGartistry-1629-3_cropped.jpg",
     alt: "South Asian bride tearfully wiping her eyes during emotional wedding reception speech, groom looking on in support",
   },
   {
