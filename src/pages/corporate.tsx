@@ -93,7 +93,7 @@ const Corporate = () => {
               <div className="h-14 w-14 bg-[#f5f1ea] rounded-full flex items-center justify-center mb-4">
                 <Users className="h-7 w-7 text-gold" />
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-[#2a2a3a]">Last-minute fires?</h3>
+              <h3 className="text-xl font-semibold mb-2 text-[#2a2a3a]">Deadline meltdowns?</h3>
               <p className="text-lg text-[#7b6535]">Handled.</p>
             </div>
           </div>
