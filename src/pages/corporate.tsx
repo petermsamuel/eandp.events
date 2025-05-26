@@ -123,21 +123,26 @@ const Corporate = () => {
           </div>
         </section>
 
-        {/* Testimonial Section */}
-        <section
-          id="testimonial"
-          className="py-20 px-6 md:px-12 lg:px-16"
-          style={{ backgroundColor: "#2a2a2a" }}
-        >
-          <div className="max-w-5xl mx-auto text-center">
-            <h2 className="section-title text-white">Who We’ve Helped</h2>
-            <blockquote className="text-xl md:text-2xl italic font-light mb-6 max-w-3xl mx-auto text-white">
-              <p><"I worked extensively with Peter on a number of global United Nations programs, working with corporate executives and high-ranking government officials and dignitaries from over 20-30 countries around the world represented at each event.
-Peter provided exceptional strategic direction and corporate planning, exquisite event management, and impeccable attention to detail. He pulled off events seamlessly and flawlessly and delegates were always impressed..."</p>
-            </blockquote>
-            <p className="text-lg text-white">— Sebastian</p>
-          </div>
-        </section>
+     {/* Testimonial Section */}
+<section
+  id="testimonial"
+  className="py-20 px-6 md:px-12 lg:px-16"
+  style={{ backgroundColor: "#2a2a2a" }}
+>
+  <div className="max-w-5xl mx-auto text-center">
+    <h2 className="section-title text-white">Who We’ve Helped</h2>
+    <blockquote className="text-xl md:text-2xl italic font-light mb-6 max-w-3xl mx-auto text-white space-y-6">
+      <p>
+        I worked extensively with Peter on a number of global United Nations programs, working with corporate executives and high-ranking government officials and dignitaries from over 20–30 countries around the world represented at each event.
+      </p>
+      <p>
+        Peter provided exceptional strategic direction and corporate planning, exquisite event management, and impeccable attention to detail. He pulled off events seamlessly and flawlessly, and delegates were always impressed...
+      </p>
+    </blockquote>
+    <p className="text-lg text-white">— Sebastian</p>
+  </div>
+</section>
+
 
       {/* Gallery Section */}
           {/*    <section id="gallery" className="py-20 px-6 md:px-12 lg:px-16">
