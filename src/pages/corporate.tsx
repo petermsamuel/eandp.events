@@ -145,28 +145,47 @@ const Corporate = () => {
 </section>
 
 
-      {/* Gallery Section */}
-              <section id="gallery" className="py-20 px-6 md:px-12 lg:px-16">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="section-title">Events That Move People</h2>
-              <p className="text-lg">From corporate galas to strategy summits — proof of what’s possible when execution meets intention.</p>
-            </div>
+    {/* Featured Brands Section */}
+<section id="featured" className="section-container bg-white text-black py-20">
+  <div className="max-w-5xl mx-auto text-center">
+    <h2 className="section-title text-black text-center mx-auto">
+      Trusted by the People Who Know Excellence
+    </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {corporateGalleryImages.map((image, index) => (
-                <div key={index} className="aspect-[4/3] bg-gray-100 rounded-md overflow-hidden">
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+      <div className="flex flex-col items-center">
+        <div className="w-40 h-40 flex items-center justify-center">
+          <img 
+            src="/lovable-uploads/corporate-logo1.png" 
+            alt="Fortune 500 Client Logo" 
+            className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+          />
+        </div>
+      </div>
+
+      <div className="flex flex-col items-center">
+        <div className="w-40 h-40 flex items-center justify-center">
+          <img 
+            src="/lovable-uploads/corporate-logo2.png" 
+            alt="Global Summit Sponsor Logo" 
+            className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+          />
+        </div>
+      </div>
+
+      <div className="flex flex-col items-center">
+        <div className="w-40 h-40 flex items-center justify-center">
+          <img 
+            src="/lovable-uploads/corporate-logo3.png" 
+            alt="United Nations Event Partner" 
+            className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
         {/* CTA Section */}
         <section
