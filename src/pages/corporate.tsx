@@ -68,7 +68,7 @@ const Corporate = () => {
           <div className="text-center mb-16">
             <h2 className="section-title text-white">What You Need, What We Deliver</h2>
             <p className="text-lg max-w-3xl mx-auto text-white">
-              Planning a high-stakes event means managing timelines, stakeholders, and brand expectations — all under pressure. Most planners coordinate. We take ownership — so you can lead the room, not run it.
+              Planning a high-stakes event means managing timelines, stakeholders, and brand expectations — all under pressure. Most planners coordinate. We take ownership so you can lead the room, not run it.
             </p>
           </div>
 
