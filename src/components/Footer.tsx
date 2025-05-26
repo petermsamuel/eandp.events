@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Facebook, Instagram } from "lucide-react";
+import { Facebook, Instagram, Email } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -41,6 +41,15 @@ const Footer = () => {
                 aria-label="Visit our Instagram"
               >
                 <Instagram size={24} />
+              </a>
+<a 
+                href="mailto:info@eandp.events" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-gold transition-colors"
+                aria-label="Contact Us"
+              >
+                <Email size={24} />
               </a>
             </div>
           </div>
