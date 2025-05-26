@@ -138,8 +138,8 @@ const Corporate = () => {
           </div>
         </section>
 
-        {/* Gallery Section */}
-        <section id="gallery" className="py-20 px-6 md:px-12 lg:px-16">
+      {/* Gallery Section */}
+          {/*    <section id="gallery" className="py-20 px-6 md:px-12 lg:px-16">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="section-title">Events That Move People</h2>
@@ -159,7 +159,7 @@ const Corporate = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* CTA Section */}
         <section
