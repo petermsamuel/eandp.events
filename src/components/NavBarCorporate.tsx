@@ -30,7 +30,7 @@ const NavBarCorporate = () => {
           <a href="#what-we-do" className="text-black hover:text-gold">What We Do</a>
           <a href="#how-it-works" className="text-black hover:text-gold">How It Works</a>
           <a href="#testimonial" className="text-black hover:text-gold">Testimonials</a>
-          <a href="#partners" className="text-black hover:text-gold">Gallery</a>
+          <a href="#partners" className="text-black hover:text-gold">Partners</a>
           <a href="#cta" className="text-black hover:text-gold">Contact</a>
         </div>
       </div>
