@@ -6,7 +6,7 @@ const Corporate = () => {
   return (
     <>
       <div className="min-h-screen bg-transparent flex flex-col">
-        <NavBarCorporate />
+        <NavBarWeddings />
 
         {/* Hero Section */}
         <section
