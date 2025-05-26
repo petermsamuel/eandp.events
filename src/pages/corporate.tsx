@@ -149,52 +149,49 @@ const Corporate = () => {
 <section id="featured" className="section-container bg-white text-black py-20">
   <div className="max-w-5xl mx-auto text-center">
     <h2 className="section-title text-black text-center mx-auto">
-      Trusted by the People Who Know Excellence
+      Proven by Partnerships That Demand Precision
     </h2>
 
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-      <div className="flex flex-col items-center">
-        <div className="w-40 h-40 flex items-center justify-center">
+    <div className="mt-12 space-y-12">
+      {/* First row - larger logos */}
+      <div className="flex flex-wrap justify-center gap-12">
+        <div className="w-56 h-28 flex items-center justify-center">
           <img 
             src="/lovable-uploads/emory-logo.jpeg" 
             alt="Emory School of Nursing" 
-            className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+            className="max-w-full max-h-full object-contain"
           />
         </div>
-      </div>
-
-      <div className="flex flex-col items-center">
-        <div className="w-40 h-40 flex items-center justify-center">
+        <div className="w-56 h-28 flex items-center justify-center">
           <img 
             src="/lovable-uploads/LNRS_RGB_POS_300.png" 
             alt="LexisNexis Risk Solutions" 
-            className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+            className="max-w-full max-h-full object-contain"
           />
         </div>
       </div>
 
-      <div className="flex flex-col items-center">
-        <div className="w-40 h-40 flex items-center justify-center">
+      {/* Second row - smaller logos */}
+      <div className="flex flex-wrap justify-center gap-8">
+        <div className="w-40 h-20 flex items-center justify-center">
           <img 
             src="/lovable-uploads/GCC-Logo.png" 
             alt="GateCity Church" 
-            className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+            className="max-w-full max-h-full object-contain"
           />
         </div>
-      </div>
-
- <div className="flex flex-col items-center">
-        <div className="w-40 h-40 flex items-center justify-center">
+        <div className="w-40 h-20 flex items-center justify-center">
           <img 
             src="/lovable-uploads/FUT001_Logo_Screen_V2_RGB_B-c_black.png" 
             alt="Futures Church" 
-            className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+            className="max-w-full max-h-full object-contain"
           />
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
 
         {/* CTA Section */}
