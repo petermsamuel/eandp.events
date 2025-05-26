@@ -200,7 +200,7 @@ const Weddings = () => {
               </a>
             </div>
 
-            <div className="mt-8">
+            {/*  <div className="mt-8">
               <p className="text-base text-white/80 max-w-md mx-auto">
                 Or email us at{" "}
                 <a
@@ -215,7 +215,7 @@ const Weddings = () => {
 
             <div className="mt-8">
               <a href="/" className="text-gold underline">← Back to Main</a>
-            </div>
+            </div> */}
           </div>
         </section>
       </div>
