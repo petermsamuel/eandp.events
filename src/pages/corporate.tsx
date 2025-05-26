@@ -1,13 +1,13 @@
 import React from "react";
 import { Check, Globe, Users } from "lucide-react";
-import NavBarWeddings from "@/components/NavBarWeddings";
+import NavBarWeddings from "@/components/NavBarCorporate";
 import { corporateGalleryImages } from "@/data/corporategallery";
 
 const Corporate = () => {
   return (
     <>
       <div className="min-h-screen bg-transparent flex flex-col">
-        <NavBarWeddings />
+        <NavBarCorporate />
 
         {/* Hero Section */}
         <section
@@ -145,8 +145,7 @@ const Corporate = () => {
 </section>
 
 
-    {/* Featured Brands Section */}
-{/* Featured Brands Section */}
+{/* Featured Partners Section */}
 <section id="featured" className="section-container bg-white text-black py-20">
   <div className="max-w-6xl mx-auto text-center">
     <h2 className="section-title text-black text-center mx-auto">
