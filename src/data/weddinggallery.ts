@@ -1,4 +1,4 @@
-// src/data/gallery.ts
+// src/data/weddinggallery.ts
 
 export const weddingGalleryImages = [
   {
