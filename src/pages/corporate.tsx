@@ -14,7 +14,7 @@ const Corporate = () => {
           id="hero"
           className="relative min-h-screen flex flex-col justify-center pt-24 pb-12 px-6 md:px-12 lg:px-16 bg-cover bg-center text-white"
           style={{
-            backgroundImage: "url('/lovable-uploads/corp3_cropped.png.jpg')",
+            backgroundImage: "url('/lovable-uploads/corp3_cropped.png')",
           }}
         >
           <div className="absolute inset-0 bg-black/60 z-0" />
