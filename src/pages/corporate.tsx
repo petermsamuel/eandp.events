@@ -155,14 +155,14 @@ const Corporate = () => {
     <div className="mt-12 space-y-12">
       {/* First row - larger logos */}
       <div className="flex flex-wrap justify-center gap-12">
-        <div className="w-56 h-28 flex items-center justify-center">
+        <div className="w-64 h-32 flex items-center justify-center">
           <img 
             src="/lovable-uploads/emory-logo.jpeg" 
             alt="Emory School of Nursing" 
             className="max-w-full max-h-full object-contain"
           />
         </div>
-        <div className="w-56 h-28 flex items-center justify-center">
+        <div className="w-64 h-32 flex items-center justify-center">
           <img 
             src="/lovable-uploads/LNRS_RGB_POS_300.png" 
             alt="LexisNexis Risk Solutions" 
@@ -172,7 +172,7 @@ const Corporate = () => {
       </div>
 
       {/* Second row - smaller logos */}
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="flex flex-wrap justify-center gap-12">
         <div className="w-40 h-20 flex items-center justify-center">
           <img 
             src="/lovable-uploads/GCC-Logo.png" 
