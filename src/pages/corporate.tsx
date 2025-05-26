@@ -146,51 +146,51 @@ const Corporate = () => {
 
 
     {/* Featured Brands Section */}
+{/* Featured Brands Section */}
 <section id="featured" className="section-container bg-white text-black py-20">
-  <div className="max-w-5xl mx-auto text-center">
+  <div className="max-w-6xl mx-auto text-center">
     <h2 className="section-title text-black text-center mx-auto">
       Proven by Partnerships That Demand Precision
     </h2>
 
-    <div className="mt-12 space-y-12">
-      {/* First row - larger logos */}
-      <div className="flex flex-wrap justify-center gap-12">
-        <div className="w-64 h-32 flex items-center justify-center">
-          <img 
-            src="/lovable-uploads/emory-logo.jpeg" 
-            alt="Emory School of Nursing" 
-            className="max-w-full max-h-full object-contain"
-          />
-        </div>
-        <div className="w-64 h-32 flex items-center justify-center">
-          <img 
-            src="/lovable-uploads/LNRS_RGB_POS_300.png" 
-            alt="LexisNexis Risk Solutions" 
-            className="max-w-full max-h-full object-contain"
-          />
-        </div>
+    {/* Top row */}
+    <div className="flex flex-wrap justify-center items-center gap-12 mt-12">
+      <div className="max-w-[400px] w-full flex items-center justify-center">
+        <img 
+          src="/lovable-uploads/emory-logo.jpeg" 
+          alt="Emory School of Nursing" 
+          className="w-full h-auto object-contain"
+        />
       </div>
+      <div className="max-w-[400px] w-full flex items-center justify-center">
+        <img 
+          src="/lovable-uploads/LNRS_RGB_POS_300.png" 
+          alt="LexisNexis Risk Solutions" 
+          className="w-full h-auto object-contain"
+        />
+      </div>
+    </div>
 
-      {/* Second row - smaller logos */}
-      <div className="flex flex-wrap justify-center gap-12">
-        <div className="w-40 h-20 flex items-center justify-center">
-          <img 
-            src="/lovable-uploads/GCC-Logo.png" 
-            alt="GateCity Church" 
-            className="max-w-full max-h-full object-contain"
-          />
-        </div>
-        <div className="w-40 h-20 flex items-center justify-center">
-          <img 
-            src="/lovable-uploads/FUT001_Logo_Screen_V2_RGB_B-c_black.png" 
-            alt="Futures Church" 
-            className="max-w-full max-h-full object-contain"
-          />
-        </div>
+    {/* Bottom row */}
+    <div className="flex flex-wrap justify-center items-center gap-16 mt-10">
+      <div className="max-w-[220px] w-full flex items-center justify-center">
+        <img 
+          src="/lovable-uploads/GCC-Logo.png" 
+          alt="GateCity Church" 
+          className="w-full h-auto object-contain"
+        />
+      </div>
+      <div className="max-w-[220px] w-full flex items-center justify-center">
+        <img 
+          src="/lovable-uploads/FUT001_Logo_Screen_V2_RGB_B-c_black.png" 
+          alt="Futures Church" 
+          className="w-full h-auto object-contain"
+        />
       </div>
     </div>
   </div>
 </section>
+
 
 
 
