@@ -3,7 +3,7 @@ import React from "react";
 
 const GallerySection = () => {
   const galleryImages = [
-    "/lovable-uploads/RAGartistry-1629-3.jpg",
+    "/lovable-uploads/RAGartistry-1629-3_cropped.jpg",
     "/lovable-uploads/RAGartistry-9023-2_cropped.jpg",
     "/lovable-uploads/suparnasaurabh12.jpg",
     "/lovable-uploads/Shivani_Sagar-3729.jpg", 
