@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Facebook, Instagram, Email } from "lucide-react";
+import { Facebook, Instagram, Mail } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -49,7 +49,7 @@ const Footer = () => {
                 className="text-gray-300 hover:text-gold transition-colors"
                 aria-label="Contact Us"
               >
-                <Email size={24} />
+                <Mail size={24} />
               </a>
             </div>
           </div>
