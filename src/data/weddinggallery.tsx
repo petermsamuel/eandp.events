@@ -62,7 +62,7 @@ export const weddingGalleryImages = [
     alt: "Luxurious teal wedding backdrop with framed chandeliers and a white couch surrounded by glittering accents",
   },
   {
-    src: "/lovable-uploads/RAGartistry-9023-2.jpg",
+    src: "/lovable-uploads/RAGartistry-9023-2_cropped.jpg",
     alt: "Intimate moment between South Asian bride and groom with henna and jewelry, smiling just before a kiss",
   },
   {
