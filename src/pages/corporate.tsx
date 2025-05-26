@@ -220,7 +220,7 @@ const Corporate = () => {
               </a>
             </div>
 
-            <div className="mt-8">
+            {/*       <div className="mt-8">
               <p className="text-base text-white/80 max-w-md mx-auto">
                 Or email us at {" "}
                 <a href="mailto:info@eandp.events" className="text-gold hover:underline">
@@ -228,7 +228,7 @@ const Corporate = () => {
                 </a>
                 . You'll get a response from a real person — not a bot, not a sales script.
               </p>
-            </div>
+            </div> */}
 
             <div className="mt-8">
               <a href="/" className="text-gold underline">
