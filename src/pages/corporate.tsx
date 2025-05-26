@@ -1,6 +1,6 @@
 import React from "react";
 import { Check, Globe, Users } from "lucide-react";
-import NavBarWeddings from "@/components/NavBarCorporate";
+import NavBarCorporate from "@/components/NavBarCorporate";
 import { corporateGalleryImages } from "@/data/corporategallery";
 
 const Corporate = () => {
