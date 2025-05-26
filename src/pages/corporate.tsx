@@ -132,9 +132,9 @@ const Corporate = () => {
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="section-title text-white">Who We’ve Helped</h2>
             <blockquote className="text-xl md:text-2xl italic font-light mb-6 max-w-3xl mx-auto text-white">
-              "This is a placeholder quote"
+              "I worked extensively with Peter on a number of global United Nations programs, working with corporate executives and high-ranking government officials and dignitaries from over 20-30 countries around the world represented at each event. Peter provided exceptional strategic direction and corporate planning, exquisite event management, and impeccable attention to detail. He pulled off events seamlessly and flawlessly and delegates were always impressed..."
             </blockquote>
-            <p className="text-lg text-white">— Pretty cool events</p>
+            <p className="text-lg text-white">— Sebastian</p>
           </div>
         </section>
 
