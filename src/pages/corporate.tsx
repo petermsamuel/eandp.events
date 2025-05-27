@@ -131,7 +131,7 @@ const Corporate = () => {
   style={{ backgroundColor: "#2a2a2a" }}
 >
   <div className="max-w-5xl mx-auto text-center">
-    <h2 className="section-title text-white">Who We’ve Helped</h2>
+    <h2 className="section-title text-white">What They're Saying</h2>
     <blockquote className="text-xl md:text-2xl italic font-light mb-6 max-w-3xl mx-auto text-white space-y-6">
       <p>
         "I worked extensively with Peter on a number of global United Nations programs, working with corporate executives and high-ranking government officials and dignitaries from over 20–30 countries around the world represented at each event.
