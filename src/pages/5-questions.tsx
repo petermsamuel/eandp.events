@@ -69,13 +69,13 @@ const LeadMagnetPage = () => {
           </div>
         )}
 
-        <div className="mt-12 text-center text-gray-600">
+        {/*    <div className="mt-12 text-center text-gray-600">
           <blockquote className="italic max-w-xl mx-auto">
             "Peter didn’t just plan our wedding — he helped us <span className="font-semibold">protect</span> it.
             Every vendor said it was the most organized event they’d ever seen."
           </blockquote>
           <p className="mt-2 font-medium">— Sana</p>
-        </div>
+        </div> */}
       </div>
     </section>
   );
