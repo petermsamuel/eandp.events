@@ -29,40 +29,61 @@ const LeadMagnetPage = () => {
 
         {!submitted ? (
           <form
-            onSubmit={handleSubmit}
-            className="bg-[#f9f6f0] p-8 rounded-lg shadow-md max-w-xl mx-auto"
-          >
-            <p className="text-lg font-semibold mb-4">
-              📝 Grab the Free Guide:
-              <br />
-              <span className="text-xl text-gold font-bold">
-                “5 Questions to Ask Before Hiring Your Wedding Planner”
-              </span>
-            </p>
+  onSubmit={async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const name = form.elements[0].value;
+    const email = form.elements[1].value;
 
-            <input
-              type="text"
-              placeholder="Your Name"
-              required
-              className="w-full px-4 py-3 mb-4 border border-gray-300 rounded-md"
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-              required
-              className="w-full px-4 py-3 mb-4 border border-gray-300 rounded-md"
-            />
-            <button
-              type="submit"
-              className="w-full bg-navy text-white py-3 px-6 rounded-full font-semibold hover:bg-gold transition-colors"
-            >
-              Get the Guide
-            </button>
+    try {
+      await fetch("https://hook.us1.make.com/hw0r5ihivh26pfsp8yb7ua12iigrl36x", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email }),
+      });
 
-            <p className="text-sm text-gray-500 mt-4">
-              🔒 We’ll never send spam. Just planning wisdom and the occasional insider tip to help you breathe easier.
-            </p>
-          </form>
+      setSubmitted(true);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("Something went wrong. Please try again.");
+    }
+  }}
+  className="bg-[#f9f6f0] p-8 rounded-lg shadow-md max-w-xl mx-auto"
+>
+  <p className="text-lg font-semibold mb-4">
+    📝 Grab the Free Guide:
+    <br />
+    <span className="text-xl text-gold font-bold">
+      “5 Questions to Ask Before Hiring Your Wedding Planner”
+    </span>
+  </p>
+
+  <input
+    type="text"
+    placeholder="Your Name"
+    required
+    className="w-full px-4 py-3 mb-4 border border-gray-300 rounded-md"
+  />
+  <input
+    type="email"
+    placeholder="Your Email"
+    required
+    className="w-full px-4 py-3 mb-4 border border-gray-300 rounded-md"
+  />
+
+  <button
+    type="submit"
+    className="w-full bg-navy text-white py-3 px-6 rounded-full font-semibold hover:bg-gold transition-colors"
+  >
+    Get the Guide
+  </button>
+
+  <p className="text-sm text-gray-500 mt-4">
+    🔒 We’ll never send spam. Just planning wisdom and the occasional insider tip to help you breathe easier.
+  </p>
+</form>
         ) : (
           <div className="text-lg text-green-700 font-semibold">
             ✅ Thanks! Your free guide is on the way. Check your inbox — and keep your questions ready.
