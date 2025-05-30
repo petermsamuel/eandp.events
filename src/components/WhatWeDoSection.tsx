@@ -25,7 +25,7 @@ const WhatWeDoSection = () => {
               <span className="h-10 w-10 mr-3 bg-[#e6e6ea] rounded-full flex items-center justify-center">
                 <Presentation className="h-6 w-6 text-[#1a1a26]" />
               </span>
-              Let’s Lead Your Event
+              Let’s Lead Your Corporate Event
             </h3>
             <p className="text-gray-700">
               You need results, not risk. Whether it’s a seasonal celebration, executive summit, or high-stakes launch—our events are built to reflect your mission, deliver measurable impact, and keep the chaos contained.
