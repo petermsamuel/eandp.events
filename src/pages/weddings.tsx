@@ -137,8 +137,10 @@ const Weddings = () => {
         </section>
 
         {/* Testimonial Section */}
-   <TestimonialSection />
-
+   <section
+  id="testimonials"
+  className="section-container bg-[#2a2a2a] pt-16 pb-24"
+>
         {/* Gallery Section */}
         <section id="gallery" className="py-20 px-6 md:px-12 lg:px-16">
           <div className="max-w-6xl mx-auto">
