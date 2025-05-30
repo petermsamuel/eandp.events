@@ -12,31 +12,35 @@ const GallerySection = () => {
   ];
 
   return (
-   <section id="gallery" className="py-20 px-6 md:px-12 lg:px-16 bg-white overflow-hidden">
-  <div className="text-center mb-12">
-    <h2 className="section-title">Real weddings. Real emotion.</h2>
-    <p className="text-lg">Cultural beauty meets seamless coordination.</p>
-  </div>
+    <section id="gallery" className="section-container bg-charcoal text-white py-20">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="section-title text-white text-center"> Precision You Can See. Peace You Can Feel.</h2>
+      <p className="text-lg mb-12 text-center">
+       <div className="text-center text-white space-y-4 text-lg md:text-xl">
+  <p>Every photo here is from a real event—not a styled shoot.</p>
+  <p>Real families. Real timelines. Real harmony.</p>
+</div>
 
-  <div className="relative">
-    <div className="animate-marquee whitespace-nowrap flex gap-6">
-      {[...weddingGalleryImages, ...weddingGalleryImages].map((image, index) => (
-        <div
-          key={index}
-          className="min-w-[300px] md:min-w-[400px] h-[200px] rounded-md overflow-hidden flex-shrink-0 bg-gray-200"
-        >
-          <img
-            src={image.src}
-            alt={image.alt}
-            className="w-full h-full object-cover"
-            loading="lazy"
-          />
+
+        </p>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {galleryImages.map((image, index) => (
+            <div 
+              key={index} 
+              className="overflow-hidden rounded-md aspect-square hover:shadow-lg transition-shadow cursor-pointer group relative"
+            >
+              <img
+                src={image}
+                alt={`Wedding event photo ${index + 1}`}
+                className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-opacity duration-300"></div>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
-  </div>
-</section>
-
+      </div>
+    </section>
   );
 };
 
