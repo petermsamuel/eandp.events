@@ -40,7 +40,25 @@ const testimonials = [
   },
 
 ];
-const TestimonialSection = () => {
+
+type Testimonial = {
+  id: number;
+  text: string;
+  name: string;
+  role?: string;
+};
+
+type Props = {
+  testimonials: Testimonial[];
+  title?: string;
+  backgroundColor?: string;
+};
+
+const TestimonialSection: React.FC<Props> = ({
+  testimonials,
+  title = "When You Know You Picked the Right Planner",
+  backgroundColor = "bg-transparent",
+}) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -48,29 +66,24 @@ const TestimonialSection = () => {
       setActiveIndex((prev) => (prev + 1) % testimonials.length);
     }, 7000);
     return () => clearInterval(interval);
-  }, []);
+  }, [testimonials.length]);
 
   const nextTestimonial = () => setActiveIndex((prev) => (prev + 1) % testimonials.length);
   const prevTestimonial = () => setActiveIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   const selectTestimonial = (index: number) => setActiveIndex(index);
 
   return (
-    <section id="testimonials" className="section-container bg-transparent pt-16 pb-24">
+    <section id="testimonials" className={`section-container pt-16 pb-24 ${backgroundColor}`}>
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="section-title text-center mb-4">
-          When You Know You Picked the Right Planner
-        </h2>
+        <h2 className="section-title text-center mb-4 text-white">{title}</h2>
       </div>
 
       <div className="max-w-6xl mx-auto bg-white/80 p-6 md:p-10 rounded-lg shadow-md relative h-[520px] md:h-[480px] flex flex-col justify-between">
-        {/* Quotation mark */}
         <div className="absolute top-6 left-6 text-6xl text-gold opacity-20 z-0">"</div>
 
-        {/* Testimonial Content */}
         <div className="relative z-10 flex flex-col justify-between h-full">
           <div>
             <p className="text-gray-700 mb-8 overflow-auto">{testimonials[activeIndex].text}</p>
-
             <div className="flex items-center mt-4">
               <div className="h-10 w-10 bg-gold rounded-full flex items-center justify-center text-white font-bold">
                 {testimonials[activeIndex].name.charAt(0)}
@@ -84,7 +97,6 @@ const TestimonialSection = () => {
             </div>
           </div>
 
-          {/* Navigation */}
           <div className="flex justify-between items-center mt-8">
             <button
               onClick={prevTestimonial}
