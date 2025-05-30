@@ -181,27 +181,31 @@ const Weddings = () => {
 
 
         {/* Gallery Section */}
-        <section id="gallery" className="py-20 px-6 md:px-12 lg:px-16">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="section-title">Real weddings. Real emotion.</h2>
-              <p className="text-lg">Cultural beauty meets seamless coordination.</p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-             {weddingGalleryImages.map((image, index) => (
-  <div key={index} className="aspect-[4/3] bg-gray-100 rounded-md overflow-hidden">
-    <img
-      src={image.src}
-      alt={image.alt}
-      className="w-full h-full object-cover"
-      loading="lazy"
-    />
+     <section id="gallery" className="py-20 px-6 md:px-12 lg:px-16 bg-white overflow-hidden">
+  <div className="max-w-6xl mx-auto text-center mb-12">
+    <h2 className="section-title">Real weddings. Real emotion.</h2>
+    <p className="text-lg">Cultural beauty meets seamless coordination.</p>
   </div>
-))}
-            </div>
-          </div>
-        </section>
+
+  <div className="relative">
+    <div className="animate-marquee whitespace-nowrap flex gap-6">
+      {[...weddingGalleryImages, ...weddingGalleryImages].map((image, index) => (
+        <div
+          key={index}
+          className="min-w-[300px] md:min-w-[400px] h-[200px] rounded-md overflow-hidden flex-shrink-0 bg-gray-200"
+        >
+          <img
+            src={image.src}
+            alt={image.alt}
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
 
         {/* Call to Action Section */}
         <section
