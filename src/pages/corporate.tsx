@@ -2,6 +2,7 @@ import React from "react";
 import { Check, Globe, Users } from "lucide-react";
 import NavBarCorporate from "@/components/NavBarCorporate";
 import { corporateGalleryImages } from "@/data/corporategallery";
+import TestimonialSection from "@/components/TestimonialSection";
 
 const Corporate = () => {
   return (
