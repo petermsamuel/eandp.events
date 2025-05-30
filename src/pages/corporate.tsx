@@ -152,12 +152,22 @@ const Corporate = () => {
       Proven by Partnerships That Demand Precision
     </h2>
 
+
+
     {/* Top row */}
     <div className="flex flex-wrap justify-center items-center gap-12 mt-12">
-      <div className="max-w-[400px] w-full flex items-center justify-center">
+
+   <div className="max-w-[400px] w-full flex items-center justify-center">
         <img 
           src="/lovable-uploads/emory-logo.jpeg" 
           alt="Emory School of Nursing" 
+          className="w-full h-auto object-contain"
+        />
+      </div>
+      <div className="max-w-[400px] w-full flex items-center justify-center">
+        <img 
+          src="/lovable-uploads/IMG_3344.PNG" 
+          alt="G3ict" 
           className="w-full h-auto object-contain"
         />
       </div>
