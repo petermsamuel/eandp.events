@@ -1,22 +1,23 @@
 import React, { useState, useEffect } from "react";
 
 const testimonials = [
- {
+
+  {
     id: 1,
+    text: "Seriously, look no further. Peter and Essie were the best to work with. As someone with a lot of ideas but terrible planning skills, wedding planning easily could have been so stressful. E&P were so amazing at listening to my ideas, contributing to them to make them even better, then implementing them in the most perfect way. They were so easy to work with along the way, and best of all the attention to detail was fantastic. They thought of things I never would have, always keeping in mind our vision for our day. The day couldn't have been more beautiful, and I couldn't have imagined working with better planners.",
+    name: "Keri",
+    role: ""
+  },
+ {
+    id: 2,
     text: "Peter Samuel really provides world-class service. I worked extensively with Peter on a number of global United Nations programs, working with corporate executives and high-ranking government officials and dignitaries from over 20-30 countries around the world represented at each event. Peter provided exceptional strategic direction and corporate planning, exquisite event management, and impeccable attention to detail. He pulled off events seamlessly and flawlessly and delegates were always impressed. Peter's attention to customer service is exceptional and he is so responsive and unflappable in even the most complex of situations. More than a safe pair of hands that I could rely on with complete confidence; he is also a true maestro that could orchestrate any event we threw at him with perfection. An absolute joy to work with him!",
     name: "Sebastian",
     role: ""
   },
   {
-    id: 2,
-    text: "Seriously, look no further. Peter and Essie were the best to work with. As someone with a lot of ideas but terrible planning skills, wedding planning easily could have been so stressful. E&P were so amazing at listening to my ideas, contributing to them to make them even better, then implementing them in the most perfect way. They were so easy to work with along the way, and best of all the attention to detail was fantastic. They thought of things I never would have, always keeping in mind our vision for our day. The day couldn't have been more beautiful, and I couldn't have imagined working with better planners.",
-    name: "Keri",
-    role: ""
-  },
-  {
     id: 3,
-    text: "[E&P Events] really helped us to be able to relax on our wedding day by helping us get everything and everyone organized prior to and during the wedding. We really appreciated their help!!",
-    name: "Jackie",
+    text: "[I wanted to thank you for your help with planning and setting up our Easter Breakfast for the Worship Department, Production Department, and Dance Department. You looked at our budget and helped to find ways to not only stay within budget but to still go above and beyond with how we could successfully show appreciation to our volunteers! You were timely and thoughtful with how you set everything up and all of the departments felt valued because of how you served us. Thank you for stepping in, especially at the last minute, to help us plan through everything. Our leadership team felt at ease with your expertise and careful attention to detail! We will definitely reach out again for the next event!",
+    name: "Viveka",
     role: ""
   },
   {
@@ -27,28 +28,17 @@ const testimonials = [
   },
   {
     id: 5,
-    text: "If you are getting married, definitely plan on using E&P Events as your wedding planner. From all the wedding expenses, this was the most valuable. My family, friends, and vendors were all skeptical when I first mentioned I hired a planner, but once they saw how beautifully the wedding was executed, they were raving about Peter and Essie. In the months prior to the wedding, Peter did an incredible job keeping me grounded and making sure all details were addressed and well thought out. He also helped negotiate better deals with almost all my vendors. I was a pretty demanding bride and he was so patient and cool with me the whole time. During the wedding events, he was under the radar and handled a few emergencies so smoothly that no one noticed a thing, including me on that day. People are still raving about how organized and classy the wedding was. My parents were so appreciative of his work because they could mingle with family and friends instead of handling logistics with the hotel and each vendor. The wedding day was a beautiful memory for my husband and I, it was better than we could have imagined and we're so thankful we trusted Peter with our big day.",
-    name: "Sana",
-    role: ""
-  },
-  {
-    id: 6,
     text: "I literally cannot say enough nice things about Essie and Peter. Everything that could have gone wrong during my reception did (the cater didn't show up....like really...?) but they took every issue and knocked it out of the park. By the time I noticed that the caterers weren't there, Peter had already talked to them and food was on the way. They pay attention to small details like packing us food to take to the hotel after, and making sure my grandparents and parents got food. All the issues that went on were taken care of without anyone even noticing. They are both so much fun to just talk to as well! It felt like we were talking to our friends in all of our meetings. I still can't believe I was second guessing hiring a day of coordinator, other than my now husband, E&P Events is the best decision I made that day! THANK YOU!!!!!!!",
     name: "Khushboo",
     role: ""
   },
   {
-    id: 7,
+    id: 6,
     text: "Peter was super great he did a great job with making sure every detail was ironed out before the wedding and meeting with me a couple of times! [E&P Events] were very attentive and remembered little details like making sure I was replenished with snacks! I would most definitely want to work with him again in the future!",
     name: "Sonia",
     role: ""
   },
-  {
-    id: 8,
-    text: "[E&P Events] were so great and such a valuable part of our wedding reception! I only wish I had them on my team for all of our events! Peter was very professional and kind throughout the process. The day of our reception, he managed between 10-12 vendors for us. He was the go to person and really went out of his way to make sure things were exactly the way we wanted. The time line was spot on based on how we envisioned. On our reception day, we had a hiccup with another vendor and Peter pulled through to make sure my husband and I had no idea - he treated us like royalty and it made such a big difference on our event day. Thank you so much E&P!",
-    name: "Afsha",
-    role: ""
-  }
+
 ];
 const TestimonialSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
