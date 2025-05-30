@@ -52,13 +52,17 @@ type Props = {
   testimonials: Testimonial[];
   title?: string;
   backgroundColor?: string;
+  titleColor?: string;
 };
+
 
 const TestimonialSection: React.FC<Partial<Props>> = ({
   testimonials: incomingTestimonials,
   title = "When You Know You Picked the Right Planner",
   backgroundColor = "bg-transparent",
+  titleColor = "text-black", // default is black
 }) => {
+
   const testimonialsToUse = incomingTestimonials ?? testimonials;
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -77,7 +81,7 @@ const TestimonialSection: React.FC<Partial<Props>> = ({
   return (
     <section id="testimonials" className={`section-container pt-16 pb-24 ${backgroundColor}`}>
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="section-title text-center mb-4 text-black">{title}</h2>
+      <h2 className={`section-title text-center mb-4 ${titleColor}`}>{title}</h2>
       </div>
 
       <div className="max-w-6xl mx-auto bg-white/80 p-6 md:p-10 rounded-lg shadow-md relative h-[520px] md:h-[480px] flex flex-col justify-between">
