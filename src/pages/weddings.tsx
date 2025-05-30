@@ -180,30 +180,12 @@ const Weddings = () => {
 
 
 
-        {/* Gallery Section */}
-{/* Gallery Section */}
+    {/* Gallery Section */}
 <section id="gallery" className="py-20 px-6 md:px-12 lg:px-16">
-  <div className="max-w-6xl mx-auto">
-    <div className="text-center mb-12">
-      <h2 className="section-title">Real weddings. Real emotion.</h2>
-      <p className="text-lg">Cultural beauty meets seamless coordination.</p>
-    </div>
-
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {weddingGalleryImages.map((image, index) => (
-        <div key={index} className="aspect-[4/3] bg-gray-100 rounded-md overflow-hidden">
-          <img
-            src={image.src}
-            alt={image.alt}
-            className="w-full h-full object-cover"
-            loading="lazy"
-          />
-        </div>
-      ))}
-    </div>
+  <div className="text-center mb-12">
+    <h2 className="section-title">Real weddings. Real emotion.</h2>
+    <p className="text-lg">Cultural beauty meets seamless coordination.</p>
   </div>
-</section>
-
 
   {/* Row 1 — scrolls left */}
   <div className="flex space-x-6 animate-marquee w-max">
@@ -214,8 +196,8 @@ const Weddings = () => {
     ))}
   </div>
 
-  {/* Row 2 — scrolls right */}
-  <div className="flex space-x-6 animate-marquee-reverse w-max mt-6">
+  {/* Row 2 — scrolls right (hidden on mobile) */}
+  <div className="hidden sm:flex space-x-6 animate-marquee-reverse w-max mt-6">
     {weddingGalleryImages.concat(weddingGalleryImages).map((image, index) => (
       <div key={`row2-${index}`} className="flex-shrink-0 w-72 rounded-md overflow-hidden">
         <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
@@ -223,6 +205,7 @@ const Weddings = () => {
     ))}
   </div>
 </section>
+
 
 
 
