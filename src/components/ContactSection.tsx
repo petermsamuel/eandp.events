@@ -23,7 +23,7 @@ const ContactSection = () => {
         <div className="glow-button-wrapper mx-auto">
           <div className="glow-ring" />
           <a
-            href="https://cal.com/ryanmcmullen/15min"
+            href="https://cal.com/eandp.events/clarity"
             target="_blank"
             rel="noopener noreferrer"
             className="glow-button-inner"
