@@ -41,9 +41,10 @@ const weddingTestimonials = [
 
 
 const Weddings = () => {
-  const half = Math.ceil(weddingGalleryImages.length / 2);
-  const firstRowImages = weddingGalleryImages.slice(0, half);
-  const secondRowImages = weddingGalleryImages.slice(half);
+  // Split the images into two groups for the scrolling rows
+  const midpoint = Math.ceil(weddingGalleryImages.length / 2);
+  const firstRowImages = weddingGalleryImages.slice(0, midpoint);
+  const secondRowImages = weddingGalleryImages.slice(midpoint);
 
   return (
     <>
@@ -80,18 +81,94 @@ const Weddings = () => {
           </div>
           <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
             <a href="#what-we-do" aria-label="Scroll down">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                />
               </svg>
             </a>
           </div>
         </section>
 
         {/* What We Do Section */}
-        {/* ... keep existing What We Do + How It Works + Testimonial section unchanged ... */}
+        <section id="what-we-do" className="py-20 px-6 md:px-12 lg:px-16 bg-[#2a2a2a]">
+          <div className="text-center mb-16">
+            <h2 className="section-title text-white">What You Need, What We Do</h2>
+            <p className="text-lg max-w-3xl mx-auto text-white">
+              Planning a South Asian or fusion wedding means balancing tradition, family, and a thousand decisions. Most planners help with logistics. We take ownership — so you can live in the moment instead of managing it.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div className="flex flex-col items-center text-center p-6 bg-white shadow-sm rounded-lg">
+              <div className="h-14 w-14 bg-[#f5f1ea] rounded-full flex items-center justify-center mb-4">
+                <Check className="h-7 w-7 text-gold" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-[#2a2a3a]">Multiday timelines?</h3>
+              <p className="text-lg text-[#7b6535]">Covered.</p>
+            </div>
+
+            <div className="flex flex-col items-center text-center p-6 bg-white shadow-sm rounded-lg">
+              <div className="h-14 w-14 bg-[#f5f1ea] rounded-full flex items-center justify-center mb-4">
+                <Globe className="h-7 w-7 text-gold" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-[#2a2a3a]">Cultural nuances?</h3>
+              <p className="text-lg text-[#7b6535]">Fluent.</p>
+            </div>
+
+            <div className="flex flex-col items-center text-center p-6 bg-white shadow-sm rounded-lg">
+              <div className="h-14 w-14 bg-[#f5f1ea] rounded-full flex items-center justify-center mb-4">
+                <Users className="h-7 w-7 text-gold" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-[#2a2a3a]">Family dynamics?</h3>
+              <p className="text-lg text-[#7b6535]">Navigated.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* How It Works Section */}
+        <section id="how-it-works" className="bg-transparent py-20 px-6 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="section-title">How It Works</h2>
+            <div className="space-y-16">
+              {["Plan with Precision", "Align the Details", "Execute with Ownership"].map((title, index) => (
+                <div key={title} className="flex flex-col md:flex-row items-start gap-6">
+                  <div className="h-14 w-14 bg-black rounded-full flex items-center justify-center flex-shrink-0 md:mt-2">
+                    <span className="text-white text-xl font-bold">{index + 1}</span>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-semibold mb-3">{title}</h3>
+                    <p className="text-lg">
+                      {index === 0 && "We start with your vision, then build a plan that respects tradition and ensures calm, not stress."}
+                      {index === 1 && "From vendors to venues, every moving part gets locked into place."}
+                      {index === 2 && "You're not managing your wedding — you're experiencing it."}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonials */}
+        <TestimonialSection
+          testimonials={weddingTestimonials}
+          title="What They're Saying"
+          backgroundColor="bg-[#2a2a2a]"
+          titleColor="text-white"
+        />
 
         {/* Gallery Section */}
-        <section id="gallery" className="py-20 px-6 md:px-12 lg:px-16">
+        <section id="gallery" className="py-20 px-6 md:px-12 lg:px-16 overflow-hidden">
           <div className="text-center mb-12">
             <h2 className="section-title">Real weddings. Real emotion.</h2>
             <p className="text-lg">Cultural beauty meets seamless coordination.</p>
@@ -106,7 +183,7 @@ const Weddings = () => {
             ))}
           </div>
 
-          {/* Row 2 — scrolls right (hidden on mobile) */}
+          {/* Row 2 — scrolls right */}
           <div className="hidden sm:flex space-x-6 animate-marquee-reverse w-max mt-6">
             {secondRowImages.concat(secondRowImages).map((image, index) => (
               <div key={`row2-${index}`} className="flex-shrink-0 w-72 rounded-md overflow-hidden">
@@ -116,12 +193,8 @@ const Weddings = () => {
           </div>
         </section>
 
-        {/* Call to Action */}
-        {/* ... keep CTA section and watermark as-is ... */}
-        <section
-          id="cta"
-          className="relative bg-[#2c2c2c] py-20 px-6 md:px-12 lg:px-16 text-white overflow-hidden"
-        >
+        {/* CTA Section */}
+        <section id="cta" className="relative bg-[#2c2c2c] py-20 px-6 md:px-12 lg:px-16 text-white overflow-hidden">
           <div className="absolute inset-0 flex justify-center items-center pointer-events-none z-0">
             <div className="w-[300px] h-[300px] bg-gold/10 rounded-full blur-[100px]" />
           </div>
