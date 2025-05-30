@@ -77,7 +77,7 @@ const TestimonialSection: React.FC<Partial<Props>> = ({
   return (
     <section id="testimonials" className={`section-container pt-16 pb-24 ${backgroundColor}`}>
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="section-title text-center mb-4 text-white">{title}</h2>
+        <h2 className="section-title text-center mb-4 text-black">{title}</h2>
       </div>
 
       <div className="max-w-6xl mx-auto bg-white/80 p-6 md:p-10 rounded-lg shadow-md relative h-[520px] md:h-[480px] flex flex-col justify-between">
