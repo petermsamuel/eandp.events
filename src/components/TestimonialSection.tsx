@@ -54,11 +54,13 @@ type Props = {
   backgroundColor?: string;
 };
 
-const TestimonialSection: React.FC<Props> = ({
-  testimonials,
+const TestimonialSection: React.FC<Partial<Props>> = ({
+  testimonials: incomingTestimonials,
   title = "When You Know You Picked the Right Planner",
   backgroundColor = "bg-transparent",
 }) => {
+  const testimonialsToUse = incomingTestimonials ?? testimonials;
+
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -68,8 +70,8 @@ const TestimonialSection: React.FC<Props> = ({
     return () => clearInterval(interval);
   }, [testimonials.length]);
 
-  const nextTestimonial = () => setActiveIndex((prev) => (prev + 1) % testimonials.length);
-  const prevTestimonial = () => setActiveIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  const nextTestimonial = () => setActiveIndex((prev) => (prev + 1) % testimonialsToUse.length);
+  const prevTestimonial = () => setActiveIndex((prev) => (prev - 1 + testimonialsToUse.length) % testimonials.length);
   const selectTestimonial = (index: number) => setActiveIndex(index);
 
   return (
@@ -83,15 +85,15 @@ const TestimonialSection: React.FC<Props> = ({
 
         <div className="relative z-10 flex flex-col justify-between h-full">
           <div>
-            <p className="text-gray-700 mb-8 overflow-auto">{testimonials[activeIndex].text}</p>
+            <p className="text-gray-700 mb-8 overflow-auto">{testimonialsToUse[activeIndex].text}</p>
             <div className="flex items-center mt-4">
               <div className="h-10 w-10 bg-gold rounded-full flex items-center justify-center text-white font-bold">
-                {testimonials[activeIndex].name.charAt(0)}
+                {testimonialsToUse[activeIndex].name.charAt(0)}
               </div>
               <div className="ml-3">
-                <p className="font-semibold">{testimonials[activeIndex].name}</p>
-                {testimonials[activeIndex].role && (
-                  <p className="text-sm text-gray-600">{testimonials[activeIndex].role}</p>
+                <p className="font-semibold">{testimonialsToUse[activeIndex].name}</p>
+                {testimonialsToUse[activeIndex].role && (
+                  <p className="text-sm text-gray-600">{testimonialsToUse[activeIndex].role}</p>
                 )}
               </div>
             </div>
@@ -109,7 +111,7 @@ const TestimonialSection: React.FC<Props> = ({
             </button>
 
             <div className="flex space-x-2">
-              {testimonials.map((_, index) => (
+              {testimonialsToUse.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => selectTestimonial(index)}
