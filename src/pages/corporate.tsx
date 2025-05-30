@@ -7,26 +7,29 @@ import TestimonialSection from "@/components/TestimonialSection";
 const weddingTestimonials = [
   {
     id: 1,
-    text: "Peter Samuel really provides world-class service. I worked extensively with Peter on a number of global United Nations programs, working with corporate executives and high-ranking government officials and dignitaries from over 20-30 countries around the world represented at each event.  Peter provided exceptional strategic direction and corporate planning, exquisite event management, and impeccable attention to detail. He pulled off events seamlessly and flawlessly and delegates were always impressed. 
- 
-Peter's attention to customer service is exceptional and he is so responsive and unflappable in even the most complex of situations. More than a safe pair of hands that I could rely on with complete confidence; he is also a true maestro that could orchestrate any event we threw at him with perfection. An absolute joy to work with him!",
+    text: `Peter Samuel really provides world-class service. I worked extensively with Peter on a number of global United Nations programs, working with corporate executives and high-ranking government officials and dignitaries from over 20-30 countries around the world represented at each event. Peter provided exceptional strategic direction and corporate planning, exquisite event management, and impeccable attention to detail. He pulled off events seamlessly and flawlessly and delegates were always impressed.
+
+Peter's attention to customer service is exceptional and he is so responsive and unflappable in even the most complex of situations. More than a safe pair of hands that I could rely on with complete confidence; he is also a true maestro that could orchestrate any event we threw at him with perfection. An absolute joy to work with him!`,
     name: "Sebastian",
   },
   {
     id: 2,
-    text: "I wanted to thank you for your help with planning and setting up our Easter Breakfast for the Worship Department, Production Department, and Dance Department. You looked at our budget and helped to find ways to not only stay within budget but to still go above and beyond with how we could successfully show appreciation to our volunteers! You were timely and thoughtful with how you set everything up and all of the departments felt valued because of how you served us. Thank you for stepping in, especially at the last minute, to help us plan through everything. Our leadership team felt at ease with your expertise and careful attention to detail! We will definitely reach out again for the next event!",
+    text: `I wanted to thank you for your help with planning and setting up our Easter Breakfast for the Worship Department, Production Department, and Dance Department. You looked at our budget and helped to find ways to not only stay within budget but to still go above and beyond with how we could successfully show appreciation to our volunteers!
+
+You were timely and thoughtful with how you set everything up and all of the departments felt valued because of how you served us. Thank you for stepping in, especially at the last minute, to help us plan through everything. Our leadership team felt at ease with your expertise and careful attention to detail! We will definitely reach out again for the next event!`,
     name: "Viveka",
   },
   {
     id: 3,
-    text: "I had the pleasure of working with Peter Samuel during a conference, where he played a key role in managing catering and food service operations. His ability to coordinate logistics for large groups was exceptional, and he consistently ensured that meals were served smoothly, on time, and with great attention to detail.
+    text: `I had the pleasure of working with Peter Samuel during a conference, where he played a key role in managing catering and food service operations. His ability to coordinate logistics for large groups was exceptional, and he consistently ensured that meals were served smoothly, on time, and with great attention to detail.
 
 Peter was instrumental in managing both the front- and back-of-house flow — liaising with vendors, organizing volunteers, and resolving last-minute challenges with professionalism and calm. His leadership in high-pressure situations helped keep the food service running efficiently, even during peak times.
 
-He also demonstrated excellent people management skills, guiding volunteers with clear instructions and a positive attitude that kept morale high throughout the event. Thanks to his efforts, the dining experience was a success and received great feedback from attendees. Highly recommended!",
+He also demonstrated excellent people management skills, guiding volunteers with clear instructions and a positive attitude that kept morale high throughout the event. Thanks to his efforts, the dining experience was a success and received great feedback from attendees. Highly recommended!`,
     name: "Lindsay",
   }
 ];
+
 
 const Corporate = () => {
   return (
