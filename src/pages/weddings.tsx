@@ -175,7 +175,9 @@ const Weddings = () => {
   testimonials={weddingTestimonials}
   title="What They're Saying"
   backgroundColor="bg-[#2a2a2a]"
+  titleColor="text-white"
 />
+
 
 
         {/* Gallery Section */}
