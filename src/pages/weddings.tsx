@@ -5,6 +5,25 @@ import NavBarWeddings from "@/components/NavBarWeddings";
 import { weddingGalleryImages } from "@/data/weddinggallery";
 import TestimonialSection from "@/components/TestimonialSection";
 
+const weddingTestimonials = [
+  {
+    id: 1,
+    text: "E&P Events were incredible throughout our South Asian wedding weekend. They knew exactly when to take the lead and when to step back. We felt so taken care of.",
+    name: "Asha",
+  },
+  {
+    id: 2,
+    text: "Our wedding had so many moving parts, but Peter and Essie made it all feel effortless. Even our relatives were impressed — and that’s saying something.",
+    name: "Rahul",
+  },
+  {
+    id: 3,
+    text: "I didn’t think I needed a planner until E&P saved our baraat from a last-minute rainstorm. Unreal professionalism.",
+    name: "Meera",
+  }
+];
+
+
 
 const Weddings = () => {
   return (
@@ -137,10 +156,8 @@ const Weddings = () => {
         </section>
 
         {/* Testimonial Section */}
-   <section
-  id="testimonials"
-  className="section-container bg-[#2a2a2a] pt-16 pb-24"
->
+ <TestimonialSection testimonials={weddingTestimonials} title="What They're Saying" />
+
         {/* Gallery Section */}
         <section id="gallery" className="py-20 px-6 md:px-12 lg:px-16">
           <div className="max-w-6xl mx-auto">
