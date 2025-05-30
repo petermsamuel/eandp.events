@@ -164,13 +164,7 @@ const Corporate = () => {
           className="w-full h-auto object-contain"
         />
       </div>
-      <div className="max-w-[400px] w-full flex items-center justify-center">
-        <img 
-          src="/lovable-uploads/IMG_3344.PNG" 
-          alt="G3ict" 
-          className="w-full h-auto object-contain"
-        />
-      </div>
+
       <div className="max-w-[400px] w-full flex items-center justify-center">
         <img 
           src="/lovable-uploads/LNRS_RGB_POS_300.png" 
@@ -186,6 +180,13 @@ const Corporate = () => {
         <img 
           src="/lovable-uploads/GCC-Logo.png" 
           alt="GateCity Church" 
+          className="w-full h-auto object-contain"
+        />
+      </div>
+      <div className="max-w-[220px] w-full flex items-center justify-center">
+        <img 
+          src="/lovable-uploads/IMG_3344.PNG" 
+          alt="G3ict" 
           className="w-full h-auto object-contain"
         />
       </div>
