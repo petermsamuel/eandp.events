@@ -182,6 +182,10 @@
 .animate-marquee {
   animation: marquee 90s linear infinite;
 }
+.marquee-track {
+  min-width: 200vw; /* Ensures each row can scroll before looping */
+}
+
 
 .animate-marquee-reverse {
   animation: marquee-reverse 90s linear infinite;
