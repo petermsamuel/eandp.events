@@ -52,13 +52,12 @@ const Weddings = () => {
     ...weddingGalleryImages.slice(0, mid),
   ];
 
-  const bottomRowImages = [
-    ...reorderedBottomRow,
-    ...reorderedBottomRow,
-    ...reorderedBottomRow,
-    ...reorderedBottomRow,
-    ...reorderedBottomRow,
-  ];
+const bottomRowImages = [
+  ...reorderedBottomRow,
+  ...reorderedBottomRow,
+  ...reorderedBottomRow, // ⬅️ keep it at 3x (or 4x for safety)
+];
+
 
   return (
     <>
