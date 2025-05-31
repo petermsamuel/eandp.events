@@ -178,9 +178,10 @@ const bottomRowImages = [
         </div>
 
         <div className="space-y-10">
+          
          {/* Top Row */}
 <div className="overflow-hidden">
-<div className="flex animate-marquee-reverse gap-6 w-max" style={{ transform: 'translateX(33%)' }}>
+  <div className="flex animate-marquee gap-6 w-max" style={{ transform: 'translateX(33%)' }}>
     {topRowImages.map((image, index) => (
       <div
         key={`top-${index}`}
@@ -196,6 +197,7 @@ const bottomRowImages = [
     ))}
   </div>
 </div>
+
 
 <div className="overflow-hidden">
   <div
