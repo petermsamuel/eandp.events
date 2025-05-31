@@ -27,25 +27,22 @@ const config: Config = {
         "2xl": "1400px",
       },
     },
-       extend: {
+    extend: {
       colors: {
         background: "#ffffff",
         foreground: "#1a1a1a",
         border: "#e5e7eb",
         input: "#f3f4f6",
         ring: "#d1d5db",
-
         gold: "#c9a75d",
         navy: "#1c1f2b",
         charcoal: "#2a2a2a",
         emerald: "#50C878",
         ruby: "#E0115F",
-        clay: '#7b6535',
-        beige: '#f5f1ea',
-       blush: '#fdf6e3',
-      slategray: '#e6e6ea',
-
-
+        clay: "#7b6535",
+        beige: "#f5f1ea",
+        blush: "#fdf6e3",
+        slategray: "#e6e6ea",
         primary: {
           DEFAULT: "#1a1a26",
           foreground: "#ffffff",
@@ -88,7 +85,7 @@ const config: Config = {
       fontFamily: {
         heading: ["Cinzel", "serif"],
         body: ['"Sorts Mill Goudy"', "serif"],
-        montserrat: ["Montserrat", "sans-serif"], // optional if still used
+        montserrat: ["Montserrat", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -120,11 +117,21 @@ const config: Config = {
               "conic-gradient(from 360deg, transparent, #c9a75d, transparent, #c9a75d, transparent)",
           },
         },
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        'marquee-reverse': {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(50%)' },
+        },
       },
       animation: {
         "pulse-glow": "pulseGlow 2.5s ease-in-out infinite",
         "spin-glow": "spinGlow 2s linear infinite",
         "border-orbit": "borderOrbit 2.5s linear infinite",
+        "marquee": "marquee 60s linear infinite",
+        "marquee-reverse": "marquee-reverse 60s linear infinite",
       },
     },
   },
