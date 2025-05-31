@@ -35,7 +35,7 @@ const WhatWeDoSection = () => {
                 You need results, not risk. Whether it’s a seasonal celebration, executive summit, or high-stakes launch—our events are built to reflect your mission, deliver measurable impact, and keep the chaos contained.
               </p>
               <p className="text-sm text-gold font-semibold underline group-hover:no-underline">
-                View Corporate Services →
+                Click Here to view Corporate Services →
               </p>
             </div>
           </div>
@@ -58,7 +58,7 @@ const WhatWeDoSection = () => {
                 We specialize in South Asian and fusion weddings — events with deep cultural layers, multiday logistics, and complex family expectations. From sangeets to baraats, we lead with lived experience and cultural fluency.
               </p>
               <p className="text-sm text-gold font-semibold underline group-hover:no-underline">
-                Explore Wedding Planning →
+                Click Here to explore Wedding Planning →
               </p>
             </div>
           </div>
