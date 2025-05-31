@@ -1,28 +1,39 @@
-// pages/5q.tsx
-import { useEffect } from "react";
-import { useRouter } from "next/router"; // or 'react-router-dom' if you're using that instead
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
 const InstagramRedirect = () => {
+  const [shouldRedirect, setShouldRedirect] = useState(false);
+  const router = useRouter();
+
   useEffect(() => {
-    // Manually send the GA event
+    // Trigger GA page_view manually
     if (typeof window.gtag === "function") {
       window.gtag("event", "page_view", {
         page_path: "/5q",
       });
     }
 
-    // Redirect after short delay to allow GA event to register
+    // Give time for GA and UI to render before redirect
     const timer = setTimeout(() => {
-      const targetUrl = "https://www.eandp.events/5-questions?utm_source=instagram&utm_medium=bio&utm_campaign=5-questions-lead-magnet";
-      window.location.href = targetUrl;
-    }, 300); // ~300ms is typically enough
+      setShouldRedirect(true);
+    }, 500); // 0.5 second delay for both GA and content render
 
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    if (shouldRedirect) {
+      const targetUrl =
+        "https://www.eandp.events/5-questions?utm_source=instagram&utm_medium=bio&utm_campaign=5-questions-lead-magnet";
+      window.location.href = targetUrl;
+    }
+  }, [shouldRedirect]);
+
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <p className="text-lg text-gray-600">Redirecting you to the resource...</p>
+      <p className="text-lg text-gray-600">
+        Redirecting you to the resource...
+      </p>
     </div>
   );
 };
