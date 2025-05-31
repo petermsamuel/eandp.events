@@ -204,7 +204,6 @@ const bottomRowImages = [
    {/* Bottom Row */}
 <div className="overflow-hidden">
   <div
-<div
   className="flex animate-marquee-reverse gap-6 w-max"
   style={{ marginLeft: "-95%" }} // Hide more offscreen left
   >
