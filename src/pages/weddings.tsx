@@ -165,7 +165,7 @@ const Weddings = () => {
   title="What They're Saying"
   backgroundColor="bg-[#2a2a2a]"
   titleColor="text-white"
-  minHeight="h-[1000px] md:h-[580px]" // ✅ fixed height instead of min-height
+  minHeight="h-[800px] md:h-[580px]" // ✅ fixed height instead of min-height
 />
 
 
