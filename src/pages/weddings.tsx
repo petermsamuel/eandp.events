@@ -178,8 +178,8 @@ const Weddings = () => {
         <div className="space-y-10">
           
          {/* Top Row */}
-<div className="overflow-hidden">
-  <div className="flex animate-marquee gap-6 w-max" style={{ transform: 'translateX(33%)' }}>
+<div className="overflow-hidden w-full will-change-transform" style={{ transform: 'translateZ(0)' }}>
+  <div className="flex animate-marquee gap-6 w-max min-w-[200%]">
     {topRowImages.map((image, index) => (
       <div
         key={`top-${index}`}
@@ -196,11 +196,11 @@ const Weddings = () => {
   </div>
 </div>
 
+          {/*Bottom Row */}
    <div className="overflow-hidden">
-  <div
-    className="flex animate-marquee-reverse gap-6 w-max"
-    style={{ marginLeft: "-66.66%" }} // More offset = more photos hidden to the left
-  >
+ <div className="overflow-hidden w-full will-change-transform" style={{ transform: 'translateZ(0)' }}>
+  <div className="flex animate-marquee gap-6 w-max min-w-[200%]">
+
     {bottomRowImages.map((image, index) => (
       <div
         key={`bottom-${index}`}
