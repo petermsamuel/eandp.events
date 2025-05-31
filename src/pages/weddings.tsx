@@ -53,9 +53,9 @@ const Weddings = () => {
   ];
 
 const bottomRowImages = [
-  ...reorderedBottomRow,
-  ...reorderedBottomRow,
-  ...reorderedBottomRow, // ⬅️ keep it at 3x (or 4x for safety)
+  ...weddingGalleryImages,
+  ...weddingGalleryImages,
+  ...weddingGalleryImages,
 ];
 
 
