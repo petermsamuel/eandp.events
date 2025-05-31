@@ -8,7 +8,7 @@ const HeroSection = () => {
       style={{ backgroundImage: "url('/lovable-uploads/SSTK_asset_small_new.jpg')" }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black opacity-60 z-0"></div>
+      <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
 
       {/* Headline */}
       <div className="relative z-10 text-center w-full px-4">
