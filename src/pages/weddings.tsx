@@ -171,48 +171,42 @@ const secondHalf = weddingGalleryImages.slice(midpoint);
     <p className="text-lg">Cultural beauty meets seamless coordination.</p>
   </div>
 
-  <div className="space-y-6">
-    {/* Top Row */}
-    <div className="overflow-hidden h-[24rem]">
-      <div className="flex w-max animate-marquee space-x-6">
-        {[...firstHalf, ...firstHalf].map((image, index) => (
-          <div
-            key={`top-${index}`}
-            className="relative flex-shrink-0 w-72 aspect-[2/3] rounded-md overflow-hidden"
-          >
-            <img
-              src={image.src}
-              alt={image.alt}
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-          </div>
-        ))}
-      </div>
+  {/* Top Row */}
+  <div className="marquee-container h-[24rem] mb-12">
+    <div className="marquee-track">
+      {[...firstHalf, ...firstHalf].map((image, idx) => (
+        <div
+          key={`top-${idx}`}
+          className="w-72 flex-shrink-0 aspect-[2/3] rounded-md overflow-hidden"
+        >
+          <img
+            src={image.src}
+            alt={image.alt}
+            className="w-full h-full object-cover"
+          />
+        </div>
+      ))}
     </div>
+  </div>
 
   {/* Bottom Row */}
-<div className="overflow-hidden h-[24rem]">
-  <div className="flex animate-marquee-reverse space-x-6 w-[200%]">
-    {[...secondHalf, ...secondHalf].map((image, index) => (
-      <div
-        key={`bottom-${index}`}
-        className="relative w-72 aspect-[2/3] flex-shrink-0 rounded-md overflow-hidden"
-      >
-        <img
-          src={image.src}
-          alt={image.alt}
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-      </div>
-    ))}
-  </div>
-</div>
+  <div className="marquee-container h-[24rem]">
+    <div className="marquee-track-reverse">
+      {[...secondHalf, ...secondHalf].map((image, idx) => (
+        <div
+          key={`bottom-${idx}`}
+          className="w-72 flex-shrink-0 aspect-[2/3] rounded-md overflow-hidden"
+        >
+          <img
+            src={image.src}
+            alt={image.alt}
+            className="w-full h-full object-cover"
+          />
+        </div>
+      ))}
+    </div>
   </div>
 </section>
-
-
-
-
 
 
 
