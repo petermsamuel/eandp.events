@@ -1,22 +1,28 @@
-// pages/5q.tsx
 import { useEffect } from "react";
 
 const InstagramRedirect = () => {
   useEffect(() => {
     const targetUrl = "https://www.eandp.events/5-questions?utm_source=instagram&utm_medium=bio&utm_campaign=5q-redirect";
 
-    // Make sure GA is loaded
     if (typeof window.gtag === "function") {
+      // Send page view
       window.gtag("config", "G-QMY9ZR38N1", {
         page_path: "/5q",
         page_title: "Instagram Redirect",
       });
+
+      // Send custom event for redundancy
+      window.gtag("event", "5q_redirect_view", {
+        event_category: "Redirects",
+        event_label: "Visited 5q landing",
+        value: 1,
+      });
     }
 
-    // Add a slightly longer delay
+    // Wait longer than before
     const timeout = setTimeout(() => {
       window.location.href = targetUrl;
-    }, 700); // GA needs ~500–700ms to reliably fire
+    }, 1200); // ⏱️ Give GA more time to send data
 
     return () => clearTimeout(timeout);
   }, []);
