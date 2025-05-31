@@ -171,42 +171,45 @@ const secondHalf = weddingGalleryImages.slice(midpoint);
     <p className="text-lg">Cultural beauty meets seamless coordination.</p>
   </div>
 
-  {/* Top Row */}
-  <div className="marquee-container h-[24rem] mb-12">
-    <div className="marquee-track">
-      {[...firstHalf, ...firstHalf].map((image, idx) => (
-        <div
-          key={`top-${idx}`}
-          className="w-72 flex-shrink-0 aspect-[2/3] rounded-md overflow-hidden"
-        >
-          <img
-            src={image.src}
-            alt={image.alt}
-            className="w-full h-full object-cover"
-          />
-        </div>
-      ))}
+  <div className="space-y-10">
+    {/* Top Row */}
+    <div className="overflow-hidden">
+      <div className="flex animate-marquee whitespace-nowrap">
+        {[...firstHalf, ...firstHalf].map((image, index) => (
+          <div
+            key={`top-${index}`}
+            className="w-72 aspect-[2/3] mx-3 inline-block rounded-md overflow-hidden"
+          >
+            <img
+              src={image.src}
+              alt={image.alt}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ))}
+      </div>
     </div>
-  </div>
 
-  {/* Bottom Row */}
-  <div className="marquee-container h-[24rem]">
-    <div className="marquee-track-reverse">
-      {[...secondHalf, ...secondHalf].map((image, idx) => (
-        <div
-          key={`bottom-${idx}`}
-          className="w-72 flex-shrink-0 aspect-[2/3] rounded-md overflow-hidden"
-        >
-          <img
-            src={image.src}
-            alt={image.alt}
-            className="w-full h-full object-cover"
-          />
-        </div>
-      ))}
+    {/* Bottom Row */}
+    <div className="overflow-hidden">
+      <div className="flex animate-marquee-reverse whitespace-nowrap">
+        {[...secondHalf, ...secondHalf].map((image, index) => (
+          <div
+            key={`bottom-${index}`}
+            className="w-72 aspect-[2/3] mx-3 inline-block rounded-md overflow-hidden"
+          >
+            <img
+              src={image.src}
+              alt={image.alt}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ))}
+      </div>
     </div>
   </div>
 </section>
+
 
 
 
