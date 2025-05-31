@@ -114,7 +114,7 @@ const Weddings = () => {
         {/* What We Do Section */}
         <section id="what-we-do" className="py-20 px-6 md:px-12 lg:px-16 bg-[#2a2a2a] titleColor="text-white"">
           <div className="text-center mb-16">
-            <h2 className="section-title">What You Need, What We Do</h2>
+      <h2 className="section-title text-white">What You Need, What We Do</h2>
             <p className="text-lg max-w-3xl mx-auto">
               Planning a South Asian or fusion wedding means balancing tradition, family, and a thousand decisions. Most planners help with logistics. We take ownership — so you can live in the moment instead of managing it.
             </p>
