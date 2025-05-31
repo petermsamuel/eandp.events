@@ -83,11 +83,13 @@ const TestimonialSection: React.FC<Partial<Props>> = ({
         <h2 className={`section-title text-center mb-8 ${titleColor}`}>{title}</h2>
       </div>
 
-      <div className={`max-w-6xl mx-auto bg-white/80 p-6 md:p-10 rounded-lg shadow-md relative flex flex-col justify-between ${minHeight}`}>
+<div
+  className={`max-w-6xl mx-auto bg-white/80 p-6 md:p-10 rounded-lg shadow-md relative flex flex-col ${minHeight}`}
+  style={{ height: "100%", maxHeight: "100%", overflow: "hidden" }}
         <div className="absolute top-6 left-6 text-6xl text-gold opacity-20 z-0">"</div>
 
         {/* Content */}
-        <div className="z-10 flex-1 overflow-y-auto">
+  <div className="z-10 flex-1 overflow-y-auto max-h-full">
           <p className="text-gray-700 mb-8">{testimonialsToUse[activeIndex].text}</p>
           <div className="flex items-center mt-4">
             <div className="h-10 w-10 bg-gold rounded-full flex items-center justify-center text-white font-bold">
