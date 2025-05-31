@@ -164,7 +164,7 @@ const Weddings = () => {
   </div>
 
   <div className="space-y-10">
-   {{/* Top Row */}
+   {/* Top Row */}
 <div className="overflow-hidden">
   <div className="flex animate-marquee gap-6 w-max">
     {topRowImages.map((image, index) => (
