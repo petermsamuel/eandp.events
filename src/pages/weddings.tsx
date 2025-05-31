@@ -198,7 +198,7 @@ const Weddings = () => {
 {/* BOTTOM ROW */}
 <div className="w-full overflow-hidden">
   <div className="marquee-wrapper">
-    <div className="flex animate-marquee-reverse gap-6 w-max">
+    <div className="flex animate-marquee gap-6 w-max">
       {bottomRowImages.map((image, index) => (
         <div
           key={`bottom-${index}`}
