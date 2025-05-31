@@ -4,7 +4,7 @@ import NotFound from "./pages/NotFound";
 import WeddingsPage from "./pages/weddings";
 import CorporatePage from "./pages/corporate";
 import FiveQuestionsPage from "./pages/5-questions";
-import { useAnalytics } from "@/hooks/useAnalytics";
+import { useAnalytics } from "@/hooks/use-analytics";
 
 const App = () => {
   useAnalytics();
