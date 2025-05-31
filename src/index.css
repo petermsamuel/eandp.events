@@ -183,6 +183,12 @@
   animation: marquee 90s linear infinite;
 }
 
+/* tailwind.config.js or CSS */
 .animate-marquee-reverse {
-  animation: marquee-reverse 90s linear infinite;
+  animation: marqueeReverse 50s linear infinite;
+}
+
+@keyframes marqueeReverse {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(100%); }
 }
