@@ -40,27 +40,26 @@ const weddingTestimonials = [
 
 const Weddings = () => {
   // Calculate the midpoint of the original gallery
-  const mid = Math.floor(weddingGalleryImages.length / 2);
+const mid = Math.floor(weddingGalleryImages.length / 2);
 
-  // Top row: normal order, repeated 3 times for smooth loop
-  const topRowImages = [
-    ...weddingGalleryImages,
-    ...weddingGalleryImages,
-    ...weddingGalleryImages,
-  ];
+const topRowImages = [
+  ...weddingGalleryImages,
+  ...weddingGalleryImages,
+  ...weddingGalleryImages,
+];
 
-  // Bottom row: reordered to start from halfway point, repeated 3 times
+// Bottom row starts midway but renders full cycle with front buffer
 const reorderedBottomRow = [
   ...weddingGalleryImages.slice(mid),
   ...weddingGalleryImages.slice(0, mid),
 ];
-
 const bottomRowImages = [
   ...reorderedBottomRow,
   ...reorderedBottomRow,
   ...reorderedBottomRow,
-  ...reorderedBottomRow, // Add 4th repetition for offset buffer
+  ...reorderedBottomRow,
 ];
+
 
   return (
     <>
@@ -201,7 +200,7 @@ const bottomRowImages = [
 <div className="overflow-hidden">
   <div
     className="flex animate-marquee-reverse gap-6 w-max"
-    style={{ transform: "translateX(-25%)" }} // Start midway!
+    style={{ marginLeft: "-33.33%" }} // this shifts start point to middle
   >
     {bottomRowImages.map((image, index) => (
       <div
