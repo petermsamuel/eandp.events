@@ -117,21 +117,19 @@ const config: Config = {
               "conic-gradient(from 360deg, transparent, #c9a75d, transparent, #c9a75d, transparent)",
           },
         },
-        marquee: {
-          "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-50%)" },
-        },
-        "marquee-reverse": {
-          "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(50%)" },
-        },
-      },
-      animation: {
-        "pulse-glow": "pulseGlow 2.5s ease-in-out infinite",
-        "spin-glow": "spinGlow 2s linear infinite",
-        "border-orbit": "borderOrbit 2.5s linear infinite",
-        marquee: "marquee 60s linear infinite",
-        "marquee-reverse": "marquee-reverse 60s linear infinite",
+  marquee: {
+    '0%': { transform: 'translateX(0)' },
+    '100%': { transform: 'translateX(-100%)' },
+  },
+  'marquee-reverse': {
+    '0%': { transform: 'translateX(0)' },
+    '100%': { transform: 'translateX(100%)' },
+  },
+},
+animation: {
+  marquee: 'marquee 80s linear infinite',
+  'marquee-reverse': 'marquee-reverse 80s linear infinite',
+
       },
     },
   },
