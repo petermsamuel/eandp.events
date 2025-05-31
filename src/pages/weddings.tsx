@@ -47,10 +47,6 @@ const Weddings = () => {
     ...weddingGalleryImages,
   ];
 
-  const reorderedBottomRow = [
-    ...weddingGalleryImages.slice(mid),
-    ...weddingGalleryImages.slice(0, mid),
-  ];
 
 const bottomRowImages = [
   ...weddingGalleryImages,
