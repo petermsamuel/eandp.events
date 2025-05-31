@@ -170,12 +170,12 @@
 }
 
 @keyframes marquee {
-  0%   { transform: translateX(0%); }
+  0% { transform: translateX(0%); }
   100% { transform: translateX(-50%); }
 }
 
 @keyframes marquee-reverse {
-  0%   { transform: translateX(0%); }
+  0% { transform: translateX(0%); }
   100% { transform: translateX(50%); }
 }
 
@@ -186,6 +186,7 @@
 .animate-marquee-reverse {
   animation: marquee-reverse 60s linear infinite;
 }
+
 /* Optional: reinforce GPU acceleration */
 .marquee-wrapper {
   transform: translateZ(0);
