@@ -159,12 +159,16 @@ const Weddings = () => {
           </div>
         </section>
 
-        <TestimonialSection
-          testimonials={weddingTestimonials}
-          title="What They're Saying"
-          backgroundColor="bg-[#2a2a2a]"
-          titleColor="text-white"
-        />
+
+            {/* Testimonial Section */} 
+<TestimonialSection
+  testimonials={weddingTestimonials}
+  title="What They're Saying"
+  backgroundColor="bg-[#2a2a2a]"
+  titleColor="text-white"
+  minHeight="min-h-[550px]" // 👈 force height to fit Sana’s testimonial
+/>
+
 
        {/* Gallery Section */}
 <section id="gallery" className="py-20 px-6 md:px-12 lg:px-16 bg-white">
