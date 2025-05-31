@@ -177,8 +177,8 @@ const Weddings = () => {
 
 {/* Bottom Row */}
 <div className="overflow-hidden">
-  <div className="flex animate-marquee-reverse gap-6 w-max translate-x-[-33.33%]">
-    {[...weddingGalleryImages.reverse(), ...weddingGalleryImages.reverse(), ...weddingGalleryImages.reverse()].map((image, index) => (
+  <div className="flex animate-marquee-reverse gap-6 w-max translate-x-[33.333333%]">
+    {repeatedReversedImages.map((image, index) => (
       <div
         key={`bottom-${index}`}
         className="relative w-72 aspect-[2/3] flex-shrink-0 rounded-md overflow-hidden"
