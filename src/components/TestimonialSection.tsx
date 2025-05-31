@@ -87,57 +87,58 @@ const TestimonialSection: React.FC<Partial<Props>> = ({
 <div className="max-w-6xl mx-auto bg-white/80 p-6 md:p-10 rounded-lg shadow-md relative min-h-[580px] md:min-h-[540px] flex flex-col justify-between">
         <div className="absolute top-6 left-6 text-6xl text-gold opacity-20 z-0">"</div>
 
-        <div className="relative z-10 flex flex-col justify-between h-full">
-          <div>
-            <p className="text-gray-700 mb-8 overflow-auto">{testimonialsToUse[activeIndex].text}</p>
-            <div className="flex items-center mt-4">
-              <div className="h-10 w-10 bg-gold rounded-full flex items-center justify-center text-white font-bold">
-                {testimonialsToUse[activeIndex].name.charAt(0)}
-              </div>
-              <div className="ml-3">
-                <p className="font-semibold">{testimonialsToUse[activeIndex].name}</p>
-                {testimonialsToUse[activeIndex].role && (
-                  <p className="text-sm text-gray-600">{testimonialsToUse[activeIndex].role}</p>
-                )}
-              </div>
-            </div>
-          </div>
+   <div className="relative z-10 flex flex-col justify-start h-full">
+  <div className="flex-1 overflow-auto">
+    <p className="text-gray-700 mb-8">{testimonialsToUse[activeIndex].text}</p>
+    <div className="flex items-center mt-4">
+      <div className="h-10 w-10 bg-gold rounded-full flex items-center justify-center text-white font-bold">
+        {testimonialsToUse[activeIndex].name.charAt(0)}
+      </div>
+      <div className="ml-3">
+        <p className="font-semibold">{testimonialsToUse[activeIndex].name}</p>
+        {testimonialsToUse[activeIndex].role && (
+          <p className="text-sm text-gray-600">{testimonialsToUse[activeIndex].role}</p>
+        )}
+      </div>
+    </div>
+  </div>
 
-          <div className="flex justify-between items-center mt-8">
-            <button
-              onClick={prevTestimonial}
-              className="p-2 rounded-full border border-black hover:bg-black hover:text-white transition-colors"
-              aria-label="Previous testimonial"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
-              </svg>
-            </button>
+  {/* Navigation now sticks at bottom */}
+  <div className="mt-6 pt-4 border-t border-gray-300 flex justify-between items-center">
+    <button
+      onClick={prevTestimonial}
+      className="p-2 rounded-full border border-black hover:bg-black hover:text-white transition-colors"
+      aria-label="Previous testimonial"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
+      </svg>
+    </button>
 
-            <div className="flex space-x-2">
-              {testimonialsToUse.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => selectTestimonial(index)}
-                  className={`h-2 w-2 rounded-full transition-all ${
-                    index === activeIndex ? "bg-gold w-6" : "bg-gray-300"
-                  }`}
-                  aria-label={`Go to testimonial ${index + 1}`}
-                />
-              ))}
-            </div>
+    <div className="flex space-x-2">
+      {testimonialsToUse.map((_, index) => (
+        <button
+          key={index}
+          onClick={() => selectTestimonial(index)}
+          className={`h-2 w-2 rounded-full transition-all ${
+            index === activeIndex ? "bg-gold w-6" : "bg-gray-300"
+          }`}
+          aria-label={`Go to testimonial ${index + 1}`}
+        />
+      ))}
+    </div>
 
-            <button
-              onClick={nextTestimonial}
-              className="p-2 rounded-full border border-black hover:bg-black hover:text-white transition-colors"
-              aria-label="Next testimonial"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
-              </svg>
-            </button>
-          </div>
-        </div>
+    <button
+      onClick={nextTestimonial}
+      className="p-2 rounded-full border border-black hover:bg-black hover:text-white transition-colors"
+      aria-label="Next testimonial"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+      </svg>
+    </button>
+  </div>
+</div>
       </div>
     </section>
   );
