@@ -8,6 +8,7 @@ import { useAnalytics } from "@/hooks/use-analytics";
 
 const App = () => {
   useAnalytics();
+  ...
 
   return (
     <BrowserRouter>
