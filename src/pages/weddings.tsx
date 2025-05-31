@@ -38,20 +38,15 @@ const weddingTestimonials = [
   }
 ];
 
-const Weddings = () => {
-  const repeatCount = 6; // Repeat enough times for seamless scroll
+const repeatCount = 3; // or higher
+const topRowImages = Array(repeatCount).fill(weddingGalleryImages).flat();
 
-  // TOP ROW: loop original in order
-  const topRowImages = Array(repeatCount).fill(weddingGalleryImages).flat();
-
-  // BOTTOM ROW: reorder and loop
-  const mid = Math.floor(weddingGalleryImages.length / 2);
-  const reordered = [
-    ...weddingGalleryImages.slice(mid),
-    ...weddingGalleryImages.slice(0, mid),
-  ];
-  const bottomRowImages = Array(repeatCount).fill(reordered).flat();
-
+const mid = Math.floor(weddingGalleryImages.length / 2);
+const reordered = [
+  ...weddingGalleryImages.slice(mid),
+  ...weddingGalleryImages.slice(0, mid),
+];
+const bottomRowImages = Array(repeatCount).fill(reordered).flat();
 
 
 
@@ -173,52 +168,51 @@ const Weddings = () => {
   </div>
 
   <div className="space-y-10 overflow-hidden">
-   
-{/* TOP ROW */}
-<div className="w-full overflow-hidden">
-  <div className="marquee-wrapper">
-    <div className="flex animate-marquee gap-6 w-max">
-      {topRowImages.map((image, index) => (
-        <div
-          key={`top-${index}`}
-          className="relative flex-shrink-0 rounded-md overflow-hidden"
-          style={{ height: "18rem", minWidth: "16rem" }}
-        >
-          <img
-            src={image.src}
-            alt={image.alt}
-            className="h-full w-auto object-cover rounded-md"
-          />
+    
+    {/* TOP ROW */}
+    <div className="w-full overflow-hidden">
+      <div className="marquee-wrapper">
+        <div className="flex animate-marquee gap-6 w-max">
+          {[...topRowImages, ...topRowImages].map((image, index) => (
+            <div
+              key={`top-${index}`}
+              className="relative flex-shrink-0 rounded-md overflow-hidden"
+              style={{ height: "18rem", minWidth: "16rem" }}
+            >
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="h-full w-auto object-cover rounded-md"
+              />
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
     </div>
-  </div>
-</div>
 
-{/* BOTTOM ROW */}
-<div className="w-full overflow-hidden">
-  <div className="marquee-wrapper">
-    <div className="flex animate-marquee gap-6 w-max">
-      {bottomRowImages.map((image, index) => (
-        <div
-          key={`bottom-${index}`}
-          className="relative flex-shrink-0 rounded-md overflow-hidden"
-          style={{ height: "18rem", minWidth: "16rem" }}
-        >
-          <img
-            src={image.src}
-            alt={image.alt}
-            className="h-full w-auto object-cover rounded-md"
-          />
+    {/* BOTTOM ROW */}
+    <div className="w-full overflow-hidden">
+      <div className="marquee-wrapper">
+        <div className="flex animate-marquee-reverse gap-6 w-max">
+          {[...bottomRowImages, ...bottomRowImages].map((image, index) => (
+            <div
+              key={`bottom-${index}`}
+              className="relative flex-shrink-0 rounded-md overflow-hidden"
+              style={{ height: "18rem", minWidth: "16rem" }}
+            >
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="h-full w-auto object-cover rounded-md"
+              />
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
     </div>
-  </div>
-</div>
-
-
   </div>
 </section>
+
 
 
         {/* CTA Section */}
