@@ -171,9 +171,9 @@ const secondHalf = weddingGalleryImages.slice(midpoint);
     <p className="text-lg">Cultural beauty meets seamless coordination.</p>
   </div>
 
-  {/* Top Row */}
+  {/* Top Row - scrolls left */}
   <div className="overflow-hidden mb-6">
-    <div className="flex animate-marquee space-x-6 min-w-[200%]">
+    <div className="flex w-max animate-marquee space-x-6">
       {[...firstHalf, ...firstHalf].map((image, index) => (
         <div key={`top-${index}`} className="flex-shrink-0 w-72 rounded-md overflow-hidden">
           <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
@@ -182,9 +182,9 @@ const secondHalf = weddingGalleryImages.slice(midpoint);
     </div>
   </div>
 
-  {/* Bottom Row */}
+  {/* Bottom Row - scrolls right */}
   <div className="overflow-hidden hidden sm:block">
-    <div className="flex animate-marquee-reverse space-x-6 min-w-[200%]">
+    <div className="flex w-max animate-marquee-reverse space-x-6">
       {[...secondHalf, ...secondHalf].map((image, index) => (
         <div key={`bottom-${index}`} className="flex-shrink-0 w-72 rounded-md overflow-hidden">
           <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
@@ -193,6 +193,7 @@ const secondHalf = weddingGalleryImages.slice(midpoint);
     </div>
   </div>
 </section>
+
 
 
 
