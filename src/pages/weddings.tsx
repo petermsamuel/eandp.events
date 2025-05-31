@@ -179,13 +179,14 @@ const Weddings = () => {
             <div
               key={`top-${index}`}
               className="relative flex-shrink-0 rounded-md overflow-hidden"
-              style={{ height: "18rem", minWidth: "16rem" }}
+            className="relative flex-shrink-0 rounded-md overflow-hidden aspect-[3/2] h-72"
             >
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="h-full w-auto object-cover rounded-md"
-              />
+               <img
+  src={image.src}
+  alt={image.alt}
+  className="w-full h-full object-cover rounded-md"
+/>
+
             </div>
           ))}
         </div>
@@ -200,13 +201,14 @@ const Weddings = () => {
             <div
               key={`bottom-${index}`}
               className="relative flex-shrink-0 rounded-md overflow-hidden"
-              style={{ height: "18rem", minWidth: "16rem" }}
+ className="relative flex-shrink-0 rounded-md overflow-hidden aspect-[3/2] h-72"
+
             >
               <img
-                src={image.src}
-                alt={image.alt}
-                className="h-full w-auto object-cover rounded-md"
-              />
+  src={image.src}
+  alt={image.alt}
+  className="w-full h-full object-cover rounded-md"
+/>
             </div>
           ))}
         </div>
