@@ -39,9 +39,9 @@ const weddingTestimonials = [
 ];
 
 const Weddings = () => {
-  const midpoint = Math.ceil(weddingGalleryImages.length / 2);
-  const firstHalf = weddingGalleryImages.slice(0, midpoint);
-  const secondHalf = weddingGalleryImages.slice(midpoint);
+  const midpoint = Math.floor(weddingGalleryImages.length / 2);
+const firstHalf = weddingGalleryImages.slice(0, midpoint);
+const secondHalf = weddingGalleryImages.slice(midpoint);
 
   return (
     <>
@@ -165,36 +165,34 @@ const Weddings = () => {
         />
 
         {/* Gallery Section */}
-     <section id="gallery" className="py-20 px-6 md:px-12 lg:px-16 overflow-hidden">
+  <section id="gallery" className="py-20 px-6 md:px-12 lg:px-16 overflow-hidden">
   <div className="text-center mb-12">
     <h2 className="section-title">Real weddings. Real emotion.</h2>
     <p className="text-lg">Cultural beauty meets seamless coordination.</p>
   </div>
 
-  {/* Row 1 – scrolls left */}
-<div className="overflow-hidden mb-6">
-  <div className="flex animate-marquee space-x-6 w-max">
-    {[...firstHalf, ...firstHalf].map((image, index) => (
-      <div key={`top-${index}`} className="flex-shrink-0 w-72 rounded-md overflow-hidden">
-        <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
-      </div>
-    ))}
+  {/* Top Row – scrolls left */}
+  <div className="overflow-hidden mb-6">
+    <div className="flex animate-marquee space-x-6 w-max">
+      {[...firstHalf, ...firstHalf].map((image, index) => (
+        <div key={`top-${index}`} className="flex-shrink-0 w-72 rounded-md overflow-hidden">
+          <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
+        </div>
+      ))}
+    </div>
   </div>
-</div>
 
-{/* Row 2 – scrolls right */}
-<div className="overflow-hidden hidden sm:block">
-  <div className="flex animate-marquee-reverse space-x-6 w-max">
-    {[...secondHalf, ...secondHalf].map((image, index) => (
-      <div key={`bottom-${index}`} className="flex-shrink-0 w-72 rounded-md overflow-hidden">
-        <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
-      </div>
-    ))}
+  {/* Bottom Row – scrolls right */}
+  <div className="overflow-hidden hidden sm:block">
+    <div className="flex animate-marquee-reverse space-x-6 w-max">
+      {[...secondHalf, ...secondHalf].map((image, index) => (
+        <div key={`bottom-${index}`} className="flex-shrink-0 w-72 rounded-md overflow-hidden">
+          <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
+        </div>
+      ))}
+    </div>
   </div>
-</div>
 </section>
-
-
 
 
         {/* CTA Section */}
