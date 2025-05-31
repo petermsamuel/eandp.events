@@ -172,23 +172,31 @@ const secondHalf = weddingGalleryImages.slice(midpoint);
   </div>
 
   {/* Top Row – scrolls left */}
-  <div className="overflow-hidden mb-6">
+<div className="overflow-hidden h-[24rem] mb-6">
     <div className="flex w-max animate-marquee space-x-6">
       {[...firstHalf, ...firstHalf].map((image, index) => (
-        <div key={`top-${index}`} className="flex-shrink-0 w-72 rounded-md overflow-hidden">
-          <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
-        </div>
+        <div key={`top-${index}`} className="relative flex-shrink-0 w-72 aspect-[2/3] rounded-md overflow-hidden">
+  <img
+    src={image.src}
+    alt={image.alt}
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+</div>
       ))}
     </div>
   </div>
 
   {/* Bottom Row – scrolls right */}
-  <div className="overflow-hidden">
+<div className="overflow-hidden h-[24rem] mb-6">
     <div className="flex w-max animate-marquee-reverse space-x-6">
       {[...secondHalf, ...secondHalf].map((image, index) => (
-        <div key={`bottom-${index}`} className="flex-shrink-0 w-72 rounded-md overflow-hidden">
-          <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
-        </div>
+        <div key={`bottom-${index}`} className="relative flex-shrink-0 w-72 aspect-[2/3] rounded-md overflow-hidden">
+  <img
+    src={image.src}
+    alt={image.alt}
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+</div>
       ))}
     </div>
   </div>
