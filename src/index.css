@@ -199,3 +199,10 @@
 .animate-marquee-reverse {
   animation: marqueeReverse 80s linear infinite;
 }
+
+.marquee-wrapper {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
