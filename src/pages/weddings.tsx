@@ -38,11 +38,10 @@ const weddingTestimonials = [
   }
 ];
 
-
-
-const midpoint = Math.ceil(weddingGalleryImages.length / 2);
-const firstHalf = weddingGalleryImages.slice(0, midpoint);
-const secondHalf = weddingGalleryImages.slice(midpoint);
+const Weddings = () => {
+  const midpoint = Math.ceil(weddingGalleryImages.length / 2);
+  const firstHalf = weddingGalleryImages.slice(0, midpoint);
+  const secondHalf = weddingGalleryImages.slice(midpoint);
 
   return (
     <>
