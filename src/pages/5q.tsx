@@ -18,9 +18,10 @@ const InstagramRedirect = () => {
     const formData = new URLSearchParams(payload).toString();
 
     navigator.sendBeacon(
-      "https://www.google-analytics.com/mp/collect?measurement_id=G-QMY9ZR38N1",
-      formData
-    );
+  "https://www.google-analytics.com/mp/collect?measurement_id=G-QMY9ZR38N1&api_secret=_3IwR0sMQ4etFV6o_Z67RA",
+  formData
+);
+
 
     setTimeout(() => {
       window.location.href = targetUrl;
