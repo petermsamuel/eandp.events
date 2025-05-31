@@ -2,33 +2,21 @@ import { useEffect } from "react";
 
 const InstagramRedirect = () => {
   useEffect(() => {
-    const sendAnalyticsEvent = async () => {
-      const payload = {
-        client_id: "555.123456789", // use a real or random UUIDv4 if possible
-        events: [
-          {
-            name: "page_view",
-            params: {
-              page_location: "https://www.eandp.events/5q",
-              page_title: "Instagram Redirect Page",
-            },
-          },
-        ],
-      };
+    const targetUrl =
+      "https://www.eandp.events/5-questions?utm_source=instagram&utm_medium=bio&utm_campaign=5q-redirect";
 
-      navigator.sendBeacon(
-        "https://www.google-analytics.com/mp/collect?measurement_id=G-QMY9ZR38N1&api_secret=_3IwR0sMQ4etFV6o_Z67RA",
-        JSON.stringify(payload)
-      );
-    };
+    // Fire GA4 page_view manually before redirect
+    if (typeof window !== "undefined" && typeof window.gtag === "function") {
+      window.gtag("event", "page_view", {
+        page_location: "https://www.eandp.events/5q",
+        page_title: "Instagram Redirect Page",
+      });
+    }
 
-    sendAnalyticsEvent();
-
-    // Redirect after short delay
+    // Add delay to let the event process before redirecting
     setTimeout(() => {
-      window.location.href =
-        "https://www.eandp.events/5-questions?utm_source=instagram&utm_medium=bio&utm_campaign=5q-redirect";
-    }, 300); // gives beacon enough time
+      window.location.href = targetUrl;
+    }, 500); // 500ms is usually enough
   }, []);
 
   return (
