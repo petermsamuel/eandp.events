@@ -1,3 +1,4 @@
+// App.tsx
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
@@ -6,11 +7,16 @@ import CorporatePage from "./pages/corporate";
 import FiveQuestionsPage from "./pages/5-questions";
 import { useAnalytics } from "@/hooks/use-analytics";
 
-const App = () => {
+// 🔧 This ensures the hook only runs once Router is mounted
+const AnalyticsTracker = () => {
   useAnalytics();
+  return null;
+};
 
+const App = () => {
   return (
     <BrowserRouter>
+      <AnalyticsTracker />
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/weddings" element={<WeddingsPage />} />
