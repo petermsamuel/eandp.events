@@ -174,43 +174,48 @@ const Weddings = () => {
 
   <div className="space-y-10 overflow-hidden">
    
- {/* TOP ROW */}
+{/* TOP ROW */}
 <div className="w-full overflow-hidden">
-  <div className="flex animate-marquee gap-6 w-max">
-    {topRowImages.map((image, index) => (
-      <div
-        key={`top-${index}`}
-        className="relative flex-shrink-0 rounded-md overflow-hidden"
-        style={{ height: "18rem", minWidth: "16rem" }}
-      >
-        <img
-          src={image.src}
-          alt={image.alt}
-          className="h-full w-auto object-cover rounded-md"
-        />
-      </div>
-    ))}
+  <div className="marquee-wrapper">
+    <div className="flex animate-marquee gap-6 w-max">
+      {topRowImages.map((image, index) => (
+        <div
+          key={`top-${index}`}
+          className="relative flex-shrink-0 rounded-md overflow-hidden"
+          style={{ height: "18rem", minWidth: "16rem" }}
+        >
+          <img
+            src={image.src}
+            alt={image.alt}
+            className="h-full w-auto object-cover rounded-md"
+          />
+        </div>
+      ))}
+    </div>
   </div>
 </div>
 
 {/* BOTTOM ROW */}
 <div className="w-full overflow-hidden">
-  <div className="flex animate-marquee-reverse gap-6 w-max">
-    {bottomRowImages.map((image, index) => (
-      <div
-        key={`bottom-${index}`}
-        className="relative flex-shrink-0 rounded-md overflow-hidden"
-        style={{ height: "18rem", minWidth: "16rem" }}
-      >
-        <img
-          src={image.src}
-          alt={image.alt}
-          className="h-full w-auto object-cover rounded-md"
-        />
-      </div>
-    ))}
+  <div className="marquee-wrapper">
+    <div className="flex animate-marquee-reverse gap-6 w-max">
+      {bottomRowImages.map((image, index) => (
+        <div
+          key={`bottom-${index}`}
+          className="relative flex-shrink-0 rounded-md overflow-hidden"
+          style={{ height: "18rem", minWidth: "16rem" }}
+        >
+          <img
+            src={image.src}
+            alt={image.alt}
+            className="h-full w-auto object-cover rounded-md"
+          />
+        </div>
+      ))}
+    </div>
   </div>
 </div>
+
 
   </div>
 </section>
