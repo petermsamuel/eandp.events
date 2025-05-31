@@ -84,8 +84,9 @@ const TestimonialSection: React.FC<Partial<Props>> = ({
       </div>
 
 
+
 <div
-  className={`max-w-6xl mx-auto bg-white/80 p-6 md:p-10 rounded-lg shadow-md relative flex flex-col h-[680px] md:h-[540px]`}>
+  className={`max-w-6xl mx-auto bg-white/80 p-6 md:p-10 rounded-lg shadow-md relative flex flex-col ${minHeight}`}>
         <div className="absolute top-6 left-6 text-6xl text-gold opacity-20 z-0">"</div>
 
         {/* Content */}
