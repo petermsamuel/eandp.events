@@ -173,17 +173,17 @@ const secondHalf = weddingGalleryImages.slice(midpoint);
 
   <div className="space-y-10">
     {/* Top Row */}
-    <div className="overflow-hidden">
-      <div className="flex animate-marquee whitespace-nowrap">
-        {[...firstHalf, ...firstHalf].map((image, index) => (
+    <div className="overflow-hidden h-[24rem]">
+      <div className="flex gap-6 animate-marquee">
+        {[...firstHalf, ...firstHalf, ...firstHalf].map((image, index) => (
           <div
             key={`top-${index}`}
-            className="w-72 aspect-[2/3] mx-3 inline-block rounded-md overflow-hidden"
+            className="relative w-72 aspect-[2/3] flex-shrink-0 rounded-md overflow-hidden"
           >
             <img
               src={image.src}
               alt={image.alt}
-              className="w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover"
             />
           </div>
         ))}
@@ -191,17 +191,17 @@ const secondHalf = weddingGalleryImages.slice(midpoint);
     </div>
 
     {/* Bottom Row */}
-    <div className="overflow-hidden">
-      <div className="flex animate-marquee-reverse whitespace-nowrap">
-        {[...secondHalf, ...secondHalf].map((image, index) => (
+    <div className="overflow-hidden h-[24rem]">
+      <div className="flex gap-6 animate-marquee-reverse">
+        {[...secondHalf, ...secondHalf, ...secondHalf].map((image, index) => (
           <div
             key={`bottom-${index}`}
-            className="w-72 aspect-[2/3] mx-3 inline-block rounded-md overflow-hidden"
+            className="relative w-72 aspect-[2/3] flex-shrink-0 rounded-md overflow-hidden"
           >
             <img
               src={image.src}
               alt={image.alt}
-              className="w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover"
             />
           </div>
         ))}
@@ -209,6 +209,7 @@ const secondHalf = weddingGalleryImages.slice(midpoint);
     </div>
   </div>
 </section>
+
 
 
 
