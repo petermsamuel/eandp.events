@@ -2,29 +2,30 @@ import { useEffect } from "react";
 
 const InstagramRedirect = () => {
   useEffect(() => {
-    const targetUrl = "https://www.eandp.events/5-questions?utm_source=instagram&utm_medium=bio&utm_campaign=5q-redirect";
+    const targetUrl =
+      "https://www.eandp.events/5-questions?utm_source=instagram&utm_medium=bio&utm_campaign=5q-redirect";
 
-    if (typeof window.gtag === "function") {
-      // Send page view
-      window.gtag("config", "G-QMY9ZR38N1", {
-        page_path: "/5q",
-        page_title: "Instagram Redirect",
-      });
+    const payload = {
+      v: "2", // GA4 protocol version
+      tid: "G-QMY9ZR38N1", // Your Measurement ID
+      cid: "555", // Dummy Client ID (or retrieve from cookie if needed)
+      t: "event",
+      en: "instagram_redirect",
+      dl: "https://www.eandp.events/5q",
+      dt: "Instagram Redirect Page",
+    };
 
-      // Send custom event for redundancy
-      window.gtag("event", "5q_redirect_view", {
-        event_category: "Redirects",
-        event_label: "Visited 5q landing",
-        value: 1,
-      });
-    }
+    const formData = new URLSearchParams(payload).toString();
 
-    // Wait longer than before
-    const timeout = setTimeout(() => {
+    navigator.sendBeacon(
+      "https://www.google-analytics.com/mp/collect?measurement_id=G-QMY9ZR38N1",
+      formData
+    );
+
+    setTimeout(() => {
       window.location.href = targetUrl;
-    }, 1200); // ⏱️ Give GA more time to send data
+    }, 200); // Short delay to ensure beacon sends
 
-    return () => clearTimeout(timeout);
   }, []);
 
   return (
