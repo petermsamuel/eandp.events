@@ -200,7 +200,7 @@ const bottomRowImages = [
 <div className="overflow-hidden">
   <div
     className="flex animate-marquee-reverse gap-6 w-max"
-    style={{ marginLeft: "-66.66%" }} // More offset = more photos hidden to the left
+    style={{ marginLeft: "-83.33%" }} // More offset = more photos hidden to the left
   >
     {bottomRowImages.map((image, index) => (
       <div
