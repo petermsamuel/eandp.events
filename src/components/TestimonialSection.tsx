@@ -87,9 +87,11 @@ const TestimonialSection: React.FC<Partial<Props>> = ({
 <div className="max-w-6xl mx-auto bg-white/80 p-6 md:p-10 rounded-lg shadow-md relative min-h-[580px] md:min-h-[540px] flex flex-col justify-between">
         <div className="absolute top-6 left-6 text-6xl text-gold opacity-20 z-0">"</div>
 
-   <div className="relative z-10 flex flex-col justify-start h-full">
-  <div className="flex-1 overflow-auto">
-    <p className="text-gray-700 mb-8">{testimonialsToUse[activeIndex].text}</p>
+   <div className="relative h-full flex flex-col justify-between">
+  {/* Content container */}
+  <div className="z-10 p-1 flex-1 overflow-y-auto">
+    <div className="text-gray-700 mb-8">{testimonialsToUse[activeIndex].text}</div>
+
     <div className="flex items-center mt-4">
       <div className="h-10 w-10 bg-gold rounded-full flex items-center justify-center text-white font-bold">
         {testimonialsToUse[activeIndex].name.charAt(0)}
@@ -103,8 +105,8 @@ const TestimonialSection: React.FC<Partial<Props>> = ({
     </div>
   </div>
 
-  {/* Navigation now sticks at bottom */}
-  <div className="mt-6 pt-4 border-t border-gray-300 flex justify-between items-center">
+  {/* Nav + dots pinned to bottom */}
+  <div className="mt-6 flex justify-between items-center">
     <button
       onClick={prevTestimonial}
       className="p-2 rounded-full border border-black hover:bg-black hover:text-white transition-colors"
