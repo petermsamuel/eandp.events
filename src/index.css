@@ -186,3 +186,11 @@
 .animate-marquee-reverse {
   animation: marquee-reverse 60s linear infinite;
 }
+/* Optional: reinforce GPU acceleration */
+.marquee-wrapper {
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
