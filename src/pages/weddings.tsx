@@ -166,7 +166,7 @@ const Weddings = () => {
   title="What They're Saying"
   backgroundColor="bg-[#2a2a2a]"
   titleColor="text-white"
-  minHeight="min-h-[700px]" // 👈 force height to fit Sana’s testimonial
+  minHeight="min-h-[800px]" // 👈 force height to fit Sana’s testimonial
 />
 
 
