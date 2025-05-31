@@ -39,14 +39,26 @@ const weddingTestimonials = [
 ];
 
 const Weddings = () => {
+  // Calculate the midpoint of the original gallery
   const mid = Math.floor(weddingGalleryImages.length / 2);
 
-  // Top row uses all images
-  const topRowImages = [...weddingGalleryImages, ...weddingGalleryImages, ...weddingGalleryImages];
+  // Top row: normal order, repeated 3 times for smooth loop
+  const topRowImages = [
+    ...weddingGalleryImages,
+    ...weddingGalleryImages,
+    ...weddingGalleryImages,
+  ];
 
-  // Bottom row starts from halfway through
-  const bottomRowStart = weddingGalleryImages.slice(mid).concat(weddingGalleryImages.slice(0, mid));
-  const bottomRowImages = [...bottomRowStart, ...bottomRowStart, ...bottomRowStart];
+  // Bottom row: reordered to start from halfway point, repeated 3 times
+  const reorderedBottomRow = [
+    ...weddingGalleryImages.slice(mid),
+    ...weddingGalleryImages.slice(0, mid),
+  ];
+  const bottomRowImages = [
+    ...reorderedBottomRow,
+    ...reorderedBottomRow,
+    ...reorderedBottomRow,
+  ];
 
   return (
     <>
@@ -156,52 +168,52 @@ const Weddings = () => {
           titleColor="text-white"
         />
 
-      {/* Gallery Section */}
-<section id="gallery" className="py-20 px-6 md:px-12 lg:px-16">
-  <div className="text-center mb-12">
-    <h2 className="section-title">Real weddings. Real emotion.</h2>
-    <p className="text-lg">Cultural beauty meets seamless coordination.</p>
-  </div>
+     {/* Gallery Section */}
+      <section id="gallery" className="py-20 px-6 md:px-12 lg:px-16">
+        <div className="text-center mb-12">
+          <h2 className="section-title">Real weddings. Real emotion.</h2>
+          <p className="text-lg">Cultural beauty meets seamless coordination.</p>
+        </div>
 
-  <div className="space-y-10">
-   {/* Top Row */}
-<div className="overflow-hidden">
-  <div className="flex animate-marquee gap-6 w-max">
-    {topRowImages.map((image, index) => (
-      <div
-        key={`top-${index}`}
-        className="relative w-72 aspect-[2/3] flex-shrink-0 rounded-md overflow-hidden"
-      >
-        <img
-          src={image.src}
-          alt={image.alt}
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-      </div>
-    ))}
-  </div>
-</div>
+        <div className="space-y-10">
+          {/* Top Row */}
+          <div className="overflow-hidden">
+            <div className="flex animate-marquee gap-6 w-max">
+              {topRowImages.map((image, index) => (
+                <div
+                  key={`top-${index}`}
+                  className="relative w-72 aspect-[2/3] flex-shrink-0 rounded-md overflow-hidden"
+                >
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
 
-{/* Bottom Row */}
-<div className="overflow-hidden">
-  <div className="flex animate-marquee-reverse gap-6 w-max translate-x-[50%]">
-    {bottomRowImages.map((image, index) => (
-      <div
-        key={`bottom-${index}`}
-        className="relative w-72 aspect-[2/3] flex-shrink-0 rounded-md overflow-hidden"
-      >
-        <img
-          src={image.src}
-          alt={image.alt}
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-      </div>
-    ))}
-  </div>
-</div>
+          {/* Bottom Row */}
+          <div className="overflow-hidden">
+            <div className="flex animate-marquee-reverse gap-6 w-max">
+              {bottomRowImages.map((image, index) => (
+                <div
+                  key={`bottom-${index}`}
+                  className="relative w-72 aspect-[2/3] flex-shrink-0 rounded-md overflow-hidden"
+                >
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
 
-  </div>
-</section>
 
         {/* CTA Section */}
         <section id="cta" className="relative bg-[#2c2c2c] py-20 px-6 md:px-12 lg:px-16 text-white overflow-hidden">
