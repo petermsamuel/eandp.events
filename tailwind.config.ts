@@ -118,19 +118,19 @@ const config: Config = {
           },
         },
         marquee: {
-          '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(-50%)' },
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
         },
-        'marquee-reverse': {
-          '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(50%)' },
+        "marquee-reverse": {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(50%)" },
         },
       },
       animation: {
         "pulse-glow": "pulseGlow 2.5s ease-in-out infinite",
         "spin-glow": "spinGlow 2s linear infinite",
         "border-orbit": "borderOrbit 2.5s linear infinite",
-        "marquee": "marquee 60s linear infinite",
+        marquee: "marquee 60s linear infinite",
         "marquee-reverse": "marquee-reverse 60s linear infinite",
       },
     },
