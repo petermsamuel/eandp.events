@@ -175,23 +175,23 @@ const Weddings = () => {
       </div>
     </div>
 
-    {/* Bottom Row */}
-    <div className="overflow-hidden">
-      <div className="flex gap-6 animate-marquee-reverse w-max">
-        {weddingGalleryImages.map((image, index) => (
-          <div
-            key={`bottom-${index}`}
-            className="relative w-72 aspect-[2/3] flex-shrink-0 rounded-md overflow-hidden"
-          >
-            <img
-              src={image.src}
-              alt={image.alt}
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-          </div>
-        ))}
+   {/* Bottom Row */}
+<div className="overflow-hidden">
+  <div className="flex flex-row-reverse gap-6 animate-marquee-reverse w-max">
+    {weddingGalleryImages.map((image, index) => (
+      <div
+        key={`bottom-${index}`}
+        className="relative w-72 aspect-[2/3] flex-shrink-0 rounded-md overflow-hidden"
+      >
+        <img
+          src={image.src}
+          alt={image.alt}
+          className="absolute inset-0 w-full h-full object-cover"
+        />
       </div>
-    </div>
+    ))}
+  </div>
+</div>
   </div>
 </section>
 
