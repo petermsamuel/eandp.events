@@ -164,33 +164,36 @@ const secondHalf = weddingGalleryImages.slice(midpoint);
           titleColor="text-white"
         />
 
-        {/* Gallery Section */}
-  <section id="gallery" className="py-20 px-6 md:px-12 lg:px-16 overflow-hidden">
+      {/* Gallery Section */}
+<section id="gallery" className="py-20 px-6 md:px-12 lg:px-16 overflow-hidden">
   <div className="text-center mb-12">
     <h2 className="section-title">Real weddings. Real emotion.</h2>
     <p className="text-lg">Cultural beauty meets seamless coordination.</p>
   </div>
 
   {/* Top Row */}
-<div className="flex animate-marquee space-x-6 min-w-[200%]">
-  {[...firstHalf, ...firstHalf].map((image, index) => (
-    <div key={`top-${index}`} className="flex-shrink-0 w-72 rounded-md overflow-hidden">
-      <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
+  <div className="overflow-hidden mb-6">
+    <div className="flex animate-marquee space-x-6 min-w-[200%]">
+      {[...firstHalf, ...firstHalf].map((image, index) => (
+        <div key={`top-${index}`} className="flex-shrink-0 w-72 rounded-md overflow-hidden">
+          <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
+        </div>
+      ))}
     </div>
-  ))}
-</div>
   </div>
 
   {/* Bottom Row */}
-<div className="flex animate-marquee-reverse space-x-6 min-w-[200%]">
-  {[...secondHalf, ...secondHalf].map((image, index) => (
-    <div key={`bottom-${index}`} className="flex-shrink-0 w-72 rounded-md overflow-hidden">
-      <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
+  <div className="overflow-hidden hidden sm:block">
+    <div className="flex animate-marquee-reverse space-x-6 min-w-[200%]">
+      {[...secondHalf, ...secondHalf].map((image, index) => (
+        <div key={`bottom-${index}`} className="flex-shrink-0 w-72 rounded-md overflow-hidden">
+          <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
+        </div>
+      ))}
     </div>
-  ))}
-</div>
   </div>
 </section>
+
 
 
 
