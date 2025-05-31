@@ -39,20 +39,25 @@ const weddingTestimonials = [
 ];
 
 const Weddings = () => {
-const mid = Math.floor(weddingGalleryImages.length / 2);
+  // 🛠️ FIX: Declare topRowImages
+  const topRowImages = [
+    ...weddingGalleryImages,
+    ...weddingGalleryImages,
+  ];
 
-// Split and reorder bottom row
-const reorderedBottomRow = [
-  ...weddingGalleryImages.slice(mid),
-  ...weddingGalleryImages.slice(0, mid),
-];
+  const mid = Math.floor(weddingGalleryImages.length / 2);
 
-// Repeat that reordered array enough times to allow smooth looping
-const bottomRowImages = [
-  ...reorderedBottomRow,
-  ...reorderedBottomRow,
-  ...reorderedBottomRow,
-];
+  const reorderedBottomRow = [
+    ...weddingGalleryImages.slice(mid),
+    ...weddingGalleryImages.slice(0, mid),
+  ];
+
+  const bottomRowImages = [
+    ...reorderedBottomRow,
+    ...reorderedBottomRow,
+    ...reorderedBottomRow,
+  ];
+
 
 
 
