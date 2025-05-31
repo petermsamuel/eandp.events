@@ -149,18 +149,18 @@ const Weddings = () => {
           titleColor="text-white"
         />
 
-        {/* Gallery Section */}
-        <section id="gallery" className="py-20 px-6 md:px-12 lg:px-16">
+      {/* Gallery Section */}
+<section id="gallery" className="py-20 px-6 md:px-12 lg:px-16">
   <div className="text-center mb-12">
     <h2 className="section-title">Real weddings. Real emotion.</h2>
     <p className="text-lg">Cultural beauty meets seamless coordination.</p>
   </div>
 
-  <div className="space-y-10 overflow-hidden">
+  <div className="space-y-10">
     {/* Top Row */}
     <div className="overflow-hidden">
-      <div className="flex gap-6 animate-marquee w-max">
-        {weddingGalleryImages.map((image, index) => (
+      <div className="flex animate-marquee gap-6 w-max">
+        {[...weddingGalleryImages, ...weddingGalleryImages].map((image, index) => (
           <div
             key={`top-${index}`}
             className="relative w-72 aspect-[2/3] flex-shrink-0 rounded-md overflow-hidden"
@@ -175,26 +175,23 @@ const Weddings = () => {
       </div>
     </div>
 
- {/* Bottom Row */}
-<div className="overflow-hidden h-[24rem]">
-  <div
-    className="flex flex-row-reverse gap-6 animate-marquee-reverse w-max"
-    style={{ animationDelay: "2s" }} // 👈 ADD THIS
-  >
-    {[...weddingGalleryImages, ...weddingGalleryImages].map((image, index) => (
-      <div
-        key={`bottom-${index}`}
-        className="relative w-72 aspect-[2/3] flex-shrink-0 rounded-md overflow-hidden"
-      >
-        <img
-          src={image.src}
-          alt={image.alt}
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+    {/* Bottom Row (Reversed Images) */}
+    <div className="overflow-hidden">
+      <div className="flex animate-marquee-reverse gap-6 w-max">
+        {[...weddingGalleryImages, ...weddingGalleryImages].reverse().map((image, index) => (
+          <div
+            key={`bottom-${index}`}
+            className="relative w-72 aspect-[2/3] flex-shrink-0 rounded-md overflow-hidden"
+          >
+            <img
+              src={image.src}
+              alt={image.alt}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
+        ))}
       </div>
-    ))}
-  </div>
-</div>
+    </div>
   </div>
 </section>
 
