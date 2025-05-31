@@ -114,14 +114,13 @@ const Weddings = () => {
         {/* What We Do Section */}
         <section id="what-we-do" className="py-20 px-6 md:px-12 lg:px-16 bg-[#2a2a2a] text-white">
           <div className="text-center mb-16">
-      <h2 className="section-title text-white">What You Need, What We Do</h2>
+            <h2 className="section-title text-white">What You Need, What We Do</h2>
             <p className="text-lg max-w-3xl mx-auto">
               Planning a South Asian or fusion wedding means balancing tradition, family, and a thousand decisions. Most planners help with logistics. We take ownership — so you can live in the moment instead of managing it.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            {[
-              { icon: Check, title: "Multiday timelines?", desc: "Covered." },
+            {[{ icon: Check, title: "Multiday timelines?", desc: "Covered." },
               { icon: Globe, title: "Cultural nuances?", desc: "Fluent." },
               { icon: Users, title: "Family dynamics?", desc: "Navigated." },
             ].map(({ icon: Icon, title, desc }) => (
@@ -160,7 +159,6 @@ const Weddings = () => {
           </div>
         </section>
 
-        {/* Testimonials */}
         <TestimonialSection
           testimonials={weddingTestimonials}
           title="What They're Saying"
@@ -168,58 +166,53 @@ const Weddings = () => {
           titleColor="text-white"
         />
 
-     {/* Gallery Section */}
-      <section id="gallery" className="py-20 px-6 md:px-12 lg:px-16">
-        <div className="text-center mb-12">
-          <h2 className="section-title">Real weddings. Real emotion.</h2>
-          <p className="text-lg">Cultural beauty meets seamless coordination.</p>
-        </div>
+        {/* Gallery Section */}
+        <section id="gallery" className="py-20 px-6 md:px-12 lg:px-16">
+          <div className="text-center mb-12">
+            <h2 className="section-title">Real weddings. Real emotion.</h2>
+            <p className="text-lg">Cultural beauty meets seamless coordination.</p>
+          </div>
 
-        <div className="space-y-10">
-          
-         {/* Top Row */}
-<div className="overflow-hidden w-full will-change-transform" style={{ transform: 'translateZ(0)' }}>
-  <div className="flex animate-marquee gap-6 w-max min-w-[200%]">
-    {topRowImages.map((image, index) => (
-      <div
-        key={`top-${index}`}
-        className="relative flex-shrink-0 rounded-md overflow-hidden"
-        style={{ width: "auto", height: "18rem" }}
-      >
-        <img
-          src={image.src}
-          alt={image.alt}
-          className="h-full w-auto object-cover rounded-md"
-        />
-      </div>
-    ))}
-  </div>
-</div>
+          <div className="space-y-10">
+            {/* Top Row */}
+            <div className="overflow-hidden w-full will-change-transform" style={{ transform: 'translateZ(0)' }}>
+              <div className="flex animate-marquee gap-6 w-max min-w-[200%]">
+                {topRowImages.map((image, index) => (
+                  <div
+                    key={`top-${index}`}
+                    className="relative flex-shrink-0 rounded-md overflow-hidden"
+                    style={{ width: "auto", height: "18rem" }}
+                  >
+                    <img
+                      src={image.src}
+                      alt={image.alt}
+                      className="h-full w-auto object-cover rounded-md"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
 
-          {/*Bottom Row */}
-   <div className="overflow-hidden">
- <div className="overflow-hidden w-full will-change-transform" style={{ transform: 'translateZ(0)' }}>
-  <div className="flex animate-marquee gap-6 w-max min-w-[200%]">
-
-    {bottomRowImages.map((image, index) => (
-      <div
-        key={`bottom-${index}`}
-        className="relative flex-shrink-0 rounded-md overflow-hidden"
-        style={{ width: "auto", height: "18rem" }}
-      >
-        <img
-          src={image.src}
-          alt={image.alt}
-          className="h-full w-auto object-cover rounded-md"
-        />
-      </div>
-    ))}
-  </div>
-</div>
-
-        </div>
-      </section>
-
+            {/* Bottom Row */}
+            <div className="overflow-hidden w-full will-change-transform" style={{ transform: 'translateZ(0)' }}>
+              <div className="flex animate-marquee-reverse gap-6 w-max min-w-[200%]">
+                {bottomRowImages.map((image, index) => (
+                  <div
+                    key={`bottom-${index}`}
+                    className="relative flex-shrink-0 rounded-md overflow-hidden"
+                    style={{ width: "auto", height: "18rem" }}
+                  >
+                    <img
+                      src={image.src}
+                      alt={image.alt}
+                      className="h-full w-auto object-cover rounded-md"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* CTA Section */}
         <section id="cta" className="relative bg-[#2c2c2c] py-20 px-6 md:px-12 lg:px-16 text-white overflow-hidden">
