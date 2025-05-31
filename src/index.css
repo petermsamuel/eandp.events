@@ -186,9 +186,3 @@
 .animate-marquee-reverse {
   animation: marquee-reverse 60s linear infinite;
 }
-
-extend: {
-  animationDelay: {
-    '2s': '2s',
-  },
-}
