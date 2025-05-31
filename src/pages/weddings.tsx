@@ -159,15 +159,15 @@ const Weddings = () => {
           </div>
         </section>
 
-
-            {/* Testimonial Section */} 
+{/* Testimonial Section */} 
 <TestimonialSection
   testimonials={weddingTestimonials}
   title="What They're Saying"
   backgroundColor="bg-[#2a2a2a]"
   titleColor="text-white"
-  minHeight="min-h-[1000px] md:min-h-[580px]" // 👈 force height to fit Sana’s testimonial
+  minHeight="h-[1000px] md:h-[580px]" // ✅ fixed height instead of min-height
 />
+
 
 
        {/* Gallery Section */}
