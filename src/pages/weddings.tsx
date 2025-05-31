@@ -176,41 +176,46 @@ const Weddings = () => {
         </div>
 
         <div className="space-y-10">
-          {/* Top Row */}
-          <div className="overflow-hidden">
-            <div className="flex animate-marquee gap-6 w-max">
-              {topRowImages.map((image, index) => (
-                <div
-                  key={`top-${index}`}
-                  className="relative w-72 aspect-[2/3] flex-shrink-0 rounded-md overflow-hidden"
-                >
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
+         {/* Top Row */}
+<div className="overflow-hidden">
+  <div className="flex animate-marquee gap-6 w-max">
+    {topRowImages.map((image, index) => (
+      <div
+        key={`top-${index}`}
+        className="relative flex-shrink-0 rounded-md overflow-hidden"
+        style={{ width: "auto", height: "18rem" }}
+      >
+        <img
+          src={image.src}
+          alt={image.alt}
+          className="h-full w-auto object-cover rounded-md"
+        />
+      </div>
+    ))}
+  </div>
+</div>
 
-          {/* Bottom Row */}
-          <div className="overflow-hidden">
-            <div className="flex animate-marquee-reverse gap-6 w-max">
-              {bottomRowImages.map((image, index) => (
-                <div
-                  key={`bottom-${index}`}
-                  className="relative w-72 aspect-[2/3] flex-shrink-0 rounded-md overflow-hidden"
-                >
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
+{/* Bottom Row */}
+<div className="overflow-hidden">
+  <div
+    className="flex animate-marquee-reverse gap-6 w-max"
+    style={{ transform: "translateX(-33%)" }}
+  >
+    {bottomRowImages.map((image, index) => (
+      <div
+        key={`bottom-${index}`}
+        className="relative flex-shrink-0 rounded-md overflow-hidden"
+        style={{ width: "auto", height: "18rem" }}
+      >
+        <img
+          src={image.src}
+          alt={image.alt}
+          className="h-full w-auto object-cover rounded-md"
+        />
+      </div>
+    ))}
+  </div>
+</div>
         </div>
       </section>
 
