@@ -62,13 +62,13 @@ const LeadMagnetPage = () => {
 
   <input
     type="text"
-    placeholder="Your Name"
+    placeholder="First Name"
     required
     className="w-full px-4 py-3 mb-4 border border-gray-300 rounded-md"
   />
   <input
     type="email"
-    placeholder="Your Email"
+    placeholder="Email"
     required
     className="w-full px-4 py-3 mb-4 border border-gray-300 rounded-md"
   />
