@@ -171,20 +171,20 @@ const secondHalf = weddingGalleryImages.slice(midpoint);
     <p className="text-lg">Cultural beauty meets seamless coordination.</p>
   </div>
 
-  {/* Top Row – scrolls left */}
-  <div className="overflow-hidden mb-6">
-    <div className="flex animate-marquee space-x-6 w-max">
-      {[...firstHalf, ...firstHalf].map((image, index) => (
-        <div key={`top-${index}`} className="flex-shrink-0 w-72 rounded-md overflow-hidden">
-          <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
-        </div>
-      ))}
-    </div>
+ {/* Top Row */}
+<div className="overflow-hidden mb-6">
+  <div className="marquee-track animate-marquee space-x-6">
+    {[...firstHalf, ...firstHalf].map((image, index) => (
+      <div key={`top-${index}`} className="flex-shrink-0 w-72 rounded-md overflow-hidden">
+        <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
+      </div>
+    ))}
   </div>
+</div>
 
-{/* Bottom Row – scrolls right */}
+{/* Bottom Row */}
 <div className="overflow-hidden hidden sm:block">
-  <div className="flex animate-marquee-reverse marquee-track space-x-6">
+  <div className="marquee-track animate-marquee-reverse space-x-6">
     {[...secondHalf, ...secondHalf].map((image, index) => (
       <div key={`bottom-${index}`} className="flex-shrink-0 w-72 rounded-md overflow-hidden">
         <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
