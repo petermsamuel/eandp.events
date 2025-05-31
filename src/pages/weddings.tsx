@@ -38,17 +38,19 @@ const weddingTestimonials = [
   }
 ];
 
-const mid = Math.floor(weddingGalleryImages.length / 2);
+const Weddings = () => {
+  const mid = Math.floor(weddingGalleryImages.length / 2);
 
-// Top: first half
-const topSource = weddingGalleryImages.slice(0, mid);
-// Bottom: second half
-const bottomSource = weddingGalleryImages.slice(mid);
+  // Top: first half
+  const topSource = weddingGalleryImages.slice(0, mid);
+  // Bottom: second half
+  const bottomSource = weddingGalleryImages.slice(mid);
 
-const repeatCount = 4; // adjust for loop distance
+  const repeatCount = 4;
 
-const topRowImages = Array(repeatCount).fill(topSource).flat();
-const bottomRowImages = Array(repeatCount).fill(bottomSource).flat();
+  const topRowImages = Array(repeatCount).fill(topSource).flat();
+  const bottomRowImages = Array(repeatCount).fill(bottomSource).flat();
+
 
   return (
     <>
