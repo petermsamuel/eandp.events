@@ -171,36 +171,46 @@ const secondHalf = weddingGalleryImages.slice(midpoint);
     <p className="text-lg">Cultural beauty meets seamless coordination.</p>
   </div>
 
-  {/* Top Row – scrolls left */}
-<div className="overflow-hidden h-[24rem] mb-6">
-    <div className="flex w-max animate-marquee space-x-6">
-      {[...firstHalf, ...firstHalf].map((image, index) => (
-        <div key={`top-${index}`} className="relative flex-shrink-0 w-72 aspect-[2/3] rounded-md overflow-hidden">
-  <img
-    src={image.src}
-    alt={image.alt}
-    className="absolute inset-0 w-full h-full object-cover"
-  />
-</div>
-      ))}
+  {/* Outer wrapper to control the height and layout */}
+  <div className="space-y-6">
+    {/* Top Row */}
+    <div className="overflow-hidden h-[24rem]">
+      <div className="flex w-max animate-marquee space-x-6">
+        {[...firstHalf, ...firstHalf].map((image, index) => (
+          <div
+            key={`top-${index}`}
+            className="relative flex-shrink-0 w-72 aspect-[2/3] rounded-md overflow-hidden"
+          >
+            <img
+              src={image.src}
+              alt={image.alt}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
+        ))}
+      </div>
     </div>
-  </div>
 
-  {/* Bottom Row – scrolls right */}
-<div className="overflow-hidden h-[24rem] mb-6">
-    <div className="flex w-max animate-marquee-reverse space-x-6">
-      {[...secondHalf, ...secondHalf].map((image, index) => (
-        <div key={`bottom-${index}`} className="relative flex-shrink-0 w-72 aspect-[2/3] rounded-md overflow-hidden">
-  <img
-    src={image.src}
-    alt={image.alt}
-    className="absolute inset-0 w-full h-full object-cover"
-  />
-</div>
-      ))}
+    {/* Bottom Row */}
+    <div className="overflow-hidden h-[24rem]">
+      <div className="flex w-max animate-marquee-reverse space-x-6">
+        {[...secondHalf, ...secondHalf].map((image, index) => (
+          <div
+            key={`bottom-${index}`}
+            className="relative flex-shrink-0 w-72 aspect-[2/3] rounded-md overflow-hidden"
+          >
+            <img
+              src={image.src}
+              alt={image.alt}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
+        ))}
+      </div>
     </div>
   </div>
 </section>
+
 
 
 
