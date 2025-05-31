@@ -61,7 +61,7 @@ const TestimonialSection: React.FC<Partial<Props>> = ({
   title = "When You Know You Picked the Right Planner",
   backgroundColor = "bg-transparent",
   titleColor = "text-black",
-  minHeight = "min-h-[580px] md:min-h-[540px]", // Default height set here
+  minHeight = "min-h-[700px] md:min-h-[540px]", // Default height set here
 }) => {
   const testimonialsToUse = incomingTestimonials ?? testimonials;
   const [activeIndex, setActiveIndex] = useState(0);
@@ -89,7 +89,7 @@ const TestimonialSection: React.FC<Partial<Props>> = ({
         <div className="absolute top-6 left-6 text-6xl text-gold opacity-20 z-0">"</div>
 
         {/* Content */}
-  <div className="z-10 flex-1 overflow-y-auto max-h-full">
+<div className="z-10 flex-1 overflow-hidden">
           <p className="text-gray-700 mb-8">{testimonialsToUse[activeIndex].text}</p>
           <div className="flex items-center mt-4">
             <div className="h-10 w-10 bg-gold rounded-full flex items-center justify-center text-white font-bold">
