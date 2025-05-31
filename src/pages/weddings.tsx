@@ -182,16 +182,16 @@ const secondHalf = weddingGalleryImages.slice(midpoint);
     </div>
   </div>
 
-  {/* Bottom Row – scrolls right */}
-  <div className="overflow-hidden hidden sm:block">
-    <div className="flex animate-marquee-reverse space-x-6 w-max">
-      {[...secondHalf, ...secondHalf].map((image, index) => (
-        <div key={`bottom-${index}`} className="flex-shrink-0 w-72 rounded-md overflow-hidden">
-          <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
-        </div>
-      ))}
-    </div>
+{/* Bottom Row – scrolls right */}
+<div className="overflow-hidden hidden sm:block">
+  <div className="flex animate-marquee-reverse marquee-track space-x-6">
+    {[...secondHalf, ...secondHalf].map((image, index) => (
+      <div key={`bottom-${index}`} className="flex-shrink-0 w-72 rounded-md overflow-hidden">
+        <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
+      </div>
+    ))}
   </div>
+</div>
 </section>
 
 
