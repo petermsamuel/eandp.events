@@ -39,7 +39,7 @@ const weddingTestimonials = [
 ];
 
 const Weddings = () => {
-  const repeatCount = 3; // Repeat enough times for seamless scroll
+  const repeatCount = 6; // Repeat enough times for seamless scroll
 
   // TOP ROW: loop original in order
   const topRowImages = Array(repeatCount).fill(weddingGalleryImages).flat();
