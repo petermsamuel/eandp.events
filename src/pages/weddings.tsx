@@ -58,8 +58,11 @@ const bottomRowImages = [
   ...reorderedBottomRow,
   ...reorderedBottomRow,
   ...reorderedBottomRow,
-  ...reorderedBottomRow, // 5x repeat
+  ...reorderedBottomRow,
+  ...reorderedBottomRow,
+  ...reorderedBottomRow, // 7x repeat
 ];
+
 
 
   return (
@@ -198,11 +201,12 @@ const bottomRowImages = [
   </div>
 </div>
 
-
+   {/* Bottom Row */}
 <div className="overflow-hidden">
   <div
-    className="flex animate-marquee-reverse gap-6 w-max"
-    style={{ marginLeft: "-83.33%" }} // More offset = more photos hidden to the left
+<div
+  className="flex animate-marquee-reverse gap-6 w-max"
+  style={{ marginLeft: "-95%" }} // Hide more offscreen left
   >
     {bottomRowImages.map((image, index) => (
       <div
