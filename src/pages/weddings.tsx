@@ -177,7 +177,7 @@ const Weddings = () => {
 
 {/* Bottom Row */}
 <div className="overflow-hidden">
-  <div className="flex animate-marquee-reverse gap-6 w-max">
+<div className="flex animate-marquee-reverse gap-6 w-max translate-x-[-33.33%]">
     {[...weddingGalleryImages, ...weddingGalleryImages, ...weddingGalleryImages]
       .reverse()
       .map((image, index) => (
