@@ -80,7 +80,7 @@ const TestimonialSection: React.FC<Partial<Props>> = ({
 
   return (
     <section id="testimonials" className={`section-container pt-16 pb-24 ${backgroundColor}`}>
-      <div className="max-w-6xl mx-auto px-4">
+<div className="max-w-6xl mx-auto bg-white/80 p-6 md:p-10 rounded-lg shadow-md relative h-[540px] md:h-[520px] flex flex-col justify-between">
       <h2 className={`section-title text-center mb-4 ${titleColor}`}>{title}</h2>
       </div>
 
@@ -105,17 +105,43 @@ const TestimonialSection: React.FC<Partial<Props>> = ({
     </div>
   </div>
 
-  {/* Nav + dots pinned to bottom */}
-  <div className="mt-6 flex justify-between items-center">
+{/* BOTTOM NAVIGATION */}
+<div className="relative mt-8">
+  {/* Dots centered */}
+  <div className="flex justify-center space-x-2 mb-4">
+    {testimonialsToUse.map((_, index) => (
+      <button
+        key={index}
+        onClick={() => selectTestimonial(index)}
+        className={`h-2 w-2 rounded-full transition-all ${
+          index === activeIndex ? "bg-gold w-6" : "bg-gray-300"
+        }`}
+        aria-label={`Go to testimonial ${index + 1}`}
+      />
+    ))}
+  </div>
+
+  {/* Arrows left and right */}
+  <div className="absolute inset-0 flex justify-between items-center px-4 pointer-events-none">
     <button
       onClick={prevTestimonial}
-      className="p-2 rounded-full border border-black hover:bg-black hover:text-white transition-colors"
+      className="p-2 rounded-full border border-black hover:bg-black hover:text-white transition-colors pointer-events-auto"
       aria-label="Previous testimonial"
     >
       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
         <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
       </svg>
     </button>
+    <button
+      onClick={nextTestimonial}
+      className="p-2 rounded-full border border-black hover:bg-black hover:text-white transition-colors pointer-events-auto"
+      aria-label="Next testimonial"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+      </svg>
+    </button>
+
 
     <div className="flex space-x-2">
       {testimonialsToUse.map((_, index) => (
