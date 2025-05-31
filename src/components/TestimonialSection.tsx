@@ -47,13 +47,14 @@ type Testimonial = {
   name: string;
   role?: string;
 };
-
 type Props = {
   testimonials: Testimonial[];
   title?: string;
   backgroundColor?: string;
   titleColor?: string;
+  minHeight?: string; // <-- add this
 };
+
 
 
 const TestimonialSection: React.FC<Partial<Props>> = ({
@@ -84,7 +85,7 @@ const TestimonialSection: React.FC<Partial<Props>> = ({
       <h2 className={`section-title text-center mb-8 ${titleColor}`}>{title}</h2>
     </div>
 
-    <div className="max-w-6xl mx-auto bg-white/80 p-6 md:p-10 rounded-lg shadow-md relative min-h-[580px] md:min-h-[540px] flex flex-col justify-between">
+<div className={`max-w-6xl mx-auto bg-white/80 p-6 md:p-10 rounded-lg shadow-md relative flex flex-col justify-between ${minHeight ?? "min-h-[580px] md:min-h-[540px]"}`}>
       <div className="absolute top-6 left-6 text-6xl text-gold opacity-20 z-0">"</div>
 
       {/* Content container */}
