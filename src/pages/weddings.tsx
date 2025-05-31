@@ -39,7 +39,14 @@ const weddingTestimonials = [
 ];
 
 const Weddings = () => {
-  const repeatedGalleryImages = [...weddingGalleryImages, ...weddingGalleryImages];
+  const mid = Math.floor(weddingGalleryImages.length / 2);
+
+  // Top row uses all images
+  const topRowImages = [...weddingGalleryImages, ...weddingGalleryImages, ...weddingGalleryImages];
+
+  // Bottom row starts from halfway through
+  const bottomRowStart = weddingGalleryImages.slice(mid).concat(weddingGalleryImages.slice(0, mid));
+  const bottomRowImages = [...bottomRowStart, ...bottomRowStart, ...bottomRowStart];
 
   return (
     <>
@@ -157,10 +164,10 @@ const Weddings = () => {
   </div>
 
   <div className="space-y-10">
-   {/* Top Row */}
+   {{/* Top Row */}
 <div className="overflow-hidden">
   <div className="flex animate-marquee gap-6 w-max">
-    {[...weddingGalleryImages, ...weddingGalleryImages, ...weddingGalleryImages].map((image, index) => (
+    {topRowImages.map((image, index) => (
       <div
         key={`top-${index}`}
         className="relative w-72 aspect-[2/3] flex-shrink-0 rounded-md overflow-hidden"
@@ -177,8 +184,8 @@ const Weddings = () => {
 
 {/* Bottom Row */}
 <div className="overflow-hidden">
-  <div className="flex animate-marquee-reverse gap-6 w-max translate-x-[33.333333%]">
-    {repeatedReversedImages.map((image, index) => (
+  <div className="flex animate-marquee-reverse gap-6 w-max translate-x-[50%]">
+    {bottomRowImages.map((image, index) => (
       <div
         key={`bottom-${index}`}
         className="relative w-72 aspect-[2/3] flex-shrink-0 rounded-md overflow-hidden"
