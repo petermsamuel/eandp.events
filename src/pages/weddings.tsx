@@ -50,15 +50,17 @@ const Weddings = () => {
   ];
 
   // Bottom row: reordered to start from halfway point, repeated 3 times
-  const reorderedBottomRow = [
-    ...weddingGalleryImages.slice(mid),
-    ...weddingGalleryImages.slice(0, mid),
-  ];
-  const bottomRowImages = [
-    ...reorderedBottomRow,
-    ...reorderedBottomRow,
-    ...reorderedBottomRow,
-  ];
+const reorderedBottomRow = [
+  ...weddingGalleryImages.slice(mid),
+  ...weddingGalleryImages.slice(0, mid),
+];
+
+const bottomRowImages = [
+  ...reorderedBottomRow,
+  ...reorderedBottomRow,
+  ...reorderedBottomRow,
+  ...reorderedBottomRow, // Add 4th repetition for offset buffer
+];
 
   return (
     <>
@@ -199,7 +201,7 @@ const Weddings = () => {
 <div className="overflow-hidden">
   <div
     className="flex animate-marquee-reverse gap-6 w-max"
-    style={{ transform: "translateX(-33%)" }}
+    style={{ transform: "translateX(-25%)" }} // Start midway!
   >
     {bottomRowImages.map((image, index) => (
       <div
@@ -216,6 +218,7 @@ const Weddings = () => {
     ))}
   </div>
 </div>
+
         </div>
       </section>
 
