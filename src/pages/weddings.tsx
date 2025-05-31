@@ -171,7 +171,6 @@ const secondHalf = weddingGalleryImages.slice(midpoint);
     <p className="text-lg">Cultural beauty meets seamless coordination.</p>
   </div>
 
-  {/* Outer wrapper to control the height and layout */}
   <div className="space-y-6">
     {/* Top Row */}
     <div className="overflow-hidden h-[24rem]">
@@ -192,22 +191,23 @@ const secondHalf = weddingGalleryImages.slice(midpoint);
     </div>
 
     {/* Bottom Row */}
-<div className="overflow-hidden h-[24rem]">
-  <div className="flex animate-marquee-reverse gap-6" style={{ minWidth: "300%" }}>
-    {[...secondHalf, ...secondHalf, ...secondHalf].map((image, index) => (
-      <div
-        key={`bottom-${index}`}
-        className="relative w-72 aspect-[2/3] flex-shrink-0 rounded-md overflow-hidden"
-      >
-        <img
-          src={image.src}
-          alt={image.alt}
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+    <div className="overflow-hidden h-[24rem]">
+      <div className="flex animate-marquee-reverse gap-6 min-w-[300%]">
+        {[...secondHalf, ...secondHalf, ...secondHalf].map((image, index) => (
+          <div
+            key={`bottom-${index}`}
+            className="relative flex-shrink-0 w-72 aspect-[2/3] rounded-md overflow-hidden"
+          >
+            <img
+              src={image.src}
+              alt={image.alt}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
+        ))}
       </div>
-    ))}
+    </div>
   </div>
-</div>
 </section>
 
 
