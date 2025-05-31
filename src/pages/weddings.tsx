@@ -76,7 +76,7 @@ const bottomRowImages = [
               "url('/lovable-uploads/0d69fd76-5bed-40b1-8935-d005fb4b5c77.png')",
           }}
         >
-          <div className="absolute inset-0 bg-black/60 z-0" />
+          <div className="absolute inset-0 bg-black/30 z-0" />
           <div className="relative z-10 text-center w-full px-4">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-snug max-w-[75rem] mx-auto">
               Your Wedding Deserves More Than a Checklist. It Deserves Leadership.
