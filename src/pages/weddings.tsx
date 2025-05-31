@@ -172,25 +172,23 @@ const secondHalf = weddingGalleryImages.slice(midpoint);
   </div>
 
   {/* Top Row */}
-  <div className="overflow-hidden mb-6">
-    <div className="flex animate-marquee gap-6 min-w-[200%]">
-      {firstHalf.concat(firstHalf).map((image, index) => (
-        <div key={`top-${index}`} className="w-72 flex-shrink-0 rounded overflow-hidden">
-          <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
-        </div>
-      ))}
+<div className="flex animate-marquee space-x-6 min-w-[200%]">
+  {[...firstHalf, ...firstHalf].map((image, index) => (
+    <div key={`top-${index}`} className="flex-shrink-0 w-72 rounded-md overflow-hidden">
+      <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
     </div>
+  ))}
+</div>
   </div>
 
   {/* Bottom Row */}
-  <div className="overflow-hidden hidden sm:block">
-    <div className="flex animate-marquee-reverse gap-6 min-w-[200%]">
-      {secondHalf.concat(secondHalf).map((image, index) => (
-        <div key={`bottom-${index}`} className="w-72 flex-shrink-0 rounded overflow-hidden">
-          <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
-        </div>
-      ))}
+<div className="flex animate-marquee-reverse space-x-6 min-w-[200%]">
+  {[...secondHalf, ...secondHalf].map((image, index) => (
+    <div key={`bottom-${index}`} className="flex-shrink-0 w-72 rounded-md overflow-hidden">
+      <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
     </div>
+  ))}
+</div>
   </div>
 </section>
 
