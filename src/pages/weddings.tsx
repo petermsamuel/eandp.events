@@ -58,9 +58,7 @@ const bottomRowImages = [
   ...reorderedBottomRow,
   ...reorderedBottomRow,
   ...reorderedBottomRow,
-  ...reorderedBottomRow,
-  ...reorderedBottomRow,
-  ...reorderedBottomRow, // 7x repeat
+  ...reorderedBottomRow, // 5x repeat
 ];
 
 
