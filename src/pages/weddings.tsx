@@ -48,16 +48,17 @@ const topRowImages = [
   ...weddingGalleryImages,
 ];
 
-// Bottom row starts midway but renders full cycle with front buffer
 const reorderedBottomRow = [
   ...weddingGalleryImages.slice(mid),
   ...weddingGalleryImages.slice(0, mid),
 ];
+
 const bottomRowImages = [
   ...reorderedBottomRow,
   ...reorderedBottomRow,
   ...reorderedBottomRow,
   ...reorderedBottomRow,
+  ...reorderedBottomRow, // 5x repeat
 ];
 
 
@@ -196,11 +197,10 @@ const bottomRowImages = [
   </div>
 </div>
 
-{/* Bottom Row */}
 <div className="overflow-hidden">
   <div
     className="flex animate-marquee-reverse gap-6 w-max"
-    style={{ marginLeft: "-33.33%" }} // this shifts start point to middle
+    style={{ marginLeft: "-66.66%" }} // More offset = more photos hidden to the left
   >
     {bottomRowImages.map((image, index) => (
       <div
