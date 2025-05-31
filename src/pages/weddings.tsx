@@ -38,16 +38,17 @@ const weddingTestimonials = [
   }
 ];
 
-const Weddings = () => {
-  const repeatCount = 3; // or higher
-  const topRowImages = Array(repeatCount).fill(weddingGalleryImages).flat();
+const mid = Math.floor(weddingGalleryImages.length / 2);
 
-  const mid = Math.floor(weddingGalleryImages.length / 2);
-  const reordered = [
-    ...weddingGalleryImages.slice(mid),
-    ...weddingGalleryImages.slice(0, mid),
-  ];
-  const bottomRowImages = Array(repeatCount).fill(reordered).flat();
+// Top: first half
+const topSource = weddingGalleryImages.slice(0, mid);
+// Bottom: second half
+const bottomSource = weddingGalleryImages.slice(mid);
+
+const repeatCount = 4; // adjust for loop distance
+
+const topRowImages = Array(repeatCount).fill(topSource).flat();
+const bottomRowImages = Array(repeatCount).fill(bottomSource).flat();
 
   return (
     <>
