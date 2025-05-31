@@ -190,10 +190,10 @@ const secondHalf = weddingGalleryImages.slice(midpoint);
       </div>
     </div>
 
-    {/* Bottom Row */}
+  {/* Bottom Row */}
 <div className="overflow-hidden h-[24rem]">
   <div className="flex w-max animate-marquee-reverse space-x-6">
-    {[...secondHalf, ...secondHalf, ...secondHalf, ...secondHalf].map((image, index) => (
+    {[...secondHalf, ...secondHalf].map((image, index) => (
       <div
         key={`bottom-${index}`}
         className="relative flex-shrink-0 w-72 aspect-[2/3] rounded-md overflow-hidden"
