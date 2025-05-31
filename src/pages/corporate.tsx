@@ -45,7 +45,7 @@ const Corporate = () => {
             backgroundImage: "url('/lovable-uploads/corp3_cropped.png')",
           }}
         >
-          <div className="absolute inset-0 bg-black/60 z-0" />
+          <div className="absolute inset-0 bg-black/30 z-0" />
 
           <div className="relative z-10 text-center w-full px-4">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-snug max-w-[75rem] mx-auto">
