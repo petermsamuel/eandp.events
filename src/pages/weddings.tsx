@@ -38,8 +38,6 @@ const weddingTestimonials = [
   }
 ];
 
-const Weddings = () => {
-  // Calculate the midpoint of the original gallery
 const mid = Math.floor(weddingGalleryImages.length / 2);
 
 const topRowImages = [
@@ -199,11 +197,10 @@ const bottomRowImages = [
   </div>
 </div>
 
-   {/* Bottom Row */}
-<div className="overflow-hidden">
+   <div className="overflow-hidden">
   <div
-  className="flex animate-marquee-reverse gap-6 w-max"
-  style={{ marginLeft: "-95%" }} // Hide more offscreen left
+    className="flex animate-marquee-reverse gap-6 w-max"
+    style={{ marginLeft: "-66.66%" }} // More offset = more photos hidden to the left
   >
     {bottomRowImages.map((image, index) => (
       <div
