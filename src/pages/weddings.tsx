@@ -38,28 +38,27 @@ const weddingTestimonials = [
   }
 ];
 
-const mid = Math.floor(weddingGalleryImages.length / 2);
+const Weddings = () => {
+  const mid = Math.floor(weddingGalleryImages.length / 2);
 
-const topRowImages = [
-  ...weddingGalleryImages,
-  ...weddingGalleryImages,
-  ...weddingGalleryImages,
-];
+  const topRowImages = [
+    ...weddingGalleryImages,
+    ...weddingGalleryImages,
+    ...weddingGalleryImages,
+  ];
 
-const reorderedBottomRow = [
-  ...weddingGalleryImages.slice(mid),
-  ...weddingGalleryImages.slice(0, mid),
-];
+  const reorderedBottomRow = [
+    ...weddingGalleryImages.slice(mid),
+    ...weddingGalleryImages.slice(0, mid),
+  ];
 
-const bottomRowImages = [
-  ...reorderedBottomRow,
-  ...reorderedBottomRow,
-  ...reorderedBottomRow,
-  ...reorderedBottomRow,
-  ...reorderedBottomRow, // 5x repeat
-];
-
-
+  const bottomRowImages = [
+    ...reorderedBottomRow,
+    ...reorderedBottomRow,
+    ...reorderedBottomRow,
+    ...reorderedBottomRow,
+    ...reorderedBottomRow,
+  ];
 
   return (
     <>
