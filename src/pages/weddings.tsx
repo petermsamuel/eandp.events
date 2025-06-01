@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Check, Globe, Users } from "lucide-react";
 import NavBarWeddings from "@/components/NavBarWeddings";
@@ -37,6 +38,30 @@ const weddingTestimonials = [
     name: "Afsha",
   }
 ];
+
+const AccordionCard = ({ icon: Icon, title, short, details }: { icon: any; title: string; short: string; details: string }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div
+      className="flex flex-col items-center text-center p-6 bg-white text-[#2a2a3a] shadow-sm rounded-lg transition-all cursor-pointer"
+      onClick={() => setIsOpen(!isOpen)}
+    >
+      <div className="h-14 w-14 bg-[#f5f1ea] rounded-full flex items-center justify-center mb-4">
+        <Icon className="h-7 w-7 text-gold" />
+      </div>
+      <h3 className="text-xl font-semibold mb-1">{title}</h3>
+      <p className="text-lg text-clay">{short}</p>
+
+      {isOpen && (
+        <div className="mt-4 text-sm text-gray-700 leading-relaxed">
+          {details}
+        </div>
+      )}
+    </div>
+  );
+};
+
 
 const Weddings = () => {
   const mid = Math.floor(weddingGalleryImages.length / 2);
@@ -121,19 +146,26 @@ const Weddings = () => {
                  Planning a South Asian or fusion wedding means balancing tradition, family, and a thousand decisions.  It isn’t simple. But it can be stress-free — when you have the right guide.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            {[{ icon: Check, title: "Multiday timelines?", desc: "Covered." },
-              { icon: Globe, title: "Cultural nuances?", desc: "Fluent." },
-              { icon: Users, title: "Family dynamics?", desc: "Navigated." },
-            ].map(({ icon: Icon, title, desc }) => (
-              <div key={title} className="flex flex-col items-center text-center p-6 bg-white text-[#2a2a3a] shadow-sm rounded-lg">
-                <div className="h-14 w-14 bg-[#f5f1ea] rounded-full flex items-center justify-center mb-4">
-                  <Icon className="h-7 w-7 text-gold" />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">{title}</h3>
-                <p className="text-lg text-clay">{desc}</p>
-              </div>
-            ))}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+  <AccordionCard
+    icon={Check}
+    title="Multiday timelines?"
+    short="Covered."
+    details="From sangeet to reception, we manage the flow of multiple events without chaos. You’ll know what’s happening, when, and why — and so will every vendor and family member."
+  />
+  <AccordionCard
+    icon={Globe}
+    title="Cultural nuances?"
+    short="Fluent."
+    details="We understand the traditions that matter most — and help integrate them with your modern style. No confusion. No lost-in-translation moments. Just clarity and respect."
+  />
+  <AccordionCard
+    icon={Users}
+    title="Family dynamics?"
+    short="Navigated."
+    details="Weddings involve big emotions, bigger personalities, and layered expectations. We handle it all with grace, empathy, and calm, so your joy stays protected."
+  />
+</div>
           </div>
         </section>
 
