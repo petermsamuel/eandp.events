@@ -177,7 +177,7 @@ const Weddings = () => {
 </section>
 
 
-       {/* What We Do Section */}
+      {/* What We Do Section */}
 <section id="what-we-do" className="py-20 px-6 md:px-12 lg:px-16 bg-[#2a2a2a] text-white">
   <div className="text-center mb-16">
     <h2 className="section-title text-white">What You Need, What We Do</h2>
@@ -188,31 +188,29 @@ const Weddings = () => {
   </div>
 
   <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-import AccordionCard from "@/components/AccordionCard"; // adjust import path as needed
+    <AccordionCard
+      icon={Check}
+      title="Multiday timelines?"
+      short="Covered."
+      details="From sangeet to reception, we manage the flow of multiple events without chaos. You’ll know what’s happening, when, and why — and so will every vendor and family member."
+    />
 
-<AccordionCard
-  icon={Check}
-  title="Multiday timelines?"
-  short="Covered."
-  details="From sangeet to reception, we manage the flow of multiple events without chaos. You’ll know what’s happening, when, and why — and so will every vendor and family member."
-/>
+    <AccordionCard
+      icon={Globe}
+      title="Cultural nuances?"
+      short="Fluent."
+      details="We understand the traditions that matter most — and help integrate them with your modern style. No confusion. No lost-in-translation moments. Just clarity and respect."
+    />
 
-<AccordionCard
-  icon={Globe}
-  title="Cultural nuances?"
-  short="Fluent."
-  details="We understand the traditions that matter most — and help integrate them with your modern style. No confusion. No lost-in-translation moments. Just clarity and respect."
-/>
-
-<AccordionCard
-  icon={Users}
-  title="Family dynamics?"
-  short="Navigated."
-  details="Weddings involve big emotions, bigger personalities, and layered expectations. We handle it all with grace, empathy, and calm, so your joy stays protected."
-/>
-
+    <AccordionCard
+      icon={Users}
+      title="Family dynamics?"
+      short="Navigated."
+      details="Weddings involve big emotions, bigger personalities, and layered expectations. We handle it all with grace, empathy, and calm, so your joy stays protected."
+    />
   </div>
 </section>
+
 
 
 
