@@ -59,49 +59,58 @@ const Weddings = () => {
 
         {/* Hero Section */}
         <section
-          id="hero"
-          className="relative min-h-screen flex flex-col justify-center pt-24 pb-12 px-6 md:px-12 lg:px-16 bg-cover bg-center text-white"
-          style={{
-            backgroundImage:
-              "url('/lovable-uploads/0d69fd76-5bed-40b1-8935-d005fb4b5c77.png')",
-          }}
-        >
-          <div className="absolute inset-0 bg-black/30 z-0" />
-          <div className="relative z-10 text-center w-full px-4">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-snug max-w-[75rem] mx-auto">
-              Your Wedding Deserves More Than a Checklist. It Deserves Leadership.
-            </h1>
-            <p className="text-lg md:text-xl max-w-3xl mb-10 text-white/90 mx-auto">
-              From the sangeet to the send-off, we don’t just plan — we protect your vision, your culture, and your joy.
-            </p>
-            <div className="flex justify-center">
-              <a
-                href="#cta"
-                className="btn btn-primary bg-navy text-white text-lg sm:text-base whitespace-nowrap rounded-full px-6 py-3 inline-flex items-center justify-center"
-              >
-                Your Vision. Our Plan.
-              </a>
-            </div>
-          </div>
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-            <a href="#what-we-do" aria-label="Scroll down">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
-                />
-              </svg>
-            </a>
-          </div>
-        </section>
+  id="hero"
+  className="relative min-h-screen flex flex-col justify-center pt-24 pb-12 px-6 md:px-12 lg:px-16 bg-cover bg-center text-white"
+  style={{
+    backgroundImage:
+      "url('/lovable-uploads/0d69fd76-5bed-40b1-8935-d005fb4b5c77.png')",
+  }}
+>
+  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent z-0" />
+
+  <div className="relative z-10 text-center w-full px-4">
+    <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-snug max-w-[75rem] mx-auto">
+      You Deserve a Wedding That Feels as Beautiful as It Looks.
+    </h1>
+    <p className="text-lg md:text-xl max-w-3xl mb-10 text-white/90 mx-auto">
+      From the sangeet to the send-off, we do more than coordinate —
+      we lead with clarity, protect your culture, and ensure joy stays at the center.
+    </p>
+
+    <div className="flex justify-center mb-6">
+      <a
+        href="#cta"
+        className="btn btn-primary bg-navy text-white text-lg sm:text-base whitespace-nowrap rounded-full px-6 py-3 inline-flex items-center justify-center"
+      >
+        Your Vision. Our Plan.
+      </a>
+    </div>
+
+    <div className="opacity-0 animate-fade-in text-white/80 italic text-base max-w-xl mx-auto">
+      “We felt so seen and taken care of — like they understood our family and what mattered most.”
+      <br />— Kushboo, Bride
+    </div>
+  </div>
+
+  <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+    <a href="#what-we-do" aria-label="Scroll down">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-6 w-6 text-white"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M19 14l-7 7m0 0l-7-7m7 7V3"
+        />
+      </svg>
+    </a>
+  </div>
+</section>
 
         {/* What We Do Section */}
         <section id="what-we-do" className="py-20 px-6 md:px-12 lg:px-16 bg-[#2a2a2a] text-white">
