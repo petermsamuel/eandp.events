@@ -89,7 +89,7 @@ const Weddings = () => {
     <div className="opacity-0 animate-fade-in text-white/80 italic text-base max-w-xl mx-auto">
      “From all the wedding expenses, this was the most valuable. Even my family, friends, and vendors—who were skeptical at first—were raving by the end.”
 — Sana, Bride
-      <br />— Kushboo, Bride
+      <br />
     </div>
   </div>
 
