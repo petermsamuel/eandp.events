@@ -39,24 +39,38 @@ const weddingTestimonials = [
   }
 ];
 
-const AccordionCard = ({ icon: Icon, title, short, details }) => {
+import React, { useState } from "react";
+import clsx from "clsx";
+
+const AccordionCard = ({
+  icon: Icon,
+  title,
+  short,
+  details,
+}: {
+  icon: any;
+  title: string;
+  short: string;
+  details: string;
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div
-      className={`flex flex-col items-center text-center p-6 bg-white text-[#2a2a3a] shadow-sm rounded-lg transition-all cursor-pointer hover:shadow-md hover:scale-[1.02] ${
-        isOpen ? 'ring-2 ring-gold ring-offset-2' : ''
-      }`}
+      className={clsx(
+        "flex flex-col items-center text-center p-6 bg-white text-[#2a2a3a] shadow-sm rounded-lg transition-all cursor-pointer hover:shadow-md hover:scale-[1.02]",
+        isOpen && "border-2 border-gold"
+      )}
       onClick={() => setIsOpen(!isOpen)}
     >
       <div
-        className={`h-14 w-14 rounded-full flex items-center justify-center mb-4 transition-colors duration-300 ${
-          isOpen ? 'bg-gold/20' : 'bg-[#f5f1ea]'
-        }`}
+        className={clsx(
+          "h-14 w-14 bg-[#f5f1ea] rounded-full flex items-center justify-center mb-4 transition-colors",
+          isOpen ? "text-gold" : "text-gray-500"
+        )}
       >
-        <Icon className={`h-7 w-7 ${isOpen ? 'text-gold' : 'text-[#b79b58]'}`} />
+        <Icon className="h-7 w-7" />
       </div>
-
       <h3 className="text-xl font-semibold mb-1">{title}</h3>
       <p className="text-lg text-clay">{short}</p>
 
@@ -68,6 +82,8 @@ const AccordionCard = ({ icon: Icon, title, short, details }) => {
     </div>
   );
 };
+
+export default AccordionCard;
 
 
 const Weddings = () => {
@@ -214,26 +230,29 @@ const Weddings = () => {
   </div>
 
   <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-    <AccordionCard
-      icon={Check}
-      title="Multiday timelines?"
-      short="Covered."
-      details="From sangeet to reception, we manage the flow of multiple events without chaos. You’ll know what’s happening, when, and why — and so will every vendor and family member."
-    />
-    
-    <AccordionCard
-      icon={Globe}
-      title="Cultural nuances?"
-      short="Fluent."
-      details="We understand the traditions that matter most — and help integrate them with your modern style. No confusion. No lost-in-translation moments. Just clarity and respect."
-    />
-    
-    <AccordionCard
-      icon={Users}
-      title="Family dynamics?"
-      short="Navigated."
-      details="Weddings involve big emotions, bigger personalities, and layered expectations. We handle it all with grace, empathy, and calm, so your joy stays protected."
-    />
+import AccordionCard from "@/components/AccordionCard"; // adjust import path as needed
+
+<AccordionCard
+  icon={Check}
+  title="Multiday timelines?"
+  short="Covered."
+  details="From sangeet to reception, we manage the flow of multiple events without chaos. You’ll know what’s happening, when, and why — and so will every vendor and family member."
+/>
+
+<AccordionCard
+  icon={Globe}
+  title="Cultural nuances?"
+  short="Fluent."
+  details="We understand the traditions that matter most — and help integrate them with your modern style. No confusion. No lost-in-translation moments. Just clarity and respect."
+/>
+
+<AccordionCard
+  icon={Users}
+  title="Family dynamics?"
+  short="Navigated."
+  details="Weddings involve big emotions, bigger personalities, and layered expectations. We handle it all with grace, empathy, and calm, so your joy stays protected."
+/>
+
   </div>
 </section>
 
