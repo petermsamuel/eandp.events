@@ -166,6 +166,7 @@ const Weddings = () => {
     </p>
   </div>
 
+  {/* ✅ Each card lives independently inside the grid — not inside a shared container */}
   <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
     <AccordionCard
       icon={Check}
@@ -187,6 +188,7 @@ const Weddings = () => {
     />
   </div>
 </section>
+
 
 
 
