@@ -87,7 +87,8 @@ const Weddings = () => {
     </div>
 
     <div className="opacity-0 animate-fade-in text-white/80 italic text-base max-w-xl mx-auto">
-      “We felt so seen and taken care of — like they understood our family and what mattered most.”
+     “From all the wedding expenses, this was the most valuable. Even my family, friends, and vendors—who were skeptical at first—were raving by the end.”
+— Sana, Bride
       <br />— Kushboo, Bride
     </div>
   </div>
