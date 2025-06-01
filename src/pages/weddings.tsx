@@ -145,81 +145,10 @@ const Weddings = () => {
   </div>
 </section>
 
-       {/* What We Do Section */}
-{/* What We Do Section */}
-<section id="what-we-do" className="py-20 px-6 md:px-12 lg:px-16 bg-[#2a2a2a] text-white">
-  <div className="text-center mb-16">
-    <h2 className="section-title text-white">What You Need, What We Do</h2>
-    <p className="text-lg max-w-3xl mx-auto">
-      Planning a South Asian or fusion wedding means balancing tradition, family, and a thousand decisions.
-      It isn’t simple. But it can be stress-free — when you have the right guide.
-    </p>
-  </div>
-
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-    <AccordionCard
-      icon={Check}
-      title="Multiday timelines?"
-      short="Covered."
-      details="From sangeet to reception, we manage the flow of multiple events without chaos. You’ll know what’s happening, when, and why — and so will every vendor and family member."
-    />
-    
-    <AccordionCard
-      icon={Globe}
-      title="Cultural nuances?"
-      short="Fluent."
-      details="We understand the traditions that matter most — and help integrate them with your modern style. No confusion. No lost-in-translation moments. Just clarity and respect."
-    />
-    
-    <AccordionCard
-      icon={Users}
-      title="Family dynamics?"
-      short="Navigated."
-      details="Weddings involve big emotions, bigger personalities, and layered expectations. We handle it all with grace, empathy, and calm, so your joy stays protected."
-    />
-  </div>
-</section>
 
 
-
-
-        {/* How It Works Section */}
-      <section id="how-it-works" className="bg-transparent py-20 px-6 md:px-12 lg:px-16">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="section-title">How It Works</h2>
-            <div className="space-y-16">
-              {["Plan with Precision", "Align the Details", "Execute with Calm Authority"].map((title, index) => (
-                <div key={title} className="flex flex-col md:flex-row items-start gap-6">
-                  <div className="h-14 w-14 bg-black rounded-full flex items-center justify-center flex-shrink-0 md:mt-2">
-                    <span className="text-white text-xl font-bold">{index + 1}</span>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-semibold mb-3">{title}</h3>
-                    <p className="text-lg">
-                      {index === 0 && "We start with your vision, then build a plan that respects tradition and ensures calm, not stress."}
-                      {index === 1 && "From vendors to venues, every moving part gets locked into place."}
-                      {index === 2 && "You're not managing your wedding — you're experiencing it."}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-{/* Testimonial Section */} 
-<TestimonialSection
-  testimonials={weddingTestimonials}
-  title="What They're Saying"
-  backgroundColor="bg-[#2a2a2a]"
-  titleColor="text-white"
-  minHeight="h-[800px] md:h-[580px]" // ✅ fixed height instead of min-height
-/>
-
-
-
-       {/* Gallery Section */}
-<section id="gallery" className="py-20 px-6 md:px-12 lg:px-16 bg-white">
+  {/* Gallery Section */}
+<section id="gallery" className="py-20 px-6 md:px-12 lg:px-16 bg-[#2a2a2a]">
   <div className="text-center mb-12">
     <h2 className="section-title">Real weddings. Real emotion.</h2>
     <p className="text-lg">Cultural beauty meets seamless coordination.</p>
@@ -273,6 +202,80 @@ const Weddings = () => {
   </div>
 </section>
 
+
+       {/* What We Do Section */}
+<section id="what-we-do" className="py-20 px-6 md:px-12 lg:px-16 bg-transparent text-white">
+  <div className="text-center mb-16">
+    <h2 className="section-title text-white">What You Need, What We Do</h2>
+    <p className="text-lg max-w-3xl mx-auto">
+      Planning a South Asian or fusion wedding means balancing tradition, family, and a thousand decisions.
+      It isn’t simple. But it can be stress-free — when you have the right guide.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+    <AccordionCard
+      icon={Check}
+      title="Multiday timelines?"
+      short="Covered."
+      details="From sangeet to reception, we manage the flow of multiple events without chaos. You’ll know what’s happening, when, and why — and so will every vendor and family member."
+    />
+    
+    <AccordionCard
+      icon={Globe}
+      title="Cultural nuances?"
+      short="Fluent."
+      details="We understand the traditions that matter most — and help integrate them with your modern style. No confusion. No lost-in-translation moments. Just clarity and respect."
+    />
+    
+    <AccordionCard
+      icon={Users}
+      title="Family dynamics?"
+      short="Navigated."
+      details="Weddings involve big emotions, bigger personalities, and layered expectations. We handle it all with grace, empathy, and calm, so your joy stays protected."
+    />
+  </div>
+</section>
+
+
+
+
+        {/* How It Works Section */}
+      <section id="how-it-works" className="bg-transparent py-20 px-6 md:px-12 lg:px-16 bg-[#2a2a2a]">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="section-title">How It Works</h2>
+            <div className="space-y-16">
+              {["Plan with Precision", "Align the Details", "Execute with Calm Authority"].map((title, index) => (
+                <div key={title} className="flex flex-col md:flex-row items-start gap-6">
+                  <div className="h-14 w-14 bg-black rounded-full flex items-center justify-center flex-shrink-0 md:mt-2">
+                    <span className="text-white text-xl font-bold">{index + 1}</span>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-semibold mb-3">{title}</h3>
+                    <p className="text-lg">
+                      {index === 0 && "We start with your vision, then build a plan that respects tradition and ensures calm, not stress."}
+                      {index === 1 && "From vendors to venues, every moving part gets locked into place."}
+                      {index === 2 && "You're not managing your wedding — you're experiencing it."}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+{/* Testimonial Section */} 
+<TestimonialSection
+  testimonials={weddingTestimonials}
+  title="What They're Saying"
+  backgroundColor="bg-[#2a2a2a]"
+  titleColor="text-white"
+  minHeight="h-[800px] md:h-[580px]" // ✅ fixed height instead of min-height
+/>
+
+
+
+     
 
 
         {/* CTA Section */}
