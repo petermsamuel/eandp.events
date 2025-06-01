@@ -148,7 +148,7 @@ const Weddings = () => {
 
 
   {/* Gallery Section */}
-<section id="gallery" className="py-20 px-6 md:px-12 lg:px-16 bg-[#2a2a2a]">
+<section id="gallery" className="py-20 px-6 md:px-12 lg:px-16 bg-transparent">
   <div className="text-center mb-12">
     <h2 className="section-title">Real weddings. Real emotion.</h2>
     <p className="text-lg">Cultural beauty meets seamless coordination.</p>
@@ -204,7 +204,7 @@ const Weddings = () => {
 
 
        {/* What We Do Section */}
-<section id="what-we-do" className="py-20 px-6 md:px-12 lg:px-16 bg-transparent text-white">
+<section id="what-we-do" className="py-20 px-6 md:px-12 lg:px-16 bg-[#2a2a2a] text-white">
   <div className="text-center mb-16">
     <h2 className="section-title text-white">What You Need, What We Do</h2>
     <p className="text-lg max-w-3xl mx-auto">
