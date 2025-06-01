@@ -39,34 +39,20 @@ const weddingTestimonials = [
   }
 ];
 
-const AccordionCard = ({
-  icon: Icon,
-  title,
-  short,
-  details,
-}: {
-  icon: any;
-  title: string;
-  short: string;
-  details: string;
-}) => {
+// ✅ Define outside the parent component
+const AccordionCard = ({ icon: Icon, title, short, details }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div
-      className={`flex flex-col items-center text-center p-6 bg-white text-[#2a2a3a] shadow-sm rounded-lg transition-all duration-300 cursor-pointer transform hover:scale-[1.02] hover:shadow-md`}
+      className="flex flex-col items-center text-center p-6 bg-white text-[#2a2a3a] shadow-sm rounded-lg transition-all cursor-pointer hover:shadow-md hover:scale-[1.02]"
       onClick={() => setIsOpen(!isOpen)}
     >
-      <div
-        className={`h-14 w-14 bg-[#f5f1ea] rounded-full flex items-center justify-center mb-4 transition-transform duration-300 ${
-          isOpen ? "rotate-[20deg]" : ""
-        }`}
-      >
-        <Icon className="h-7 w-7 text-gold" />
+      <div className="h-14 w-14 bg-[#f5f1ea] rounded-full flex items-center justify-center mb-4">
+        <Icon className={`h-7 w-7 text-gold transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
       </div>
       <h3 className="text-xl font-semibold mb-1">{title}</h3>
       <p className="text-lg text-clay">{short}</p>
-
       {isOpen && (
         <div className="mt-4 text-sm text-gray-700 leading-relaxed">
           {details}
@@ -154,41 +140,36 @@ const Weddings = () => {
 </section>
 
        {/* What We Do Section */}
-<section
-  id="what-we-do"
-  className="py-20 px-6 md:px-12 lg:px-16 bg-[#2a2a2a] text-white"
->
-  <div className="text-center mb-16">
-    <h2 className="section-title text-white">What You Need, What We Do</h2>
-    <p className="text-lg max-w-3xl mx-auto">
-      Planning a South Asian or fusion wedding means balancing tradition, family, and a thousand decisions.
-      It isn’t simple. But it can be stress-free — when you have the right guide.
-    </p>
-  </div>
+<section id="what-we-do" className="py-20 px-6 md:px-12 lg:px-16 bg-[#2a2a2a] text-white">
+      <div className="text-center mb-16">
+        <h2 className="section-title text-white">What You Need, What We Do</h2>
+        <p className="text-lg max-w-3xl mx-auto">
+          Planning a South Asian or fusion wedding means balancing tradition, family, and a thousand decisions.
+          It isn’t simple. But it can be stress-free — when you have the right guide.
+        </p>
+      </div>
 
-  {/* ✅ Each card lives independently inside the grid — not inside a shared container */}
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-    <AccordionCard
-      icon={Check}
-      title="Multiday timelines?"
-      short="Covered."
-      details="From sangeet to reception, we manage the flow of multiple events without chaos. You’ll know what’s happening, when, and why — and so will every vendor and family member."
-    />
-    <AccordionCard
-      icon={Globe}
-      title="Cultural nuances?"
-      short="Fluent."
-      details="We understand the traditions that matter most — and help integrate them with your modern style. No confusion. No lost-in-translation moments. Just clarity and respect."
-    />
-    <AccordionCard
-      icon={Users}
-      title="Family dynamics?"
-      short="Navigated."
-      details="Weddings involve big emotions, bigger personalities, and layered expectations. We handle it all with grace, empathy, and calm, so your joy stays protected."
-    />
-  </div>
-</section>
-
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <AccordionCard
+          icon={Check}
+          title="Multiday timelines?"
+          short="Covered."
+          details="From sangeet to reception, we manage the flow of multiple events without chaos..."
+        />
+        <AccordionCard
+          icon={Globe}
+          title="Cultural nuances?"
+          short="Fluent."
+          details="We understand the traditions that matter most — and help integrate them..."
+        />
+        <AccordionCard
+          icon={Users}
+          title="Family dynamics?"
+          short="Navigated."
+          details="Weddings involve big emotions, bigger personalities, and layered expectations..."
+        />
+      </div>
+    </section>
 
 
 
