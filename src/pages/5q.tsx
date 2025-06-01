@@ -2,6 +2,8 @@ useEffect(() => {
   const urlParams = new URLSearchParams(window.location.search);
   const isDebug = urlParams.has("debug");
 
+  console.log("Redirect Debug Mode:", isDebug);
+
   const targetUrl =
     "https://www.eandp.events/5-questions?utm_source=instagram&utm_medium=bio&utm_campaign=5q-redirect";
 
@@ -17,7 +19,6 @@ useEffect(() => {
     });
   }
 
-  // ✅ Only redirect if not in debug mode
   if (!isDebug) {
     const redirectTimeout = setTimeout(() => {
       window.location.href = targetUrl;
