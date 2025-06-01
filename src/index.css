@@ -215,4 +215,11 @@
 .animate-fade-in {
   animation: fade-in 1.4s ease-out 0.5s forwards;
 }
+/* --- Mobile Hero Image Position Fix --- */
+@media (max-width: 768px) {
+  #hero {
+    background-position: 40% center;
+  }
+}
+
 
