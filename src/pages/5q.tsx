@@ -5,24 +5,33 @@ const InstagramRedirect = () => {
     const targetUrl =
       "https://www.eandp.events/5-questions?utm_source=instagram&utm_medium=bio&utm_campaign=5q-redirect";
 
-    const fireGAandRedirect = () => {
-      if (typeof window.gtag === "function") {
-        window.gtag("event", "page_view", {
-          page_location: "https://www.eandp.events/5q",
-          page_title: "Instagram Redirect Page",
-        });
-      }
+    const waitForGtag = () =>
+      new Promise<void>((resolve) => {
+        const maxWait = 2000;
+        let waited = 0;
+        const interval = setInterval(() => {
+          if (typeof window !== "undefined" && typeof window.gtag === "function") {
+            clearInterval(interval);
+            resolve();
+          }
+          waited += 100;
+          if (waited >= maxWait) {
+            clearInterval(interval);
+            resolve(); // Proceed anyway
+          }
+        }, 100);
+      });
 
-      // Final redirect after firing GA
+    waitForGtag().then(() => {
+      window.gtag("event", "page_view", {
+        page_location: "https://www.eandp.events/5q",
+        page_title: "Instagram Redirect Page",
+      });
+
       setTimeout(() => {
         window.location.href = targetUrl;
-      }, 500); // Let GA log event
-    };
-
-    // Wait 300ms to ensure gtag is loaded, then continue
-    const initTimeout = setTimeout(fireGAandRedirect, 300);
-
-    return () => clearTimeout(initTimeout);
+      }, 500);
+    });
   }, []);
 
   return (
