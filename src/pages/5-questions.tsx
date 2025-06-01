@@ -86,7 +86,7 @@ const LeadMagnetPage = () => {
 </form>
         ) : (
           <div className="text-lg text-green-700 font-semibold">
-            ✅ Thanks! Your free guide is on the way. Check your inbox — and keep your questions ready.
+            ✅ Thanks! Your free guide is on the way. Check your inbox — or your spam folder — and keep your questions ready.
           </div>
         )}
 
