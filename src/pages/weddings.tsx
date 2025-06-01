@@ -117,7 +117,7 @@ const Weddings = () => {
           <div className="text-center mb-16">
             <h2 className="section-title text-white">What You Need, What We Do</h2>
             <p className="text-lg max-w-3xl mx-auto">
-              Planning a South Asian or fusion wedding means balancing tradition, family, and a thousand decisions. Most planners help with logistics. We take ownership — so you can live in the moment instead of managing it.
+                 Planning a South Asian or fusion wedding means balancing tradition, family, and a thousand decisions.  It isn’t simple. But it can be stress-free — when you have the right guide.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -137,11 +137,11 @@ const Weddings = () => {
         </section>
 
         {/* How It Works Section */}
-        <section id="how-it-works" className="bg-transparent py-20 px-6 md:px-12 lg:px-16">
+      <section id="how-it-works" className="bg-transparent py-20 px-6 md:px-12 lg:px-16">
           <div className="max-w-5xl mx-auto">
             <h2 className="section-title">How It Works</h2>
             <div className="space-y-16">
-              {["Plan with Precision", "Align the Details", "Execute with Ownership"].map((title, index) => (
+              {["Plan with Precision", "Align the Details", "Execute with Calm Authority"].map((title, index) => (
                 <div key={title} className="flex flex-col md:flex-row items-start gap-6">
                   <div className="h-14 w-14 bg-black rounded-full flex items-center justify-center flex-shrink-0 md:mt-2">
                     <span className="text-white text-xl font-bold">{index + 1}</span>
