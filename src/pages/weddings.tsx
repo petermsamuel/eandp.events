@@ -39,15 +39,29 @@ const weddingTestimonials = [
   }
 ];
 
-const AccordionCard = ({ icon: Icon, title, short, details }: { icon: any; title: string; short: string; details: string }) => {
+const AccordionCard = ({
+  icon: Icon,
+  title,
+  short,
+  details,
+}: {
+  icon: any;
+  title: string;
+  short: string;
+  details: string;
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div
-      className="flex flex-col items-center text-center p-6 bg-white text-[#2a2a3a] shadow-sm rounded-lg transition-all cursor-pointer"
+      className={`flex flex-col items-center text-center p-6 bg-white text-[#2a2a3a] shadow-sm rounded-lg transition-all duration-300 cursor-pointer transform hover:scale-[1.02] hover:shadow-md`}
       onClick={() => setIsOpen(!isOpen)}
     >
-      <div className="h-14 w-14 bg-[#f5f1ea] rounded-full flex items-center justify-center mb-4">
+      <div
+        className={`h-14 w-14 bg-[#f5f1ea] rounded-full flex items-center justify-center mb-4 transition-transform duration-300 ${
+          isOpen ? "rotate-[20deg]" : ""
+        }`}
+      >
         <Icon className="h-7 w-7 text-gold" />
       </div>
       <h3 className="text-xl font-semibold mb-1">{title}</h3>
@@ -61,6 +75,7 @@ const AccordionCard = ({ icon: Icon, title, short, details }: { icon: any; title
     </div>
   );
 };
+
 
 
 const Weddings = () => {
@@ -146,7 +161,8 @@ const Weddings = () => {
   <div className="text-center mb-16">
     <h2 className="section-title text-white">What You Need, What We Do</h2>
     <p className="text-lg max-w-3xl mx-auto">
-      Planning a South Asian or fusion wedding means balancing tradition, family, and a thousand decisions. It isn’t simple. But it can be stress-free — when you have the right guide.
+      Planning a South Asian or fusion wedding means balancing tradition, family, and a thousand decisions.
+      It isn’t simple. But it can be stress-free — when you have the right guide.
     </p>
   </div>
 
@@ -171,6 +187,7 @@ const Weddings = () => {
     />
   </div>
 </section>
+
 
 
 
