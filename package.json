@@ -4,11 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "dummy": "echo this is a dummy script",
-    "build:dev": "vite build --mode development",
-    "lint": "eslint .",
-    "preview": "vite preview",
+  "dev": "vite",
+  "preview": "vite preview",
+  "build:dev": "vite build --mode development",
+  "lint": "eslint .",
   "generate-sitemap": "node generate-sitemap.js",
   "build": "npm run generate-sitemap && vite build"
 }
