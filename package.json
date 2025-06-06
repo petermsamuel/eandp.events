@@ -5,7 +5,6 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
     "dummy": "echo this is a dummy script",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
