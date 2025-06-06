@@ -9,7 +9,11 @@
     "dummy": "echo this is a dummy script",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+  "generate-sitemap": "node generate-sitemap.js",
+  "build": "npm run generate-sitemap && vite build"
+}
+
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
