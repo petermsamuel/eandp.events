@@ -13,7 +13,7 @@ const HeroSection = () => {
       {/* Headline */}
       <div className="relative z-10 text-center w-full px-4">
         <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white leading-snug max-w-[75rem] mx-auto">
-          Still Holding It All Together By Yourself? You Shouldn’t Have To.
+          When the Stakes Are High, You’ve Got One Shot to Get It Right.
         </h1>
       </div>
 
