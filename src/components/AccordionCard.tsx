@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import clsx from "clsx";
 
 const AccordionCard = ({
@@ -35,6 +35,7 @@ const AccordionCard = ({
       <h3 className="text-xl font-semibold mb-1">{title}</h3>
       <p className="text-lg text-clay">{short}</p>
 
+      {/* Only show if isOpen is true */}
       {isOpen && (
         <div className="mt-4 text-sm text-gray-700 leading-relaxed">
           {details}
@@ -43,6 +44,5 @@ const AccordionCard = ({
     </div>
   );
 };
-
 
 export default AccordionCard;
