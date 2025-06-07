@@ -11,12 +11,10 @@ const SchemaMarkup = () => {
     "url": "https://www.eandp.events",
     "telephone": "+1-770-410-8302",
     "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "123 Your Street",
-      "addressLocality": "Atlanta",
-      "addressRegion": "GA",
-      "postalCode": "30303",
-      "addressCountry": "US"
+  "@type": "PostalAddress",
+  "addressLocality": "Atlanta",
+  "addressRegion": "GA",
+  "addressCountry": "US"
     },
     "geo": {
       "@type": "GeoCoordinates",
