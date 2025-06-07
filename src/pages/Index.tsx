@@ -23,11 +23,11 @@ const Index = () => {
 
         <main className="flex-1 relative z-10">
           <HeroSection />
-        <GallerySection />
           <WhatWeDoSection />
-          <MeetPeterSection />
           <FeaturedSection />
+          <MeetPeterSection />
           <TestimonialSection />
+          <GallerySection />
           <AdditionalCtaSection />
           <ContactSection />
         </main>
