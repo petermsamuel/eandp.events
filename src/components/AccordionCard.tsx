@@ -16,6 +16,9 @@ const AccordionCard = ({
   isOpen: boolean;
   onToggle: () => void;
 }) => {
+  console.log(`${title} - isOpen:`, isOpen); // ✅ Put it here
+
+
   return (
     <div
       className={clsx(
