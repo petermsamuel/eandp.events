@@ -9,7 +9,7 @@ const SchemaMarkup = () => {
     "image": "https://www.eandp.events/lovable-uploads/SSTK_asset_small_new.jpg",
     "@id": "https://www.eandp.events",
     "url": "https://www.eandp.events",
-    "telephone": "+1-123-456-7890",
+    "telephone": "+1-770-410-8302",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "123 Your Street",
