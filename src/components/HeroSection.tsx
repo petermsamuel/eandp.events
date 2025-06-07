@@ -20,8 +20,7 @@ const HeroSection = () => {
       {/* Subhead & Button */}
       <div className="container mx-auto max-w-4xl text-center z-10 animate-fade-in">
         <p className="text-lg md:text-xl mb-10 text-white max-w-3xl mx-auto">
-          Weddings rooted in tradition. Corporate events built to impress.
-          At E&P Events, we don’t just plan—we take ownership.
+          Some moments only happen once. E&P Events helps you make them unforgettable — whether it’s your wedding weekend or a defining corporate launch.
         </p>
 
         <p className="text-lg md:text-xl mb-10 text-white max-w-3xl mx-auto">
