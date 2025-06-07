@@ -14,7 +14,7 @@ const Footer = () => {
 <p className="text-gray-300 mb-4">
   Experts in South Asian + fusion wedding planning, corporate events, and more planning.<br />
   <br />
-  Based in Atlanta, trusted across Georgia and beyone.
+  Based in Atlanta, trusted across Georgia and beyond.
 </p>
 
             <div className="mt-4 flex items-center space-x-4">
