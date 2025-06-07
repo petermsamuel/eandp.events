@@ -206,8 +206,9 @@ onToggle={() =>
   setOpenCards((prev) =>
     prev.includes(0) ? prev.filter((i) => i !== 0) : [...prev, 0]
   )}
-isOpen={openCards.includes(0)}
 />
+
+
 
 <AccordionCard
   icon={Globe}
@@ -219,7 +220,6 @@ onToggle={() =>
   setOpenCards((prev) =>
     prev.includes(1) ? prev.filter((i) => i !== 1) : [...prev, 1]
   )}
-isOpen={openCards.includes(1)}
 />
 
    <AccordionCard
@@ -232,7 +232,6 @@ onToggle={() =>
   setOpenCards((prev) =>
     prev.includes(2) ? prev.filter((i) => i !== 2) : [...prev, 2]
   )}
-isOpen={openCards.includes(2)}
 />
 
 <AccordionCard
@@ -245,7 +244,6 @@ onToggle={() =>
   setOpenCards((prev) =>
     prev.includes(3) ? prev.filter((i) => i !== 3) : [...prev, 3]
   )}
-isOpen={openCards.includes(3)}
 />
 
 
