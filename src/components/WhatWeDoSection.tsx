@@ -32,7 +32,7 @@ const WhatWeDoSection = () => {
                 Let’s Lead Your Corporate Event
               </h3>
               <p className="text-gray-700 mb-3">
-                You need results, not risk. Whether it’s a seasonal celebration, executive summit, or high-stakes launch—our events are built to reflect your mission, deliver measurable impact, and keep the chaos contained.
+  You need results, not risk. From brand launches and seasonal celebrations to executive summits, our corporate event planning delivers measurable impact — with clarity, confidence, and cultural fluency from our Atlanta-based team, trusted worldwide.
               </p>
               <p className="text-sm text-gold font-semibold underline group-hover:no-underline">
                 Click Here to view Corporate Services →
@@ -55,7 +55,7 @@ const WhatWeDoSection = () => {
                 Let’s Plan Your Wedding
               </h3>
               <p className="text-gray-700 mb-3">
-                We specialize in South Asian and fusion weddings — events with deep cultural layers, multiday logistics, and complex family expectations. From sangeets to baraats, we lead with lived experience and cultural fluency.
+  We specialize in South Asian and fusion weddings — events layered with culture, complexity, and meaning. From sangeets to baraats, our Atlanta wedding planners bring lived experience, precision, and peace of mind to your celebration.
               </p>
               <p className="text-sm text-gold font-semibold underline group-hover:no-underline">
                 Click Here to explore Wedding Planning →
