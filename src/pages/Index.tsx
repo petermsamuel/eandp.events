@@ -10,6 +10,8 @@ import GallerySection from "../components/GallerySection";
 import AdditionalCtaSection from "../components/AdditionalCtaSection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
+import SchemaMarkup from "../components/SchemaMarkup";
+
 
 
 const Index = () => {
@@ -18,7 +20,9 @@ const Index = () => {
       {/* ✅ Background watermark is fixed-position and behind everything */}
       <div className="lion-watermark" />
 
+
       <div className="min-h-screen flex flex-col">
+  <SchemaMarkup />
         <Navbar />
 
         <main className="flex-1 relative z-10">
