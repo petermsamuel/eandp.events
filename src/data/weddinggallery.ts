@@ -3,86 +3,86 @@
 export const weddingGalleryImages = [
   {
     src: "/lovable-uploads/RAGartistry-1629-3_cropped.jpg",
-    alt: "South Asian bride tearfully wiping her eyes during emotional wedding reception speech, groom looking on in support",
+      alt: "South Asian bride at wedding reception in Atlanta, tearfully wiping her eyes during a heartfelt speech, groom offering support",
   },
   {
     src: "/lovable-uploads/RAGartistry-1701-3.jpg",
-    alt: "Bride holds groom close during a tearful first dance, her eyes closed in an emotional moment",
+    alt: "Bride embraces groom during emotional first dance at an Indian wedding in Atlanta",
   },
   {
     src: "/lovable-uploads/sonia-bridal-4.jpg",
-    alt: "Bride in a turquoise outfit delicately fastens her earring, showcasing soft makeup and a calm, reflective expression",
+    alt: "Bride in turquoise outfit preparing for her South Asian wedding in Atlanta, fastening her earring with a reflective expression",
   },
   {
     src: "/lovable-uploads/c053cec3-b569-472a-ae12-b070e928783a.png",
-    alt: "Close-up of bride’s intricate mehndi design and sparkling engagement ring, with her smiling in the background",
+    alt: "Close-up of intricate bridal mehndi and engagement ring during fusion wedding preparations in Atlanta",
   },
   {
     src: "/lovable-uploads/SuparnaSaurabh8.jpg",
-    alt: "South Asian bride and groom in traditional attire beneath a vibrant floral mandap, holding hands during their wedding ceremony",
+    alt: "South Asian couple holding hands beneath a vibrant mandap during traditional Hindu wedding ceremony in Georgia",
   },
   {
     src: "/lovable-uploads/9b8fed6d-b6d7-4e9f-b159-569f754a501d.png",
-    alt: "Groom in traditional sherwani leads his baraat outside The Whitley Hotel, surrounded by joyful guests in colorful attire",
+    alt: "Indian groom in sherwani leads a lively baraat outside The Whitley Hotel in Atlanta, surrounded by joyful guests",
   },
 {
     src: "/lovable-uploads/fenglongphoto-7146-preview-jpeg.jpg",
-    alt: "Dancing in traditional attire during vibrant sangeet celebration",
+    alt: "Guests dancing during vibrant South Asian sangeet ceremony in Atlanta",
   },
   {
     src: "/lovable-uploads/fenglongphoto-8194-preview-jpeg.jpg",
-    alt: "Suspended wedding cake adorned with cascading pink flowers and a gold ‘Mr & Mrs’ topper",
+    alt: "Suspended wedding cake at fusion reception in Atlanta, with pink flowers and a gold Mr & Mrs topper",
   },
   {
     src: "/lovable-uploads/suparnasaurabh12_cropped.jpg",
-    alt: "South Asian couple gazing into each other’s eyes through soft, glowing lights at elegant wedding reception",
+    alt: "South Asian couple gazing into each other’s eyes during luxury wedding reception in Atlanta",
   },
   {
     src: "/lovable-uploads/sonia-reception.jpg",
-    alt: "Elegant wedding reception table set with teal linens, glowing candles, and crystal candelabras under moody lighting",
+    alt: "Elegant wedding reception table with teal linens and crystal candelabras at a fusion wedding in Georgia",
   },
   {
     src: "/lovable-uploads/untitled-237.jpg",
-    alt: "Close-up of gold ceremonial chairs beneath a lush green mandap roof with cascading white flowers and hanging crystals",
+    alt: "Gold ceremonial wedding chairs under green mandap with floral canopy at Indian wedding in Atlanta",
   },
   {
     src: "/lovable-uploads/June 23, 2018-18-53-42-IMG_9751-Mid-Res-L.jpg",
-    alt: "Lavishly lit wedding reception hall with dramatic purple uplighting and elegant round tables set for guests",
+    alt: "Lavishly lit South Asian wedding reception hall with purple uplighting and elegant decor in Atlanta",
   },
   {
     src: "/lovable-uploads/RAGartistry-9461-2.jpg",
-    alt: "Elegant wedding aisle with gold planters, white orchids, and tree branches, leading to a softly lit mandap",
+    alt: "Luxury wedding aisle with gold planters and orchids leading to floral mandap at Indian wedding in Georgia",
   },
   {
     src: "/lovable-uploads/fenglongphoto-8236-preview-jpeg_1.jpg",
-    alt: "Luxurious wedding venue with red carpet aisle and elegant floral altar under sparkling chandeliers",
+    alt: "High-end wedding venue with red carpet aisle and floral altar under chandeliers at Atlanta South Asian wedding",
   },
   {
     src: "/lovable-uploads/sonia-reception2.jpg",
-    alt: "Luxurious teal wedding backdrop with framed chandeliers and a white couch surrounded by glittering accents",
+    alt: "Luxurious fusion wedding stage with teal backdrop, chandeliers, and glittering decor at reception in Georgia",
   },
   {
     src: "/lovable-uploads/RAGartistry-9023-2_cropped.jpg",
-    alt: "Intimate moment between South Asian bride and groom with henna and jewelry, smiling just before a kiss",
+    alt: "Intimate moment in Atlanta wedding between South Asian bride and groom before ceremony",
   },
   {
     src: "/lovable-uploads/SuparnaSaurabh2.jpg",
-    alt: "Bride and groom pose regally under a pink and white floral canopy, surrounded by crystal candelabras and draped fabric",
+    alt: "Bride and groom pose under floral canopy at luxurious Indian wedding in Georgia",
   },
   {
     src: "/lovable-uploads/afsha-sam-day3-nikah-44_1.jpg",
-    alt: "South Asian bride in an ivory sari smiling as she puts on earrings before the wedding ceremony",
+    alt: "Ivory-clad South Asian bride preparing for wedding ceremony, adjusting earrings in Atlanta",
   },
   {
     src: "/lovable-uploads/keriadam-w0312-x3_1.jpg",
-    alt: "Groom tenderly kisses bride’s forehead during an intimate outdoor wedding moment",
+    alt: "Groom kisses bride’s forehead during romantic outdoor South Asian wedding moment in Atlanta",
   },
   {
     src: "/lovable-uploads/judithtommy-wedding-0574_1.jpg",
-    alt: "Romantic moment as newlyweds share a kiss behind a glowing table of floating candles",
+    alt: "Newlyweds kiss behind floating candle decor at an elegant wedding reception coordinated in Georgia",
   },
   {
     src: "/lovable-uploads/misha6.jpg",
-    alt: "Bride and groom make a joyful reception entrance beneath romantic pink uplighting and floral décor",
+    alt: "Bride and groom make joyful entrance at South Asian wedding reception in Atlanta under floral décor and pink uplighting",
   },
 ];
