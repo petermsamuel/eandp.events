@@ -84,8 +84,8 @@ const [openCards, setOpenCards] = useState<number[]>([]);
       You Deserve a Wedding That Feels as Beautiful as It Looks.
     </h1>
     <p className="text-lg md:text-xl max-w-3xl mb-10 text-white/90 mx-auto">
-      From the sangeet to the send-off, we do more than coordinate —
-      we lead with clarity, protect your culture, and bring fusion wedding planning expertise grounded in lived experience.
+As your <strong>Atlanta South Asian wedding planner</strong>, we do more than coordinate — we lead with clarity, protect your culture, and bring fusion wedding planning expertise grounded in lived experience. 
+From the sangeet to the send-off, your joy stays front and center.
     </p>
 
 
