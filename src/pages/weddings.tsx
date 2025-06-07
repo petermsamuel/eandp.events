@@ -201,7 +201,7 @@ const Weddings = () => {
       icon={Globe}
       title="Cultural nuances?"
       short="Fluent."
-      details="As experienced South Asian wedding planners — including Indian, Pakistani, Bangladeshi, and fusion traditions — we honor the rituals that matter most. Whether it’s a baraat, nikah, sangeet, or other sacred event, we help you blend tradition with modern elegance.”
+      details="As experienced South Asian wedding planners — including Indian, Pakistani, Bangladeshi, and fusion traditions — we honor the rituals that matter most. Whether it’s a baraat, nikah, sangeet, or other sacred event, we help you blend tradition with modern elegance."
     />
 
     <AccordionCard
