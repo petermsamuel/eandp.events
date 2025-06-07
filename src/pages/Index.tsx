@@ -10,7 +10,6 @@ import GallerySection from "../components/GallerySection";
 import AdditionalCtaSection from "../components/AdditionalCtaSection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
-import SchemaMarkup from "../components/SchemaMarkup";
 
 
 
@@ -22,7 +21,6 @@ const Index = () => {
 
 
       <div className="min-h-screen flex flex-col">
-  <SchemaMarkup />
         <Navbar />
 
         <main className="flex-1 relative z-10">
