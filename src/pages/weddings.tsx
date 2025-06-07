@@ -201,7 +201,7 @@ const [openCards, setOpenCards] = useState<number[]>([]);
   title="Multiday timelines?"
   short="Covered."
   details="From sangeet to reception, we manage the flow of your South Asian wedding with precision. Whether it's a Hindu, Sikh, or fusion celebration, we coordinate each event with cultural fluency and seamless communication. We ensure everyone knows what’s happening, when, and why."
-  isOpen={openCardIndex === 0}
+  isOpen={openCards.includes(0)}
 onToggle={() =>
   setOpenCards((prev) =>
     prev.includes(0) ? prev.filter((i) => i !== 0) : [...prev, 0]
@@ -214,7 +214,7 @@ isOpen={openCards.includes(0)}
   title="Cultural nuances?"
   short="Fluent."
   details="As experienced South Asian wedding planners — including Indian, Pakistani, Bangladeshi, and fusion traditions — we honor the rituals that matter most. Whether it’s a baraat, nikah, sangeet, or other sacred event, we help you blend tradition with modern elegance."
-  isOpen={openCardIndex === 1}
+  isOpen={openCards.includes(1)}
 onToggle={() =>
   setOpenCards((prev) =>
     prev.includes(1) ? prev.filter((i) => i !== 1) : [...prev, 1]
@@ -227,7 +227,7 @@ isOpen={openCards.includes(1)}
   title="Family dynamics?"
   short="Navigated."
   details="South Asian weddings often involve large families and layered expectations. Our Atlanta-based wedding planning team brings empathy, diplomacy, and structure to every interaction. We balance emotional needs with logistical demands, so your joy - and your guest experience - stays protected."
-  isOpen={openCardIndex === 2}
+  isOpen={openCards.includes(2)}
 onToggle={() =>
   setOpenCards((prev) =>
     prev.includes(2) ? prev.filter((i) => i !== 2) : [...prev, 2]
@@ -240,7 +240,7 @@ isOpen={openCards.includes(2)}
   title="Not in Atlanta?"
   short="Anywhere."
   details="While we're proudly based in Atlanta, we plan and manage South Asian and multicultural weddings where you need us. Whether you're organizing a destination wedding or a multi-city celebration, we’re ready to lead wherever your love story takes us."
-  isOpen={openCardIndex === 3}
+  isOpen={openCards.includes(3)}
 onToggle={() =>
   setOpenCards((prev) =>
     prev.includes(3) ? prev.filter((i) => i !== 3) : [...prev, 3]
