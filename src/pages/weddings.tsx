@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Check, Globe, Users } from "lucide-react";
+import { Check, Globe, Users, Plane } from "lucide-react";
 import NavBarWeddings from "@/components/NavBarWeddings";
 import { weddingGalleryImages } from "@/data/weddinggallery";
 import TestimonialSection from "@/components/TestimonialSection";
@@ -209,6 +209,13 @@ const Weddings = () => {
       title="Family dynamics?"
       short="Navigated."
       details="South Asian weddings often involve large families and layered expectations. Our Atlanta-based wedding planning team brings empathy, diplomacy, and structure to every interaction. We balance emotional needs with logistical demands, so your joy - and your guest experience - stays protected."
+    />
+
+<AccordionCard
+      icon={Plane}
+      title="Not in Atlanta?"
+      short="Anywhere."
+      details="While we're proudly based in Atlanta, we plan and manage South Asian and multicultural weddings where you need us. Whether you're organizing a destination wedding or a multi-city celebration, we’re ready to lead wherever your love story takes us."
     />
   </div>
 </section>
