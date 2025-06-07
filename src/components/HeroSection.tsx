@@ -15,11 +15,6 @@ const HeroSection = () => {
         <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white leading-snug max-w-[75rem] mx-auto">
           When the Stakes Are High, You’ve Got One Shot to Get It Right.
         </h1>
-
-<p className="text-lg md:text-xl mb-6 text-white max-w-3xl mx-auto">
-  Atlanta’s trusted partner for South Asian weddings and corporate event planning.
-</p>
-
       </div>
 
 
