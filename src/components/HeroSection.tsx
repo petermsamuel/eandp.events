@@ -26,7 +26,7 @@ const HeroSection = () => {
       {/* Subhead & Button */}
       <div className="container mx-auto max-w-4xl text-center z-10 animate-fade-in">
         <p className="text-lg md:text-xl mb-10 text-white max-w-3xl mx-auto">
-          Some moments only happen once. E&P Events helps you make them unforgettable — whether it’s your wedding weekend or a defining corporate launch.
+   Some moments only happen once. Whether you're planning a South Asian wedding, a fusion celebration, or a high-impact corporate launch, E&P Events helps you make them unforgettable.
         </p>
 
         <p className="text-lg md:text-xl mb-10 text-white max-w-3xl mx-auto">
