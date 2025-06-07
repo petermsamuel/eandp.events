@@ -60,6 +60,9 @@ const Weddings = () => {
 
   const [openCardIndex, setOpenCardIndex] = useState<number | null>(null);
 
+console.log("openCardIndex", openCardIndex);
+
+
 
   return (
     <>
