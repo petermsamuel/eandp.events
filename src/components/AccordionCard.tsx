@@ -6,21 +6,23 @@ const AccordionCard = ({
   title,
   short,
   details,
+  isOpen,
+  onToggle,
 }: {
   icon: any;
   title: string;
   short: string;
   details: string;
+  isOpen: boolean;
+  onToggle: () => void;
 }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <div
       className={clsx(
         "flex flex-col items-center text-center p-6 bg-white text-[#2a2a3a] shadow-sm rounded-lg transition-all cursor-pointer hover:shadow-md hover:scale-[1.02]",
         isOpen && "border-2 border-gold"
       )}
-      onClick={() => setIsOpen(!isOpen)}
+      onClick={onToggle}
     >
       <div
         className={clsx(
@@ -41,5 +43,6 @@ const AccordionCard = ({
     </div>
   );
 };
+
 
 export default AccordionCard;
