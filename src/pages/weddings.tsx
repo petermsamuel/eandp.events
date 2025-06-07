@@ -80,8 +80,9 @@ const Weddings = () => {
     </h1>
     <p className="text-lg md:text-xl max-w-3xl mb-10 text-white/90 mx-auto">
       From the sangeet to the send-off, we do more than coordinate —
-      we lead with clarity, protect your culture, and ensure joy stays at the center.
+      we lead with clarity, protect your culture, and bring fusion wedding planning expertise grounded in lived experience.
     </p>
+
 
     <div className="flex justify-center mb-6">
       <a
@@ -183,9 +184,10 @@ const Weddings = () => {
     <h2 className="section-title text-white">What You Need, What We Do</h2>
     <p className="text-lg max-w-3xl mx-auto">
       Planning a South Asian or fusion wedding means balancing tradition, family, and a thousand decisions.
-      It isn’t simple. But it can be stress-free — when you have the right guide.
+    Our Atlanta-based team is trusted for wedding planning across cultures. We help you protect your joy — and your bandwidth.
     </p>
   </div>
+
 
   <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
     <AccordionCard
@@ -230,7 +232,7 @@ const Weddings = () => {
                     <p className="text-lg">
                       {index === 0 && "We start with your vision, then build a plan that respects tradition and ensures calm, not stress."}
                       {index === 1 && "From vendors to venues, every moving part gets locked into place."}
-                      {index === 2 && "You're not managing your wedding — you're experiencing it."}
+                      {index === 2 && "You’re not managing your wedding — you’re experiencing it. With a seasoned wedding planner guiding every moment, you stay calm, connected, and fully present."}
                     </p>
                   </div>
                 </div>
