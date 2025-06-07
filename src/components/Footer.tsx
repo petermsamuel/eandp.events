@@ -12,16 +12,10 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">E&P Events</h3> 
 <p className="text-gray-300 mb-4">
-  Experts in South Asian, fusion, and corporate event planning.<br />
+  Experts in South Asian + fusion wedding planning, corporate events, and more planning.<br />
   <br />
-  Based in Atlanta, trusted everywhere.
+  Based in Atlanta, trusted across Georgia and beyone.
 </p>
-
-<blockquote className="border-l-4 border-gold pl-4 text-gray-300 italic mb-2">
-  "Brought to you by the guy with the clipboard who already solved your next five problems."
-</blockquote>
-
-<p className="text-gray-300">— E&P Events</p>
 
             <div className="mt-4 flex items-center space-x-4">
               <a 
