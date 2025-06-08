@@ -48,15 +48,15 @@ const Corporate = () => {
           <div className="absolute inset-0 bg-black/30 z-0" />
 
           <div className="relative z-10 text-center w-full px-4">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-snug max-w-[75rem] mx-auto">
-              Your Event Deserves More Than a Run of Show. It Deserves Strategy.
-            </h1>
+       <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-snug max-w-[75rem] mx-auto">
+  Your Event Deserves More Than a Run of Show. It Deserves Strategy.
+</h1>
           </div>
 
           <div className="relative z-10 max-w-4xl text-center mx-auto">
-            <p className="text-lg md:text-xl max-w-3xl mb-10 text-white/90 mx-auto">
-              From executive summits to brand activations, we don’t just manage logistics — we lead with structure, insight, and cultural fluency.
-            </p>
+           <p className="text-lg md:text-xl max-w-3xl mb-10 text-white/90 mx-auto">
+  Based in Atlanta, we specialize in corporate event planning that transcends logistics. From executive summits to brand activations, we align purpose with precision—leading with structure, cultural fluency, and decades of experience.
+</p>
 
             <div className="flex justify-center">
               <a
@@ -96,9 +96,9 @@ const Corporate = () => {
         >
           <div className="text-center mb-16">
             <h2 className="section-title text-white">What You Need, What We Deliver</h2>
-            <p className="text-lg max-w-3xl mx-auto text-white">
-              Planning a high-stakes event means managing timelines, stakeholders, and brand expectations — all under pressure. Most planners coordinate. We take ownership so you can lead the room, not run it.
-            </p>
+         <p className="text-lg max-w-3xl mx-auto text-white">
+  Planning an Atlanta-based, high-stakes corporate event means juggling timelines, stakeholder expectations, and brand integrity—often under intense pressure. Most planners coordinate. We take ownership, so you can lead the room, not run it.
+</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -127,6 +127,13 @@ const Corporate = () => {
             </div>
           </div>
         </section>
+
+
+<section className="text-lg text-white my-12 max-w-4xl mx-auto text-center">
+  <p>
+    As a seasoned <strong>corporate event planner in Atlanta</strong>, we help clients elevate internal meetings, C-suite summits, nonprofit galas, and global conferences. Whether you need support for vendor management, logistics, or brand alignment, our <strong>strategic event planning services</strong> ensure excellence at every touchpoint.
+  </p>
+</section>
 
         {/* How It Works Section */}
         <section id="how-it-works" className="bg-transparent py-20 px-6 md:px-12 lg:px-16">
@@ -231,9 +238,9 @@ const Corporate = () => {
 
           <div className="relative z-10 max-w-4xl mx-auto text-center">
             <h2 className="section-title text-white">Lead the Room. We’ll Run the Rest.</h2>
-            <p className="text-lg mb-10 max-w-2xl mx-auto text-white/90">
-              Let’s create an event that reflects your vision — with flawless logistics, cultural fluency, and strategic intent baked into every detail.
-            </p>
+          <p className="text-lg mb-10 max-w-2xl mx-auto text-white/90">
+  Let’s build a corporate event that drives outcomes. Our Atlanta-based team blends strategic planning with cultural fluency and flawless execution — so your message lands exactly where it should.
+</p>
 
             <div className="glow-button-wrapper mx-auto">
               <div className="glow-ring" />
