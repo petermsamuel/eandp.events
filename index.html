@@ -35,37 +35,32 @@
   <meta property="og:type" content="website" />
 
   <!-- ✅ Corporate Page SEO Override -->
-  <script>
-    const path = window.location.pathname;
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      const path = window.location.pathname;
+      if (path.includes('/corporate')) {
+        console.log('🧠 Corporate SEO override applied—running now');
 
-    if (path.includes('/corporate')) {
-      document.title = 'Corporate Event Planning in Atlanta | Strategic & Executive Events | E&P Events';
+        const titleText = 'Corporate Event Planning in Atlanta | Strategic & Executive Events | E&P Events';
+        const descText  = 'E&P Events elevates corporate event planning in Atlanta — strategically executing summits, brand activations, and executive experiences.';
 
-      const metaDescription = document.querySelector('meta[name="description"]');
-      if (metaDescription) {
-        metaDescription.setAttribute(
-          'content',
-          'E&P Events elevates corporate event planning in Atlanta — strategically executing summits, brand activations, and executive experiences.'
-        );
+        document.title = titleText;
+
+        const meta = document.querySelector('meta[name="description"]');
+        meta?.setAttribute('content', descText);
+
+        document.querySelector('meta[property="og:title"]')
+          ?.setAttribute('content', titleText);
+
+        document.querySelector('meta[property="og:description"]')
+          ?.setAttribute('content', descText);
+
+        console.log('→ New Title:', document.title);
+        console.log('→ Description:', document.querySelector('meta[name="description"]')?.getAttribute('content'));
       }
-
-      const ogTitle = document.querySelector('meta[property="og:title"]');
-      if (ogTitle) {
-        ogTitle.setAttribute(
-          'content',
-          'Corporate Event Planning in Atlanta | Strategic & Executive Events | E&P Events'
-        );
-      }
-
-      const ogDesc = document.querySelector('meta[property="og:description"]');
-      if (ogDesc) {
-        ogDesc.setAttribute(
-          'content',
-          'E&P Events elevates corporate event planning in Atlanta — strategically executing summits, brand activations, and executive experiences.'
-        );
-      }
-    }
+    });
   </script>
+
 
   <link rel="icon" href="/lovable-uploads/77d9a347-7e81-4f55-827e-07598bec637f.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
