@@ -129,7 +129,8 @@ const Corporate = () => {
         </section>
 
 
-<section className="text-lg text-white my-12 max-w-4xl mx-auto text-center">
+    <h2 className="section-title">About</h2>
+<section className="text-lg text-black my-12 max-w-4xl mx-auto text-center">
   <p>
     As a seasoned <strong>corporate event planner in Atlanta</strong>, we help clients elevate internal meetings, C-suite summits, nonprofit galas, and global conferences. Whether you need support for vendor management, logistics, or brand alignment, our <strong>strategic event planning services</strong> ensure excellence at every touchpoint.
   </p>
