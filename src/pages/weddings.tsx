@@ -302,16 +302,25 @@ onToggle={() =>
             <p className="text-lg mb-10 max-w-2xl mx-auto text-white/90">
               Let's create a wedding experience you'll remember for how it felt — not just how it looked.
             </p>
-            <div className="glow-button-wrapper mx-auto">
+
+       <div className="glow-button-wrapper mx-auto">
               <div className="glow-ring" />
-              <a
-                href="https://cal.com/eandp.events/30min"
+          <a
+  href="https://cal.com/eandp.events/30min"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glow-button-inner"
-              >
-                Book Your Free Clarity Call
-              </a>
+  onClick={() => {
+    window.gtag?.('event', 'cta_click', {
+      button_text: 'Book Your Free Clarity Call',
+      cta_type: 'weddings_cta',
+      page_path: window.location.pathname,
+    });
+  }}
+>
+    Book Your Free Clarity Call
+</a>
+
             </div>
           </div>
         </section>
