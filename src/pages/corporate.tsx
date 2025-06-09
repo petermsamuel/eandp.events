@@ -254,7 +254,7 @@ const Corporate = () => {
   onClick={() => {
     window.gtag?.('event', 'cta_click', {
       button_text: 'Book Your Planning Consult',
-      cta_type: 'corporate',
+      cta_type: 'corporate_cta',
       page_path: window.location.pathname,
     });
   }}
