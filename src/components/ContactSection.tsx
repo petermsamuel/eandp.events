@@ -19,6 +19,7 @@ const ContactSection = () => {
        Let’s make your next move clear and stress-free.
         </p>
 
+
         {/* Glow CTA Button */}
         <div className="glow-button-wrapper mx-auto">
           <div className="glow-ring" />
@@ -27,9 +28,16 @@ const ContactSection = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="glow-button-inner"
-          >
-            Book Your Free Clarity Call
-          </a>
+         onClick={() => {
+    window.gtag?.('event', 'cta_click', {
+      button_text: 'Book Your Free Clarity Call',
+      cta_type: 'main_cta',
+      page_path: window.location.pathname,
+    });
+  }}
+>
+  Book Your Free Clarity Call
+</a>
         </div>
 
         {/* Email Text */}
