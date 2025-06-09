@@ -246,14 +246,22 @@ const Corporate = () => {
 
             <div className="glow-button-wrapper mx-auto">
               <div className="glow-ring" />
-              <a
-                href="https://cal.com/eandp.events/corporate-b2b-15"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="glow-button-inner"
-              >
-                Book Your Planning Consult
-              </a>
+          <a
+  href="https://cal.com/eandp.events/corporate-b2b-15"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="glow-button-inner"
+  onClick={() => {
+    window.gtag?.('event', 'cta_click', {
+      button_text: 'Book Your Planning Consult',
+      cta_type: 'corporate',
+      page_path: window.location.pathname,
+    });
+  }}
+>
+  Book Your Planning Consult
+</a>
+
             </div>
 
             {/*       <div className="mt-8">
