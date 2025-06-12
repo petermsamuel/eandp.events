@@ -9,7 +9,7 @@ const WhatWeDoSection = () => {
     >
       <div className="max-w-4xl mx-auto text-center px-4">
         <h2 className="section-title">
-          Strategic Execution for Once-in-a-Lifetime Moments
+          Expert Planning for Unforgettable Events—Corporate & Cultural
         </h2>
 
         <p className="text-lg mt-6 text-gray-700">
