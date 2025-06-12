@@ -25,8 +25,8 @@ const HeroSection = () => {
         </p>
 
         <p className="text-lg md:text-xl mb-10 text-white max-w-3xl mx-auto">
-          We lead with strategy, protect your vision, and bring cultural fluency to every detail.
-         From navigating family dynamics to brand goals, we build a plan that holds up — so you can be fully present.
+   We lead with strategy and deliver with precision—backed by cultural fluency and operational excellence.
+         Whether navigating brand goals or family dynamics, we build a plan that holds up — so you can be fully present.
         </p>
 
         <div className="flex justify-center">
