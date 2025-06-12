@@ -369,16 +369,11 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-xl font-bold mb-4">Contact</h3>
-            <p className="text-gray-300 mb-2">
-              Email: <a href="mailto:info@events-ep.com" className="text-gold hover:underline">info@eandp.events</a>
-            </p>
-            <p className="text-gray-300">
-              Atlanta, GA
-            </p>
+                        <h3 className="text-xl font-bold mb-4">Contact</h3>
+            <p className="text-gray-300">Email: <a href="mailto:info@eandp.events" className="text-gold hover:underline">info@eandp.events</a></p>
+            <p className="text-gray-300">Atlanta, GA</p>
           </div>
         </div>
-        
         <div className="border-t border-gray-800 mt-12 pt-6 text-center text-sm text-gray-400">
           <p>&copy; {currentYear} E&P Events. All rights reserved.</p>
         </div>
