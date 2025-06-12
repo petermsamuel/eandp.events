@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Check, Globe, Users, Plane } from "lucide-react";
+import { Check, Globe, Users, Plane, Facebook, Instagram, Mail} from "lucide-react";
 import NavBarWeddings from "@/components/NavBarWeddings";
 import { weddingGalleryImages } from "@/data/weddinggallery";
 import TestimonialSection from "@/components/TestimonialSection";
