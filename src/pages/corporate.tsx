@@ -206,10 +206,11 @@ const Corporate = () => {
           </div>
         </section>
 
-        <Footer />
+                <Footer />
       </div>
     </>
   );
 };
 
 export default Corporate;
+
