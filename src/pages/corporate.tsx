@@ -283,7 +283,7 @@ const Corporate = () => {
         </section>
       </div>
 
-      <        </section>
+             </section>
         <Footer />
       </div>
 
