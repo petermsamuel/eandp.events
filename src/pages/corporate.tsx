@@ -286,8 +286,6 @@ const Corporate = () => {
 
       <div className="lion-watermark" aria-hidden="true" />
     </>
-  );
-};
 
 // Footer Component
 const Footer = () => {
