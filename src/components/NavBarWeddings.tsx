@@ -29,7 +29,7 @@ const NavbarWeddings = () => {
         <div className="hidden md:flex space-x-8">
           <a href="#what-we-do" className="text-black hover:text-gold">What We Do</a>
           <a href="#how-it-works" className="text-black hover:text-gold">How It Works</a>
-          <a href="#testimonial" className="text-black hover:text-gold">Testimonials</a>
+          <a href="#testimonials" className="text-black hover:text-gold">Testimonials</a>
           <a href="#gallery" className="text-black hover:text-gold">Gallery</a>
           <a href="#cta" className="text-black hover:text-gold">Contact</a>
         </div>
