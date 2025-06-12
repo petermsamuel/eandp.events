@@ -28,8 +28,7 @@ const MeetPeterSection = () => {
 
             <p>
               With over a decade of experience and a formal background in project management,
-              I bring structure, clarity, and cultural empathy to everything I touch.  From intimate ceremonies to productions with over 1,500 guests, I’ve led events at every scale—
-    without losing sight of what matters most.
+              I bring structure, clarity, and cultural empathy to everything I touch. From productions with over 1,500 guests to executive events for the United Nations with global dignitaries, I’ve led high‑stakes moments at every scale—without losing sight of what matters most. Trusted by international leaders and local families alike, I bring structure, clarity, and calm when it matters most.
               But more than credentials, what drives me is justice.
             </p>
 
