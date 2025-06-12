@@ -280,12 +280,10 @@ const Corporate = () => {
               </a>
             </div>
           </div>
-        </section>
-      </div>
+      </section>
+<Footer />
+</div>
 
-             </section>
-        <Footer />
-      </div>
 
       <div className="lion-watermark" aria-hidden="true" />
     </>
