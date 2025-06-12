@@ -283,10 +283,15 @@ const Corporate = () => {
         </section>
       </div>
 
+      <        </section>
+        <Footer />
+      </div>
+
       <div className="lion-watermark" aria-hidden="true" />
     </>
   );
 };
+
 
 // Footer Component
 const Footer = () => {
