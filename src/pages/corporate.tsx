@@ -281,108 +281,56 @@ const Corporate = () => {
             </div>
           </div>
         </section>
-      </div>
+     
 
-      <div className="lion-watermark" aria-hidden="true" />
-    </>
-  );
-};
-
-// Footer Component
-const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
-  return (
-    <footer className="bg-[#333333] text-white py-12">
-
-      <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div>
-            <h3 className="text-xl font-bold mb-4">E&P Events</h3> 
-<p className="text-gray-300 mb-4">
-  Experts in South Asian wedding planning, fusion weddings, corporate events, and more.<br />
-  <br />
-  Based in Atlanta, trusted across Georgia and beyond.
-</p>
-
-            <div className="mt-4 flex items-center space-x-4">
-              <a 
-                href="https://www.facebook.com/eventsep/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-gold transition-colors"
-                aria-label="Visit our Facebook"
-              >
-                <Facebook size={24} />
-              </a>
-              <a 
-                href="https://www.instagram.com/eandp_events/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-gold transition-colors"
-                aria-label="Visit our Instagram"
-              >
-                <Instagram size={24} />
-              </a>
-<a 
-                href="mailto:info@eandp.events" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-gold transition-colors"
-                aria-label="Contact Us"
-              >
-                <Mail size={24} />
-              </a>
+        {/* Footer Section */}
+        <footer className="bg-[#333333] text-white py-12">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+              <div>
+                <h3 className="text-xl font-bold mb-4">E&P Events</h3>
+                <p className="text-gray-300 mb-4">
+                  Experts in South Asian wedding planning, fusion weddings, corporate events, and more.<br />
+                  Based in Atlanta, trusted across Georgia and beyond.
+                </p>
+                <div className="mt-4 flex items-center space-x-4">
+                  <a href="https://www.facebook.com/eventsep/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gold">
+                    <Facebook size={24} />
+                  </a>
+                  <a href="https://www.instagram.com/eandp_events/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gold">
+                    <Instagram size={24} />
+                  </a>
+                  <a href="mailto:info@eandp.events" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gold">
+                    <Mail size={24} />
+                  </a>
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-4">Navigation</h3>
+                <ul className="space-y-2">
+                  <li><a href="#what-we-do" className="text-gray-300 hover:text-gold">What We Do</a></li>
+                  <li><a href="#how-it-works" className="text-gray-300 hover:text-gold">How It Works</a></li>
+                  <li><a href="#testimonial" className="text-gray-300 hover:text-gold">Testimonials</a></li>
+                  <li><a href="#partners" className="text-gray-300 hover:text-gold">Partners</a></li>
+                  <li><a href="#cta" className="text-gray-300 hover:text-gold">Contact</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-4">Contact</h3>
+                <p className="text-gray-300 mb-2">
+                  Email: <a href="mailto:info@events-ep.com" className="text-gold hover:underline">info@eandp.events</a>
+                </p>
+                <p className="text-gray-300">Atlanta, GA</p>
+              </div>
+            </div>
+            <div className="border-t border-gray-800 mt-12 pt-6 text-center text-sm text-gray-400">
+              <p>&copy; {currentYear} E&P Events. All rights reserved.</p>
             </div>
           </div>
-          
-          <div>
-            <h3 className="text-xl font-bold mb-4">Navigation</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#what-we-do" className="text-gray-300 hover:text-gold transition-colors">
-                  What We Do
-                </a>
-              </li>
-              <li>
-                <a href="#how-it-works" className="text-gray-300 hover:text-gold transition-colors">
-                  How It Works
-                </a>
-              </li>
-              <li>
-                <a href="#testimonial" className="text-gray-300 hover:text-gold transition-colors">
-                  Testimonials
-                </a>
-              </li>
-              <li>
-                <a href="#partners" className="text-gray-300 hover:text-gold transition-colors">
-                 Partners
-                </a>
-              </li>
-              <li>
-                <a href="#cta" className="text-gray-300 hover:text-gold transition-colors">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-xl font-bold mb-4">Contact</h3>
-            <p className="text-gray-300 mb-2">
-              Email: <a href="mailto:info@events-ep.com" className="text-gold hover:underline">info@eandp.events</a>
-            </p>
-            <p className="text-gray-300">
-              Atlanta, GA
-            </p>
-          </div>
-        </div>
-        
-        <div className="border-t border-gray-800 mt-12 pt-6 text-center text-sm text-gray-400">
-          <p>&copy; {currentYear} E&P Events. All rights reserved.</p>
-        </div>
+        </footer>
       </div>
-    </footer>
+      <div className="lion-watermark" aria-hidden="true" />
+    </>
   );
 };
 
