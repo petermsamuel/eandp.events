@@ -1,4 +1,5 @@
 import React from "react";
+import React, { useEffect } from "react";
 import { Check, Globe, Users, Facebook, Instagram, Mail } from "lucide-react";
 import NavBarCorporate from "@/components/NavBarCorporate";
 import { corporateGalleryImages } from "@/data/corporategallery";
@@ -32,6 +33,20 @@ He also demonstrated excellent people management skills, guiding volunteers with
 
 
 const Corporate = () => {
+  useEffect(() => {
+    document.title = "Corporate Event Planning in Atlanta | Strategic & Executive Events | E&P Events";
+
+    const descriptionTag = document.querySelector("meta[name='description']");
+    if (descriptionTag) {
+      descriptionTag.setAttribute("content", "E&P Events elevates corporate event planning in Atlanta — strategically executing summits, brand activations, and executive experiences.");
+    } else {
+      const meta = document.createElement("meta");
+      meta.name = "description";
+      meta.content = "E&P Events elevates corporate event planning in Atlanta — strategically executing summits, brand activations, and executive experiences.";
+      document.head.appendChild(meta);
+    }
+  }, []);
+
   return (
     <>
       <div className="min-h-screen bg-transparent flex flex-col">
@@ -218,11 +233,11 @@ const Corporate = () => {
   </div>
 </section>
 
-
-    <h2 className="section-title">About</h2>
+  {/* About Section */}
+ <h2 className="section-title">Corporate Event Planner in Atlanta</h2>
 <section className="text-lg text-black my-12 max-w-4xl mx-auto text-center">
   <p>
-    As a seasoned <strong>corporate event planner in Atlanta</strong>, we help clients elevate internal meetings, C-suite summits, nonprofit galas, and global conferences. Whether you need support for vendor management, logistics, or brand alignment, our <strong>strategic event planning services</strong> ensure excellence at every touchpoint.
+    With over a decade of experience, E&P Events is a trusted corporate event planner in Atlanta. From executive summits and product launches to nonprofit fundraisers and global delegations, we design experiences that align with your business goals and brand reputation. Whether you're planning a high-profile executive event or need full-service event production, our Atlanta-based team brings structure, speed, and precision to every detail.
   </p>
 </section>
 
