@@ -14,16 +14,16 @@ const AdditionalCtaSection = () => {
       {/* Full-width subheading */}
       <div className="text-left space-y-4 text-lg text-gray-800 px-4 md:px-8 max-w-7xl mx-auto mt-4">
         <p><em>“I didn’t realize how much this would take over my life.”</em></p>
-        <p>
-          When you're the one planning it all, the cost isn’t just in spreadsheets or vendor deposits. 
-          It’s in missed family dinners. Sleepless nights. The slow erosion of joy.
-        </p>
-        <p>
-          And when the day finally comes, you’re not present — you’re performing.
-        </p>
-        <p>
-          You don’t get to <em>feel</em> it. You’re too busy holding everything together.
-        </p>
+<p>
+  Managing the event shouldn’t cost your peace of mind or your presence—
+  whether that's as a bride orchestrating every vendor detail or a team lead responsible for corporate success.
+</p>
+<p>
+  When it’s crunch time, you’re no longer *present* — you're stuck *performing*.
+</p>
+<p>
+  You miss what matters—memories, moments, wins—because you're too busy making it happen.
+</p>
       </div>
 
       {/* Comparison cards in centered container */}
@@ -45,11 +45,11 @@ const AdditionalCtaSection = () => {
   <div className="bg-[#faf8f3] border border-green-500 p-6 rounded-2xl shadow-md shadow-black/10 min-h-[460px]">
           <h3 className="text-xl font-semibold text-green-700 mb-4">With E&P Events</h3>
           <ul className="list-disc list-inside space-y-2 text-neutral-700 text-base">
-            <li>We take ownership — so you don’t have to carry the mental load alone.</li>
-            <li>Your culture is honored. Your elders are supported. Your vision is protected.</li>
-            <li>The details run smoothly because someone who understands what’s at stake is leading.</li>
-            <li>You can finally exhale—your peace, your time, and your budget are protected from surprises.</li>
-<li>You’re calm. Fully in the moment. And when you look back? You don’t just remember what it looked like — you remember how it <span className="italic">felt</span>.</li>
+            <li>We take ownership—so you don’t have to carry the mental load alone.</li>
+<li>Your vision, tradition, or brand standards are honored and protected.</li>
+<li>The details run smoothly because someone who deeply understands what's at stake is leading.</li>
+<li>You can finally exhale—your peace, your time, and your budget are secure from surprises.</li>
+<li>You’re calm. Fully in the moment. And when it’s all over? You’ll remember not just what it looked like—but how it <em>felt</em>.</li>
           </ul>
         </div>
 
