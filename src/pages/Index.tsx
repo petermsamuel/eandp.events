@@ -13,7 +13,7 @@ import Footer from "../components/Footer";
 import SchemaMarkup from "../components/SchemaMarkup";
 
 
-onst Index = () => {
+const Index = () => {
   useEffect(() => {
     document.title = "Indian Wedding & Corporate Event Planner in Atlanta | E&P Events";
 
