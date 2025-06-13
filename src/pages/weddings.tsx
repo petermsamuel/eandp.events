@@ -146,11 +146,16 @@ From the sangeet to the send-off, your joy stays front and center.
               className="relative flex-shrink-0 rounded-md overflow-hidden"
             className="relative flex-shrink-0 rounded-md overflow-hidden aspect-[3/2] h-72"
             >
-               <img
+  <img
   src={image.src}
   alt={image.alt}
+  loading="lazy"
+  width="432"
+  height="288"
   className="w-full h-full object-cover rounded-md"
 />
+
+
 
             </div>
           ))}
@@ -172,8 +177,12 @@ From the sangeet to the send-off, your joy stays front and center.
               <img
   src={image.src}
   alt={image.alt}
+  loading="lazy"
+  width="432"
+  height="288"
   className="w-full h-full object-cover rounded-md"
 />
+
             </div>
           ))}
         </div>
