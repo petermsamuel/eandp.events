@@ -188,8 +188,10 @@ From the sangeet to the send-off, your joy stays front and center.
   <div className="text-center mb-16">
     <h2 className="section-title text-white">What You Need, What We Do</h2>
     <p className="text-lg max-w-3xl mx-auto">
-      Planning a South Asian or fusion wedding means balancing tradition, family, and a thousand decisions.
-    Our Atlanta-based team is trusted for wedding planning across cultures. We help you protect your joy — and your bandwidth.
+ <p className="text-lg max-w-3xl mx-auto">
+  As an experienced <strong>Indian wedding planner in Atlanta</strong>, we specialize in South Asian and fusion weddings layered with culture, complexity, and tradition. 
+  From baraats and sangeets to elegant receptions, our team brings lived experience, calm execution, and cultural fluency to every celebration.
+</p>
     </p>
   </div>
 
