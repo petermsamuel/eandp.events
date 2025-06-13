@@ -55,10 +55,13 @@ const WhatWeDoSection = () => {
                 Let’s Plan Your Wedding
               </h3>
               <p className="text-gray-700 mb-3">
-  We specialize in Indian, South Asian, and fusion weddings — events layered with culture, complexity, and meaning. From sangeets to baraats, our Atlanta wedding planners bring lived experience, precision, and peace of mind to your celebration.
+<p className="text-lg max-w-3xl mx-auto">
+  As an experienced <strong>Indian wedding planner in Atlanta</strong>, we specialize in South Asian and fusion weddings layered with culture, complexity, and tradition. 
+  From baraats and sangeets to elegant receptions, our team brings lived experience, calm execution, and cultural fluency to every celebration.
+</p>
               </p>
               <p className="text-sm text-gold font-semibold underline group-hover:no-underline">
-                Looking for an Indian wedding planner in Atlanta? Click here to explore wedding planning →
+                Click here to explore wedding planning →
               </p>
             </div>
           </div>
