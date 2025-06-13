@@ -1,2 +1,4 @@
-/5q  https://eandp.events/5-questions  301
-/*    /index.html   200
+/5q  https://eandp.events/5-questions?utm_source=instagram&utm_medium=bio&utm_campaign=5q-redirect  301
+/ig  https://eandp.events/?utm_source=instagram&utm_medium=bio&utm_campaign=ig-redirect  301
+/fb  https://eandp.events/?utm_source=facebook&utm_medium=bio&utm_campaign=fb-redirect  301
+/*   /index.html   200
