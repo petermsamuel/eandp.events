@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
@@ -13,30 +13,38 @@ import Footer from "../components/Footer";
 import SchemaMarkup from "../components/SchemaMarkup";
 
 
+onst Index = () => {
+  useEffect(() => {
+    document.title = "Indian Wedding & Corporate Event Planner in Atlanta | E&P Events";
 
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement('meta');
+      metaDescription.setAttribute('name', 'description');
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.setAttribute(
+      'content',
+      "E&P Events is Atlanta’s premier planner for Indian, South Asian, and fusion weddings — as well as high-end corporate and executive events."
+    );
+  }, []);
 
-const Index = () => {
   return (
     <div className="relative overflow-x-hidden">
-      {/* ✅ Background watermark is fixed-position and behind everything */}
       <div className="lion-watermark" />
-
-
       <div className="min-h-screen flex flex-col">
- <SchemaMarkup />
+        <SchemaMarkup />
         <Navbar />
-
         <main className="flex-1 relative z-10">
           <HeroSection />
           <WhatWeDoSection />
           <FeaturedSection />
           <MeetPeterSection />
           <GallerySection />
-   <TestimonialSection />
+          <TestimonialSection />
           <AdditionalCtaSection />
           <ContactSection />
         </main>
-
         <Footer />
       </div>
     </div>
