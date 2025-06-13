@@ -69,18 +69,15 @@ const [openCards, setOpenCards] = useState<number[]>([]);
         <NavBarWeddings />
 
         {/* Hero Section */}
-
-<section className="relative min-h-screen flex flex-col justify-center pt-24 pb-12 px-6 md:px-12 lg:px-16 text-white">
-  <img
-    src="/lovable-uploads/0d69fd76-5bed-40b1-8935-d005fb4b5c77.png"
-    alt="South Asian wedding couple in elegant venue"
-    className="absolute inset-0 w-full h-full object-cover z-0"
-    width="1440"
-    height="960"
-    loading="eager"
-    fetchpriority="high"
-  />
- <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent z-0" />
+        <section
+  id="hero"
+  className="relative min-h-screen flex flex-col justify-center pt-24 pb-12 px-6 md:px-12 lg:px-16 bg-cover bg-center text-white"
+  style={{
+    backgroundImage:
+      "url('/lovable-uploads/0d69fd76-5bed-40b1-8935-d005fb4b5c77.png')",
+  }}
+>
+  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent z-0" />
 
   <div className="relative z-10 text-center w-full px-4">
     <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-snug max-w-[75rem] mx-auto">
