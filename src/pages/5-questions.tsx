@@ -13,18 +13,18 @@ const LeadMagnetPage = () => {
     <section className="min-h-screen bg-white py-20 px-6 md:px-12 lg:px-16 text-center text-[#2a2a2a]">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-3xl md:text-5xl font-bold mb-6">
-          Before You Book a Wedding Planner, Ask <span className="text-gold">These</span> 5 Questions
+          Before You Book an Event Planner, Ask <span className="text-gold">These</span> 5 Questions
         </h1>
 
         <p className="text-lg mb-8 text-gray-700">
-          Most couples don’t know what to ask until it’s too late — and end up stuck with stress,
-          miscommunication, or unmet expectations. This 2-minute read could save your wedding (and your wallet).
+      Most clients don’t know what to ask — until it’s too late. Whether you're planning a high-stakes corporate event or a once-in-a-lifetime wedding, 
+      asking these questions could save your budget, your timeline, and your sanity.
         </p>
 
         <p className="text-base mb-10 text-gray-600">
-          You’re planning a once-in-a-lifetime celebration. But with so many planners out there — how do you know
-          who actually gets your culture, your family dynamics, and your vision? We’ll show you exactly how to cut
-          through the noise and find the right fit.
+        You’re not just looking for a good planner — you’re looking for the right one.
+        Someone who can lead under pressure, protect your time and values, and make sure your event actually delivers on its purpose.
+        We’ll show you how to cut through the fluff and find the fit — so you can move forward with confidence.
         </p>
 
         {!submitted ? (
@@ -56,7 +56,7 @@ const LeadMagnetPage = () => {
     📝 Grab the Free Guide:
     <br />
     <span className="text-xl text-gold font-bold">
-      “5 Questions to Ask Before Hiring Your Wedding Planner”
+      “Top 5 Questions to Ask Before Hiring An Event Planner”
     </span>
   </p>
 
@@ -81,7 +81,7 @@ const LeadMagnetPage = () => {
   </button>
 
   <p className="text-sm text-gray-500 mt-4">
-    🔒 We’ll never send spam. Just planning wisdom and the occasional insider tip to help you breathe easier.
+    🔒 We don’t do spam — just occasional planning wisdom and clarity-driven insights from the field.
   </p>
 </form>
         ) : (
