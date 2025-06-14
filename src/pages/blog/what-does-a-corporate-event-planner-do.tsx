@@ -5,8 +5,8 @@ const WhatDoesACorporateEventPlannerDo = () => {
     <div className="bg-[#f7f7f2] pt-28 pb-20 px-4">
       <div className="max-w-4xl mx-auto text-[#2a2a2a]">
         <img
-          src="/lovable-uploads/event-strategy-header.jpg"
-          alt="Corporate planners collaborating at a high-end event"
+          src="/lovable-uploads/ChatGPT Image Jun 14, 2025, 03_13_22 PM.png"
+          alt="Corporate planners collaborating at a high-end Atlanta event"
           className="w-full h-auto rounded-xl shadow-md mb-10"
         />
 
