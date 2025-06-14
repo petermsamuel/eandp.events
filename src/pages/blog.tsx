@@ -6,10 +6,10 @@ import { Facebook, Instagram, Mail } from "lucide-react";
 const blogPosts = [
   {
     image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=600&q=80",
-    title: "Planning Across Cultures: Behind the Scenes",
+    title: "What Does a Corporate Event Planner Do?",
     date: "June 2024",
     excerpt: "Expert insights and real stories from cross-cultural event planning—what makes it work, what to avoid, and lessons that shape every celebration.",
-    href: "#",
+    href: "/pages/blog/what-does-a-corporate-event-planner-do.tsx",
   },
   {
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&q=80",
