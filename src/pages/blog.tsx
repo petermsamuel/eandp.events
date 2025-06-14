@@ -9,7 +9,7 @@ const blogPosts = [
     title: "What Does a Corporate Event Planner Do?",
     date: "June 2024",
     excerpt: "Expert insights and real stories from cross-cultural event planning—what makes it work, what to avoid, and lessons that shape every celebration.",
-    href: "/blog/what-does-a-corporate-event-planner-do.tsx",
+    href: "/blog/what-does-a-corporate-event-planner-do",
   },
   {
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&q=80",
