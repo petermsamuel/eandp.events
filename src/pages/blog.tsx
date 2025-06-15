@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import Footer from "@/components/Footer";
 import { Facebook, Instagram, Mail } from "lucide-react";
@@ -12,31 +11,31 @@ const blogPosts = [
   },
 ];
 
-useEffect(() => {
-  document.title = "E&P Events Blog | Atlanta Insights & Event Stories";
+const Blog = () => {
+  useEffect(() => {
+    document.title = "E&P Events Blog | Atlanta Insights & Event Stories";
 
-  const meta = document.createElement("meta");
-  meta.name = "description";
-  meta.content = "Read tips, stories, and expert advice from Atlanta’s leading wedding and corporate event planners.";
-  document.head.appendChild(meta);
+    const meta = document.createElement("meta");
+    meta.name = "description";
+    meta.content = "Read tips, stories, and expert advice from Atlanta’s leading wedding and corporate event planners.";
+    document.head.appendChild(meta);
 
-  // Add BlogPosting schema
-  const script = document.createElement("script");
-  script.type = "application/ld+json";
-  script.innerHTML = JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "name": "E&P Events Blog",
-    "description": "Expert event planning advice, real stories, and cultural insights from Atlanta's top planners.",
-    "url": "https://eandp.events/blog",
-    "publisher": {
-      "@type": "Organization",
-      "name": "E&P Events",
-      "url": "https://eandp.events"
-    }
-  });
-  document.head.appendChild(script);
-}, []);
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.innerHTML = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "E&P Events Blog",
+      "description": "Expert event planning advice, real stories, and cultural insights from Atlanta's top planners.",
+      "url": "https://eandp.events/blog",
+      "publisher": {
+        "@type": "Organization",
+        "name": "E&P Events",
+        "url": "https://eandp.events"
+      }
+    });
+    document.head.appendChild(script);
+  }, []);
 
 
   return (
@@ -101,7 +100,7 @@ useEffect(() => {
                 <div className="h-56 w-full relative overflow-hidden">
                   <img
                     src={post.image}
-                    alt={post.title}
+                alt={`Blog post about ${post.title.toLowerCase()} by Atlanta event planner`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
