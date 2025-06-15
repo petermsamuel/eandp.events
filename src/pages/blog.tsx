@@ -47,9 +47,9 @@ const Blog = () => {
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-snug mx-auto drop-shadow-lg">
               Real Atlanta Events. Real Solutions.<br />Blog by E&amp;P Events
             </h1>
-            <p className="text-lg md:text-xl mb-8 text-white/90 max-w-xl mx-auto">
-              Honest stories, practical guidance, and expert reflections—from crossing cultural lines to building seamless timelines for Big Moments.
-            </p>
+        <p className="text-lg text-gray-700 mb-6">
+  Tips, behind-the-scenes insights, and expert advice from Atlanta’s trusted planners. Whether you're organizing a luxury wedding or a high-impact corporate event, our blog helps you plan smarter and stress less.
+</p>
           </div>
           {/* Down Arrow */}
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 animate-bounce z-10">
