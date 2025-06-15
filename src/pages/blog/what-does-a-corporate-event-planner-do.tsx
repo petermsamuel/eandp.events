@@ -7,7 +7,7 @@ const WhatDoesACorporateEventPlannerDo = () => {
         <div className="w-full aspect-[16/9] overflow-hidden rounded-xl shadow-lg mb-10">
   <img
     src="/lovable-uploads/event-strategy-header.jpg"
-    alt="Corporate planners collaborating at a high-end event"
+    alt="Corporate planners collaborating at a high-end event in Atlanta"
     className="w-full h-full object-cover"
   />
 </div>
