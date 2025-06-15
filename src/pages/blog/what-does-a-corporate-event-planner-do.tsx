@@ -69,7 +69,7 @@ const WhatDoesACorporateEventPlannerDo = () => {
           <li><strong>Transparent Flat-Fee Pricing:</strong> No markups, no surprises—just clarity.</li>
           <li><strong>Cultural Intelligence:</strong> Experiences that resonate authentically.</li>
           <li><strong>Crisis-Proof Execution:</strong> Problems solved before they impact your event.</li>
-          <li><strong>Strategic Partnership:</strong> We enhance your vision, not just execute it. <a href="/testimonials" className="text-blue-600 underline">Read what our clients say.</a></li>
+          <li><strong>Strategic Partnership:</strong> We enhance your vision, not just execute it. <a href="https://eandp.events/corporate#testimonials" className="text-blue-600 underline">Read what our clients say.</a></li>
         </ul>
 
         <h2 className="text-2xl font-semibold mt-10 mb-4">Common Questions Answered</h2>
