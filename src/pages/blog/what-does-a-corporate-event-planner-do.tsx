@@ -6,12 +6,11 @@ const WhatDoesACorporateEventPlannerDo = () => {
       <div className="max-w-4xl mx-auto text-[#2a2a2a]">
         <div className="w-full aspect-[16/9] overflow-hidden rounded-xl shadow-lg mb-10">
   <img
-    src="/lovable-uploads/event-strategy-header.jpg"
-    alt="Corporate planners collaborating at a high-end event in Atlanta"
+    src="/lovable-uploads/ChatGPT Image Jun 14, 2025, 03_13_22 PM.png"
+    alt="Corporate planners collaborating at a high-end event Atlanta event"
     className="w-full h-full object-cover"
   />
 </div>
-
 
         <h1 className="text-3xl md:text-5xl font-bold mb-6">
           What Does a Corporate Event Planner Actually Do?
