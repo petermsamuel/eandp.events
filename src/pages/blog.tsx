@@ -10,38 +10,6 @@ const blogPosts = [
     excerpt: "Discover the real strategy behind flawless corporate events—what expert planners actually do, how they protect your brand, and why execution is everything.",
     href: "/blog/what-does-a-corporate-event-planner-do",
   },
-  {
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&q=80",
-    title: "The 5 Essential Questions to Ask Your Planner",
-    date: "May 2024",
-    excerpt: "Choosing a planner? Here are the five key questions every couple and corporate host should ask before booking (and the red flags to watch for).",
-    href: "#",
-  },
-  {
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80",
-    title: "What Makes an Event Truly Memorable?",
-    date: "April 2024",
-    excerpt: "Beyond the decor and the menu: our philosophy on moments, meaning, and the little things guests remember most.",
-    href: "#",
-  },
-  {
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80",
-    title: "A South Asian Wedding Timeline—Real Example",
-    date: "March 2024",
-    excerpt: "Curious how the magic happens? We break down a live timeline from baraat to reception, Atlanta style.",
-    href: "#",
-  },
-];
-
-const blogTestimonials = [
-  {
-    text: "The E&P Events Blog has become my go-to source for behind-the-scenes advice and practical inspiration—I used the timelines on my own wedding with amazing results.",
-    name: "Priya",
-  },
-  {
-    text: "Their posts helped me avoid major planner mistakes—I now feel so much more confident as a first-time organizer.",
-    name: "Jon M.",
-  },
 ];
 
 const Blog = () => {
@@ -142,52 +110,7 @@ const Blog = () => {
           </div>
         </section>
 
-        {/* Testimonials Section */}
-        <section className="py-20 px-4 bg-transparent">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="section-title text-center mb-8 text-black">
-              What Readers Say
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
-              {blogTestimonials.map((t, idx) => (
-                <div
-                  key={idx}
-                  className="p-6 bg-white/90 rounded-lg shadow border-l-4 border-gold flex flex-col"
-                >
-                  <div className="flex-1 text-gray-800 italic mb-4">"{t.text}"</div>
-                  <div className="mt-2 font-semibold text-gold">{t.name}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* About/CTA Section */}
-        <section className="py-20 px-4 bg-[#2a2a2a] text-white">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="section-title text-white">
-              About the Blog
-            </h2>
-            <p className="text-lg mb-4">
-              The E&amp;P Events Blog pulls back the curtain on what makes big moments flow—real timelines, honest mistakes, and the victories that matter. Whether you’re leading a team, a family, or just dreaming up your day—we have clarity, calm, and answers waiting.
-            </p>
-            <div className="flex justify-center space-x-6 mt-6">
-              <a href="https://www.facebook.com/eventsep/" target="_blank" rel="noopener noreferrer" className="text-gold hover:text-white transition-colors" aria-label="Facebook">
-                <Facebook size={28} />
-              </a>
-              <a href="https://www.instagram.com/eandp_events/" target="_blank" rel="noopener noreferrer" className="text-gold hover:text-white transition-colors" aria-label="Instagram">
-                <Instagram size={28} />
-              </a>
-              <a href="mailto:info@eandp.events" className="text-gold hover:text-white transition-colors" aria-label="Email">
-                <Mail size={28} />
-              </a>
-            </div>
-            <p className="mt-6 text-sm text-white/70">
-              Got a topic you want to see? Email us—we love hearing from our event community!
-            </p>
-          </div>
-        </section>
-
+       
         {/* Footer */}
         <Footer />
       </div>
