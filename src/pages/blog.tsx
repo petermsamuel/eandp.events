@@ -38,7 +38,7 @@ const Blog = () => {
         <section
           id="hero"
           className="relative min-h-[60vh] flex flex-col justify-center pt-28 pb-12 px-4 bg-cover bg-center"
-          style={{ backgroundImage: "url('/lovable-uploads/SSTK_asset_small_new.jpg')" }}
+          style={{ backgroundImage: "url('/lovable-uploads/IMG_0409.jpg')" }}
         >
           {/* Overlay */}
           <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
