@@ -5,10 +5,9 @@ import { Facebook, Instagram, Mail } from "lucide-react";
 
 const blogPosts = [
   {
-    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=600&q=80",
+    image: "/lovable-uploads/ChatGPT Image Jun 14, 2025, 03_13_22 PM.png?auto=format&fit=crop&w=600&q=80",
     title: "What Does a Corporate Event Planner Do?",
-    date: "June 2024",
-    excerpt: "Expert insights and real stories from cross-cultural event planning—what makes it work, what to avoid, and lessons that shape every celebration.",
+    excerpt: "Discover the real strategy behind flawless corporate events—what expert planners actually do, how they protect your brand, and why execution is everything.",
     href: "/blog/what-does-a-corporate-event-planner-do",
   },
   {
