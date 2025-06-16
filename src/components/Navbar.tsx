@@ -60,6 +60,7 @@ const Navbar = () => {
           <a href="#testimonials" className="text-black hover:text-gold transition-colors">Testimonials</a>
           <a href="#gallery" className="text-black hover:text-gold transition-colors">Gallery</a>
           <a href="#contact" className="text-black hover:text-gold transition-colors">Contact</a>
+          <a href="/blog" className="text-black hover:text-gold transition-colors">Blog</a>
         </div>
 
         {/* Mobile Navigation */}
@@ -108,6 +109,14 @@ const Navbar = () => {
               >
                 Contact
               </a>
+|<a 
+  href="/blog" 
+  className="text-black hover:text-gold transition-colors"
+  onClick={() => setIsMenuOpen(false)}
+>
+  Blog
+</a>
+
             </div>
           </div>
         )}
