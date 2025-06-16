@@ -120,8 +120,6 @@ const Navbar = () => {
                   <a href="/corporate" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>Corporate</a>
                 </div>
               )}
-
-              <a href="/blog" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>Blog</a>
             </div>
           </div>
         )}
