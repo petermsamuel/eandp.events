@@ -109,7 +109,7 @@ const Navbar = () => {
               >
                 Contact
               </a>
-|<a 
+<a 
   href="/blog" 
   className="text-black hover:text-gold transition-colors"
   onClick={() => setIsMenuOpen(false)}
