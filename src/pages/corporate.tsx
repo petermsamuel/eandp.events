@@ -1,5 +1,6 @@
 import React from "react";
 import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Check, Globe, Users, Facebook, Instagram, Mail } from "lucide-react";
 import NavBarCorporate from "@/components/NavBarCorporate";
 import { corporateGalleryImages } from "@/data/corporategallery";
@@ -33,6 +34,8 @@ He also demonstrated excellent people management skills, guiding volunteers with
 
 
 const Corporate = () => {
+  const location = useLocation();
+
   useEffect(() => {
     document.title = "Corporate Event Planning in Atlanta | Strategic & Executive Events | E&P Events";
 
@@ -45,7 +48,17 @@ const Corporate = () => {
       meta.content = "E&P Events elevates corporate event planning in Atlanta — strategically executing summits, brand activations, and executive experiences.";
       document.head.appendChild(meta);
     }
-  }, []);
+
+    // Smooth scroll to hash anchor if present
+    if (location.hash) {
+      setTimeout(() => {
+        const element = document.querySelector(location.hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100); // Delay to ensure elements are rendered
+    }
+  }, [location]);
 
   return (
     <>
