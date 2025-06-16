@@ -19,8 +19,6 @@ const staticRoutes = [
 const blogPostsDir = path.join(__dirname, 'src/pages/blog/');
 const files = await fs.readdir(blogPostsDir);
 
-// ✅ Add this debug log:
-console.log('🧪 Blog files found:', files);
 
 const blogSlugs = files
   .filter(file => file.endsWith('.tsx'))
