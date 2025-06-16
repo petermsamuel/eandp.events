@@ -85,7 +85,7 @@ const Blog = () => {
             <h2 className="section-title text-[#2a2a2a] mb-3">
               Latest from the E&amp;P Blog
             </h2>
-       <p className="text-lg text-white mb-6">
+       <p className="text-lg text-black mb-6">
               Stories, insights, and practical advice for anyone planning a wedding or corporate event in Atlanta—and far beyond.
             </p>
           </div>
