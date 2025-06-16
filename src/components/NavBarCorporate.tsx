@@ -27,6 +27,7 @@ const NavBarCorporate = () => {
         </a>
 
         <div className="hidden md:flex space-x-8">
+ <a href="/" className="text-black hover:text-gold transition-colors">Home</a>
           <a href="#what-we-do" className="text-black hover:text-gold">What We Do</a>
           <a href="#how-it-works" className="text-black hover:text-gold">How It Works</a>
           <a href="#testimonials" className="text-black hover:text-gold">Testimonials</a>
