@@ -1,35 +1,22 @@
-// src/components/NavBarBlog.tsx
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-const NavBarCorporate = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
+const NavBarBlog = () => {
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? "bg-white shadow-md py-2" : "bg-white py-4"
-    }`}>
+    <nav className="bg-white shadow-md py-4">
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="/" className="text-2xl font-bold">
-          <img 
-            src="/lovable-uploads/E&P_events_lion_horizontal.svg" 
-            alt="E&P Events Logo" 
-            className="h-12 w-auto"
+        <a href="/" className="text-xl font-bold text-black">
+          <img
+            src="/lovable-uploads/E&P_events_lion_horizontal.svg"
+            alt="E&P Events Logo"
+            className="h-10 w-auto"
           />
         </a>
-
-        <div className="hidden md:flex space-x-8">
-        <a href="/" className="text-black hover:text-gold transition-colors">Main</a>
+        <div className="space-x-6 hidden md:flex">
+          <a href="/" className="text-black hover:text-gold">Home</a>
           <a href="/weddings" className="text-black hover:text-gold">Weddings</a>
           <a href="/corporate" className="text-black hover:text-gold">Corporate</a>
+          <a href="/blog" className="text-black hover:text-gold font-semibold">Blog</a>
+          <a href="#contact" className="text-black hover:text-gold">Contact</a>
         </div>
       </div>
     </nav>
