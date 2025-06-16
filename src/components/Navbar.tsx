@@ -53,14 +53,26 @@ const Navbar = () => {
         </button>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex space-x-8">
+      <div className="hidden md:flex items-center gap-x-8">
           <a href="#what-we-do" className="text-black hover:text-gold transition-colors">What We Do</a>
           <a href="#featured" className="text-black hover:text-gold transition-colors">Featured In</a>
           <a href="#meet-peter" className="text-black hover:text-gold transition-colors">Meet Peter</a>
           <a href="#testimonials" className="text-black hover:text-gold transition-colors">Testimonials</a>
           <a href="#gallery" className="text-black hover:text-gold transition-colors">Gallery</a>
           <a href="#contact" className="text-black hover:text-gold transition-colors">Contact</a>
-          <a href="/blog" className="text-black hover:text-gold transition-colors">Blog</a>
+      <div className="relative group">
+<button className="text-black hover:text-gold transition-colors text-base font-medium flex items-center">
+    Events
+    <svg className="ml-1 h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+      <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clipRule="evenodd" />
+    </svg>
+  </button>
+  <div className="absolute left-0 mt-2 w-40 bg-white border rounded-md shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform scale-95 group-hover:scale-100 transition-all duration-150 z-50">
+    <a href="/weddings" className="block px-4 py-2 text-sm text-black hover:bg-gray-100">Weddings</a>
+    <a href="/corporate" className="block px-4 py-2 text-sm text-black hover:bg-gray-100">Corporate</a>
+  </div>
+</div>
+
         </div>
 
         {/* Mobile Navigation */}
