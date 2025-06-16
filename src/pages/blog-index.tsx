@@ -41,7 +41,7 @@ const Blog = () => {
 return (
   <>
     <div className="min-h-screen bg-[#f7f7f2] flex flex-col">
-      {/* ✅ Blog-specific navbar */}
+      {/* Blog-specific navbar */}
       <NavBarBlog />
 
 
