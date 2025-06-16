@@ -16,7 +16,6 @@ const NavBarBlog = () => {
           <a href="/weddings" className="text-black hover:text-gold">Weddings</a>
           <a href="/corporate" className="text-black hover:text-gold">Corporate</a>
           <a href="/blog" className="text-black hover:text-gold font-semibold">Blog</a>
-          <a href="#contact" className="text-black hover:text-gold">Contact</a>
         </div>
       </div>
     </nav>
