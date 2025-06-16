@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import NavBarCorporate from "@/components/NavBarBlog";
+import NavBarBlog from "@/components/NavBarBlog";
 import Footer from "@/components/Footer";
 import { Facebook, Instagram, Mail } from "lucide-react";
 
@@ -37,6 +37,12 @@ const Blog = () => {
     });
     document.head.appendChild(script);
   }, []);
+
+return (
+  <>
+    <div className="min-h-screen bg-[#f7f7f2] flex flex-col">
+      {/* ✅ Blog-specific navbar */}
+      <NavBarBlog />
 
 
   return (
