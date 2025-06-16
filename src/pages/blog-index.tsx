@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import NavBarCorporate from "@/components/NavBarBlog";
 import Footer from "@/components/Footer";
 import { Facebook, Instagram, Mail } from "lucide-react";
 
