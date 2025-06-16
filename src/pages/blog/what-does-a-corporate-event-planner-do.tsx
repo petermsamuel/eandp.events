@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const WhatDoesACorporateEventPlannerDo = () => {
+  useEffect(() => {
+    const canonical = document.createElement("link");
+    canonical.setAttribute("rel", "canonical");
+    canonical.setAttribute("href", "https://eandp.events/blog/what-does-a-corporate-event-planner-do");
+    document.head.appendChild(canonical);
+
+    return () => {
+      document.head.removeChild(canonical);
+    };
+  }, []);
+
   return (
     <div className="bg-[#f7f7f2] pt-28 pb-20 px-4">
       <div className="max-w-4xl mx-auto text-[#2a2a2a]">
