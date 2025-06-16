@@ -27,11 +27,9 @@ const NavBarCorporate = () => {
         </a>
 
         <div className="hidden md:flex space-x-8">
-          <a href="#what-we-do" className="text-black hover:text-gold">What We Do</a>
-          <a href="#how-it-works" className="text-black hover:text-gold">How It Works</a>
-          <a href="#testimonials" className="text-black hover:text-gold">Testimonials</a>
-          <a href="#partners" className="text-black hover:text-gold">Partners</a>
-          <a href="#cta" className="text-black hover:text-gold">Contact</a>
+        <a href="/" className="text-black hover:text-gold transition-colors">Main</a>
+          <a href="/weddings" className="text-black hover:text-gold">Weddings</a>
+          <a href="/corporate" className="text-black hover:text-gold">Corporate</a>
         </div>
       </div>
     </nav>
