@@ -8,10 +8,12 @@ const SchemaMarkup = () => {
     "url": "https://www.eandp.events",
     "telephone": "+1-770-410-8302",
     "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Atlanta",
-      "addressRegion": "GA",
-      "addressCountry": "US"
+"@type": "PostalAddress",
+"streetAddress": "1691 Ashbury Park Dr.",
+"addressLocality": "Hoschton",
+"addressRegion": "GA",
+"postalCode": "30548",
+"addressCountry": "US"
     },
     "description": "Luxury wedding and corporate event planning in Atlanta, specializing in South Asian and fusion weddings."
   };
