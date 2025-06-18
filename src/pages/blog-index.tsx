@@ -13,30 +13,36 @@ const blogPosts = [
 ];
 
 const Blog = () => {
-  useEffect(() => {
-    document.title = "E&P Events Blog | Atlanta Insights & Event Stories";
+useEffect(() => {
+  document.title = "E&P Events Blog | Atlanta Insights & Event Stories";
 
-    const meta = document.createElement("meta");
-    meta.name = "description";
-    meta.content = "Read tips, stories, and expert advice from Atlanta’s leading wedding and corporate event planners.";
-    document.head.appendChild(meta);
+  const meta = document.createElement("meta");
+  meta.name = "description";
+  meta.content = "Read tips, stories, and expert advice from Atlanta’s leading wedding and corporate event planners.";
+  document.head.appendChild(meta);
 
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.innerHTML = JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Blog",
-      "name": "E&P Events Blog",
-      "description": "Expert event planning advice, real stories, and cultural insights from Atlanta's top planners.",
-      "url": "https://eandp.events/blog",
-      "publisher": {
-        "@type": "Organization",
-        "name": "E&P Events",
-        "url": "https://eandp.events"
-      }
-    });
-    document.head.appendChild(script);
-  }, []);
+  const script = document.createElement("script");
+  script.type = "application/ld+json";
+  script.innerHTML = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "E&P Events Blog",
+    "description": "Expert event planning advice, real stories, and cultural insights from Atlanta's top planners.",
+    "url": "https://eandp.events/blog",
+    "publisher": {
+      "@type": "Organization",
+      "name": "E&P Events",
+      "url": "https://eandp.events"
+    }
+  });
+  document.head.appendChild(script);
+
+  return () => {
+    document.head.removeChild(meta);
+    document.head.removeChild(script);
+  };
+}, []);
+
 
   return (
     <>
