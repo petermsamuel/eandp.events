@@ -2,15 +2,48 @@ import React, { useEffect } from "react";
 
 const WhatDoesACorporateEventPlannerDo = () => {
   useEffect(() => {
-    const canonical = document.createElement("link");
-    canonical.setAttribute("rel", "canonical");
-    canonical.setAttribute("href", "https://eandp.events/blog/what-does-a-corporate-event-planner-do");
-    document.head.appendChild(canonical);
+  // Add canonical tag
+  const canonical = document.createElement("link");
+  canonical.setAttribute("rel", "canonical");
+  canonical.setAttribute("href", "https://eandp.events/blog/what-does-a-corporate-event-planner-do");
+  document.head.appendChild(canonical);
 
-    return () => {
-      document.head.removeChild(canonical);
-    };
-  }, []);
+  // Add breadcrumb schema
+  const breadcrumbScript = document.createElement("script");
+  breadcrumbScript.type = "application/ld+json";
+  breadcrumbScript.innerHTML = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://eandp.events/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://eandp.events/blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "What Does a Corporate Event Planner Do?",
+        "item": "https://eandp.events/blog/what-does-a-corporate-event-planner-do"
+      }
+    ]
+  });
+  document.head.appendChild(breadcrumbScript);
+
+  // Cleanup both on unmount
+  return () => {
+    document.head.removeChild(canonical);
+    document.head.removeChild(breadcrumbScript);
+  };
+}, []);
+
 
   return (
     <div className="bg-[#f7f7f2] pt-28 pb-20 px-4">
