@@ -8,7 +8,7 @@ const WhatWeDoSection = () => {
       className="relative z-10 section-container bg-transparent py-20"
     >
       <div className="max-w-4xl mx-auto text-center px-4">
-<h2 className="text-2xl md:text-4xl font-bold tracking-tight text-gray-900 section-title">
+<h2 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 section-title">
           Expert Planning for Unforgettable Events—Corporate & Cultural
         </h2>
         <p className="text-lg mt-6 text-gray-700 hidden md:block">
