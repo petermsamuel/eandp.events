@@ -13,7 +13,7 @@ const LeadMagnetPage = () => {
     <section className="min-h-screen bg-white py-20 px-6 md:px-12 lg:px-16 text-center text-[#2a2a2a]">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-3xl md:text-5xl font-bold mb-6">
-          Before You Book an Event Planner, Ask <span className="text-gold">These</span> 5 Questions
+          Ask <span className="text-gold">These</span> 5 Questions Before You Hire Anyone — Or Risk Regret
         </h1>
 
         <p className="text-lg mb-8 text-gray-700">
@@ -77,7 +77,7 @@ const LeadMagnetPage = () => {
     type="submit"
     className="w-full bg-navy text-white py-3 px-6 rounded-full font-semibold hover:bg-gold transition-colors"
   >
-    Get the Guide
+    Download the Free Guide
   </button>
 
   <p className="text-sm text-gray-500 mt-4">
