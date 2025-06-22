@@ -32,7 +32,7 @@ const WhatWeDoSection = () => {
                 Let’s Lead Your Corporate Event
               </h3>
               <p className="text-gray-700 mb-3">
-                Brand launches, summits, and seasonal events with measurable results — and zero chaos.
+            You need results, not risk. From brand launches and seasonal celebrations to executive summits, our corporate event planning delivers measurable impact - with clarity, confidence, and cultural fluency from our Atlanta-based team, trusted worldwide.
               </p>
               <p className="text-sm text-gold font-semibold underline group-hover:no-underline">
                 Click Here to view Corporate Services →
@@ -52,7 +52,7 @@ const WhatWeDoSection = () => {
                 Let’s Plan Your Wedding
               </h3>
               <p className="text-gray-700 mb-3">
-                South Asian & fusion weddings — layered with culture, coordinated with care.
+               As an experienced Indian wedding planner in Atlanta, we specialize in South Asian and fusion weddings layered with culture, complexity, and tradition. From baraats and sangeets to elegant receptions, our team brings lived experience, calm execution, and cultural fluency to every celebration.
               </p>
               <p className="text-sm text-gold font-semibold underline group-hover:no-underline">
                 Click Here to explore Wedding Planning →
@@ -66,14 +66,14 @@ const WhatWeDoSection = () => {
       <div className="mt-12 md:hidden flex flex-col gap-6 max-w-xl mx-auto px-4">
         {/* Corporate (placed first if preferred) */}
         <a href="/corporate" className="block bg-white p-6 rounded-lg shadow hover:shadow-lg border border-gray-100 hover:border-gold transition-all">
-          <h3 className="text-xl font-bold text-[#2a2a2a] mb-2">Corporate Events</h3>
+          <h3 className="text-xl font-bold text-[#2a2a2a] mb-2"> Let’s Lead Your Corporate Event</h3>
           <p className="text-sm text-gray-700 mb-2">Brand launches, summits, and culture-driven corporate experiences.</p>
           <p className="text-sm text-gold font-semibold underline">See Corporate Services →</p>
         </a>
 
         {/* Weddings */}
         <a href="/weddings" className="block bg-white p-6 rounded-lg shadow hover:shadow-lg border border-gray-100 hover:border-gold transition-all">
-          <h3 className="text-xl font-bold text-[#2a2a2a] mb-2">South Asian & Fusion Weddings</h3>
+          <h3 className="text-xl font-bold text-[#2a2a2a] mb-2">Let’s Plan Your Wedding</h3>
           <p className="text-sm text-gray-700 mb-2">Experience, elegance, and cultural fluency for once-in-a-lifetime days.</p>
           <p className="text-sm text-gold font-semibold underline">See Wedding Services →</p>
         </a>
