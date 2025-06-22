@@ -66,6 +66,7 @@ const WhatWeDoSection = () => {
       <div className="mt-12 md:hidden flex flex-col gap-6 max-w-xl mx-auto px-4">
         {/* Corporate (placed first if preferred) */}
         <a href="/corporate" className="block bg-white p-6 rounded-lg shadow hover:shadow-lg border border-gray-100 hover:border-gold transition-all">
+  <Presentation className="h-6 w-6 text-[#1a1a26]" />
           <h3 className="text-xl font-bold text-[#2a2a2a] mb-2"> Let’s Lead Your Corporate Event</h3>
           <p className="text-sm text-gray-700 mb-2">Brand launches, summits, and culture-driven corporate experiences.</p>
           <p className="text-sm text-gold font-semibold underline">See Corporate Services →</p>
@@ -73,6 +74,7 @@ const WhatWeDoSection = () => {
 
         {/* Weddings */}
         <a href="/weddings" className="block bg-white p-6 rounded-lg shadow hover:shadow-lg border border-gray-100 hover:border-gold transition-all">
+    <Sparkles className="h-6 w-6 text-gold" />
           <h3 className="text-xl font-bold text-[#2a2a2a] mb-2">Let’s Plan Your Wedding</h3>
           <p className="text-sm text-gray-700 mb-2">Experience, elegance, and cultural fluency for once-in-a-lifetime days.</p>
           <p className="text-sm text-gold font-semibold underline">See Wedding Services →</p>
