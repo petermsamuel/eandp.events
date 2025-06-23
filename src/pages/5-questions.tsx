@@ -21,7 +21,7 @@ const LeadMagnetPage = () => {
       asking these questions could save your budget, your timeline, and your sanity.
         </p>
 
-        <p className="text-base mb-10 text-gray-600">
+        <p className="text-lg mb-8 text-gray-700">
         You’re not just looking for a good planner — you’re looking for the right one.
         Someone who can lead under pressure, protect your time and values, and make sure your event actually delivers on its purpose.
         We’ll show you how to cut through the fluff and find the fit — so you can move forward with confidence.
