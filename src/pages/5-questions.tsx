@@ -13,7 +13,7 @@ const LeadMagnetPage = () => {
     <section className="min-h-screen bg-white py-20 px-6 md:px-12 lg:px-16 text-center text-[#2a2a2a]">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-3xl md:text-5xl font-bold mb-6">
-          Ask <span className="text-gold">These</span> 5 Questions Before You Hire Anyone — Or Risk Regret
+          Ask These <span className="text-gold">5 Questions</span> Before You Hire Anyone — Or Risk Regret
         </h1>
 
         <p className="text-lg mb-8 text-gray-700">
