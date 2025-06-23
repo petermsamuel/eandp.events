@@ -1,6 +1,7 @@
 import React from "react";
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import SchemaMarkup from "@/components/SchemaMarkup";
 import { Check, Globe, Users, Facebook, Instagram, Mail } from "lucide-react";
 import NavBarCorporate from "@/components/NavBarCorporate";
 import { corporateGalleryImages } from "@/data/corporategallery";
@@ -62,6 +63,7 @@ const Corporate = () => {
 
   return (
     <>
+    <SchemaMarkup />
       <div className="min-h-screen bg-transparent flex flex-col">
         <NavBarCorporate />
 
