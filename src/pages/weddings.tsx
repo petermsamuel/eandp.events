@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import SchemaMarkup from "@/components/SchemaMarkup";
 import { Check, Globe, Users, Plane, Facebook, Instagram, Mail} from "lucide-react";
 import NavBarWeddings from "@/components/NavBarWeddings";
 import { weddingGalleryImages } from "@/data/weddinggallery";
@@ -65,6 +66,7 @@ const [openCards, setOpenCards] = useState<number[]>([]);
 
   return (
     <>
+   <SchemaMarkup />
       <div className="min-h-screen bg-transparent flex flex-col">
         <NavBarWeddings />
 
