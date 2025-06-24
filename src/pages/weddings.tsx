@@ -66,7 +66,14 @@ const [openCards, setOpenCards] = useState<number[]>([]);
 
   return (
     <>
-   <SchemaMarkup />
+<SchemaMarkup
+  type="Service"
+  name="E and P Events"
+  description="Atlanta-based wedding planners specializing in South Asian and fusion ceremonies, luxury weddings, and multicultural celebrations."
+  url="https://eandp.events/weddings"
+  serviceType="Wedding Planning"
+/>
+
       <div className="min-h-screen bg-transparent flex flex-col">
         <NavBarWeddings />
 
