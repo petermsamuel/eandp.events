@@ -13,42 +13,55 @@ const blogPosts = [
 ];
 
 const Blog = () => {
-useEffect(() => {
-  document.title = "E&P Events Blog | Atlanta Insights & Event Stories";
+  useEffect(() => {
+    document.title = "E&P Events Blog | Atlanta Insights & Event Stories";
 
-  const meta = document.createElement("meta");
-  meta.name = "description";
-  meta.content = "Read tips, stories, and expert advice from Atlanta’s leading wedding and corporate event planners.";
-  document.head.appendChild(meta);
+    const meta = document.createElement("meta");
+    meta.name = "description";
+    meta.content = "Read tips, stories, and expert advice from Atlanta’s leading wedding and corporate event planners.";
+    document.head.appendChild(meta);
 
-  const script = document.createElement("script");
-  script.type = "application/ld+json";
-  script.innerHTML = JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "name": "E&P Events Blog",
-    "description": "Expert event planning advice, real stories, and cultural insights from Atlanta's top planners.",
-    "url": "https://eandp.events/blog",
-    "publisher": {
-      "@type": "Organization",
-      "name": "E&P Events",
-      "url": "https://eandp.events"
-    }
-  });
-  document.head.appendChild(script);
+    const canonical = document.createElement("link");
+    canonical.rel = "canonical";
+    canonical.href = "https://eandp.events/blog";
+    document.head.appendChild(canonical);
 
-  return () => {
-    document.head.removeChild(meta);
-    document.head.removeChild(script);
-  };
-}, []);
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.innerHTML = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "E&P Events Blog",
+      "url": "https://eandp.events/blog",
+      "description": "Expert event planning advice, real stories, and cultural insights from Atlanta's top planners.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "E&P Events",
+        "url": "https://eandp.events"
+      },
+      "mainEntity": [
+        {
+          "@type": "BlogPosting",
+          "headline": "What Does a Corporate Event Planner Do?",
+          "url": "https://eandp.events/blog/what-does-a-corporate-event-planner-do",
+          "image": "https://eandp.events/lovable-uploads/ChatGPT%20Image%20Jun%2014,%202025,%2003_13_22%20PM.png",
+          "description": "Discover the real strategy behind flawless corporate events—what expert planners actually do, how they protect your brand, and why execution is everything."
+        }
+      ]
+    });
+    document.head.appendChild(script);
 
+    return () => {
+      document.head.removeChild(meta);
+      document.head.removeChild(canonical);
+      document.head.removeChild(script);
+    };
+  }, []);
 
   return (
     <>
       <div className="min-h-screen bg-[#f7f7f2] flex flex-col">
-        {/* Blog-specific navbar */}
-         <NavBarBlog />
+        <NavBarBlog />
 
         {/* Hero Section */}
         <section
