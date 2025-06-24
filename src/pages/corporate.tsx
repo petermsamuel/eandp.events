@@ -71,7 +71,13 @@ const Corporate = () => {
 
   return (
     <>
-    <SchemaMarkup />
+<SchemaMarkup
+  type="Service"
+  name="E and P Events"
+  description="Strategic corporate event planning in Atlanta — from executive summits to nonprofit galas and brand activations."
+  url="https://eandp.events/corporate"
+  serviceType="Corporate Event Planning"
+/>
       <div className="min-h-screen bg-transparent flex flex-col">
         <NavBarCorporate />
 
