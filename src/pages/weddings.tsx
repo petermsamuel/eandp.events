@@ -89,13 +89,16 @@ const [openCards, setOpenCards] = useState<number[]>([]);
   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent z-0" />
 
   <div className="relative z-10 text-center w-full px-4">
-    <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-snug max-w-[75rem] mx-auto">
-      You Deserve a Wedding That Feels as Beautiful as It Looks.
-    </h1>
-    <p className="text-lg md:text-xl max-w-3xl mb-10 text-white/90 mx-auto">
-As your <strong>Atlanta South Asian wedding planner</strong>, we do more than coordinate — we lead with clarity, protect your culture, and bring fusion wedding planning expertise grounded in lived experience. 
-From the sangeet to the send-off, your joy stays front and center.
-    </p>
+  <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-snug max-w-[75rem] mx-auto">
+    You Deserve a Wedding That Feels as Beautiful as It Looks.
+  </h1>
+
+  <h2 className="text-lg md:text-xl max-w-3xl mb-10 text-white/90 mx-auto">
+    As your <strong>Atlanta South Asian wedding planner</strong>, we do more than coordinate — we lead with clarity, protect your culture, and bring fusion wedding planning expertise grounded in lived experience. 
+    From the sangeet to the send-off, your joy stays front and center.
+  </h2>
+</div>
+
 
 
     <div className="flex justify-center mb-6">
