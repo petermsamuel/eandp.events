@@ -38,28 +38,36 @@ const Corporate = () => {
   const location = useLocation();
 
   useEffect(() => {
-    document.title = "Corporate Event Planning in Atlanta | Strategic & Executive Events | E&P Events";
+  document.title = "Corporate Event Planning in Atlanta | Strategic & Executive Events | E&P Events";
 
-    const descriptionTag = document.querySelector("meta[name='description']");
-    if (descriptionTag) {
-      descriptionTag.setAttribute("content", "E&P Events elevates corporate event planning in Atlanta — strategically executing summits, brand activations, and executive experiences.");
-    } else {
-      const meta = document.createElement("meta");
-      meta.name = "description";
-      meta.content = "E&P Events elevates corporate event planning in Atlanta — strategically executing summits, brand activations, and executive experiences.";
-      document.head.appendChild(meta);
-    }
+  const descriptionTag = document.querySelector("meta[name='description']");
+  if (descriptionTag) {
+    descriptionTag.setAttribute("content", "E&P Events elevates corporate event planning in Atlanta — strategically executing summits, brand activations, and executive experiences.");
+  } else {
+    const meta = document.createElement("meta");
+    meta.name = "description";
+    meta.content = "E&P Events elevates corporate event planning in Atlanta — strategically executing summits, brand activations, and executive experiences.";
+    document.head.appendChild(meta);
+  }
 
-    // Smooth scroll to hash anchor if present
-    if (location.hash) {
-      setTimeout(() => {
-        const element = document.querySelector(location.hash);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 100); // Delay to ensure elements are rendered
-    }
-  }, [location]);
+  // Add canonical tag
+  const existingCanonical = document.querySelector("link[rel='canonical']");
+  if (!existingCanonical) {
+    const canonical = document.createElement("link");
+    canonical.rel = "canonical";
+    canonical.href = "https://eandp.events/corporate";
+    document.head.appendChild(canonical);
+  }
+
+  if (location.hash) {
+    setTimeout(() => {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  }
+}, [location]);
 
   return (
     <>
