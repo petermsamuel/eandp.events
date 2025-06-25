@@ -1,3 +1,5 @@
-https://www.eandp.events/* https://eandp.events/:splat 301!
-/5q  https://eandp.events/5-questions  301
-/*    /index.html   200
+https://www.eandp.events/*   https://eandp.events/:splat  301!
+http://www.eandp.events/*    https://eandp.events/:splat  301!
+/5q    /5-questions    301
+/*     /index.html     200
+
