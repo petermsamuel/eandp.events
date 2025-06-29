@@ -8,7 +8,7 @@ export default defineConfig({
     host: "::",
     port: 8080,
   },
-  plugins: [react(), ssr()],
+  plugins: [react(), ssr({ pageFiles: ['src/pages/**/*.page.*([a-z])'] })],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
