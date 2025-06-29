@@ -1,4 +1,4 @@
 import React from "react";
-import Index from "./index";
+import Index from "./Index";
 
 export default Index;
