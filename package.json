@@ -9,8 +9,7 @@
   "build:dev": "vite build --mode development",
   "lint": "eslint .",
   "generate-sitemap": "node generate-sitemap.js",
-  "prerender": "vite-plugin-ssr prerender",
-  "build": "npm run generate-sitemap && vite build && npm run prerender"
+"build": "npm run generate-sitemap && vite build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
