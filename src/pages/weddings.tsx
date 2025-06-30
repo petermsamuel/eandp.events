@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import SchemaMarkup from "@/components/SchemaMarkup";
 import { Check, Globe, Users, Plane, Facebook, Instagram, Mail} from "lucide-react";
@@ -65,14 +66,21 @@ const [openCards, setOpenCards] = useState<number[]>([]);
 
 
   return (
-    <>
-<SchemaMarkup
-  type="Service"
-  name="E and P Events"
-  description="Atlanta-based wedding planners specializing in South Asian and fusion ceremonies, luxury weddings, and multicultural celebrations."
-  url="https://eandp.events/weddings"
-  serviceType="Wedding Planning"
-/>
+<>
+  <Helmet>
+    <title>Atlanta South Asian Wedding Planner | Fusion & Multicultural Weddings | E&P Events</title>
+    <meta name="description" content="As your Atlanta South Asian wedding planner, we specialize in fusion and multicultural weddings with expert coordination and cultural fluency." />
+    <link rel="canonical" href="https://eandp.events/weddings" />
+  </Helmet>
+
+  <SchemaMarkup
+    type="Service"
+    name="E and P Events"
+    description="Atlanta-based wedding planners specializing in South Asian and fusion ceremonies, luxury weddings, and multicultural celebrations."
+    url="https://eandp.events/weddings"
+    serviceType="Wedding Planning"
+  />
+
 
       <div className="min-h-screen bg-transparent flex flex-col">
         <NavBarWeddings />
