@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { Helmet } from "react-helmet-async";
 
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
@@ -12,25 +13,18 @@ import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import SchemaMarkup from "../components/SchemaMarkup";
 
-
 const Index = () => {
-  useEffect(() => {
-    document.title = "Indian Wedding & Corporate Event Planner in Atlanta | E&P Events";
-
-    let metaDescription = document.querySelector('meta[name="description"]');
-    if (!metaDescription) {
-      metaDescription = document.createElement('meta');
-      metaDescription.setAttribute('name', 'description');
-      document.head.appendChild(metaDescription);
-    }
-    metaDescription.setAttribute(
-      'content',
-      "E&P Events is Atlanta’s premier planner for Indian, South Asian, and fusion weddings — as well as high-end corporate and executive events."
-    );
-  }, []);
-
   return (
     <div className="relative overflow-x-hidden">
+      <Helmet>
+        <title>Indian Wedding & Corporate Event Planner in Atlanta | E&P Events</title>
+        <meta
+          name="description"
+          content="E&P Events is Atlanta’s premier planner for Indian, South Asian, and fusion weddings — as well as high-end corporate and executive events."
+        />
+        <link rel="canonical" href="https://eandp.events/" />
+      </Helmet>
+
       <div className="lion-watermark" />
       <div className="min-h-screen flex flex-col">
         <SchemaMarkup />
