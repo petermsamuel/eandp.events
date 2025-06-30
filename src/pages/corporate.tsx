@@ -1,11 +1,25 @@
 import React from "react";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { Helmet } from 'react-helmet-async';
 import SchemaMarkup from "@/components/SchemaMarkup";
 import { Check, Globe, Users, Facebook, Instagram, Mail } from "lucide-react";
 import NavBarCorporate from "@/components/NavBarCorporate";
 import { corporateGalleryImages } from "@/data/corporategallery";
 import TestimonialSection from "@/components/TestimonialSection";
+
+
+
+
+
+// Inside your component’s return block:
+<Helmet>
+  <title>Corporate Event Planning in Atlanta | Strategic & Executive Events | E&P Events</title>
+  <meta name="description" content="E&P Events elevates corporate event planning in Atlanta — strategically executing summits, brand activations, and executive experiences." />
+  <link rel="canonical" href="https://eandp.events/corporate" />
+</Helmet>
+
+
 
 const weddingTestimonials = [
   {
@@ -37,47 +51,36 @@ He also demonstrated excellent people management skills, guiding volunteers with
 const Corporate = () => {
   const location = useLocation();
 
+  // Smooth scroll for anchor links
   useEffect(() => {
-  document.title = "Corporate Event Planning in Atlanta | Strategic & Executive Events | E&P Events";
-
-  const descriptionTag = document.querySelector("meta[name='description']");
-  if (descriptionTag) {
-    descriptionTag.setAttribute("content", "E&P Events elevates corporate event planning in Atlanta — strategically executing summits, brand activations, and executive experiences.");
-  } else {
-    const meta = document.createElement("meta");
-    meta.name = "description";
-    meta.content = "E&P Events elevates corporate event planning in Atlanta — strategically executing summits, brand activations, and executive experiences.";
-    document.head.appendChild(meta);
-  }
-
-  // Add canonical tag
-  const existingCanonical = document.querySelector("link[rel='canonical']");
-  if (!existingCanonical) {
-    const canonical = document.createElement("link");
-    canonical.rel = "canonical";
-    canonical.href = "https://eandp.events/corporate";
-    document.head.appendChild(canonical);
-  }
-
-  if (location.hash) {
-    setTimeout(() => {
-      const element = document.querySelector(location.hash);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }, 100);
-  }
-}, [location]);
+    if (location.hash) {
+      setTimeout(() => {
+        const element = document.querySelector(location.hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    }
+  }, [location]);
 
   return (
     <>
-<SchemaMarkup
-  type="Service"
-  name="E and P Events"
-  description="Strategic corporate event planning in Atlanta — from executive summits to nonprofit galas and brand activations."
-  url="https://eandp.events/corporate"
-  serviceType="Corporate Event Planning"
-/>
+      <Helmet>
+        <title>Corporate Event Planning in Atlanta | Strategic & Executive Events | E&P Events</title>
+        <meta
+          name="description"
+          content="E&P Events elevates corporate event planning in Atlanta — strategically executing summits, brand activations, and executive experiences."
+        />
+        <link rel="canonical" href="https://eandp.events/corporate" />
+      </Helmet>
+
+      <SchemaMarkup
+        type="Service"
+        name="E and P Events"
+        description="Strategic corporate event planning in Atlanta — from executive summits to nonprofit galas and brand activations."
+        url="https://eandp.events/corporate"
+        serviceType="Corporate Event Planning"
+      />
       <div className="min-h-screen bg-transparent flex flex-col">
         <NavBarCorporate />
 
