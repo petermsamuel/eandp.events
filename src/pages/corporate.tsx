@@ -269,7 +269,7 @@ const Corporate = () => {
  <h2 className="section-title">Corporate Event Planner in Atlanta</h2>
 <section className="text-lg text-black my-12 max-w-4xl mx-auto text-center">
   <p>
-  Looking for a strategic <strong>corporate event planner in Atlanta</strong>? With over a decade of experience, E&P Events partners with executive teams, nonprofits, and brands to produce high-impact summits, launches, and activations — all with precision and cultural fluency. Whether you need a full-service event team or a partner to handle the details, our Atlanta-based planners bring experience, speed, and results.
+  Looking for a strategic <b>corporate event planner in Atlanta</b>? With over a decade of experience, E&P Events partners with executive teams, nonprofits, and brands to produce high-impact summits, launches, and activations — all with precision and cultural fluency. Whether you need a full-service event team or a partner to handle the details, our Atlanta-based planners bring experience, speed, and results.
   </p>
 </section>
 
