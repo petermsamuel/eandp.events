@@ -142,7 +142,7 @@ const Corporate = () => {
           style={{ backgroundColor: "#2a2a2a" }}
         >
           <div className="text-center mb-16">
-            <h2 className="section-title text-white">What You Need, What We Deliver</h2>
+            <h2 className="section-title text-white">What You Need from an Atlanta Corporate Event Planner</h2>
          <p className="text-lg max-w-3xl mx-auto text-white">
   Planning an Atlanta-based, high-stakes corporate event means juggling timelines, stakeholder expectations, and brand integrity—often under intense pressure. Most planners coordinate. We take ownership, so you can lead the room, not run it.
 </p>
@@ -269,7 +269,7 @@ const Corporate = () => {
  <h2 className="section-title">Corporate Event Planner in Atlanta</h2>
 <section className="text-lg text-black my-12 max-w-4xl mx-auto text-center">
   <p>
-    With over a decade of experience, E&P Events is a trusted corporate event planner in Atlanta. From executive summits and product launches to nonprofit fundraisers and global delegations, we design experiences that align with your business goals and brand reputation. Whether you're planning a high-profile executive event or need full-service event production, our Atlanta-based team brings structure, speed, and precision to every detail.
+  Looking for a strategic <strong>corporate event planner in Atlanta</strong>? With over a decade of experience, E&P Events partners with executive teams, nonprofits, and brands to produce high-impact summits, launches, and activations — all with precision and cultural fluency. Whether you need a full-service event team or a partner to handle the details, our Atlanta-based planners bring experience, speed, and results.
   </p>
 </section>
 
@@ -437,6 +437,35 @@ const Footer = () => {
           <p>&copy; {currentYear} E&P Events. All rights reserved.</p>
         </div>
       </div>
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      name: "E and P Events",
+      image: "https://eandp.events/logo.png",
+      url: "https://eandp.events/corporate",
+      telephone: "+1-770-410-8302",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "1691 Ashbury Park Dr.",
+        addressLocality: "Hoschton",
+        addressRegion: "GA",
+        postalCode: "30548",
+        addressCountry: "US",
+      },
+      priceRange: "$$$",
+      description:
+        "Corporate event planner in Atlanta offering strategic execution for summits, brand activations, and nonprofit galas.",
+      sameAs: [
+        "https://www.instagram.com/eandp_events/",
+        "https://www.facebook.com/eventsep/",
+        "https://www.theknot.com/marketplace/eandp-events-alpharetta-ga-1055902",
+      ],
+    }),
+  }}
+/>
     </footer>
   );
 };
