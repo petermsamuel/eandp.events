@@ -90,7 +90,7 @@ const HiddenCostsOfDIYCoporateEvents = () => {
         </p>
         <p className="text-lg mb-4">
   The opportunity cost is real, and it compounds. That’s why many Atlanta companies partner with 
-  <a href="/corporate" className="text-blue-600 underline">our corporate event planning team</a> to stay focused on what truly drives business value.
+  <a href="/corporate" className="text-blue-600 underline"> our corporate event planning team</a> to stay focused on what truly drives business value.
 </p>
 
         <h2 className="text-2xl font-semibold mt-10 mb-4">
@@ -147,7 +147,7 @@ const HiddenCostsOfDIYCoporateEvents = () => {
         </h3>
        <p className="text-lg mb-4">
   Being based in Atlanta gives E&amp;P Events a strategic edge—access to vetted, reliable vendors who know our standards and deliver without compromise. 
-  <a href="/corporate" className="text-blue-600 underline">Learn more about our corporate event services</a> and how we elevate business gatherings with Atlanta expertise.
+  <a href="/corporate" className="text-blue-600 underline"> Learn more about our corporate event services</a> and how we elevate business gatherings with Atlanta expertise.
 </p>
 
         <h3 className="text-xl font-semibold mt-6 mb-2">
