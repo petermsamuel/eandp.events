@@ -89,8 +89,7 @@ const HiddenCostsOfDIYCoporateEvents = () => {
           When you pull your marketing director into event coordination, you're not just adding to their workload—you're subtracting from their core contributions. That product launch strategy? The Q4 campaign? These get delayed or diluted because your high-performers are sourcing linens instead of driving revenue.
         </p>
         <p className="text-lg mb-4">
-  The opportunity cost is real, and it compounds. That’s why many Atlanta companies partner with  
-  <a href="/corporate" className="text-blue-600 underline">our corporate event planning team</a> to stay focused on what truly drives business value.
+  The opportunity cost is real, and it compounds. That’s why many Atlanta companies partner with <a href="/corporate" className="text-blue-600 underline">our corporate event planning team</a> to stay focused on what truly drives business value.
 </p>
 
         <h2 className="text-2xl font-semibold mt-10 mb-4">
@@ -146,8 +145,7 @@ const HiddenCostsOfDIYCoporateEvents = () => {
           Local Vendor Relationships Only an Atlanta Expert Can Leverage
         </h3>
        <p className="text-lg mb-4">
-  Being based in Atlanta gives E&amp;P Events a strategic edge—access to vetted, reliable vendors who know our standards and deliver without compromise.  
-  <a href="/corporate" className="text-blue-600 underline">Learn more about our corporate event services</a> and how we elevate business gatherings with Atlanta expertise.
+  Being based in Atlanta gives E&amp;P Events a strategic edge—access to vetted, reliable vendors who know our standards and deliver without compromise. <a href="/corporate" className="text-blue-600 underline">Learn more about our corporate event services</a> and how we elevate business gatherings with Atlanta expertise.
 </p>
 
         <h3 className="text-xl font-semibold mt-6 mb-2">
