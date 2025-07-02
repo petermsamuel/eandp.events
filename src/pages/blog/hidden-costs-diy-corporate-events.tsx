@@ -61,11 +61,11 @@ const HiddenCostsOfDIYCoporateEvents = () => {
         </p>
 
         <p className="text-lg mb-6">
-          I understand that impulse. As someone who has guided hundreds of executives through high-stakes events, I've seen brilliant leaders make this exact calculation. The math seems simple—cut the planner, save the fee. But here's what I've learned after decades in this industry: DIY corporate events don't just risk failure—they guarantee hidden costs that far exceed any savings.
+          We understand that impulse. Guided hundreds of executives through high-stakes events, we've seen brilliant leaders make this exact calculation. The math seems simple—cut the planner, save the fee. But here's what we've learned after decades in this industry: DIY corporate events don't just risk failure—they guarantee hidden costs that far exceed any savings.
         </p>
 
         <p className="text-lg mb-6">
-          Let me share what really happens when you go it alone, and why the smartest leaders choose a different path.
+         Here's what really happens when you go it alone, and why the smartest leaders choose a different path.
         </p>
 
         <h2 className="text-2xl font-semibold mt-10 mb-4">
@@ -79,7 +79,7 @@ const HiddenCostsOfDIYCoporateEvents = () => {
           The hidden costs start immediately. That rush order for forgotten signage? The overtime hours for your marketing team who's never negotiated with caterers? The penalty fees when you need to change venues last-minute because you didn't know to ask about exclusive dates?
         </p>
         <p className="text-lg mb-4">
-          At E&amp;P Events, I've built relationships with vendors across Atlanta and beyond over decades. These partnerships mean better rates, flexible terms, and the kind of trust that saves you money when things need to change—because they always do.
+          At E&amp;P Events, we've built relationships with vendors across Atlanta and beyond over decades. These partnerships mean better rates, flexible terms, and the kind of trust that saves you money when things need to change—because they always do.
         </p>
 
         <h3 className="text-xl font-semibold mt-6 mb-2">
@@ -89,8 +89,9 @@ const HiddenCostsOfDIYCoporateEvents = () => {
           When you pull your marketing director into event coordination, you're not just adding to their workload—you're subtracting from their core contributions. That product launch strategy? The Q4 campaign? These get delayed or diluted because your high-performers are sourcing linens instead of driving revenue.
         </p>
         <p className="text-lg mb-4">
-          The opportunity cost is real, and it compounds.
-        </p>
+  The opportunity cost is real, and it compounds. That’s why many Atlanta companies partner with 
+  <a href="/corporate" className="text-blue-600 underline">our corporate event planning team</a> to stay focused on what truly drives business value.
+</p>
 
         <h2 className="text-2xl font-semibold mt-10 mb-4">
           Strategic Missteps That Undermine Success
@@ -100,14 +101,14 @@ const HiddenCostsOfDIYCoporateEvents = () => {
           Misaligned Objectives, Missed Opportunities
         </h3>
         <p className="text-lg mb-4">
-          Every corporate event should serve your larger business goals. Without strategic guidance, you might create a beautiful gathering that fails to move the needle. I help leaders define clear objectives upfront—whether that's strengthening stakeholder relationships, launching a new initiative, or celebrating cultural milestones in ways that resonate authentically.
+          Every corporate event should serve your larger business goals. Without strategic guidance, you might create a beautiful gathering that fails to move the needle. We help leaders define clear objectives upfront—whether that's strengthening stakeholder relationships, launching a new initiative, or celebrating cultural milestones in ways that resonate authentically.
         </p>
 
         <h3 className="text-xl font-semibold mt-6 mb-2">
           The Vendor Maze
         </h3>
         <p className="text-lg mb-4">
-          After twenty years of navigating vendor relationships, I know which partners deliver on promises and which ones leave you scrambling. More importantly, I know how to structure contracts that protect you and build in contingencies that matter.
+          After over a decade of navigating vendor relationships, we know which partners deliver on promises and which ones leave you scrambling. More importantly, we know how to structure contracts that protect you and build in contingencies that matter.
         </p>
         <p className="text-lg mb-4">
           When you're negotiating alone, you're operating without this intelligence—and vendors know it.
@@ -124,7 +125,7 @@ const HiddenCostsOfDIYCoporateEvents = () => {
           Every corporate event is a brand showcase, whether you intend it or not. Inconsistent messaging, cultural missteps, or logistical failures reflect directly on your organization's competence and values.
         </p>
         <p className="text-lg mb-4">
-          I bring cultural intelligence to every event, ensuring your gathering honors diverse perspectives and creates inclusive experiences that strengthen rather than strain relationships.
+          We bring cultural intelligence to every event, ensuring your gathering honors diverse perspectives and creates inclusive experiences that strengthen rather than strain relationships.
         </p>
 
         <h3 className="text-xl font-semibold mt-6 mb-2">
@@ -144,9 +145,10 @@ const HiddenCostsOfDIYCoporateEvents = () => {
         <h3 className="text-xl font-semibold mt-6 mb-2">
           Local Vendor Relationships Only an Atlanta Expert Can Leverage
         </h3>
-        <p className="text-lg mb-4">
-          Being based in Atlanta gives E&amp;P Events a strategic edge—access to vetted, reliable vendors who know our standards and deliver without compromise. We understand the pace, the venues, the expectations unique to this market.
-        </p>
+       <p className="text-lg mb-4">
+  Being based in Atlanta gives E&amp;P Events a strategic edge—access to vetted, reliable vendors who know our standards and deliver without compromise. 
+  <a href="/corporate" className="text-blue-600 underline">Learn more about our corporate event services</a> and how we elevate business gatherings with Atlanta expertise.
+</p>
 
         <h3 className="text-xl font-semibold mt-6 mb-2">
           Maximizing ROI Through Strategic Event Planning
@@ -163,21 +165,21 @@ const HiddenCostsOfDIYCoporateEvents = () => {
           Transparent Partnership from Day One
         </h3>
         <p className="text-lg mb-4">
-          I believe in flat-fee pricing because hidden costs break trust. When we work together, you'll know exactly what you're investing and exactly what you'll receive. No surprises, no markups, no confusion.
+          We believe in flat-fee pricing because hidden costs break trust. When we work together, you'll know exactly what you're investing and exactly what you'll receive. No surprises, no markups, no confusion.
         </p>
 
         <h3 className="text-xl font-semibold mt-6 mb-2">
           Cultural Intelligence That Matters
         </h3>
         <p className="text-lg mb-4">
-          Whether you're hosting international stakeholders, celebrating diverse team achievements, or launching initiatives across cultural communities, I bring the sensitivity and expertise to make everyone feel valued and included.
+          Whether you're hosting international stakeholders, celebrating diverse team achievements, or launching initiatives across cultural communities, E&P Events bring the sensitivity and expertise to make everyone feel valued and included.
         </p>
 
         <h3 className="text-xl font-semibold mt-6 mb-2">
           Proven Results, Personal Touch
         </h3>
         <p className="text-lg mb-4">
-          From Fortune 500 retreats to nonprofit galas, I've guided leaders through events that strengthen relationships, advance objectives, and create lasting impact. Each event is tailored to your specific goals and culture—never cookie-cutter, always authentic.
+          From Fortune 500 retreats to nonprofit galas, we've guided leaders through events that strengthen relationships, advance objectives, and create lasting impact. Each event is tailored to your specific goals and culture—never cookie-cutter, always authentic.
         </p>
 
         <h2 className="text-2xl font-semibold mt-10 mb-4">
@@ -188,11 +190,11 @@ const HiddenCostsOfDIYCoporateEvents = () => {
           The question isn't whether you can plan your own corporate event—it's whether you should. Your time, your team's focus, and your brand's reputation are too valuable to risk on uncertainties.
         </p>
 
-        <p className="text-lg mb-4 font-semibold">
-          Ready to elevate your next corporate gathering with confidence, clarity, and cultural intelligence?
-          <br />
-          <a href="/contact" className="text-blue-600 underline">Contact E&amp;P Events</a> — your trusted corporate event planner in Atlanta — for a consultation that puts your objectives first.
-        </p>
+       <p className="text-lg mb-4 font-semibold">
+  Ready to elevate your next corporate gathering with confidence, clarity, and cultural intelligence?
+  <br />
+  <a href="https://cal.com/eandp.events/corporate-b2b-15" className="text-blue-600 underline">Contact E&amp;P Events</a> — your trusted corporate event planner in Atlanta — for a consultation that puts your objectives first. Or, <a href="/corporate" className="text-blue-600 underline">explore our corporate planning services</a>.
+</p>
 
         <h2 className="text-2xl font-semibold mt-10 mb-4">
           FAQs
@@ -215,7 +217,7 @@ const HiddenCostsOfDIYCoporateEvents = () => {
           </li>
 
           <li>
-            <strong>How does your flat-fee pricing work?</strong> <br />
+            <strong>How does your pricing structure work?</strong> <br />
             Transparent pricing from day one—no hidden fees, no markups, and no post-event surprises.
           </li>
 
