@@ -46,7 +46,7 @@ const HiddenCostsOfDIYCoporateEvents = () => {
       <div className="max-w-4xl mx-auto text-[#2a2a2a]">
         <div className="w-full aspect-[16/9] overflow-hidden rounded-xl shadow-lg mb-10">
           <img
-            src="/lovable-uploads/ChatGPT Image Jul 2, 2025, 01_13 PM.png"
+            src="/lovable-uploads/ChatGPT Image Jul 2, 2025, 03_37_53 PM.png"
             alt="Corporate leaders managing a high-end Atlanta business event"
             className="w-full h-full object-cover"
           />
