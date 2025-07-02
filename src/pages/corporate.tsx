@@ -74,13 +74,7 @@ const Corporate = () => {
         <link rel="canonical" href="https://eandp.events/corporate" />
       </Helmet>
 
-      <SchemaMarkup
-        type="Service"
-        name="E and P Events"
-        description="Strategic corporate event planning in Atlanta — from executive summits to nonprofit galas and brand activations."
-        url="https://eandp.events/corporate"
-        serviceType="Corporate Event Planning"
-      />
+
       <div className="min-h-screen bg-transparent flex flex-col">
         <NavBarCorporate />
 
