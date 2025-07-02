@@ -73,36 +73,6 @@ const [openCards, setOpenCards] = useState<number[]>([]);
     <link rel="canonical" href="https://eandp.events/weddings" />
   </Helmet>
 
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-      __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "E and P Events",
-        "image": "https://eandp.events/logo.png",
-        "url": "https://eandp.events/weddings",
-        "telephone": "+1-770-410-8302",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "1691 Ashbury Park Dr.",
-          "addressLocality": "Hoschton",
-          "addressRegion": "GA",
-          "postalCode": "30548",
-          "addressCountry": "US"
-        },
-        "priceRange": "$$$",
-        "description": "Atlanta wedding planners specializing in South Asian and fusion weddings — offering full-service planning, design, and culturally fluent coordination.",
-        "sameAs": [
-          "https://www.instagram.com/eandp_events/",
-          "https://www.facebook.com/eventsep/",
-          "https://www.theknot.com/marketplace/eandp-events-alpharetta-ga-1055902"
-        ]
-      })
-    }}
-  />
-
-
   <SchemaMarkup
     type="Service"
     name="E and P Events"
@@ -510,6 +480,34 @@ const Footer = () => {
           <p>&copy; {currentYear} E&P Events. All rights reserved.</p>
         </div>
       </div>
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "E and P Events",
+      "image": "https://eandp.events/logo.png",
+      "url": "https://eandp.events/weddings",
+      "telephone": "+1-770-410-8302",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1691 Ashbury Park Dr.",
+        "addressLocality": "Hoschton",
+        "addressRegion": "GA",
+        "postalCode": "30548",
+        "addressCountry": "US"
+      },
+      "priceRange": "$$$",
+      "description": "Atlanta wedding planners specializing in South Asian and fusion weddings — offering full-service planning, design, and culturally fluent coordination.",
+      "sameAs": [
+        "https://www.instagram.com/eandp_events/",
+        "https://www.facebook.com/eventsep/",
+        "https://www.theknot.com/marketplace/eandp-events-alpharetta-ga-1055902"
+      ]
+    })
+  }}
+/>
     </footer>
   );
 };
