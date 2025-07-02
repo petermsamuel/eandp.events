@@ -10,6 +10,12 @@ const blogPosts = [
     excerpt: "Discover the real strategy behind flawless corporate events—what expert planners actually do, how they protect your brand, and why execution is everything.",
     href: "/blog/what-does-a-corporate-event-planner-do",
   },
+ {
+    image: "/lovable-uploads/ChatGPT Image Jul 2, 2025, 03_37_53 PM.png?auto=format&fit=crop&w=600&q=80",
+    title: "The Hidden Cost of DIY Corporate Events",
+    excerpt: "DIY corporate events may look budget-friendly—but hidden costs, missed strategy, and brand risks make expert planning a smarter investment.",
+    href: "/blog/hidden-costs-diy-corporate-events",
+  },
 ];
 
 const Blog = () => {
