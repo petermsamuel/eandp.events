@@ -63,6 +63,9 @@ const NavbarWeddings = () => {
           <a href="/" className="text-black hover:text-gold transition-colors">
             Home
           </a>
+ <a href="#gallery" className="text-black hover:text-gold">
+            Gallery
+          </a>
           <a href="#what-we-do" className="text-black hover:text-gold">
             What We Do
           </a>
@@ -71,9 +74,6 @@ const NavbarWeddings = () => {
           </a>
           <a href="#testimonials" className="text-black hover:text-gold">
             Testimonials
-          </a>
-          <a href="#gallery" className="text-black hover:text-gold">
-            Gallery
           </a>
           <a href="#cta" className="text-black hover:text-gold">
             Contact
@@ -124,6 +124,13 @@ const NavbarWeddings = () => {
             >
               Home
             </a>
+<a
+              href="#gallery"
+              className="text-black hover:text-gold"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Gallery
+            </a>
             <a
               href="#what-we-do"
               className="text-black hover:text-gold"
@@ -144,13 +151,6 @@ const NavbarWeddings = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               Testimonials
-            </a>
-            <a
-              href="#gallery"
-              className="text-black hover:text-gold"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Gallery
             </a>
             <a
               href="#cta"
