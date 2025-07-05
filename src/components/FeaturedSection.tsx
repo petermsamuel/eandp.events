@@ -14,7 +14,7 @@ const FeaturedSection = () => {
         <div className="flex flex-wrap justify-center items-center gap-12">
           {/* South Asian Bride */}
           <a
-            href="https://www.southasianbridemagazine.com/"
+            href="https://southasianbridemagazine.com/vendor/ep-events/"
             target="_blank"
             rel="noopener noreferrer"
             className="block h-20 w-auto"
@@ -42,7 +42,7 @@ const FeaturedSection = () => {
 
           {/* Maharani Weddings */}
           <a
-            href="https://www.maharaniweddings.com/"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="block h-20 w-auto"
