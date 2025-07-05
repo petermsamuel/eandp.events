@@ -159,17 +159,16 @@ const [openCards, setOpenCards] = useState<number[]>([]);
 <img
   src={image.src}
   srcSet={`
-    ${image.src.replace('.webp', '-small.webp')} 600w,
-    ${image.src.replace('.webp', '-medium.webp')} 900w,
+    ${image.src.replace('.webp', '-600.webp')} 600w,
+    ${image.src.replace('.webp', '-900.webp')} 900w,
     ${image.src} 1200w
   `}
   sizes="(max-width: 640px) 600px, (max-width: 1024px) 900px, 1200px"
   alt={image.alt}
   loading="lazy"
-  width="432"
-  height="288"
-  className="w-full h-full object-cover rounded-md"
+  className="w-full h-full object-cover rounded-md aspect-[3/2]"
 />
+
 
 
             </div>
@@ -189,22 +188,18 @@ const [openCards, setOpenCards] = useState<number[]>([]);
  className="relative flex-shrink-0 rounded-md overflow-hidden aspect-[3/2] h-72"
 
             >
-              <img
-  src={image.src}
+    <img
+  src={image.src.replace('.webp', '-600.webp')}
+  srcSet={`
+    ${image.src.replace('.webp', '-600.webp')} 600w,
+    ${image.src.replace('.webp', '-900.webp')} 900w
+  `}
+  sizes="(max-width: 768px) 100vw, 600px"
   alt={image.alt}
   loading="lazy"
-  width="432"
-  height="288"
-  className="w-full h-full object-cover rounded-md"
+  className="w-full h-full object-cover rounded-md aspect-[3/2]"
 />
 
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 
       {/* What We Do Section */}
