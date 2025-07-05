@@ -4,6 +4,10 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import WhatWeDoSection from "../components/WhatWeDoSection";
+import Footer from "../components/Footer";
+import SchemaMarkup from "../components/SchemaMarkup";
+
+// Lazy-loaded components
 const GallerySection = React.lazy(() => import("../components/GallerySection"));
 const AdditionalCtaSection = React.lazy(() => import("../components/AdditionalCtaSection"));
 const TestimonialSection = React.lazy(() => import("../components/TestimonialSection"));
@@ -30,41 +34,32 @@ const Index = () => {
         <main className="flex-1 relative z-10">
           <HeroSection />
           <WhatWeDoSection />
-          <GallerySection />
-          <AdditionalCtaSection />
-          <TestimonialSection />
-          <MeetPeterSection />
-          <ContactSection />
-          <FeaturedSection />
+
+          <Suspense fallback={<div>Loading gallery...</div>}>
+            <GallerySection />
+          </Suspense>
+
+          <Suspense fallback={<div>Loading call-to-action...</div>}>
+            <AdditionalCtaSection />
+          </Suspense>
+
+          <Suspense fallback={<div>Loading testimonials...</div>}>
+            <TestimonialSection />
+          </Suspense>
+
+          <Suspense fallback={<div>Loading Meet Peter...</div>}>
+            <MeetPeterSection />
+          </Suspense>
+
+          <Suspense fallback={<div>Loading contact...</div>}>
+            <ContactSection />
+          </Suspense>
+
+          <Suspense fallback={<div>Loading featured logos...</div>}>
+            <FeaturedSection />
+          </Suspense>
         </main>
-<script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "E and P Events",
-      "image": "https://eandp.events/logo.png",
-      "url": "https://eandp.events/",
-      "telephone": "+1-770-410-8302",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "1691 Ashbury Park Dr.",
-        "addressLocality": "Hoschton",
-        "addressRegion": "GA",
-        "postalCode": "30548",
-        "addressCountry": "US"
-      },
-      "priceRange": "$$$",
-      "description": "Atlanta event planners specializing in South Asian weddings, fusion celebrations, and high-end corporate experiences.",
-      "sameAs": [
-        "https://www.instagram.com/eandp_events/",
-        "https://www.facebook.com/eventsep/",
-        "https://www.theknot.com/marketplace/eandp-events-alpharetta-ga-1055902"
-      ]
-    })
-  }}
-/>
+
         <Footer />
       </div>
     </div>
