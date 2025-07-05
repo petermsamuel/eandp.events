@@ -1,17 +1,15 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Helmet } from "react-helmet-async";
 
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import WhatWeDoSection from "../components/WhatWeDoSection";
-import GallerySection from "../components/GallerySection";
-import AdditionalCtaSection from "../components/AdditionalCtaSection";
-import TestimonialSection from "../components/TestimonialSection";
-import MeetPeterSection from "../components/MeetPeterSection";
-import ContactSection from "../components/ContactSection";
-import FeaturedSection from "../components/FeaturedSection";
-import Footer from "../components/Footer";
-import SchemaMarkup from "../components/SchemaMarkup";
+const GallerySection = React.lazy(() => import("../components/GallerySection"));
+const AdditionalCtaSection = React.lazy(() => import("../components/AdditionalCtaSection"));
+const TestimonialSection = React.lazy(() => import("../components/TestimonialSection"));
+const MeetPeterSection = React.lazy(() => import("../components/MeetPeterSection"));
+const ContactSection = React.lazy(() => import("../components/ContactSection"));
+const FeaturedSection = React.lazy(() => import("../components/FeaturedSection"));
 
 const Index = () => {
   return (
