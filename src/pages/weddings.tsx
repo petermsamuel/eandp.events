@@ -156,15 +156,20 @@ const [openCards, setOpenCards] = useState<number[]>([]);
               className="relative flex-shrink-0 rounded-md overflow-hidden"
             className="relative flex-shrink-0 rounded-md overflow-hidden aspect-[3/2] h-72"
             >
-  <img
+<img
   src={image.src}
+  srcSet={`
+    ${image.src.replace('.webp', '-small.webp')} 600w,
+    ${image.src.replace('.webp', '-medium.webp')} 900w,
+    ${image.src} 1200w
+  `}
+  sizes="(max-width: 640px) 600px, (max-width: 1024px) 900px, 1200px"
   alt={image.alt}
   loading="lazy"
   width="432"
   height="288"
   className="w-full h-full object-cover rounded-md"
 />
-
 
 
             </div>
