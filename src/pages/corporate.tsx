@@ -2,7 +2,6 @@ import React from "react";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Helmet } from 'react-helmet-async';
-import SchemaMarkup from "@/components/SchemaMarkup";
 import { Check, Globe, Users, Facebook, Instagram, Mail } from "lucide-react";
 import NavBarCorporate from "@/components/NavBarCorporate";
 import { corporateGalleryImages } from "@/data/corporategallery";
