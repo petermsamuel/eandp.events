@@ -9,8 +9,10 @@
   "build:dev": "vite build --mode development",
   "lint": "eslint .",
   "generate-sitemap": "node generate-sitemap.js",
-  "build": "npm run generate-sitemap && vite build && npm run critical",
-  "critical": "critical dist/index.html --inline --minify --width=375 --height=667"
+"build": "npm run generate-sitemap && vite build",
+"postbuild": "if [ \"$NETLIFY\" != \"true\" ]; then npm run critical; fi",
+"critical": "critical dist/index.html --inline --minify --width=375 --height=667"
+
 },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
