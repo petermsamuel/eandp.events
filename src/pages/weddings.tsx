@@ -82,7 +82,7 @@ const [openCards, setOpenCards] = useState<number[]>([]);
   className="relative min-h-screen flex flex-col justify-center pt-24 pb-12 px-6 md:px-12 lg:px-16 bg-cover bg-center text-white"
   style={{
     backgroundImage:
-      "url('/lovable-uploads/0d69fd76-5bed-40b1-8935-d005fb4b5c77.png')",
+      "url('/lovable-uploads/0d69fd76-5bed-40b1-8935-d005fb4b5c77.webp')",
   }}
 >
   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent z-0" />
