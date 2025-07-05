@@ -62,11 +62,11 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-x-8">
           <a href="#what-we-do" className="text-black hover:text-gold transition-colors">What We Do</a>
-          <a href="#featured" className="text-black hover:text-gold transition-colors">Featured In</a>
-          <a href="#meet-peter" className="text-black hover:text-gold transition-colors">Meet Peter</a>
-          <a href="#testimonials" className="text-black hover:text-gold transition-colors">Testimonials</a>
           <a href="#gallery" className="text-black hover:text-gold transition-colors">Gallery</a>
+          <a href="#testimonials" className="text-black hover:text-gold transition-colors">Testimonials</a>
+          <a href="#meet-peter" className="text-black hover:text-gold transition-colors">Meet Peter</a>
           <a href="#contact" className="text-black hover:text-gold transition-colors">Contact</a>
+          <a href="#featured" className="text-black hover:text-gold transition-colors">Featured In</a>
           <div className="relative group">
             <button className="text-black hover:text-gold transition-colors flex items-center">
               Events
@@ -90,12 +90,12 @@ const Navbar = () => {
           <div className="absolute top-full left-0 right-0 bg-white shadow-md py-4 md:hidden">
             <div className="flex flex-col space-y-4 px-4">
               <a href="#what-we-do" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>What We Do</a>
-              <a href="#featured" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>Featured In</a>
-              <a href="#meet-peter" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>Meet Peter</a>
-              <a href="#testimonials" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>Testimonials</a>
               <a href="#gallery" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>Gallery</a>
-              <a href="#contact" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>Contact</a>
-
+           <a href="#testimonials" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>Testimonials</a>
+          <a href="#meet-peter" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>Meet Peter</a>
+         <a href="#contact" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>Contact</a>
+              <a href="#featured" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>Featured In</a>
+          
               {/* Collapsible Events dropdown */}
               <button
                 onClick={() => setIsEventsOpen(!isEventsOpen)}
