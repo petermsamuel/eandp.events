@@ -13,7 +13,7 @@ const MeetPeterSection = () => {
           <div className="md:w-1/3">
             <div className="overflow-hidden border border-gold rounded-md">
               <img
-                src="/lovable-uploads/DSC01691_Original.JPG"
+                src="/lovable-uploads/DSC01691_Original.webp"
                 alt="Peter, Director of E&P Events"
                 className="w-full h-full object-cover"
               />
