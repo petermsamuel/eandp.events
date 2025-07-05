@@ -5,13 +5,13 @@ import { Facebook, Instagram, Mail } from "lucide-react";
 
 const blogPosts = [
   {
-    image: "/lovable-uploads/ChatGPT Image Jun 14, 2025, 03_13_22 PM.png?auto=format&fit=crop&w=600&q=80",
+    image: "/lovable-uploads/ChatGPT Image Jun 14, 2025, 03_13_22 PM.webp?auto=format&fit=crop&w=600&q=80",
     title: "What Does a Corporate Event Planner Do?",
     excerpt: "Discover the real strategy behind flawless corporate events—what expert planners actually do, how they protect your brand, and why execution is everything.",
     href: "/blog/what-does-a-corporate-event-planner-do",
   },
  {
-    image: "/lovable-uploads/ChatGPT Image Jul 2, 2025, 03_37_53 PM.png?auto=format&fit=crop&w=600&q=80",
+    image: "/lovable-uploads/ChatGPT Image Jul 2, 2025, 03_37_53 PM.webp?auto=format&fit=crop&w=600&q=80",
     title: "The Hidden Cost of DIY Corporate Events",
     excerpt: "DIY corporate events may look budget-friendly—but hidden costs, missed strategy, and brand risks make expert planning a smarter investment.",
     href: "/blog/hidden-costs-diy-corporate-events",
@@ -50,7 +50,7 @@ const Blog = () => {
           "@type": "BlogPosting",
           "headline": "What Does a Corporate Event Planner Do?",
           "url": "https://eandp.events/blog/what-does-a-corporate-event-planner-do",
-          "image": "https://eandp.events/lovable-uploads/ChatGPT%20Image%20Jun%2014,%202025,%2003_13_22%20PM.png",
+          "image": "https://eandp.events/lovable-uploads/ChatGPT%20Image%20Jun%2014,%202025,%2003_13_22%20PM.webp",
           "description": "Discover the real strategy behind flawless corporate events—what expert planners actually do, how they protect your brand, and why execution is everything."
         }
       ]
@@ -73,7 +73,7 @@ const Blog = () => {
         <section
           id="hero"
           className="relative min-h-[60vh] flex flex-col justify-center pt-28 pb-12 px-4 bg-cover bg-center"
-          style={{ backgroundImage: "url('/lovable-uploads/IMG_0409.jpg')" }}
+          style={{ backgroundImage: "url('/lovable-uploads/IMG_0409.webp')" }}
         >
           <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
           <div className="relative z-10 max-w-3xl mx-auto text-center">
