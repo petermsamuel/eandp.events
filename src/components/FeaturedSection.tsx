@@ -7,7 +7,7 @@ const FeaturedSection = () => {
       className="bg-transparent text-black py-24 border-t border-b border-gold"
     >
       <div className="max-w-5xl mx-auto text-center px-4">
-        <h2 className="section-title text-white mx-auto mb-12">
+        <h2 className="section-title text-black mx-auto mb-12">
           Trusted by the People Who Know Excellence
         </h2>
 
