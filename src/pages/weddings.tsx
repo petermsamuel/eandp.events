@@ -70,12 +70,6 @@ const [openCards, setOpenCards] = useState<number[]>([]);
     <title>Atlanta South Asian Wedding Planner | Fusion & Multicultural Weddings | E&P Events</title>
     <meta name="description" content="As your Atlanta South Asian wedding planner, we specialize in fusion and multicultural weddings with expert coordination and cultural fluency." />
     <link rel="canonical" href="https://eandp.events/weddings" />
-<link
-  rel="preload"
-  as="image"
-  href="/lovable-uploads/89a4d798-f07a-42c8-bba9-15123f9d6ecb.webp"
-  type="image/webp"
-/>
   </Helmet>
 
       <div className="min-h-screen bg-transparent flex flex-col">
@@ -433,11 +427,6 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Navigation</h3>
             <ul className="space-y-2">
-   <li>
-                <a href="#gallery" className="text-gray-300 hover:text-gold transition-colors">
-                 Gallery
-                </a>
-              </li>
               <li>
                 <a href="#what-we-do" className="text-gray-300 hover:text-gold transition-colors">
                   What We Do
@@ -451,6 +440,11 @@ const Footer = () => {
               <li>
                 <a href="#testimonials" className="text-gray-300 hover:text-gold transition-colors">
                   Testimonials
+                </a>
+              </li>
+              <li>
+                <a href="#gallery" className="text-gray-300 hover:text-gold transition-colors">
+                 Gallery
                 </a>
               </li>
               <li>
