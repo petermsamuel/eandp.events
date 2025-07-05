@@ -4,7 +4,7 @@ const FeaturedSection = () => {
   return (
     <section
       id="featured"
-      className="bg-charcoal text-white py-24 border-t border-b border-gold"
+      className="bg-transparent text-black py-24 border-t border-b border-gold"
     >
       <div className="max-w-5xl mx-auto text-center px-4">
         <h2 className="section-title text-white mx-auto mb-12">
