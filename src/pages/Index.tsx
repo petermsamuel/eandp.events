@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import WhatWeDoSection from "../components/WhatWeDoSection";
 import Footer from "../components/Footer";
+import SchemaMarkup from "../components/SchemaMarkup";
 
 // Lazy-loaded components
 const GallerySection = React.lazy(() => import("../components/GallerySection"));
