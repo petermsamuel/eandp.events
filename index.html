@@ -1,27 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Analytics (non-blocking + debug enabled) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QMY9ZR38N1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-QMY9ZR38N1', { debug_mode: true });
-  </script>
-
-  <!-- Hotjar Tracking Code (async to avoid blocking rendering) -->
-  <script>
-    (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:6428241,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-  </script>
-
   <!-- Meta essentials -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -68,5 +47,30 @@
 
   <!-- App script (deferred to allow HTML paint first) -->
   <script type="module" src="/src/main.tsx" defer></script>
+
+<!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+<script type="module" src="/src/main.tsx"></script>
+
+  <!-- Google Analytics (non-blocking + debug enabled) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QMY9ZR38N1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QMY9ZR38N1', { debug_mode: true });
+</script>
+
+  <!-- Hotjar Tracking Code (async to avoid blocking rendering) -->
+<script>
+  (function(h,o,t,j,a,r){
+    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+    h._hjSettings={hjid:6428241,hjsv:6};
+    a=o.getElementsByTagName('head')[0];
+    r=o.createElement('script');r.async=1;
+    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
 </body>
 </html>
