@@ -2,7 +2,6 @@ import React from "react";
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
-import SchemaMarkup from "@/components/SchemaMarkup";
 import { Check, Globe, Users, Plane, Facebook, Instagram, Mail} from "lucide-react";
 import NavBarWeddings from "@/components/NavBarWeddings";
 import { weddingGalleryImages } from "@/data/weddinggallery";
