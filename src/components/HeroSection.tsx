@@ -5,7 +5,7 @@ const HeroSection = () => {
     <section
       id="hero"
       className="relative min-h-screen flex flex-col justify-center pt-24 pb-12 px-4 bg-cover bg-center"
-      style={{ backgroundImage: "url('/lovable-uploads/SSTK_asset_small_new.jpg')" }}
+      style={{ backgroundImage: "url('/lovable-uploads/SSTK_asset_small_new.webp')" }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
