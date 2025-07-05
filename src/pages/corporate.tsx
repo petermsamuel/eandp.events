@@ -84,55 +84,69 @@ const Corporate = () => {
         <NavBarCorporate />
 
         {/* Hero Section */}
-        <section
-          id="hero"
-          className="relative min-h-screen flex flex-col justify-center pt-24 pb-12 px-6 md:px-12 lg:px-16 bg-cover bg-center text-white"
-          style={{
-            backgroundImage: "url('/lovable-uploads/corp3_cropped.webp')",
-          }}
-        >
-          <div className="absolute inset-0 bg-black/30 z-0" />
+       <section
+  id="hero"
+  className="relative min-h-screen flex flex-col justify-center pt-24 pb-12 px-6 md:px-12 lg:px-16 text-white overflow-hidden"
+>
+  {/* Hero Image */}
+  <img
+    src="/lovable-uploads/corp3_cropped.webp"
+    alt="Corporate event planning background"
+    className="absolute inset-0 w-full h-full object-cover z-0"
+    loading="eager"
+    width={1920}
+    height={1080}
+  />
 
-          <div className="relative z-10 text-center w-full px-4">
-       <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-snug max-w-[75rem] mx-auto">
-  Your Event Deserves More Than a Run of Show. It Deserves Strategy.
-</h1>
-          </div>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/30 z-10" />
 
-          <div className="relative z-10 max-w-4xl text-center mx-auto">
-           <p className="text-lg md:text-xl max-w-3xl mb-10 text-white/90 mx-auto">
-  Based in Atlanta, we specialize in corporate event planning that transcends logistics. From executive summits to brand activations, we align purpose with precision—leading with structure, cultural fluency, and decades of experience.
-</p>
+  {/* Headline */}
+  <div className="relative z-20 text-center w-full px-4">
+    <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-snug max-w-[75rem] mx-auto">
+      Your Event Deserves More Than a Run of Show. It Deserves Strategy.
+    </h1>
+  </div>
 
-            <div className="flex justify-center">
-              <a
-                href="#cta"
-                className="btn btn-primary bg-navy text-white text-lg sm:text-base rounded-full px-6 py-3"
-              >
-                Your Mission. Our Execution.
-              </a>
-            </div>
-          </div>
+  {/* Subtext and CTA */}
+  <div className="relative z-20 max-w-4xl text-center mx-auto">
+    <p className="text-lg md:text-xl max-w-3xl mb-10 text-white/90 mx-auto">
+      Based in Atlanta, we specialize in corporate event planning that transcends logistics.
+      From executive summits to brand activations, we align purpose with precision—leading with structure,
+      cultural fluency, and decades of experience.
+    </p>
 
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-            <a href="#what-we-do" aria-label="Scroll down">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
-                />
-              </svg>
-            </a>
-          </div>
-        </section>
+    <div className="flex justify-center">
+      <a
+        href="#cta"
+        className="btn btn-primary bg-navy text-white text-lg sm:text-base rounded-full px-6 py-3"
+      >
+        Your Mission. Our Execution.
+      </a>
+    </div>
+  </div>
+
+  {/* Scroll Indicator */}
+  <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce z-20">
+    <a href="#what-we-do" aria-label="Scroll down">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-6 w-6 text-white"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M19 14l-7 7m0 0l-7-7m7 7V3"
+        />
+      </svg>
+    </a>
+  </div>
+</section>
+
 
         {/* What You Need, What We Deliver Section */}
         <section
@@ -221,7 +235,7 @@ const Corporate = () => {
     <div className="flex flex-wrap justify-center items-center gap-12 mt-12">
 
    <div className="max-w-[400px] w-full flex items-center justify-center">
-        <img 
+        <img loading="lazy" 
           src="/lovable-uploads/emory-logo.jpeg" 
           alt="Emory School of Nursing" 
           className="w-full h-auto object-contain"
@@ -229,7 +243,7 @@ const Corporate = () => {
       </div>
 
       <div className="max-w-[400px] w-full flex items-center justify-center">
-        <img 
+        <img loading="lazy"
           src="/lovable-uploads/LNRS_RGB_POS_300.png" 
           alt="LexisNexis Risk Solutions" 
           className="w-full h-auto object-contain"
@@ -240,21 +254,21 @@ const Corporate = () => {
     {/* Bottom row */}
     <div className="flex flex-wrap justify-center items-center gap-16 mt-10">
       <div className="max-w-[220px] w-full flex items-center justify-center">
-        <img 
+        <img loading="lazy"
           src="/lovable-uploads/GCC-Logo.png" 
           alt="GateCity Church" 
           className="w-full h-auto object-contain"
         />
       </div>
       <div className="max-w-[220px] w-full flex items-center justify-center">
-        <img 
+       <img loading="lazy"
           src="/lovable-uploads/IMG_3344.PNG" 
           alt="G3ict" 
           className="w-full h-auto object-contain"
         />
       </div>
       <div className="max-w-[220px] w-full flex items-center justify-center">
-        <img 
+      <img loading="lazy" 
           src="/lovable-uploads/FUT001_Logo_Screen_V2_RGB_B-c_black.png" 
           alt="Futures Church" 
           className="w-full h-auto object-contain"
