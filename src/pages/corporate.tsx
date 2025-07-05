@@ -16,6 +16,12 @@ import TestimonialSection from "@/components/TestimonialSection";
   <title>Corporate Event Planning in Atlanta | Strategic & Executive Events | E&P Events</title>
   <meta name="description" content="E&P Events elevates corporate event planning in Atlanta — strategically executing summits, brand activations, and executive experiences." />
   <link rel="canonical" href="https://eandp.events/corporate" />
+<link
+  rel="preload"
+  as="image"
+  href="/lovable-uploads/corp3_cropped.webp"
+  type="image/webp"
+/>
 </Helmet>
 
 
