@@ -30,7 +30,7 @@ const GallerySection = () => {
               key={index} 
               className="overflow-hidden rounded-md aspect-square hover:shadow-lg transition-shadow cursor-pointer group relative"
             >
-              <img
+              <img loading="lazy"
                 src={image}
                 alt={`Wedding event photo ${index + 1}`}
                 className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
