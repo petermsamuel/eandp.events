@@ -4,12 +4,12 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import WhatWeDoSection from "../components/WhatWeDoSection";
-import FeaturedSection from "../components/FeaturedSection";
-import MeetPeterSection from "../components/MeetPeterSection";
-import TestimonialSection from "../components/TestimonialSection";
 import GallerySection from "../components/GallerySection";
 import AdditionalCtaSection from "../components/AdditionalCtaSection";
+import TestimonialSection from "../components/TestimonialSection";
+import MeetPeterSection from "../components/MeetPeterSection";
 import ContactSection from "../components/ContactSection";
+import FeaturedSection from "../components/FeaturedSection";
 import Footer from "../components/Footer";
 import SchemaMarkup from "../components/SchemaMarkup";
 
@@ -32,12 +32,12 @@ const Index = () => {
         <main className="flex-1 relative z-10">
           <HeroSection />
           <WhatWeDoSection />
-          <FeaturedSection />
-          <MeetPeterSection />
           <GallerySection />
-          <TestimonialSection />
           <AdditionalCtaSection />
+          <TestimonialSection />
+          <MeetPeterSection />
           <ContactSection />
+          <FeaturedSection />
         </main>
 <script
   type="application/ld+json"
