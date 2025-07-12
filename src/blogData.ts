@@ -7,5 +7,8 @@ export const blogPosts = {
     title: "The Hidden Cost of DIY Corporate Events",
     component: () => import("./pages/blog/hidden-costs-diy-corporate-events"),
   },
-  // Add more posts here...
+ "why-smart-atlanta-companies-hire-event-planners": {
+    title: "Why Smart Atlanta Companies Choose Corporate Event Planners for High‑Stakes Events",
+    component: () => import("./pages/blog/why-smart-atlanta-companies-hire-event-planners"),
+  },
 };
