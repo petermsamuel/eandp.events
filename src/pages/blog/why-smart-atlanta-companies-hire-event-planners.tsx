@@ -61,7 +61,7 @@ const WhyHireCorporateEventPlannerAtlanta = () => {
         </p>
 
         <p className="text-lg mb-6">
-          Many Atlanta companies still try to manage these events in-house. It seems efficient on paper. But too often, what begins as a lean initiative turns into a pressure cooker—costing far more in brand equity, time, and missed opportunity.
+          Many Atlanta companies still try to manage these events in-house. It seems efficient on paper. But too often, what begins as a lean initiative turns into a pressure cooker—<a href="https://eandp.events/blog/hidden-costs-diy-corporate-events" className="text-blue-600 underline">costing far more in brand equity, time, and missed opportunity.</a> 
         </p>
 
         <p className="text-lg mb-6">
@@ -97,7 +97,7 @@ const WhyHireCorporateEventPlannerAtlanta = () => {
           Event coordination isn’t a side task. When HR or marketing teams are pulled in, their primary focus suffers. Deadlines get missed. Stress increases. Talent gets depleted.
         </p>
         <p className="text-lg mb-4">
-          We relieve internal pressure, allowing your people to lead where they’re strongest—while we handle the complexity behind the scenes.
+          We relieve internal pressure, allowing your people to lead where they’re strongest—<a href="/corporate" className="text-blue-600 underline">while we handle the complexity behind the scenes.</a>
         </p>
 
         <h2 className="text-2xl font-semibold mt-10 mb-4">5. Executional Mistakes Damage Long-Term Trust</h2>
@@ -120,10 +120,6 @@ const WhyHireCorporateEventPlannerAtlanta = () => {
           <li><strong>Flat-Fee Pricing, Full Transparency:</strong> No upsells. No guessing. Just clean, confident numbers.</li>
         </ul>
 
-        <p className="text-lg mb-6">
-          Want a closer look at the real costs companies face when they go it alone? Read our deep dive on the <a href="/blog/hidden-costs-diy-corporate-events" className="text-blue-600 underline">hidden costs of DIY corporate events</a>.
-        </p>
-
         <h2 className="text-2xl font-semibold mt-10 mb-4">Choose Strategy Over Stress</h2>
         <p className="text-lg mb-4">
           In today’s business climate, events must do more than impress—they must perform. And performance starts with planning.
@@ -132,7 +128,7 @@ const WhyHireCorporateEventPlannerAtlanta = () => {
           Cutting corners on corporate events may seem efficient now—but the long-term risks are real. Trust E&P Events to protect your vision, brand, and team.
         </p>
         <p className="text-lg font-semibold">
-          📩 Ready to elevate your next event? Contact us today for a consultation built on clarity, experience, and results.
+          Ready to elevate your next event? <a href="https://cal.com/eandp.events/corporate-b2b-15" className="text-blue-600 underline">Contact us today</a> for a consultation built on clarity, experience, and results.
         </p>
       </div>
     </div>
