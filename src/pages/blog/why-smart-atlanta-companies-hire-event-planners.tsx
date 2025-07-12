@@ -57,10 +57,6 @@ const WhyHireCorporateEventPlannerAtlanta = () => {
         </h1>
 
         <p className="text-lg mb-6">
-          <strong>Meta Description:</strong> Discover the strategic, financial, and brand risks companies face when planning corporate events alone. Learn how E&P Events, a leading corporate event planner in Atlanta, delivers clarity, control, and measurable results.
-        </p>
-
-        <p className="text-lg mb-6">
           Corporate events aren't just calendar fillers—they're high-visibility touchpoints for your brand, leadership, and culture. Whether it's an investor reception, leadership summit, or hybrid client showcase, expectations are high. So is the potential for missteps.
         </p>
 
