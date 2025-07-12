@@ -5,7 +5,7 @@ const WhyHireCorporateEventPlannerAtlanta = () => {
     // Add canonical tag
     const canonical = document.createElement("link");
     canonical.setAttribute("rel", "canonical");
-    canonical.setAttribute("href", "https://eandp.events/blog/why-atlanta-companies-hire-event-planners");
+    canonical.setAttribute("href", "https://eandp.events/blog/why-smart-atlanta-companies-hire-event-planners");
     document.head.appendChild(canonical);
 
     // Add breadcrumb schema
@@ -31,7 +31,7 @@ const WhyHireCorporateEventPlannerAtlanta = () => {
           "@type": "ListItem",
           "position": 3,
           "name": "Why Hire a Corporate Event Planner in Atlanta",
-          "item": "https://eandp.events/blog/why-atlanta-companies-hire-event-planners"
+          "item": "https://eandp.events/blog/why-smart-atlanta-companies-hire-event-planners"
         }
       ]
     });
