@@ -16,6 +16,12 @@ const blogPosts = [
     excerpt: "DIY corporate events may look budget-friendly—but hidden costs, missed strategy, and brand risks make expert planning a smarter investment.",
     href: "/blog/hidden-costs-diy-corporate-events",
   },
+   {
+    image: "/lovable-uploads/ChatGPT Image Jul 12, 2025, 10_52_15 AM.webp?auto=format&fit=crop&w=600&q=80",
+    title: "Why Smart Atlanta Companies Choose Corporate Event Planners for High‑Stakes Events",
+    excerpt: "Discover the strategic, financial, and brand risks companies face when planning corporate events alone.",
+    href: "/blog/why-smart-atlanta-companies-hire-event-planners",
+  },
 ];
 
 const Blog = () => {
