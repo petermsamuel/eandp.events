@@ -48,7 +48,7 @@ const WhyHireCorporateEventPlannerAtlanta = () => {
       <div className="max-w-4xl mx-auto text-[#2a2a2a]">
         <div className="w-full aspect-[16/9] overflow-hidden rounded-xl shadow-lg mb-10">
           <img
-            src="/lovable-uploads/ChatGPT Image Jul 12, 2025, 10_00_00 AM.webp"
+            src="/lovable-uploads/ChatGPT Image Jul 12, 2025, 10_52_15 AM.webp"
             alt="Corporate team evaluating event strategy with a planner in Atlanta"
             className="w-full h-full object-cover"
           />
