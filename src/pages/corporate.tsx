@@ -110,10 +110,6 @@ const Corporate = () => {
 <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-snug max-w-[75rem] mx-auto">
   Your Event Deserves More Than a Run of Show. It Deserves Strategy.
 </h2>
-
-<p className="text-lg md:text-xl max-w-3xl mb-10 text-white/90 mx-auto">
-  Based in Atlanta, we specialize in <strong>corporate event planning</strong> that transcends logistics. From executive summits to brand activations, we align purpose with precision—leading with structure, cultural fluency, and decades of experience.
-</p>
   </div>
 
   {/* Subtext and CTA */}
