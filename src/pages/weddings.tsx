@@ -75,12 +75,16 @@ const [openCards, setOpenCards] = useState<number[]>([]);
 
 <SchemaMarkup
   type="Service"
+  id="https://eandp.events/#org"
   name="E & P Events"
   url="https://eandp.events"
+  serviceUrl="https://eandp.events/weddings"
   telephone="+1-770-410-8302"
   serviceType="Indian / South Asian Wedding Planning"
   description="Luxury Indian, South Asian, and fusion wedding planning in Atlanta with culturally fluent coordination and full-service execution."
+  areaServedName="Atlanta, GA"
 />
+
 
 {/* Breadcrumb Schema */}
 <script
