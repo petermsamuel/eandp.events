@@ -6,6 +6,7 @@ import { Check, Globe, Users, Plane, Facebook, Instagram, Mail} from "lucide-rea
 import NavBarWeddings from "@/components/NavBarWeddings";
 import { weddingGalleryImages } from "@/data/weddinggallery";
 import TestimonialSection from "@/components/TestimonialSection";
+import SchemaMarkup from "@/components/SchemaMarkup";
 
 
 const weddingTestimonials = [
@@ -71,6 +72,30 @@ const [openCards, setOpenCards] = useState<number[]>([]);
     <meta name="description" content="As your Atlanta South Asian wedding planner, we specialize in fusion and multicultural weddings with expert coordination and cultural fluency." />
     <link rel="canonical" href="https://eandp.events/weddings" />
   </Helmet>
+
+<SchemaMarkup
+  type="Service"
+  name="E & P Events"
+  url="https://eandp.events"
+  telephone="+1-770-410-8302"
+  serviceType="Indian / South Asian Wedding Planning"
+  description="Luxury Indian, South Asian, and fusion wedding planning in Atlanta with culturally fluent coordination and full-service execution."
+/>
+
+{/* Breadcrumb Schema */}
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://eandp.events/" },
+        { "@type": "ListItem", position: 2, name: "Weddings", item: "https://eandp.events/weddings" }
+      ]
+    })
+  }}
+/>
 
       <div className="min-h-screen bg-transparent flex flex-col">
         <NavBarWeddings />
@@ -468,7 +493,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Contact</h3>
             <p className="text-gray-300 mb-2">
-              Email: <a href="mailto:info@events-ep.com" className="text-gold hover:underline">info@eandp.events</a>
+              Email: <a href="mailto:info@eandp.events" className="text-gold hover:underline">info@eandp.events</a>
             </p>
             <p className="text-gray-300">
               Atlanta, GA
@@ -480,34 +505,6 @@ const Footer = () => {
           <p>&copy; {currentYear} E&P Events. All rights reserved.</p>
         </div>
       </div>
-<script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "E and P Events",
-      "image": "https://eandp.events/logo.png",
-      "url": "https://eandp.events/weddings",
-      "telephone": "+1-770-410-8302",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "1691 Ashbury Park Dr.",
-        "addressLocality": "Hoschton",
-        "addressRegion": "GA",
-        "postalCode": "30548",
-        "addressCountry": "US"
-      },
-      "priceRange": "$$$",
-      "description": "Atlanta wedding planners specializing in South Asian and fusion weddings — offering full-service planning, design, and culturally fluent coordination.",
-      "sameAs": [
-        "https://www.instagram.com/eandp_events/",
-        "https://www.facebook.com/eventsep/",
-        "https://www.theknot.com/marketplace/eandp-events-alpharetta-ga-1055902"
-      ]
-    })
-  }}
-/>
     </footer>
   );
 };
