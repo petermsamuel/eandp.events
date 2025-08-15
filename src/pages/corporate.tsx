@@ -51,15 +51,30 @@ const Corporate = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Corporate Event Planning in Atlanta | Strategic & Executive Events | E&P Events</title>
-        <meta
-          name="description"
-          content="E&P Events elevates corporate event planning in Atlanta — strategically executing summits, brand activations, and executive experiences."
-        />
-        <link rel="canonical" href="https://eandp.events/corporate" />
-        <link rel="preload" as="image" href="/lovable-uploads/corp3_cropped.webp" type="image/webp" />
-      </Helmet>
+    <Helmet>
+  <title>Corporate Event Planning in Atlanta | Strategic & Executive Events | E&amp;P Events</title>
+  <meta 
+    name="description" 
+    content="E&amp;P Events elevates corporate event planning in Atlanta — strategically executing summits, brand activations, and executive experiences." 
+  />
+  
+  {/* Canonical */}
+  <link rel="canonical" href="https://eandp.events/corporate" />
+
+  {/* Open Graph */}
+  <meta property="og:url" content="https://eandp.events/corporate" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Corporate Event Planning in Atlanta | Strategic & Executive Events | E&amp;P Events" />
+  <meta property="og:description" content="Corporate event planning in Atlanta for summits, brand activations, and executive experiences — delivered with strategy, precision, and cultural fluency." />
+  <meta property="og:image" content="https://eandp.events/og/corporate.jpg" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Corporate Event Planning in Atlanta | Strategic & Executive Events | E&amp;P Events" />
+  <meta name="twitter:description" content="Corporate event planning in Atlanta for summits, brand activations, and executive experiences — delivered with strategy, precision, and cultural fluency." />
+  <meta name="twitter:image" content="https://eandp.events/og/corporate.jpg" />
+</Helmet>
+
 
       {/* Service schema (Corporate) */}
       <SchemaMarkup
