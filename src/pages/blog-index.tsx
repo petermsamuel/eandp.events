@@ -2,7 +2,8 @@ import React from "react";
 import NavBarBlog from "@/components/NavBarBlog";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
-import blogList from "@/data/blog.json"; // <-- src/data/blog.json
+import blogMeta from "@/data/blog.json";
+
 
 // Per-post assets/excerpts (keep here or move into JSON later)
 const IMAGE_MAP: Record<string, string> = {
