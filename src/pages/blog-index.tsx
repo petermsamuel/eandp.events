@@ -1,33 +1,10 @@
 import React from "react";
 import NavBarBlog from "@/components/NavBarBlog";
 import Footer from "@/components/Footer";
+import blogPosts from "../path/to/blog.json";
 import { Facebook, Instagram, Mail } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 
-const blogPosts = [
-  {
-    image: "/lovable-uploads/ChatGPT Image Jun 14, 2025, 03_13_22 PM.webp?auto=format&fit=crop&w=600&q=80",
-    title: "What Does a Corporate Event Planner Do?",
-    excerpt:
-      "Discover the real strategy behind flawless corporate events—what expert planners actually do, how they protect your brand, and why execution is everything.",
-    href: "/blog/what-does-a-corporate-event-planner-do",
-  },
-  {
-    image: "/lovable-uploads/ChatGPT Image Jul 2, 2025, 03_37_53 PM.webp?auto=format&fit=crop&w=600&q=80",
-    title: "The Hidden Cost of DIY Corporate Events",
-    excerpt:
-      "DIY corporate events may look budget-friendly—but hidden costs, missed strategy, and brand risks make expert planning a smarter investment.",
-    href: "/blog/hidden-costs-diy-corporate-events",
-  },
-  {
-    image: "/lovable-uploads/ChatGPT Image Jul 12, 2025, 10_52_15 AM.webp?auto=format&fit=crop&w=600&q=80",
-    title:
-      "Why Smart Atlanta Companies Choose Corporate Event Planners for High-Stakes Events",
-    excerpt:
-      "Discover the strategic, financial, and brand risks companies face when planning corporate events alone.",
-    href: "/blog/why-smart-atlanta-companies-hire-event-planners",
-  },
-];
 
 // Helpers for JSON-LD (absolute URLs, no query strings for images)
 const ABSOLUTE_ORIGIN = "https://eandp.events";
