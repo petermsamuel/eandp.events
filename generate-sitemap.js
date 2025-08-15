@@ -6,7 +6,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 
-const BASE = 'https://www.eandp.events';
+const BASE = 'https://eandp.events';
+
 
 // 1) Static routes
 const staticUrls = [
