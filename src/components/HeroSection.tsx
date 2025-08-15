@@ -2,13 +2,23 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section
-      id="hero"
-      className="relative min-h-screen flex flex-col justify-center pt-24 pb-12 px-4 bg-cover bg-center"
-      style={{ backgroundImage: "url('/lovable-uploads/SSTK_asset_small_new.webp')" }}
-    >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
+<section
+  id="hero"
+  className="relative min-h-screen flex flex-col justify-center pt-24 pb-12 px-4 text-white overflow-hidden"
+>
+  {/* Hero Image */}
+  <img
+    src="/lovable-uploads/SSTK_asset_small_new.webp"
+    alt="Indian wedding and corporate event planner in Atlanta"
+    width={1920}
+    height={1080}
+    fetchPriority="high"
+    decoding="async"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/30 z-0" />
 
       {/* Headline */}
       <div className="relative z-10 text-center w-full px-4">
