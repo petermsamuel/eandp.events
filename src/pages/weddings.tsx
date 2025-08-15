@@ -59,20 +59,38 @@ const Weddings = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Atlanta South Asian Wedding Planner | Fusion & Multicultural Weddings | E&P Events</title>
-        <meta
-          name="description"
-          content="As your Atlanta South Asian wedding planner, we specialize in fusion and multicultural weddings with expert coordination and cultural fluency."
-        />
-        <link rel="canonical" href="https://eandp.events/weddings" />
-        <link
-          rel="preload"
-          as="image"
-          href="/lovable-uploads/89a4d798-f07a-42c8-bba9-15123f9d6ecb.webp"
-          type="image/webp"
-        />
-      </Helmet>
+<Helmet>
+  <title>Indian & South Asian Wedding Planner in Atlanta | E&P Events</title>
+  <meta
+    name="description"
+    content="Culturally fluent planning for Indian & South Asian weddings in Atlanta. We deliver high-touch, detail-driven celebrations that honor tradition and style."
+  />
+
+  {/* Canonical */}
+  <link rel="canonical" href="https://eandp.events/weddings" />
+
+  {/* Preload Hero Image for Speed */}
+  <link
+    rel="preload"
+    as="image"
+    href="/lovable-uploads/89a4d798-f07a-42c8-bba9-15123f9d6ecb.webp"
+    type="image/webp"
+  />
+
+  {/* Open Graph */}
+  <meta property="og:url" content="https://eandp.events/weddings" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Indian & South Asian Wedding Planner in Atlanta | E&P Events" />
+  <meta property="og:description" content="Culturally fluent planning for Indian & South Asian weddings in Atlanta. We deliver high-touch, detail-driven celebrations that honor tradition and style." />
+  <meta property="og:image" content="https://eandp.events/og/weddings.jpg" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Indian & South Asian Wedding Planner in Atlanta | E&P Events" />
+  <meta name="twitter:description" content="Culturally fluent planning for Indian & South Asian weddings in Atlanta. We deliver high-touch, detail-driven celebrations that honor tradition and style." />
+  <meta name="twitter:image" content="https://eandp.events/og/weddings.jpg" />
+</Helmet>
+
 
       <SchemaMarkup
         type="Service"
