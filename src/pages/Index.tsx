@@ -18,14 +18,38 @@ const FeaturedSection = React.lazy(() => import("../components/FeaturedSection")
 const Index = () => {
   return (
     <div className="relative overflow-x-hidden">
-      <Helmet>
-        <title>Indian Wedding & Corporate Event Planner in Atlanta | E&P Events</title>
-        <meta
-          name="description"
-          content="E&P Events is Atlanta’s premier planner for Indian, South Asian, and fusion weddings — as well as high-end corporate and executive events."
-        />
-        <link rel="canonical" href="https://eandp.events/" />
-      </Helmet>
+     <Helmet>
+  <title>Indian Wedding & Corporate Event Planner in Atlanta | E&P Events</title>
+  <meta
+    name="description"
+    content="E&P Events is Atlanta’s premier planner for Indian, South Asian, and fusion weddings — plus luxury corporate events."
+  />
+
+  {/* Canonical */}
+  <link rel="canonical" href="https://eandp.events" />
+
+  {/* Preload Hero */}
+  <link
+    rel="preload"
+    as="image"
+    href="/lovable-uploads/homepage-hero.webp"
+    type="image/webp"
+  />
+
+  {/* Open Graph */}
+  <meta property="og:url" content="https://eandp.events" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Indian Wedding & Corporate Event Planner in Atlanta | E&P Events" />
+  <meta property="og:description" content="Atlanta’s premier planner for Indian, South Asian, and fusion weddings — and luxury corporate events." />
+  <meta property="og:image" content="https://eandp.events/og/homepage.jpg" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Indian Wedding & Corporate Event Planner in Atlanta | E&P Events" />
+  <meta name="twitter:description" content="Atlanta’s premier planner for Indian, South Asian, and fusion weddings — and luxury corporate events." />
+  <meta name="twitter:image" content="https://eandp.events/og/homepage.jpg" />
+</Helmet>
+
 
       <div className="lion-watermark" />
       <div className="min-h-screen flex flex-col">
