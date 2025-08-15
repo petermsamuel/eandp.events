@@ -2,7 +2,7 @@ import React from "react";
 import NavBarBlog from "@/components/NavBarBlog";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
-import blogMeta from "@/data/blog.json";
+import blogList from "@/data/blog.json";
 
 
 // Per-post assets/excerpts (keep here or move into JSON later)
