@@ -1,45 +1,74 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 
 const HiddenCostsOfDIYCoporateEvents = () => {
   useEffect(() => {
-    const canonical = document.createElement("link");
-    canonical.setAttribute("rel", "canonical");
-    canonical.setAttribute("href", "https://eandp.events/blog/hidden-costs-diy-corporate-events");
-    document.head.appendChild(canonical);
-
-    const breadcrumbScript = document.createElement("script");
-    breadcrumbScript.type = "application/ld+json";
-    breadcrumbScript.innerHTML = JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://eandp.events/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Blog",
-          "item": "https://eandp.events/blog"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "The Hidden Costs of DIY Corporate Events",
-          "item": "https://eandp.events/blog/hidden-costs-diy-corporate-events"
-        }
-      ]
-    });
-    document.head.appendChild(breadcrumbScript);
-
-    return () => {
-      document.head.removeChild(canonical);
-      document.head.removeChild(breadcrumbScript);
-    };
+    window.scrollTo(0, 0);
   }, []);
+
+  const url = "https://eandp.events/blog/hidden-costs-diy-corporate-events";
+  const title = "The Hidden Costs of DIY Corporate Events | E&P Events";
+  const description =
+    "DIY corporate events seem cheaper, but hidden costs, vendor risks, and team burnout erode ROI. Here’s why Atlanta companies trust expert planners to protect brand and outcomes.";
+  const heroSrc = "/lovable-uploads/ChatGPT Image Jul 2, 2025, 03_37_53 PM.webp";
+  const ogImage = "https://eandp.events/lovable-uploads/77d9a347-7e81-4f55-827e-07598bec637f.png";
+
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
+
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://eandp.events/" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://eandp.events/blog" },
+      { "@type": "ListItem", position: 3, name: "The Hidden Costs of DIY Corporate Events", item: url },
+    ],
+  };
+
+  const blogPostingLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: "The Hidden Costs of DIY Corporate Events",
+    description,
+    image: [`https://eandp.events${heroSrc.replace(/\s/g, "%20")}`],
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    author: { "@type": "Organization", name: "E&P Events" },
+    publisher: {
+      "@type": "Organization",
+      name: "E&P Events",
+      logo: { "@type": "ImageObject", url: ogImage },
+    },
+    // datePublished: "2025-07-02",
+    // dateModified: "2025-07-02",
+    articleSection: "Corporate Events",
+  };
+
+  return (
+    <>
+      <Helmet>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+
+        <link rel="canonical" href={url} />
+
+        <meta property="og:url" content={url} />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={ogImage} />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={ogImage} />
+
+        <link rel="preload" as="image" href={heroSrc} type="image/webp" />
+
+        <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(blogPostingLd)}</script>
+      </Helmet>
 
   return (
     <div className="bg-[#f7f7f2] pt-28 pb-20 px-4">
