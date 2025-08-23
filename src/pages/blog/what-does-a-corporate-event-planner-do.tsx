@@ -2,19 +2,20 @@ import React, { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 
 const WhatDoesACorporateEventPlannerDo = () => {
-  // (Optional) scroll to top on route load
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Reusable bits
   const url = "https://eandp.events/blog/what-does-a-corporate-event-planner-do";
   const title = "What Does a Corporate Event Planner Actually Do? | E&P Events";
   const description =
     "Corporate event planners are strategic partners who align goals, budget, vendors, technology, and execution—so leaders can focus on outcomes, not logistics.";
   const heroSrc = "/lovable-uploads/ChatGPT Image Jun 14, 2025, 03_13_22 PM.webp";
-  // Temporary social image fallback (PNG you already serve as favicon)
   const ogImage = "https://eandp.events/lovable-uploads/77d9a347-7e81-4f55-827e-07598bec637f.png";
+
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
 
   const breadcrumbLd = {
     "@context": "https://schema.org",
@@ -31,7 +32,7 @@ const WhatDoesACorporateEventPlannerDo = () => {
     "@type": "BlogPosting",
     headline: "What Does a Corporate Event Planner Actually Do?",
     description,
-    image: [ `https://eandp.events${heroSrc.replace(/\s/g, "%20")}` ],
+    image: [`https://eandp.events${heroSrc.replace(/\s/g, "%20")}`],
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
     author: { "@type": "Organization", name: "E&P Events" },
     publisher: {
@@ -39,12 +40,11 @@ const WhatDoesACorporateEventPlannerDo = () => {
       name: "E&P Events",
       logo: {
         "@type": "ImageObject",
-        url: "https://eandp.events/lovable-uploads/77d9a347-7e81-4f55-827e-07598bec637f.png",
+        url: ogImage,
       },
     },
-    // If you have real dates, add:
-    // datePublished: "2025-06-14",
-    // dateModified: "2025-06-14",
+    //datePublished: "2025-06-14",
+    //dateModified: "2025-06-14",
     articleSection: "Corporate Events",
   };
 
@@ -54,25 +54,21 @@ const WhatDoesACorporateEventPlannerDo = () => {
         <title>{title}</title>
         <meta name="description" content={description} />
 
-        {/* Canonical */}
         <link rel="canonical" href={url} />
 
-        {/* Social (Open Graph / Twitter) */}
         <meta property="og:url" content={url} />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="What Does a Corporate Event Planner Actually Do? | E&P Events" />
+        <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={ogImage} />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="What Does a Corporate Event Planner Actually Do? | E&P Events" />
+        <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={ogImage} />
 
-        {/* (Optional) Preload the hero image to help LCP */}
         <link rel="preload" as="image" href={heroSrc} type="image/webp" />
 
-        {/* Structured data */}
         <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
         <script type="application/ld+json">{JSON.stringify(blogPostingLd)}</script>
       </Helmet>
