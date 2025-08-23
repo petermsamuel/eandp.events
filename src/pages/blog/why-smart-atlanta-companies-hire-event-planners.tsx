@@ -2,22 +2,20 @@ import React, { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 
 const WhyHireCorporateEventPlannerAtlanta = () => {
-  // Optional nicety
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const url =
-    "https://eandp.events/blog/why-smart-atlanta-companies-hire-event-planners";
-  const title =
-    "Why Smart Atlanta Companies Choose Corporate Event Planners for High-Stakes Events | E&P Events";
+  const url = "https://eandp.events/blog/why-smart-atlanta-companies-hire-event-planners";
+  const title = "Why Smart Atlanta Companies Choose Corporate Event Planners for High-Stakes Events | E&P Events";
   const description =
     "High-stakes corporate events demand strategy, vendor leverage, and crisis-proof execution. Here’s why top Atlanta companies partner with expert planners to protect brand, team, and outcomes.";
-  const heroSrc =
-    "/lovable-uploads/ChatGPT Image Jul 12, 2025, 10_52_15 AM.webp";
-  // Temporary social fallback until you ship branded OG images
-  const ogImage =
-    "https://eandp.events/lovable-uploads/77d9a347-7e81-4f55-827e-07598bec637f.png";
+  const heroSrc = "/lovable-uploads/ChatGPT Image Jul 12, 2025, 10_52_15 AM.webp";
+  const ogImage = "https://eandp.events/lovable-uploads/77d9a347-7e81-4f55-827e-07598bec637f.png";
+
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
 
   const breadcrumbLd = {
     "@context": "https://schema.org",
@@ -32,8 +30,7 @@ const WhyHireCorporateEventPlannerAtlanta = () => {
   const blogPostingLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline:
-      "Why Smart Atlanta Companies Choose Corporate Event Planners for High-Stakes Events",
+    headline: "Why Smart Atlanta Companies Choose Corporate Event Planners for High-Stakes Events",
     description,
     image: [`https://eandp.events${heroSrc.replace(/\s/g, "%20")}`],
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
@@ -41,12 +38,8 @@ const WhyHireCorporateEventPlannerAtlanta = () => {
     publisher: {
       "@type": "Organization",
       name: "E&P Events",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://eandp.events/lovable-uploads/77d9a347-7e81-4f55-827e-07598bec637f.png",
-      },
+      logo: { "@type": "ImageObject", url: ogImage },
     },
-    // If you have dates, uncomment and fill:
     // datePublished: "2025-07-12",
     // dateModified: "2025-07-12",
     articleSection: "Corporate Events",
@@ -58,25 +51,21 @@ const WhyHireCorporateEventPlannerAtlanta = () => {
         <title>{title}</title>
         <meta name="description" content={description} />
 
-        {/* Canonical */}
         <link rel="canonical" href={url} />
 
-        {/* Social (Open Graph / Twitter) */}
         <meta property="og:url" content={url} />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="Why Smart Atlanta Companies Choose Corporate Event Planners for High-Stakes Events | E&P Events" />
+        <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={ogImage} />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Why Smart Atlanta Companies Choose Corporate Event Planners for High-Stakes Events | E&P Events" />
+        <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={ogImage} />
 
-        {/* LCP help for the hero */}
         <link rel="preload" as="image" href={heroSrc} type="image/webp" />
 
-        {/* Structured data */}
         <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
         <script type="application/ld+json">{JSON.stringify(blogPostingLd)}</script>
       </Helmet>
