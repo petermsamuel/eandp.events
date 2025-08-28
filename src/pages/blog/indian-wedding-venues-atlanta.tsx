@@ -108,7 +108,7 @@ const IndianWeddingVenuesAtlanta = () => {
           <p className="text-lg mb-6">
             Selecting the perfect Indian wedding venue in Atlanta requires more than checking boxes on capacity
             and catering. It demands cultural intelligence, strategic thinking, and clear navigation through policies
-            that can make or break your celebration. At <strong>E&amp;P Events</strong>, we've guided hundreds of South Asian
+            that can make or break your celebration. At <a href="https://eandp.events/weddings" className="text-blue-600 underline"> <strong>E&amp;P Events</strong>, we've guided hundreds of South Asian
             couples through this decision with transparency, expertise, and unwavering support.
           </p>
           <p className="text-lg mb-6">
@@ -358,7 +358,7 @@ const IndianWeddingVenuesAtlanta = () => {
             guest comfort, and family joy while maintaining your sanity throughout the process.
           </p>
           <p className="text-lg mb-4">
-            At <strong>E&amp;P Events</strong>, we bring decades of South Asian wedding expertise to your venue selection,
+            At <a href="https://eandp.events/weddings" className="text-blue-600 underline"> <strong>E&amp;P Events</strong>, we bring decades of South Asian wedding expertise to your venue selection,
             contract negotiation, and celebration execution. Our flat-fee pricing model means transparent investment from day one,
             and our crisis-proof systems ensure your celebration flows beautifully regardless of unexpected challenges.
           </p>
