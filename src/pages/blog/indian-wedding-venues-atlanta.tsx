@@ -188,7 +188,7 @@ const IndianWeddingVenuesAtlanta = () => {
   </a>
 </h3>
 <ul className="list-disc pl-6 text-base mb-4 space-y-1">
-  <li><strong>Capacity:</strong> 600 guests</li>
+  <li><strong>Capacity:</strong> 900 guests</li>
   <li><strong>Catering Policy:</strong> Outside vendors permitted</li>
   <li><strong>Cultural Advantage:</strong> Actively partners with South Asian vendors and understands cultural requirements</li>
   <li><strong>Ideal For:</strong> Mid-size celebrations with full cultural accommodation</li>
@@ -200,7 +200,7 @@ const IndianWeddingVenuesAtlanta = () => {
   </a>
 </h3>
 <ul className="list-disc pl-6 text-base mb-4 space-y-1">
-  <li><strong>Capacity:</strong> 350 guests</li>
+  <li><strong>Capacity:</strong> up to 1000 guests</li>
   <li><strong>Catering Policy:</strong> In-house exclusively</li>
   <li><strong>Curfew:</strong> Midnight</li>
   <li><strong>Distinction:</strong> Boutique luxury with white-glove service for intimate, elevated celebrations</li>
@@ -212,7 +212,7 @@ const IndianWeddingVenuesAtlanta = () => {
   </a>
 </h3>
 <ul className="list-disc pl-6 text-base mb-4 space-y-1">
-  <li><strong>Capacity:</strong> 700 guests (Astor Ballroom)</li>
+  <li><strong>Capacity:</strong> Seated capacity 690; cocktail up to 1,200</li>
   <li><strong>Catering Advantage:</strong> Custom Indian menus via executive chef collaboration</li>
   <li><strong>Service Level:</strong> Ultra-luxury with dedicated cultural liaison support</li>
 </ul>
