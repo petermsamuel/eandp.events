@@ -21,7 +21,7 @@ const IMAGE_MAP: Record<string, string> = {
   "why-smart-atlanta-companies-hire-event-planners":
     "/lovable-uploads/ChatGPT Image Jul 12, 2025, 10_52_15 AM.webp?auto=format&fit=crop&w=600&q=80",
   "indian-wedding-venues-atlanta":
-    "lovable-uploads/june-22-2018-19-11-40-img-8231-mid-res-l_1.webp?auto=format&fit=crop&w=600&q=80",
+    "/lovable-uploads/june-22-2018-19-11-40-img-8231-mid-res-l_1.webp?auto=format&fit=crop&w=600&q=80",
 };
 
 const EXCERPT_MAP: Record<string, string> = {
