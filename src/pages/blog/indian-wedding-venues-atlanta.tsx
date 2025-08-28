@@ -12,7 +12,7 @@ const IndianWeddingVenuesAtlanta = () => {
     "Indian Wedding Venues in Atlanta: Hotels, Gardens & Resorts Compared | E&P Events";
   const description =
     "Your complete guide to Atlanta venues for Indian weddings—compare hotels, gardens, and resorts by capacity, outside catering, open-flame rules, baraat logistics, and curfews. Curate with confidence.";
-  const heroSrc = "/lovable-uploads/atlanta-indian-wedding-venues-hero.webp";
+  const heroSrc = "lovable-uploads/june-22-2018-19-11-40-img-8231-mid-res-l_1.webp";
   const ogImage =
     "https://eandp.events/lovable-uploads/atlanta-indian-wedding-venues-og.png";
   const clarityUrl = "/book/clarity-call"; // TODO: replace with your live 15-min clarity call booking link
