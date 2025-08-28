@@ -403,7 +403,7 @@ const IndianWeddingVenuesAtlanta = () => {
           <p className="text-lg font-semibold mb-10">
  Want expert eyes on your venue options? 
   <a href={clarityUrl} className="text-blue-600 underline">
-   Request your 3-venue shortlist with a short clarity call to curate with confidence.
+    Request your 3-venue shortlist with a short clarity call to curate with confidence.
   </a>
 </p>
 
