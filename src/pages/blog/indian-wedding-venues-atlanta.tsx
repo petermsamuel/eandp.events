@@ -15,7 +15,7 @@ const IndianWeddingVenuesAtlanta = () => {
   const heroSrc = "lovable-uploads/june-22-2018-19-11-40-img-8231-mid-res-l_1.webp";
   const ogImage =
     "https://eandp.events/lovable-uploads/atlanta-indian-wedding-venues-og.png";
-  const clarityUrl = "/book/clarity-call"; // TODO: replace with your live 15-min clarity call booking link
+  const clarityUrl = "https://cal.com/eandp.events/30min"; // TODO: replace with your live 15-min clarity call booking link
 
   useEffect(() => {
     document.title = title;
@@ -120,7 +120,7 @@ const IndianWeddingVenuesAtlanta = () => {
           <p className="text-lg font-semibold mb-8">
             Ready for expert guidance?{" "}
             <a href={clarityUrl} className="text-blue-600 underline">
-              Request your 3-venue shortlist with a 15-minute clarity call to curate with confidence.
+              Book a quick clarity call with us today.
             </a>
           </p>
 
@@ -364,7 +364,7 @@ const IndianWeddingVenuesAtlanta = () => {
           </p>
           <p className="text-lg font-semibold mb-10">
             <a href={clarityUrl} className="text-blue-600 underline">
-              Want expert eyes on your venue options? Request your 3-venue shortlist with a 15-minute clarity call to curate with confidence.
+              Want expert eyes on your venue options?  <a href="https://cal.com/eandp.events/30min">Request your 3-venue shortlist with a short clarity call</a> to curate with confidence.
             </a>
           </p>
 
