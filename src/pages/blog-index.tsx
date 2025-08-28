@@ -20,6 +20,8 @@ const IMAGE_MAP: Record<string, string> = {
     "/lovable-uploads/ChatGPT Image Jul 2, 2025, 03_37_53 PM.webp?auto=format&fit=crop&w=600&q=80",
   "why-smart-atlanta-companies-hire-event-planners":
     "/lovable-uploads/ChatGPT Image Jul 12, 2025, 10_52_15 AM.webp?auto=format&fit=crop&w=600&q=80",
+  "indian-wedding-venues-atlanta":
+    "/lovable-uploads/ChatGPT Image Jul 12, 2025, 10_52_15 AM.webp?auto=format&fit=crop&w=600&q=80",
 };
 
 const EXCERPT_MAP: Record<string, string> = {
@@ -29,6 +31,8 @@ const EXCERPT_MAP: Record<string, string> = {
     "DIY corporate events may look budget-friendly—but hidden costs, missed strategy, and brand risks make expert planning a smarter investment.",
   "why-smart-atlanta-companies-hire-event-planners":
     "Discover the strategic, financial, and brand risks companies face when planning corporate events alone.",
+"indian-wedding-venues-atlanta":
+  "Compare Atlanta’s top Indian wedding venues—hotels, gardens, and resorts—by catering policies, baraat logistics, open-flame rules, and guest capacity to find your perfect celebration space.",
 };
 
 // Helpers
