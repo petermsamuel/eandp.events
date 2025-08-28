@@ -400,8 +400,8 @@ const IndianWeddingVenuesAtlanta = () => {
             contract negotiation, and celebration execution. Our flat-fee pricing model means transparent investment from day one,
             and our crisis-proof systems ensure your celebration flows beautifully regardless of unexpected challenges.
           </p>
-          <p className="text-lg font-semibold mb-10">
- Want expert eyes on your venue options? 
+         <p className="text-lg font-semibold mb-10">
+  Want expert eyes on your venue options?{" "}
   <a href={clarityUrl} className="text-blue-600 underline">
     Request your 3-venue shortlist with a short clarity call to curate with confidence.
   </a>
