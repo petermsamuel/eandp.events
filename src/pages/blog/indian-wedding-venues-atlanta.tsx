@@ -163,97 +163,134 @@ const IndianWeddingVenuesAtlanta = () => {
             cost more than money—they disrupt the joy and flow of your celebration.
           </p>
 
-          {/* HOTELS */}
-          <h2 className="text-2xl font-semibold mt-10 mb-4">Hotels &amp; Convention Centers: Reliability Meets Scale</h2>
-          <p className="text-lg mb-6">
-            When guest count exceeds 400 or you need climate-controlled reliability, these venues deliver professional
-            execution and comprehensive amenities.
-          </p>
+  {/* HOTELS */}
+<h2 className="text-2xl font-semibold mt-10 mb-4">Hotels &amp; Convention Centers: Reliability Meets Scale</h2>
+<p className="text-lg mb-6">
+  When guest count exceeds 400 or you need climate-controlled reliability, these venues deliver professional
+  execution and comprehensive amenities.
+</p>
 
-          <h3 className="text-xl font-semibold mt-6 mb-2">Westin Buckhead Atlanta</h3>
-          <ul className="list-disc pl-6 text-base mb-4 space-y-1">
-            <li><strong>Capacity:</strong> 1,200+ guests</li>
-            <li><strong>Catering Policy:</strong> Outside vendors welcomed</li>
-            <li><strong>Cultural Intelligence:</strong> Proven track record with mandap setups and baraat logistics</li>
-            <li><strong>Why We Recommend:</strong> Maximum flexibility for large-scale celebrations</li>
-          </ul>
+<h3 className="text-xl font-semibold mt-6 mb-2">
+  <a href="https://www.marriott.com/en-us/hotels/atlwb-the-westin-buckhead-atlanta/overview/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
+    Westin Buckhead Atlanta
+  </a>
+</h3>
+<ul className="list-disc pl-6 text-base mb-4 space-y-1">
+  <li><strong>Capacity:</strong> 1,200+ guests</li>
+  <li><strong>Catering Policy:</strong> Outside vendors welcomed</li>
+  <li><strong>Cultural Intelligence:</strong> Proven track record with mandap setups and baraat logistics</li>
+  <li><strong>Why We Recommend:</strong> Maximum flexibility for large-scale celebrations</li>
+</ul>
 
-          <h3 className="text-xl font-semibold mt-6 mb-2">Westin Atlanta Perimeter North</h3>
-          <ul className="list-disc pl-6 text-base mb-4 space-y-1">
-            <li><strong>Capacity:</strong> 600 guests</li>
-            <li><strong>Catering Policy:</strong> Outside vendors permitted</li>
-            <li><strong>Cultural Advantage:</strong> Actively partners with South Asian vendors and understands cultural requirements</li>
-            <li><strong>Ideal For:</strong> Mid-size celebrations with full cultural accommodation</li>
-          </ul>
+<h3 className="text-xl font-semibold mt-6 mb-2">
+  <a href="https://www.marriott.com/en-us/hotels/atlpn-the-westin-atlanta-perimeter-north/overview/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
+    Westin Atlanta Perimeter North
+  </a>
+</h3>
+<ul className="list-disc pl-6 text-base mb-4 space-y-1">
+  <li><strong>Capacity:</strong> 600 guests</li>
+  <li><strong>Catering Policy:</strong> Outside vendors permitted</li>
+  <li><strong>Cultural Advantage:</strong> Actively partners with South Asian vendors and understands cultural requirements</li>
+  <li><strong>Ideal For:</strong> Mid-size celebrations with full cultural accommodation</li>
+</ul>
 
-          <h3 className="text-xl font-semibold mt-6 mb-2">The Whitley Hotel, Buckhead</h3>
-          <ul className="list-disc pl-6 text-base mb-4 space-y-1">
-            <li><strong>Capacity:</strong> 350 guests</li>
-            <li><strong>Catering Policy:</strong> In-house exclusively</li>
-            <li><strong>Curfew:</strong> Midnight</li>
-            <li><strong>Distinction:</strong> Boutique luxury with white-glove service for intimate, elevated celebrations</li>
-          </ul>
+<h3 className="text-xl font-semibold mt-6 mb-2">
+  <a href="https://thewhitleyhotel.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
+    The Whitley Hotel, Buckhead
+  </a>
+</h3>
+<ul className="list-disc pl-6 text-base mb-4 space-y-1">
+  <li><strong>Capacity:</strong> 350 guests</li>
+  <li><strong>Catering Policy:</strong> In-house exclusively</li>
+  <li><strong>Curfew:</strong> Midnight</li>
+  <li><strong>Distinction:</strong> Boutique luxury with white-glove service for intimate, elevated celebrations</li>
+</ul>
 
-          <h3 className="text-xl font-semibold mt-6 mb-2">St. Regis Atlanta</h3>
-          <ul className="list-disc pl-6 text-base mb-4 space-y-1">
-            <li><strong>Capacity:</strong> 700 guests (Astor Ballroom)</li>
-            <li><strong>Catering Advantage:</strong> Custom Indian menus via executive chef collaboration</li>
-            <li><strong>Service Level:</strong> Ultra-luxury with dedicated cultural liaison support</li>
-          </ul>
+<h3 className="text-xl font-semibold mt-6 mb-2">
+  <a href="https://www.marriott.com/en-us/hotels/atlxr-the-st-regis-atlanta/overview/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
+    St. Regis Atlanta
+  </a>
+</h3>
+<ul className="list-disc pl-6 text-base mb-4 space-y-1">
+  <li><strong>Capacity:</strong> 700 guests (Astor Ballroom)</li>
+  <li><strong>Catering Advantage:</strong> Custom Indian menus via executive chef collaboration</li>
+  <li><strong>Service Level:</strong> Ultra-luxury with dedicated cultural liaison support</li>
+</ul>
 
-          <h3 className="text-xl font-semibold mt-6 mb-2">Crowne Plaza Ravinia</h3>
-          <ul className="list-disc pl-6 text-base mb-4 space-y-1">
-            <li><strong>Capacity:</strong> 1,050 guests</li>
-            <li><strong>Catering Policy:</strong> Outside vendors welcomed</li>
-            <li><strong>Value Proposition:</strong> Exceptional space and service at competitive investment levels</li>
-          </ul>
+<h3 className="text-xl font-semibold mt-6 mb-2">
+  <a href="https://www.ihg.com/crowneplaza/hotels/us/en/atlanta/atlcp/hoteldetail" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
+    Crowne Plaza Ravinia
+  </a>
+</h3>
+<ul className="list-disc pl-6 text-base mb-4 space-y-1">
+  <li><strong>Capacity:</strong> 1,050 guests</li>
+  <li><strong>Catering Policy:</strong> Outside vendors welcomed</li>
+  <li><strong>Value Proposition:</strong> Exceptional space and service at competitive investment levels</li>
+</ul>
 
-          <h3 className="text-xl font-semibold mt-6 mb-2">Atlanta Marriott Marquis</h3>
-          <ul className="list-disc pl-6 text-base mb-6 space-y-1">
-            <li><strong>Capacity:</strong> 2,000+ guests</li>
-            <li><strong>Catering Policy:</strong> In-house exclusively</li>
-            <li><strong>Best For:</strong> Ultra-large celebrations requiring maximum capacity</li>
-          </ul>
+<h3 className="text-xl font-semibold mt-6 mb-2">
+  <a href="https://www.marriott.com/en-us/hotels/atlmq-atlanta-marriott-marquis/overview/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
+    Atlanta Marriott Marquis
+  </a>
+</h3>
+<ul className="list-disc pl-6 text-base mb-6 space-y-1">
+  <li><strong>Capacity:</strong> 2,000+ guests</li>
+  <li><strong>Catering Policy:</strong> In-house exclusively</li>
+  <li><strong>Best For:</strong> Ultra-large celebrations requiring maximum capacity</li>
+</ul>
 
-          <p className="text-lg mb-8">
-            <strong>Our Assessment:</strong> Hotel venues provide climate reliability, scalable capacity, and structured service.
-            Success depends on securing clear agreements around vendor access and music policies upfront.
-          </p>
+<p className="text-lg mb-8">
+  <strong>Our Assessment:</strong> Hotel venues provide climate reliability, scalable capacity, and structured service.
+  Success depends on securing clear agreements around vendor access and music policies upfront.
+</p>
 
-          {/* EXPERIENCE VENUES */}
-          <h2 className="text-2xl font-semibold mt-10 mb-4">
-            Gardens, Museums &amp; Unique Venues: Cinematic Beauty with Strategic Planning
-          </h2>
-          <p className="text-lg mb-6">
-            For couples prioritizing stunning visuals and memorable atmospheres, these venues create once-in-a-lifetime
-            backdrops—with policies that require expert navigation.
-          </p>
+{/* EXPERIENCE VENUES */}
+<h2 className="text-2xl font-semibold mt-10 mb-4">
+  Gardens, Museums &amp; Unique Venues: Cinematic Beauty with Strategic Planning
+</h2>
+<p className="text-lg mb-6">
+  For couples prioritizing stunning visuals and memorable atmospheres, these venues create once-in-a-lifetime
+  backdrops—with policies that require expert navigation.
+</p>
 
-          <h3 className="text-xl font-semibold mt-6 mb-2">Atlanta Botanical Garden</h3>
-          <ul className="list-disc pl-6 text-base mb-4 space-y-1">
-            <li><strong>Capacity:</strong> 200 guests</li>
-            <li><strong>Catering:</strong> Pre-approved vendor list only</li>
-            <li><strong>Restrictions:</strong> Strict noise limits and early end times</li>
-            <li><strong>Magic Factor:</strong> Unparalleled natural beauty for sunset ceremonies</li>
-            <li><strong>Success Strategy:</strong> Always secure covered backup space and confirm cultural accommodation policies</li>
-          </ul>
+<h3 className="text-xl font-semibold mt-6 mb-2">
+  <a href="https://atlantabg.org/events-exhibitions/private-events-rentals/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
+    Atlanta Botanical Garden
+  </a>
+</h3>
+<ul className="list-disc pl-6 text-base mb-4 space-y-1">
+  <li><strong>Capacity:</strong> 200 guests</li>
+  <li><strong>Catering:</strong> Pre-approved vendor list only</li>
+  <li><strong>Restrictions:</strong> Strict noise limits and early end times</li>
+  <li><strong>Magic Factor:</strong> Unparalleled natural beauty for sunset ceremonies</li>
+  <li><strong>Success Strategy:</strong> Always secure covered backup space and confirm cultural accommodation policies</li>
+</ul>
 
-          <h3 className="text-xl font-semibold mt-6 mb-2">Georgia Aquarium – Oceans Ballroom</h3>
-          <ul className="list-disc pl-6 text-base mb-4 space-y-1">
-            <li><strong>Capacity:</strong> 500 guests</li>
-            <li><strong>Catering:</strong> Wolfgang Puck exclusive partnership</li>
-            <li><strong>Uniqueness:</strong> Underwater dining experience unlike anywhere else</li>
-            <li><strong>Considerations:</strong> Limited cultural menu flexibility</li>
-          </ul>
+<h3 className="text-xl font-semibold mt-6 mb-2">
+  <a href="https://www.georgiaaquarium.org/booking/venues/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
+    Georgia Aquarium – Oceans Ballroom
+  </a>
+</h3>
+<ul className="list-disc pl-6 text-base mb-4 space-y-1">
+  <li><strong>Capacity:</strong> 500 guests</li>
+  <li><strong>Catering:</strong> Wolfgang Puck exclusive partnership</li>
+  <li><strong>Uniqueness:</strong> Underwater dining experience unlike anywhere else</li>
+  <li><strong>Considerations:</strong> Limited cultural menu flexibility</li>
+</ul>
 
-          <h3 className="text-xl font-semibold mt-6 mb-2">Fox Theatre</h3>
-          <ul className="list-disc pl-6 text-base mb-6 space-y-1">
-            <li><strong>Capacity:</strong> 1,200 guests (full venue buyout)</li>
-            <li><strong>Catering:</strong> In-house exclusively</li>
-            <li><strong>Restrictions:</strong> No open flames permitted</li>
-            <li><strong>Prestige Factor:</strong> Historic glamour and architectural grandeur</li>
-            <li><strong>Planning Note:</strong> Requires creative solutions for traditional fire ceremonies</li>
-          </ul>
+<h3 className="text-xl font-semibold mt-6 mb-2">
+  <a href="https://foxtheatre.org/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
+    Fox Theatre
+  </a>
+</h3>
+<ul className="list-disc pl-6 text-base mb-6 space-y-1">
+  <li><strong>Capacity:</strong> 1,200 guests (full venue buyout)</li>
+  <li><strong>Catering:</strong> In-house exclusively</li>
+  <li><strong>Restrictions:</strong> No open flames permitted</li>
+  <li><strong>Prestige Factor:</strong> Historic glamour and architectural grandeur</li>
+  <li><strong>Planning Note:</strong> Requires creative solutions for traditional fire ceremonies</li>
+</ul>
+
 
           <p className="text-lg mb-8">
             <strong>Our Expertise:</strong> These venues deliver extraordinary experiences when cultural requirements are planned
@@ -364,8 +401,9 @@ const IndianWeddingVenuesAtlanta = () => {
             and our crisis-proof systems ensure your celebration flows beautifully regardless of unexpected challenges.
           </p>
           <p className="text-lg font-semibold mb-10">
+ Want expert eyes on your venue options? 
   <a href={clarityUrl} className="text-blue-600 underline">
-    Want expert eyes on your venue options? Request your 3-venue shortlist with a short clarity call to curate with confidence.
+   Request your 3-venue shortlist with a short clarity call to curate with confidence.
   </a>
 </p>
 
