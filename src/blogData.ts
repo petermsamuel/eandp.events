@@ -11,4 +11,8 @@ export const blogPosts = {
     title: "Why Smart Atlanta Companies Choose Corporate Event Planners for High‑Stakes Events",
     component: () => import("./pages/blog/why-smart-atlanta-companies-hire-event-planners"),
   },
+"indian-wedding-venues-atlanta": {
+    title: "Indian Wedding Venues in Atlanta: Hotels, Gardens & Resorts Compared | E&P Events",
+    component: () => import("./pages/blog/indian-wedding-venues-atlanta"),
+  },
 };
