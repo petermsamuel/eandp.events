@@ -13,10 +13,6 @@ const WhatDoesACorporateEventPlannerDo = () => {
   const heroSrc = "/lovable-uploads/ChatGPT Image Jun 14, 2025, 03_13_22 PM.webp";
   const ogImage = "https://eandp.events/lovable-uploads/77d9a347-7e81-4f55-827e-07598bec637f.png";
 
-  useEffect(() => {
-    document.title = title;
-  }, [title]);
-
   const breadcrumbLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -43,32 +39,37 @@ const WhatDoesACorporateEventPlannerDo = () => {
         url: ogImage,
       },
     },
-    //datePublished: "2025-06-14",
-    //dateModified: "2025-06-14",
+    datePublished: "2025-06-14",
+    dateModified: "2025-06-14",
     articleSection: "Corporate Events",
   };
 
   return (
     <>
-      <Helmet>
+      <Helmet prioritizeSeoTags>
         <title>{title}</title>
         <meta name="description" content={description} />
+        <meta name="robots" content="index,follow" />
 
         <link rel="canonical" href={url} />
 
+        {/* Open Graph */}
         <meta property="og:url" content={url} />
         <meta property="og:type" content="article" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={ogImage} />
 
+        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={ogImage} />
 
+        {/* Performance */}
         <link rel="preload" as="image" href={heroSrc} type="image/webp" />
 
+        {/* Structured data */}
         <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
         <script type="application/ld+json">{JSON.stringify(blogPostingLd)}</script>
       </Helmet>
