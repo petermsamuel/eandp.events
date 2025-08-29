@@ -13,10 +13,6 @@ const HiddenCostsOfDIYCoporateEvents = () => {
   const heroSrc = "/lovable-uploads/ChatGPT Image Jul 2, 2025, 03_37_53 PM.webp";
   const ogImage = "https://eandp.events/lovable-uploads/77d9a347-7e81-4f55-827e-07598bec637f.png";
 
-  useEffect(() => {
-    document.title = title;
-  }, [title]);
-
   const breadcrumbLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -40,16 +36,17 @@ const HiddenCostsOfDIYCoporateEvents = () => {
       name: "E&P Events",
       logo: { "@type": "ImageObject", url: ogImage },
     },
-    // datePublished: "2025-07-02",
-    // dateModified: "2025-07-02",
+    datePublished: "2025-07-02",
+    dateModified: "2025-07-02",
     articleSection: "Corporate Events",
   };
 
   return (
     <>
-      <Helmet>
+      <Helmet prioritizeSeoTags>
         <title>{title}</title>
         <meta name="description" content={description} />
+        <meta name="robots" content="index,follow" />
 
         {/* Canonical */}
         <link rel="canonical" href={url} />
