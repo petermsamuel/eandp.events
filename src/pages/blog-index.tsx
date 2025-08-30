@@ -4,25 +4,25 @@ import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
 import blogMeta from "@/data/blog.json"; // ensure tsconfig has "resolveJsonModule": true
 
-// (TS) Optional typing for the JSON
+// after (reading image/excerpt from JSON)
 type BlogMetaItem = {
   slug: string;
   title: string;
   datePublished: string;
   lastmod: string;
+  image?: string;
+  excerpt?: string;
 };
 
-// Per-post assets/excerpts (keep here or move into JSON later)
-const IMAGE_MAP: Record<string, string> = {
-  "what-does-a-corporate-event-planner-do":
-    "/lovable-uploads/ChatGPT Image Jun 14, 2025, 03_13_22 PM.webp?auto=format&fit=crop&w=600&q=80",
-  "hidden-costs-diy-corporate-events":
-    "/lovable-uploads/ChatGPT Image Jul 2, 2025, 03_37_53 PM.webp?auto=format&fit=crop&w=600&q=80",
-  "why-smart-atlanta-companies-hire-event-planners":
-    "/lovable-uploads/ChatGPT Image Jul 12, 2025, 10_52_15 AM.webp?auto=format&fit=crop&w=600&q=80",
-  "indian-wedding-venues-atlanta":
-    "/lovable-uploads/june-22-2018-19-11-40-img-8231-mid-res-l_1.webp?auto=format&fit=crop&w=600&q=80",
-};
+const blogPosts = (blogMeta as BlogMetaItem[]).map((p) => ({
+  title: p.title,
+  href: `/blog/${p.slug}`,
+  image: p.image ?? "/lovable-uploads/fallback-blog.webp",
+  excerpt: p.excerpt ?? "",
+  datePublished: p.datePublished,
+  lastmod: p.lastmod,
+}));
+
 
 const EXCERPT_MAP: Record<string, string> = {
   "what-does-a-corporate-event-planner-do":
