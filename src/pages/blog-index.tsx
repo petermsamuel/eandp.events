@@ -2,9 +2,8 @@ import React from "react";
 import NavBarBlog from "@/components/NavBarBlog";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
-import blogMeta from "@/data/blog.json"; // ensure tsconfig has "resolveJsonModule": true
+import blogMeta from "@/data/blog.json";
 
-// after (reading image/excerpt from JSON)
 type BlogMetaItem = {
   slug: string;
   title: string;
@@ -12,27 +11,6 @@ type BlogMetaItem = {
   lastmod: string;
   image?: string;
   excerpt?: string;
-};
-
-const blogPosts = (blogMeta as BlogMetaItem[]).map((p) => ({
-  title: p.title,
-  href: `/blog/${p.slug}`,
-  image: p.image ?? "/lovable-uploads/fallback-blog.webp",
-  excerpt: p.excerpt ?? "",
-  datePublished: p.datePublished,
-  lastmod: p.lastmod,
-}));
-
-
-const EXCERPT_MAP: Record<string, string> = {
-  "what-does-a-corporate-event-planner-do":
-    "Discover the real strategy behind flawless corporate events—what expert planners actually do, how they protect your brand, and why execution is everything.",
-  "hidden-costs-diy-corporate-events":
-    "DIY corporate events may look budget-friendly—but hidden costs, missed strategy, and brand risks make expert planning a smarter investment.",
-  "why-smart-atlanta-companies-hire-event-planners":
-    "Discover the strategic, financial, and brand risks companies face when planning corporate events alone.",
-"indian-wedding-venues-atlanta":
-  "Compare Atlanta’s top Indian wedding venues—hotels, gardens, and resorts—by catering policies, baraat logistics, open-flame rules, and guest capacity to find your perfect celebration space.",
 };
 
 // Helpers
@@ -45,12 +23,12 @@ const Blog = () => {
   const heroImage = "/lovable-uploads/IMG_0409.webp";
   const absHero = toAbs(heroImage);
 
-  // ✅ Use the imported JSON here
+  // ✅ Now reading directly from JSON only
   const blogPosts = (blogMeta as BlogMetaItem[]).map((p) => ({
     title: p.title,
     href: `/blog/${p.slug}`,
-    image: IMAGE_MAP[p.slug] ?? "/lovable-uploads/fallback-blog.webp",
-    excerpt: EXCERPT_MAP[p.slug] ?? "",
+    image: p.image ?? "/lovable-uploads/fallback-blog.webp",
+    excerpt: p.excerpt ?? "",
     datePublished: p.datePublished,
     lastmod: p.lastmod,
   }));
