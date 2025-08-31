@@ -480,7 +480,7 @@ const Footer = () => {
               Phone: <a href="tel:7704108302" className="text-gold hover:underline">(770) 410-8302</a>
             </p>
             <p className="text-gray-300">
-              Atlanta, GA
+              Hoschton, GA
             </p>
           </div>
         </div>
