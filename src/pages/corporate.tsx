@@ -122,11 +122,6 @@ const Corporate = () => {
       <div className="min-h-screen bg-transparent flex flex-col">
         <NavBarCorporate />
 
-        {/* Hero Section */}
-        <section
-          id="hero"
-          className="relative min-h-screen flex flex-col justify-center pt-24 pb-12 px-6 md:px-12 lg:px-16 text-white overflow-hidden"
-        >
 
 {/* Hero Section */}
 <section
