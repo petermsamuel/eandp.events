@@ -127,6 +127,7 @@ const Corporate = () => {
           id="hero"
           className="relative min-h-screen flex flex-col justify-center pt-24 pb-12 px-6 md:px-12 lg:px-16 text-white overflow-hidden"
         >
+
 {/* Hero Section */}
 <section
   id="hero"
@@ -149,6 +150,7 @@ const Corporate = () => {
       media="(max-width: 640px)"
       type="image/webp"
     />
+    {/* fallback for older browsers */}
     <img
       src="/lovable-uploads/corp3_cropped-1280.webp"
       srcSet="/lovable-uploads/corp3_cropped-640.webp 640w, /lovable-uploads/corp3_cropped-1280.webp 1280w, /lovable-uploads/corp3_cropped.webp 1920w"
@@ -202,6 +204,7 @@ const Corporate = () => {
     </a>
   </div>
 </section>
+
 
 
         {/* What You Need, What We Deliver Section */}
