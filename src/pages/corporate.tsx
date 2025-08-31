@@ -139,7 +139,7 @@ const Corporate = () => {
     type="image/webp"
   />
   <img
-    src="/lovable-uploads/corp3_cropped.webp"
+    src="/lovable-uploads/corp3_cropped.webp" // fallback
     alt="Corporate event planning background"
     className="absolute inset-0 w-full h-full object-cover z-0"
     loading="eager"
