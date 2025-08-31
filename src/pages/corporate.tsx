@@ -61,14 +61,20 @@ const Corporate = () => {
   {/* Canonical */}
   <link rel="canonical" href="https://eandp.events/corporate" />
 
-{/* Preload Hero Image for Speed (mid-size as best compromise) */}
-<link
-  rel="preload"
-  as="image"
-  href="/lovable-uploads/corp3_cropped-1280.webp"
-  type="image/webp"
-/>
+  {/* Preconnect for faster font/css discovery (remove if you truly don't use Google Fonts) */}
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
 
+  {/* 🔑 Preload the hero with srcset so the browser can pick the right size early */}
+  <link
+    rel="preload"
+    as="image"
+    href="/lovable-uploads/corp3_cropped-1280.webp"
+    imagesrcset="/lovable-uploads/corp3_cropped-640.webp 640w, /lovable-uploads/corp3_cropped-1280.webp 1280w, /lovable-uploads/corp3_cropped.webp 1920w"
+    imagesizes="100vw"
+    type="image/webp"
+    fetchpriority="high"
+  />
 
   {/* Open Graph */}
   <meta property="og:url" content="https://eandp.events/corporate" />
@@ -121,86 +127,82 @@ const Corporate = () => {
           id="hero"
           className="relative min-h-screen flex flex-col justify-center pt-24 pb-12 px-6 md:px-12 lg:px-16 text-white overflow-hidden"
         >
-       {/* Hero Image */}
-<picture>
-  <source
-    srcSet="/lovable-uploads/corp3_cropped-640.webp"
-    media="(max-width: 640px)"
-    type="image/webp"
-  />
-  <source
-    srcSet="/lovable-uploads/corp3_cropped-1280.webp"
-    media="(max-width: 1280px)"
-    type="image/webp"
-  />
-  <source
-    srcSet="/lovable-uploads/corp3_cropped-1920.webp"
-    media="(max-width: 1920px)"
-    type="image/webp"
-  />
-  <img
-    src="/lovable-uploads/corp3_cropped.webp" // fallback
-    alt="Corporate event planning background"
-    className="absolute inset-0 w-full h-full object-cover z-0"
-    loading="eager"
-    width={1920}
-    height={1080}
-  />
-</picture>
+{/* Hero Section */}
+<section
+  id="hero"
+  className="relative min-h-screen flex flex-col justify-center pt-24 pb-12 px-6 md:px-12 lg:px-16 text-white overflow-hidden"
+>
+  {/* Hero Image */}
+  <picture>
+    <source
+      srcSet="/lovable-uploads/corp3_cropped.webp"
+      media="(min-width: 1281px)"
+      type="image/webp"
+    />
+    <source
+      srcSet="/lovable-uploads/corp3_cropped-1280.webp"
+      media="(min-width: 641px)"
+      type="image/webp"
+    />
+    <source
+      srcSet="/lovable-uploads/corp3_cropped-640.webp"
+      media="(max-width: 640px)"
+      type="image/webp"
+    />
+    <img
+      src="/lovable-uploads/corp3_cropped-1280.webp"
+      srcSet="/lovable-uploads/corp3_cropped-640.webp 640w, /lovable-uploads/corp3_cropped-1280.webp 1280w, /lovable-uploads/corp3_cropped.webp 1920w"
+      sizes="100vw"
+      alt="Corporate event planning background"
+      className="absolute inset-0 w-full h-full object-cover z-0"
+      fetchpriority="high"
+      loading="eager"
+      decoding="async"
+      width={1920}
+      height={1080}
+    />
+  </picture>
 
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/30 z-10" />
 
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black/30 z-10" />
+  {/* Headline */}
+  <div className="relative z-20 text-center w-full px-4">
+    <h1 className="text-sm md:text-base tracking-widest uppercase text-white/80 mb-3">
+      Corporate Event Planner in Atlanta
+    </h1>
+    <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-snug max-w-[75rem] mx-auto">
+      Your Event Deserves More Than a Run of Show. It Deserves Strategy.
+    </h2>
+  </div>
 
-          {/* Headline */}
-          <div className="relative z-20 text-center w-full px-4">
-            <h1 className="text-sm md:text-base tracking-widest uppercase text-white/80 mb-3">
-              Corporate Event Planner in Atlanta
-            </h1>
+  {/* Subtext and CTA */}
+  <div className="relative z-20 max-w-4xl text-center mx-auto">
+    <p className="text-lg md:text-xl max-w-3xl mb-10 text-white/90 mx-auto">
+      Based in Atlanta, we specialize in corporate event planning that transcends logistics.
+      From executive summits to brand activations, we align purpose with precision—leading with structure,
+      cultural fluency, and decades of experience.
+    </p>
+    <div className="flex justify-center">
+      <a
+        href="#cta"
+        className="btn btn-primary bg-navy text-white text-lg sm:text-base rounded-full px-6 py-3"
+      >
+        Your Mission. Our Execution.
+      </a>
+    </div>
+  </div>
 
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-snug max-w-[75rem] mx-auto">
-              Your Event Deserves More Than a Run of Show. It Deserves Strategy.
-            </h2>
-          </div>
+  {/* Scroll Indicator */}
+  <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce z-20">
+    <a href="#what-we-do" aria-label="Scroll down">
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+      </svg>
+    </a>
+  </div>
+</section>
 
-          {/* Subtext and CTA */}
-          <div className="relative z-20 max-w-4xl text-center mx-auto">
-            <p className="text-lg md:text-xl max-w-3xl mb-10 text-white/90 mx-auto">
-              Based in Atlanta, we specialize in corporate event planning that transcends logistics.
-              From executive summits to brand activations, we align purpose with precision—leading with structure,
-              cultural fluency, and decades of experience.
-            </p>
-
-            <div className="flex justify-center">
-              <a
-                href="#cta"
-                className="btn btn-primary bg-navy text-white text-lg sm:text-base rounded-full px-6 py-3"
-              >
-                Your Mission. Our Execution.
-              </a>
-            </div>
-          </div>
-
-          {/* Scroll Indicator */}
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce z-20">
-            <a href="#what-we-do" aria-label="Scroll down">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
-                />
-              </svg>
-            </a>
-          </div>
-        </section>
 
         {/* What You Need, What We Deliver Section */}
         <section
