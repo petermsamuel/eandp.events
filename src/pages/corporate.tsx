@@ -61,14 +61,13 @@ const Corporate = () => {
   {/* Canonical */}
   <link rel="canonical" href="https://eandp.events/corporate" />
 
-{/* Preload Hero Image for Speed (mid-size as best compromise) */}
-<link
-  rel="preload"
-  as="image"
-  href="/lovable-uploads/corp3_cropped.webp"
-  type="image/webp"
-/>
-
+  {/* Preload Hero Image for Speed */}
+  <link
+    rel="preload"
+    as="image"
+    href="/lovable-uploads/corp3_cropped.webp"
+    type="image/webp"
+  />
 
   {/* Open Graph */}
   <meta property="og:url" content="https://eandp.events/corporate" />
@@ -121,33 +120,15 @@ const Corporate = () => {
           id="hero"
           className="relative min-h-screen flex flex-col justify-center pt-24 pb-12 px-6 md:px-12 lg:px-16 text-white overflow-hidden"
         >
-       {/* Hero Image */}
-<picture>
-  <source
-    srcSet="/lovable-uploads/corp3_cropped-640.webp"
-    media="(max-width: 640px)"
-    type="image/webp"
-  />
-  <source
-    srcSet="/lovable-uploads/corp3_cropped-1280.webp"
-    media="(max-width: 1280px)"
-    type="image/webp"
-  />
-  <source
-    srcSet="/lovable-uploads/corp3_cropped-1920.webp"
-    media="(max-width: 1920px)"
-    type="image/webp"
-  />
-  <img
-    src="/lovable-uploads/corp3_cropped.webp" // fallback
-    alt="Corporate event planning background"
-    className="absolute inset-0 w-full h-full object-cover z-0"
-    loading="eager"
-    width={1920}
-    height={1080}
-  />
-</picture>
-
+          {/* Hero Image */}
+          <img
+            src="/lovable-uploads/corp3_cropped.webp"
+            alt="Corporate event planning background"
+            className="absolute inset-0 w-full h-full object-cover z-0"
+            loading="eager"
+            width={1920}
+            height={1080}
+          />
 
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/30 z-10" />
