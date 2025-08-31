@@ -65,7 +65,7 @@ const Corporate = () => {
 <link
   rel="preload"
   as="image"
-  href="/lovable-uploads/corp3_cropped-1280.webp"
+  href="/lovable-uploads/corp3_cropped.webp"
   type="image/webp"
 />
 
