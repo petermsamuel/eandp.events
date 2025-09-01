@@ -240,27 +240,31 @@ const About = () => {
             </div>
 
             {/* CTA */}
+
+
             <div className="text-center">
               <h3 className="section-title text-[#2a2a2a] mb-4">Ready When You Are</h3>
               <p className="text-lg text-gray-700 mb-8">
                 If strategy, empathy, and flawless delivery matter, we’re your team.
               </p>
-              <div className="flex items-center justify-center gap-4 flex-wrap">
-                <a
-                  href="https://cal.com/eandp.events/corporate-b2b-15"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary bg-navy text-white rounded-full px-6 py-3"
-                >
-                  Book a Consult
-                </a>
-                <a href="mailto:info@eandp.events" className="text-gold underline font-semibold">
-                  info@eandp.events
-                </a>
-                <a href="tel:17704108302" className="text-gold underline font-semibold">
-                  (770) 410-8302
-                </a>
-              </div>
+               <div className="glow-button-wrapper mx-auto">
+              <div className="glow-ring" />
+              <a
+                href="https://cal.com/eandp.events/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glow-button-inner"
+                onClick={() => {
+                  (window as any).gtag?.('event', 'cta_click', {
+                    button_text: 'Book Your Free Clarity Call',
+                    cta_type: 'weddings_cta',
+                    page_path: window.location.pathname,
+                  });
+                }}
+              >
+                Book Your Free Clarity Call
+              </a>
+            </div>
             </div>
           </div>
         </section>
