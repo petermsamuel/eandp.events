@@ -12,7 +12,7 @@ const About = () => {
   const heroImage = "/lovable-uploads/IMG_0409.webp"; // reuse a known-good hero
   const absHero = toAbs(heroImage);
 
-  // JSON-LD
+  // JSON-LD (page + org summary; you can keep your sitewide schema elsewhere too)
   const aboutLd = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
@@ -49,7 +49,7 @@ const About = () => {
         <title>About E&amp;P Events | Atlanta Wedding &amp; Corporate Event Planners</title>
         <meta
           name="description"
-          content="We don’t just plan events. We run them. E&P Events brings structure, clarity, and cultural intelligence to high-stakes weddings and corporate events."
+          content="We don’t just plan events. We run them. E&P Events brings structure, clarity, and cultural intelligence to high-stakes weddings and corporate events across Atlanta and Georgia."
         />
         <link rel="canonical" href={pageUrl} />
         <link rel="preload" as="image" href={heroImage} type="image/webp" />
@@ -90,12 +90,19 @@ const About = () => {
               About E&amp;P Events
             </h1>
             <p className="text-lg text-white mb-6">
-              We don’t just plan events. We run them. Calm leadership, crisp systems, and cultural intelligence—for weddings and corporate experiences that actually work.
+              We don’t just plan events. We run them. Calm leadership, crisp systems, and cultural intelligence—for
+              weddings and corporate experiences that actually work.
             </p>
           </div>
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 animate-bounce z-10">
             <a href="#about-content" aria-label="Scroll to content">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
               </svg>
             </a>
@@ -105,7 +112,156 @@ const About = () => {
         {/* Content */}
         <section id="about-content" className="py-20 px-4 bg-[#f8f6ed]">
           <div className="max-w-5xl mx-auto space-y-16">
-            {/* ... keep the same SEO-optimized sections we wrote (Why choose us, What we do, How we work, Values, Service area, Results, CTA) ... */}
+            {/* Intro */}
+            <div className="text-center">
+              <h2 className="section-title text-[#2a2a2a] mb-4">
+                Atlanta Event Planners for Weddings &amp; Corporate — With Outcomes You Can Feel
+              </h2>
+              <p className="text-lg text-gray-700">
+                E&amp;P Events is a boutique planning studio in Atlanta, GA trusted for high-stakes execution and calm
+                leadership. We bring structure, clarity, and cultural intelligence to <strong>South Asian &amp; fusion weddings</strong> and
+                <strong> corporate events</strong>—so you can focus on the moment, not the mess. From timeline design and vendor management to
+                showcalling and contingency planning, we protect the run of show and the guest experience.
+              </p>
+            </div>
+
+            {/* Why choose us */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+              <div className="bg-white rounded-xl shadow-sm p-8">
+                <h3 className="text-2xl font-bold mb-4 text-[#2a2a2a]">
+                  Why Clients Choose E&amp;P (and Refer Us)
+                </h3>
+                <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                  <li>
+                    <strong>Crisis-proof execution:</strong> We anticipate failure points, build contingencies, and keep the day on rails—without anyone noticing the work behind it.
+                  </li>
+                  <li>
+                    <strong>Flat-fee transparency:</strong> No commissions or markups. Clear scope, clear price, clear outcomes.
+                  </li>
+                  <li>
+                    <strong>Cultural fluency:</strong> Deep expertise in <strong>South Asian ceremonies</strong>, <strong>fusion weddings</strong>,
+                    and cross-cultural corporate experiences—baraat logistics, open-flame guidance, VIP protocols, and more.
+                  </li>
+                  <li>
+                    <strong>Ownership mentality:</strong> We lead like it’s ours—so you can enjoy it like it’s yours.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-xl shadow-sm p-8">
+                <h3 className="text-2xl font-bold mb-4 text-[#2a2a2a]">What We Do</h3>
+                <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                  <li>
+                    <strong>Weddings:</strong> Full-service planning, month-of coordination, and production management for
+                    South Asian &amp; fusion celebrations, multi-event weekends, and destination-ready couples.
+                  </li>
+                  <li>
+                    <strong>Corporate:</strong> Executive summits, brand activations, conferences, and donor/board experiences
+                    where timing, tone, and stakeholder management matter.
+                  </li>
+                  <li>
+                    <strong>Scale:</strong> From 100 guests to 1,500+, we scale gracefully—protecting both logistics and guest experience.
+                  </li>
+                </ul>
+                <div className="mt-5 flex gap-4 flex-wrap">
+                  <a href="/weddings" className="text-gold underline font-semibold">Explore Weddings →</a>
+                  <a href="/corporate" className="text-gold underline font-semibold">Explore Corporate →</a>
+                </div>
+              </div>
+            </div>
+
+            {/* Results / Social proof */}
+            <div className="bg-white rounded-xl shadow-sm p-8">
+              <h3 className="text-2xl font-bold mb-4 text-[#2a2a2a]">Results You Can Feel</h3>
+              <p className="text-gray-700">
+                Clients describe our work as “calm when it counted.” One bride said emergencies were handled “so smoothly
+                that no one noticed”—and that’s the bar we set for every event. You’ll feel our impact not in what we say,
+                but in how your day flows: composed, seamless, and exactly as promised.
+              </p>
+              <div className="mt-5 flex gap-4 flex-wrap">
+                <a href="/#testimonials" className="text-gold underline font-semibold">Read Testimonials →</a>
+                <a href="/blog" className="text-gold underline font-semibold">From the E&amp;P Blog →</a>
+              </div>
+            </div>
+
+            {/* How we work */}
+            <div className="bg-white rounded-xl shadow-sm p-8">
+              <h3 className="text-2xl font-bold mb-6 text-[#2a2a2a]">How We Work</h3>
+              <ol className="list-decimal pl-6 space-y-3 text-gray-700">
+                <li>
+                  <strong>Define the mission</strong> — goals, constraints, must-haves, and cultural priorities.
+                </li>
+                <li>
+                  <strong>Build the blueprint</strong> — budget, vendors, timeline, tech, and risk plan (with contingencies).
+                </li>
+                <li>
+                  <strong>Run the room</strong> — decisive showcalling, vendor leadership, discreet problem-solving.
+                </li>
+                <li>
+                  <strong>Debrief</strong> — what worked, what we improved, what you’ll remember.
+                </li>
+              </ol>
+              <blockquote className="mt-6 italic border-l-4 border-gold pl-4 text-gray-800">
+                “Emergencies handled so smoothly that no one noticed.” — That’s the benchmark.
+              </blockquote>
+            </div>
+
+            {/* Values & Experience */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+              <div className="bg-white rounded-xl shadow-sm p-8">
+                <h3 className="text-2xl font-bold mb-4 text-[#2a2a2a]">Values We Won’t Compromise</h3>
+                <p className="text-gray-700">
+                  <strong>Excellence</strong> • <strong>Integrity</strong> • <strong>Ownership</strong> • <strong>Clarity</strong> •{" "}
+                  <strong>Cultural Intelligence</strong>
+                </p>
+              </div>
+              <div className="bg-white rounded-xl shadow-sm p-8">
+                <h3 className="text-2xl font-bold mb-4 text-[#2a2a2a]">Selected Experience</h3>
+                <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                  <li>Multi-day South Asian &amp; fusion weddings (Atlanta &amp; beyond)</li>
+                  <li>Executive programs with global dignitaries (incl. United Nations initiatives)</li>
+                  <li>High-capacity productions with 1,500+ guests</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Service area & Meet Peter */}
+            <div className="bg-white rounded-xl shadow-sm p-8">
+              <h3 className="text-2xl font-bold mb-4 text-[#2a2a2a]">Service Area</h3>
+              <p className="text-gray-700">
+                Based in <strong>Atlanta, GA</strong> and serving greater Georgia as home base.{" "}
+                <strong>Available nationwide</strong>; travel billed transparently at cost.
+              </p>
+              <div className="mt-6">
+                <a href="/#meet-peter" className="text-gold underline font-semibold">
+                  → Your Event’s Calm Commander: Meet Peter
+                </a>
+              </div>
+            </div>
+
+            {/* CTA */}
+            <div className="text-center">
+              <h3 className="section-title text-[#2a2a2a] mb-4">Ready When You Are</h3>
+              <p className="text-lg text-gray-700 mb-8">
+                If strategy, empathy, and flawless delivery matter, we’re your team.
+              </p>
+              <div className="flex items-center justify-center gap-4 flex-wrap">
+                <a
+                  href="https://cal.com/eandp.events/corporate-b2b-15"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary bg-navy text-white rounded-full px-6 py-3"
+                >
+                  Book a Consult
+                </a>
+                <a href="mailto:info@eandp.events" className="text-gold underline font-semibold">
+                  info@eandp.events
+                </a>
+                <a href="tel:17704108302" className="text-gold underline font-semibold">
+                  (770) 410-8302
+                </a>
+              </div>
+            </div>
           </div>
         </section>
 
