@@ -9,8 +9,9 @@ const toAbs = (p: string) => (p.startsWith("http") ? p : `${ABSOLUTE_ORIGIN}${p}
 
 const About = () => {
   const pageUrl = `${ABSOLUTE_ORIGIN}/about`;
-  const heroImage = "/lovable-uploads/June 23, 2018-18-53-42-IMG_9751-Mid-Res-L.webp" 
-  const absHero = toAbs(heroImage);
+  const heroDesktop = "/lovable-uploads/about-page-desktop.webp";
+  const heroMobile = "/lovable-uploads/about-page-mobile.webp";
+  const absHero = toAbs(heroDesktop);
 
   // JSON-LD (page + org summary; you can keep your sitewide schema elsewhere too)
   const aboutLd = {
@@ -52,7 +53,17 @@ const About = () => {
           content="We don’t just plan events. We run them. E&P Events brings structure, clarity, and cultural intelligence to high-stakes weddings and corporate events across Atlanta and Georgia."
         />
         <link rel="canonical" href={pageUrl} />
-        <link rel="preload" as="image" href={heroImage} type="image/webp" />
+
+        {/* Preload hero with srcset so the browser chooses the right file early */}
+        <link
+          rel="preload"
+          as="image"
+          href={heroDesktop}
+          imagesrcset={`${heroMobile} 1280w, ${heroDesktop} 2048w`}
+          imagesizes="100vw"
+          type="image/webp"
+          fetchpriority="high"
+        />
 
         {/* OG / Twitter */}
         <meta property="og:url" content={pageUrl} />
@@ -81,10 +92,25 @@ const About = () => {
         {/* Hero */}
         <section
           id="hero"
-          className="relative min-h-[60vh] flex flex-col justify-center pt-28 pb-12 px-4 bg-cover bg-center"
-          style={{ backgroundImage: `url('${heroImage}')` }}
+          className="relative min-h-[60vh] flex flex-col justify-center pt-28 pb-12 px-4 overflow-hidden"
         >
-          <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
+          {/* Responsive hero image */}
+          <picture>
+            {/* Desktop first */}
+            <source srcSet={heroDesktop} media="(min-width: 769px)" type="image/webp" />
+            {/* Mobile fallback */}
+            <source srcSet={heroMobile} media="(max-width: 768px)" type="image/webp" />
+            <img
+              src={heroDesktop}
+              alt="About E&P Events hero"
+              className="absolute inset-0 w-full h-full object-cover z-0"
+              fetchpriority="high"
+              loading="eager"
+              decoding="async"
+            />
+          </picture>
+
+          <div className="absolute inset-0 bg-black opacity-30 z-10"></div>
           <div className="relative z-10 max-w-3xl mx-auto text-center">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-snug mx-auto drop-shadow-lg">
               About E&amp;P Events
