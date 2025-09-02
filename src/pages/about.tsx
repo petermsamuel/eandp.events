@@ -197,7 +197,7 @@ const About = () => {
             </div>
 
             {/* Results / Social proof */}
-            <div className="bg-white rounded-xl shadow-sm p-8">
+            <div className="bg-transparent rounded-xl shadow-sm p-8">
               <h3 className="text-2xl font-bold mb-4 text-[#2a2a2a]">Results You Can Feel</h3>
               <p className="text-gray-700">
                 Clients describe our work as “calm when it counted.” As one bride put it, “From all the wedding expenses,
@@ -209,7 +209,7 @@ const About = () => {
             </div>
 
             {/* Meet the Director (visual spotlight) */}
-            <section className="bg-white rounded-xl shadow-sm p-8 flex flex-col md:flex-row gap-10 items-center">
+            <section className="bg-transparent rounded-xl shadow-sm p-8 flex flex-col md:flex-row gap-10 items-center">
               {/* Photo */}
               <div className="md:w-1/3">
                 <div className="overflow-hidden border border-gold rounded-md">
@@ -297,8 +297,8 @@ const About = () => {
 
             {/* CTA */}
             <div className="text-center">
-              <h3 className="section-title text-[#2c2c2c] mb-4">Ready When You Are</h3>
-              <p className="text-lg text-gray-700 mb-8">
+              <h3 className="section-title text-[#333333] mb-4">Ready When You Are</h3>
+              <p className="text-lg text-white-700 mb-8">
                 If strategy, empathy, and flawless delivery matter, we’re your team.
               </p>
               <div className="glow-button-wrapper mx-auto">
