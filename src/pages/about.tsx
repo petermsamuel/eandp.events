@@ -296,33 +296,37 @@ const About = () => {
               </p>
             </div>
 
-           {/* CTA */}
-            <div className="text-center bg-[#333333]">
-              <h3 className="section-title text-white mb-4">Ready When You Are</h3>
-              <p className="text-lg text-white-700 mb-8">
-                If strategy, empathy, and flawless delivery matter, we’re your team.
-              </p>
-              <div className="glow-button-wrapper mx-auto">
-                <div className="glow-ring" />
-                <a
-                  href="https://cal.com/eandp.events/30min"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="glow-button-inner"
-                  onClick={() => {
-                    (window as any).gtag?.('event', 'cta_click', {
-                      button_text: 'Book Your Free Clarity Call',
-                      cta_type: 'weddings_cta',
-                      page_path: window.location.pathname,
-                    });
-                  }}
-                >
-                  Book Your Free Clarity Call
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+         {/* Full-bleed CTA section */}
+<section
+  id="about-cta"
+  className="relative left-1/2 right-1/2 -mx-[50vw] w-screen bg-[#2c2c2c] text-white py-16"
+>
+  <div className="max-w-5xl mx-auto px-4 text-center">
+    <h3 className="section-title text-white mb-4">Ready When You Are</h3>
+    <p className="text-lg text-white/80 mb-8">
+      If strategy, empathy, and flawless delivery matter, we’re your team.
+    </p>
+    <div className="glow-button-wrapper mx-auto">
+      <div className="glow-ring" />
+      <a
+        href="https://cal.com/eandp.events/30min"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="glow-button-inner"
+        onClick={() => {
+          (window as any).gtag?.('event', 'cta_click', {
+            button_text: 'Book Your Free Clarity Call',
+            cta_type: 'weddings_cta',
+            page_path: window.location.pathname,
+          });
+        }}
+      >
+        Book Your Free Clarity Call
+      </a>
+    </div>
+  </div>
+</section>
+
 
         <Footer />
       </div>
