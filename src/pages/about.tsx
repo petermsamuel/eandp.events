@@ -271,8 +271,8 @@ const About = () => {
 
 
             <div className="text-center">
-              <h3 className="section-title text-[#2a2a2a] mb-4">Ready When You Are</h3>
-              <p className="text-lg text-gray-700 mb-8">
+              <h3 className="section-title text-[#2c2c2c] mb-4">Ready When You Are</h3>
+              <p className="text-lg text-white-700 mb-8">
                 If strategy, empathy, and flawless delivery matter, we’re your team.
               </p>
                <div className="glow-button-wrapper mx-auto">
