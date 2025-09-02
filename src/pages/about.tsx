@@ -148,7 +148,7 @@ const About = () => {
         </section>
 
         {/* Content */}
-        <section id="about-content" className="py-20 px-4 bg-[#f7f7f2]">
+        <section id="about-content" className="py-20 px-4 bg-transparent">
           <div className="max-w-5xl mx-auto space-y-16">
             {/* Intro */}
             <div className="text-center">
