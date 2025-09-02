@@ -86,7 +86,6 @@ const About = () => {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbsLd) }} />
       </Helmet>
 
-      <div className="min-h-screen bg-[#f7f7f2] flex flex-col">
         <NavBarBlog />
 
         {/* Hero */}
