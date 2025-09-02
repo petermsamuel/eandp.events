@@ -184,6 +184,41 @@ const About = () => {
               </div>
             </div>
 
+{/* Meet the Director (visual spotlight) */}
+<section className="bg-white rounded-xl shadow-sm p-8 flex flex-col md:flex-row gap-10 items-center">
+  {/* Photo */}
+  <div className="md:w-1/3">
+    <div className="overflow-hidden border border-gold rounded-md">
+      <img
+        src="/lovable-uploads/peter-portrait.webp"
+        alt="Peter Samuel, Director of E&P Events"
+        className="w-full h-auto object-cover"
+        loading="lazy"
+      />
+    </div>
+  </div>
+
+  {/* Text */}
+  <div className="md:w-2/3 space-y-4 text-lg text-gray-700">
+    <h3 className="text-2xl font-bold text-[#2a2a2a]">Meet the Director</h3>
+    <p>
+      At the helm of <strong>E&amp;P Events</strong> is <strong>Peter Samuel</strong>, a planner known for
+      calm under pressure and decisive leadership. With a background in project management
+      and more than a decade of high-stakes event experience, Peter has led everything from
+      <strong> multi-day South Asian weddings</strong> to <strong>executive programs for global dignitaries</strong>.
+    </p>
+    <p>
+      Clients know him as the “calm commander” who anticipates challenges, keeps the run of
+      show seamless, and leads with empathy. Whether orchestrating a 1,500-guest gala or a
+      fusion celebration in Atlanta, Peter runs the room so you can enjoy it.
+    </p>
+    <a href="/#meet-peter" className="text-gold underline font-semibold">
+      → Learn more about Peter
+    </a>
+  </div>
+</section>
+
+
             {/* How we work */}
             <div className="bg-white rounded-xl shadow-sm p-8">
               <h3 className="text-2xl font-bold mb-6 text-[#2a2a2a]">How We Work</h3>
