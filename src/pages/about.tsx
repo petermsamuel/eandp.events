@@ -86,6 +86,8 @@ const About = () => {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbsLd) }} />
       </Helmet>
 
+      {/* Page wrapper WITHOUT global background color */}
+      <div className="min-h-screen flex flex-col">
         <NavBarBlog />
 
         {/* Hero */}
@@ -134,11 +136,11 @@ const About = () => {
           </div>
         </section>
 
-        {/* Content */}
-        <section id="about-content" className="py-20 px-4 bg-[#f8f6ed]">
+        {/* Content (transparent so watermark can show through) */}
+        <section id="about-content" className="py-20 px-4 bg-transparent">
           <div className="max-w-5xl mx-auto space-y-16">
-            {/* Intro */}
-            <div className="text-center">
+            {/* Intro (use a soft panel if you still want a band of color without full-page bg) */}
+            <div className="text-center bg-[#f8f6ed] rounded-xl p-8">
               <h2 className="section-title text-[#2a2a2a] mb-4">
                 Atlanta Event Planners for Weddings &amp; Corporate — With Outcomes You Can Feel
               </h2>
@@ -195,8 +197,8 @@ const About = () => {
               </div>
             </div>
 
-            {/* Results / Social proof */}
-            <div className="bg-transparent rounded-xl shadow-sm p-8">
+            {/* Results / Social proof (transparent panel so watermark can peek through) */}
+            <div className="bg-transparent rounded-xl p-8">
               <h3 className="text-2xl font-bold mb-4 text-[#2a2a2a]">Results You Can Feel</h3>
               <p className="text-gray-700">
                 Clients describe our work as “calm when it counted.” As one bride put it, “From all the wedding expenses,
@@ -207,8 +209,8 @@ const About = () => {
               </div>
             </div>
 
-            {/* Meet the Director (visual spotlight) */}
-            <section className="bg-transparent rounded-xl shadow-sm p-8 flex flex-col md:flex-row gap-10 items-center">
+            {/* Meet the Director (transparent section; portrait card provides structure) */}
+            <section className="bg-transparent rounded-xl p-8 flex flex-col md:flex-row gap-10 items-center">
               {/* Photo */}
               <div className="md:w-1/3">
                 <div className="overflow-hidden border border-gold rounded-md">
@@ -244,7 +246,7 @@ const About = () => {
               </div>
             </section>
 
-            {/* How we work */}
+            {/* How we work (kept as white card) */}
             <div className="bg-white rounded-xl shadow-sm p-8">
               <h3 className="text-2xl font-bold mb-6 text-[#2a2a2a]">How We Work</h3>
               <ol className="list-decimal pl-6 space-y-3 text-gray-700">
@@ -297,7 +299,7 @@ const About = () => {
             {/* CTA */}
             <div className="text-center">
               <h3 className="section-title text-[#333333] mb-4">Ready When You Are</h3>
-              <p className="text-lg text-white-700 mb-8">
+              <p className="text-lg text-gray-700 mb-8">
                 If strategy, empathy, and flawless delivery matter, we’re your team.
               </p>
               <div className="glow-button-wrapper mx-auto">
