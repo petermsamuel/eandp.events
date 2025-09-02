@@ -276,7 +276,7 @@ const About = () => {
                   <strong>Excellence</strong> • <strong>Integrity</strong> • <strong>Ownership</strong> • <strong>Clarity</strong> • <strong>Cultural Intelligence</strong>
                 </p>
               </div>
-              <div className="bg-white rounded-xl shadow-sm p-8">
+              <div className="bg-[#f7f7f2] rounded-xl shadow-sm p-8">
                 <h3 className="text-2xl font-bold mb-4 text-[#2a2a2a]">Selected Experience</h3>
                 <ul className="list-disc pl-6 space-y-2 text-gray-700">
                   <li>Multi-day South Asian &amp; fusion weddings (Atlanta &amp; beyond)</li>
