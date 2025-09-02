@@ -9,7 +9,7 @@ const toAbs = (p: string) => (p.startsWith("http") ? p : `${ABSOLUTE_ORIGIN}${p}
 
 const About = () => {
   const pageUrl = `${ABSOLUTE_ORIGIN}/about`;
-  const heroImage = "/lovable-uploads/IMG_0409.webp"; // reuse a known-good hero
+  const heroImage = "/lovable-uploads/June 23, 2018-18-53-42-IMG_9751-Mid-Res-L.webp" 
   const absHero = toAbs(heroImage);
 
   // JSON-LD (page + org summary; you can keep your sitewide schema elsewhere too)
