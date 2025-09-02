@@ -174,13 +174,11 @@ const About = () => {
             <div className="bg-white rounded-xl shadow-sm p-8">
               <h3 className="text-2xl font-bold mb-4 text-[#2a2a2a]">Results You Can Feel</h3>
               <p className="text-gray-700">
-                Clients describe our work as “calm when it counted.” One bride said emergencies were handled “so smoothly
-                that no one noticed”—and that’s the bar we set for every event. You’ll feel our impact not in what we say,
-                but in how your day flows: composed, seamless, and exactly as promised.
+               Clients describe our work as “calm when it counted.” As one bride put it, “From all the wedding expenses, 
+               this was the most valuable… emergencies handled so smoothly that no one noticed.” That’s the bar we set for every event.
               </p>
               <div className="mt-5 flex gap-4 flex-wrap">
                 <a href="/#testimonials" className="text-gold underline font-semibold">Read Testimonials →</a>
-                <a href="/blog" className="text-gold underline font-semibold">From the E&amp;P Blog →</a>
               </div>
             </div>
 
@@ -237,7 +235,7 @@ const About = () => {
                 </li>
               </ol>
               <blockquote className="mt-6 italic border-l-4 border-gold pl-4 text-gray-800">
-                “Emergencies handled so smoothly that no one noticed.” — That’s the benchmark.
+                “Exceptional strategic direction and planning…pulling off events seamlessly and flawlessly.” — Sebastian
               </blockquote>
             </div>
 
@@ -260,18 +258,13 @@ const About = () => {
               </div>
             </div>
 
-            {/* Service area & Meet Peter */}
+            {/* Service area */}
             <div className="bg-white rounded-xl shadow-sm p-8">
               <h3 className="text-2xl font-bold mb-4 text-[#2a2a2a]">Service Area</h3>
               <p className="text-gray-700">
                 Based in <strong>Atlanta, GA</strong> and serving greater Georgia as home base.{" "}
                 <strong>Available nationwide</strong>; travel billed transparently at cost.
               </p>
-              <div className="mt-6">
-                <a href="/#meet-peter" className="text-gold underline font-semibold">
-                  → Your Event’s Calm Commander: Meet Peter
-                </a>
-              </div>
             </div>
 
             {/* CTA */}
