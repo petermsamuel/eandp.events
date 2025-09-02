@@ -110,7 +110,7 @@ const About = () => {
         </section>
 
         {/* Content */}
-        <section id="about-content" className="py-20 px-4 bg-[#2c2c2c]">
+        <section id="about-content" bg-transparent className="py-20 px-4 bg-[#2a2a2a]">
           <div className="max-w-5xl mx-auto space-y-16">
             {/* Intro */}
             <div className="text-center">
