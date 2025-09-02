@@ -69,7 +69,10 @@ const NavBarBlog = () => {
           <a href="/corporate" className="text-black hover:text-gold transition-colors">
             Corporate
           </a>
-          <a href="/blog" className="text-black hover:text-gold font-semibold transition-colors">
+        <a href="/about" className="text-black hover:text-gold transition-colors">
+            About
+          </a>
+          <a href="/blog" className="text-black hover:text-gold transition-colors">
             Blog
           </a>
         </div>
@@ -99,9 +102,16 @@ const NavBarBlog = () => {
               >
                 Corporate
               </a>
+             <a
+                href="/about"
+                className="text-black hover:text-gold transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About
+              </a>
               <a
                 href="/blog"
-                className="text-black hover:text-gold font-semibold transition-colors"
+                className="text-black hover:text-gold transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Blog
