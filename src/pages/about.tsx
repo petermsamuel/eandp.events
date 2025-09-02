@@ -9,8 +9,8 @@ const toAbs = (p: string) => (p.startsWith("http") ? p : `${ABSOLUTE_ORIGIN}${p}
 
 const About = () => {
   const pageUrl = `${ABSOLUTE_ORIGIN}/about`;
-  const heroDesktop = "/lovable-uploads/about-page-desktop.webp";
-  const heroMobile = "/lovable-uploads/about-page-mobile.webp";
+  const heroDesktop = "/lovable-uploads/about-hero-desktop.webp";
+  const heroMobile = "/lovable-uploads/about-hero-mobile.webp";
   const absHero = toAbs(heroDesktop);
 
   // JSON-LD (page + org summary; you can keep your sitewide schema elsewhere too)
