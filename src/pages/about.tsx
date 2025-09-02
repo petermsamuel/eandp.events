@@ -297,8 +297,8 @@ const About = () => {
             </div>
 
            {/* CTA */}
-            <div className="text-center">
-              <h3 className="section-title text-[#2a2a2a] mb-4">Ready When You Are</h3>
+            <div className="text-center bg-[#333333]">
+              <h3 className="section-title text-white mb-4">Ready When You Are</h3>
               <p className="text-lg text-white-700 mb-8">
                 If strategy, empathy, and flawless delivery matter, we’re your team.
               </p>
