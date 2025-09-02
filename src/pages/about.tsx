@@ -99,7 +99,7 @@ const About = () => {
       </Helmet>
 
       {/* PAGE WRAPPER */}
-      <div className="min-h-screen bg-[#f7f7f2] flex flex-col">
+      <div className="min-h-screen bg-transparent flex flex-col">
         <NavBarBlog />
 
         {/* Hero */}
@@ -148,7 +148,7 @@ const About = () => {
         </section>
 
         {/* Content */}
-        <section id="about-content" className="py-20 px-4 bg-[#f8f6ed]">
+        <section id="about-content" className="py-20 px-4 bg-[#f7f7f2]">
           <div className="max-w-5xl mx-auto space-y-16">
             {/* Intro */}
             <div className="text-center">
