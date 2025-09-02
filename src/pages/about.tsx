@@ -164,8 +164,8 @@ const About = () => {
             </div>
 
             {/* Why choose us */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 bg-transparent">
-              <div className="bg-white rounded-xl shadow-sm p-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+              <div className="bg-[#f7f7f2] rounded-xl shadow-sm p-8">
                 <h3 className="text-2xl font-bold mb-4 text-[#2a2a2a]">
                   Why Clients Choose E&amp;P (and Refer Us)
                 </h3>
@@ -186,7 +186,7 @@ const About = () => {
                 </ul>
               </div>
 
-              <div className="bg-white rounded-xl shadow-sm p-8 bg-transparent">
+              <div className="bg-[#f7f7f2]  rounded-xl shadow-sm p-8">
                 <h3 className="text-2xl font-bold mb-4 text-[#2a2a2a]">What We Do</h3>
                 <ul className="list-disc pl-6 space-y-2 text-gray-700">
                   <li>
@@ -270,7 +270,7 @@ const About = () => {
 
             {/* Values & Experience */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-              <div className="bg-white rounded-xl shadow-sm p-8">
+              <div className="bg-[#f7f7f2] rounded-xl shadow-sm p-8">
                 <h3 className="text-2xl font-bold mb-4 text-[#2a2a2a]">Values We Won’t Compromise</h3>
                 <p className="text-gray-700">
                   <strong>Excellence</strong> • <strong>Integrity</strong> • <strong>Ownership</strong> • <strong>Clarity</strong> • <strong>Cultural Intelligence</strong>
@@ -287,7 +287,7 @@ const About = () => {
             </div>
 
             {/* Service area */}
-            <div className="bg-white rounded-xl shadow-sm p-8">
+            <div className="bg-[#f7f7f2] rounded-xl shadow-sm p-8">
               <h3 className="text-2xl font-bold mb-4 text-[#2a2a2a]">Service Area</h3>
               <p className="text-gray-700">
                 Based in <strong>Atlanta, GA</strong> and serving greater Georgia as home base.{" "}
