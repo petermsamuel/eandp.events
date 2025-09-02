@@ -255,7 +255,7 @@ const About = () => {
             </section>
 
             {/* How we work */}
-            <div className="bg-white rounded-xl shadow-sm p-8">
+            <div className="bg-[#f7f7f2] rounded-xl shadow-sm p-8">
               <h3 className="text-2xl font-bold mb-6 text-[#2a2a2a]">How We Work</h3>
               <ol className="list-decimal pl-6 space-y-3 text-gray-700">
                 <li><strong>Define the mission</strong> — goals, constraints, must-haves, and cultural priorities.</li>
