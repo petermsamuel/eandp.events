@@ -164,7 +164,7 @@ const About = () => {
             </div>
 
             {/* Why choose us */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 bg-transparent">
               <div className="bg-white rounded-xl shadow-sm p-8">
                 <h3 className="text-2xl font-bold mb-4 text-[#2a2a2a]">
                   Why Clients Choose E&amp;P (and Refer Us)
@@ -186,7 +186,7 @@ const About = () => {
                 </ul>
               </div>
 
-              <div className="bg-white rounded-xl shadow-sm p-8">
+              <div className="bg-white rounded-xl shadow-sm p-8 bg-transparent">
                 <h3 className="text-2xl font-bold mb-4 text-[#2a2a2a]">What We Do</h3>
                 <ul className="list-disc pl-6 space-y-2 text-gray-700">
                   <li>
