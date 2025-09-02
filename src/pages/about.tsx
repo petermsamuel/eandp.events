@@ -110,7 +110,7 @@ const About = () => {
         </section>
 
         {/* Content */}
-        <section id="about-content" bg-transparent className="py-20 px-4 bg-[#f8f6ed]">
+        <section id="about-content" className="py-20 px-4 bg-[#f8f6ed]">
           <div className="max-w-5xl mx-auto space-y-16">
             {/* Intro */}
             <div className="text-center">
@@ -174,48 +174,50 @@ const About = () => {
             <div className="bg-white rounded-xl shadow-sm p-8">
               <h3 className="text-2xl font-bold mb-4 text-[#2a2a2a]">Results You Can Feel</h3>
               <p className="text-gray-700">
-               Clients describe our work as “calm when it counted.” As one bride put it, “From all the wedding expenses, 
-               this was the most valuable… emergencies handled so smoothly that no one noticed.” That’s the bar we set for every event.
+                Clients describe our work as “calm when it counted.” As one bride put it, “From all the wedding expenses,
+                this was the most valuable… emergencies handled so smoothly that no one noticed.” That’s the bar we set for every event.
               </p>
               <div className="mt-5 flex gap-4 flex-wrap">
                 <a href="/#testimonials" className="text-gold underline font-semibold">Read Testimonials →</a>
               </div>
             </div>
 
-{/* Meet the Director (visual spotlight) */}
-<section className="bg-white rounded-xl shadow-sm p-8 flex flex-col md:flex-row gap-10 items-center">
-  {/* Photo */}
-  <div className="md:w-1/3">
-    <div className="overflow-hidden border border-gold rounded-md">
-      <img
-        src="/lovable-uploads/peter-portrait.webp"
-        alt="Peter Samuel, Director of E&P Events"
-        className="w-full h-auto object-cover"
-        loading="lazy"
-      />
-    </div>
-  </div>
+            {/* Meet the Director (visual spotlight) */}
+            <section className="bg-white rounded-xl shadow-sm p-8 flex flex-col md:flex-row gap-10 items-center">
+              {/* Photo */}
+              <div className="md:w-1/3">
+                <div className="overflow-hidden border border-gold rounded-md">
+                  <img
+                    src="/lovable-uploads/peter-portrait.webp"
+                    alt="Peter Samuel, Director of E&P Events"
+                    className="w-full h-auto object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
 
-  {/* Text */}
-  <div className="md:w-2/3 space-y-4 text-lg text-gray-700">
-    <h3 className="text-2xl font-bold text-[#2a2a2a]">Meet the Director</h3>
-     <p className="text-gray-700 mb-4">
-    At the helm of E&amp;P Events is Peter Samuel, a planner known for calm under pressure
-    and decisive leadership. With a background in project management and more than a
-    decade of high-stakes event experience, Peter has led everything from multi-day
-    South Asian weddings to executive programs for global dignitaries.
-  </p>
+              {/* Text */}
+              <div className="md:w-2/3 text-lg text-gray-700">
+                <h3 className="text-2xl font-bold text-[#2a2a2a] mb-4">Meet the Director</h3>
 
-  <p className="text-gray-700 mb-6">
-    Clients know him as the “calm commander” who anticipates challenges, keeps the run of
-    show seamless, and leads with empathy. Whether orchestrating a 1,500-guest gala or a
-    fusion celebration in Atlanta, Peter runs the room so you can enjoy it.
-  </p>
+                <p className="mb-4">
+                  At the helm of E&amp;P Events is Peter Samuel, a planner known for calm under pressure
+                  and decisive leadership. With a background in project management and more than a
+                  decade of high-stakes event experience, Peter has led everything from multi-day
+                  South Asian weddings to executive programs for global dignitaries.
+                </p>
 
-  <a href="/#meet-peter" className="text-gold underline font-semibold">
-    → Learn more about Peter
-  </a>
-</section>
+                <p className="mb-6">
+                  Clients know him as the “calm commander” who anticipates challenges, keeps the run of
+                  show seamless, and leads with empathy. Whether orchestrating a 1,500-guest gala or a
+                  fusion celebration in Atlanta, Peter runs the room so you can enjoy it.
+                </p>
+
+                <a href="/#meet-peter" className="text-gold underline font-semibold">
+                  → Learn more about Peter
+                </a>
+              </div>
+            </section>
 
             {/* How we work */}
             <div className="bg-white rounded-xl shadow-sm p-8">
@@ -268,31 +270,29 @@ const About = () => {
             </div>
 
             {/* CTA */}
-
-
             <div className="text-center">
               <h3 className="section-title text-[#2c2c2c] mb-4">Ready When You Are</h3>
-              <p className="text-lg text-white-700 mb-8">
+              <p className="text-lg text-gray-700 mb-8">
                 If strategy, empathy, and flawless delivery matter, we’re your team.
               </p>
-               <div className="glow-button-wrapper mx-auto">
-              <div className="glow-ring" />
-              <a
-                href="https://cal.com/eandp.events/30min"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="glow-button-inner"
-                onClick={() => {
-                  (window as any).gtag?.('event', 'cta_click', {
-                    button_text: 'Book Your Free Clarity Call',
-                    cta_type: 'weddings_cta',
-                    page_path: window.location.pathname,
-                  });
-                }}
-              >
-                Book Your Free Clarity Call
-              </a>
-            </div>
+              <div className="glow-button-wrapper mx-auto">
+                <div className="glow-ring" />
+                <a
+                  href="https://cal.com/eandp.events/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="glow-button-inner"
+                  onClick={() => {
+                    (window as any).gtag?.('event', 'cta_click', {
+                      button_text: 'Book Your Free Clarity Call',
+                      cta_type: 'weddings_cta',
+                      page_path: window.location.pathname,
+                    });
+                  }}
+                >
+                  Book Your Free Clarity Call
+                </a>
+              </div>
             </div>
           </div>
         </section>
