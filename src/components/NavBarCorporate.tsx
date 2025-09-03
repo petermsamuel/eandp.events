@@ -76,6 +76,16 @@ const NavBarCorporate = () => {
               <a href="/corporate" className="block px-4 py-2 text-sm text-black hover:bg-gray-100">Corporate</a>
             </div>
           </div>
+
+          {/* Book a Call Button (desktop only) */}
+          <a
+            href="https://cal.com/eandp.events/corporate-b2b-15"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-6 inline-flex items-center rounded-md bg-gold px-5 py-2 text-sm font-semibold text-[#2a2a2a] shadow-md hover:bg-[#d4af37] hover:shadow-lg transition-all duration-200"
+          >
+            Book a Call
+          </a>
         </div>
       </div>
 
@@ -97,9 +107,7 @@ const NavBarCorporate = () => {
             >
               Events
               <svg
-                className={`ml-2 h-4 w-4 transition-transform duration-200 ${
-                  isEventsOpen ? "rotate-180" : ""
-                }`}
+                className={`ml-2 h-4 w-4 transition-transform duration-200 ${isEventsOpen ? "rotate-180" : ""}`}
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
