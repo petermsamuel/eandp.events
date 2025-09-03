@@ -66,7 +66,7 @@ const NavBarBlog = () => {
             target="_blank"
             rel="noopener noreferrer"
             onClick={handleCtaClick}
-            className="ml-6 inline-flex items-center rounded-full bg-gold px-5 py-2 text-sm font-semibold text-[#2a2a2a] shadow-md hover:bg-[#d4af37] hover:shadow-lg transition-all duration-200"
+            className="ml-6 inline-flex items-center rounded-md bg-gold px-5 py-2 text-sm font-semibold text-[#2a2a2a] shadow-md hover:bg-[#d4af37] hover:shadow-lg transition-all duration-200"
           >
             Book a Call
           </a>
