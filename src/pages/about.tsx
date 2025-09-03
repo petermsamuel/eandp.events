@@ -47,56 +47,59 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About E&amp;P Events | Atlanta Wedding &amp; Corporate Event Planners</title>
-        <meta
-          name="description"
-          content="We don’t just plan events. We run them. E&P Events brings structure, clarity, and cultural intelligence to high-stakes weddings and corporate events across Atlanta and Georgia."
-        />
-        <link rel="canonical" href={pageUrl} />
+  <title>
+    About E&amp;P Events | Indian South Asian &amp; Fusion Wedding Planner | Atlanta Corporate Events
+  </title>
+  <meta
+    name="description"
+    content="E&P Events delivers calm, crisis-proof execution for South Asian weddings, fusion celebrations, and high-stakes corporate events in Atlanta and beyond."
+  />
+  <link rel="canonical" href={pageUrl} />
 
-        {/* Preload hero with srcset so the browser chooses the right file early */}
-        <link
-          rel="preload"
-          as="image"
-          href={heroDesktop}
-          imagesrcset={`${heroMobile} 1280w, ${heroDesktop} 2048w`}
-          imagesizes="100vw"
-          type="image/webp"
-          fetchpriority="high"
-        />
+  {/* Preload hero with srcset so the browser chooses the right file early */}
+  <link
+    rel="preload"
+    as="image"
+    href={heroDesktop}
+    imagesrcset={`${heroMobile} 1280w, ${heroDesktop} 2048w`}
+    imagesizes="100vw"
+    type="image/webp"
+    fetchpriority="high"
+  />
 
-        {/* OG / Twitter */}
-        <meta property="og:url" content={pageUrl} />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="About E&P Events | Atlanta Wedding & Corporate Event Planners"
-        />
-        <meta
-          property="og:description"
-          content="Crisis-proof execution, flat-fee transparency, and cultural fluency in South Asian & fusion weddings and corporate events."
-        />
-        <meta property="og:image" content={absHero} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="About E&P Events | Atlanta Wedding & Corporate Event Planners"
-        />
-        <meta
-          name="twitter:description"
-          content="Crisis-proof execution, flat-fee transparency, and cultural fluency in South Asian & fusion weddings and corporate events."
-        />
-        <meta name="twitter:image" content={absHero} />
+  {/* OG / Twitter */}
+  <meta property="og:url" content={pageUrl} />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:title"
+    content="About E&amp;P Events | Indian South Asian &amp; Fusion Wedding Planner | Atlanta Corporate Events"
+  />
+  <meta
+    property="og:description"
+    content="E&P Events delivers calm, crisis-proof execution for South Asian weddings, fusion celebrations, and high-stakes corporate events in Atlanta and beyond."
+  />
+  <meta property="og:image" content={absHero} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="About E&amp;P Events | Indian South Asian &amp; Fusion Wedding Planner | Atlanta Corporate Events"
+  />
+  <meta
+    name="twitter:description"
+    content="E&P Events delivers calm, crisis-proof execution for South Asian weddings, fusion celebrations, and high-stakes corporate events in Atlanta and beyond."
+  />
+  <meta name="twitter:image" content={absHero} />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutLd) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbsLd) }}
-        />
-      </Helmet>
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutLd) }}
+  />
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbsLd) }}
+  />
+</Helmet>
+
 
       {/* PAGE WRAPPER */}
       <div className="min-h-screen bg-transparent flex flex-col">
