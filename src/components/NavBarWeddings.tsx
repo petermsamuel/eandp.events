@@ -63,7 +63,7 @@ const NavbarWeddings = () => {
           <a href="/" className="text-black hover:text-gold transition-colors">
             Home
           </a>
- <a href="#gallery" className="text-black hover:text-gold">
+          <a href="#gallery" className="text-black hover:text-gold">
             Gallery
           </a>
           <a href="#what-we-do" className="text-black hover:text-gold">
@@ -110,6 +110,16 @@ const NavbarWeddings = () => {
               </a>
             </div>
           </div>
+
+          {/* Book a Call Button (desktop only) */}
+          <a
+            href="https://cal.com/eandp.events/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-6 inline-flex items-center rounded-md bg-gold px-5 py-2 text-sm font-semibold text-[#2a2a2a] shadow-md hover:bg-[#d4af37] hover:shadow-lg transition-all duration-200"
+          >
+            Book a Call
+          </a>
         </div>
       </div>
 
@@ -124,7 +134,7 @@ const NavbarWeddings = () => {
             >
               Home
             </a>
-<a
+            <a
               href="#gallery"
               className="text-black hover:text-gold"
               onClick={() => setIsMenuOpen(false)}
