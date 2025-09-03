@@ -46,7 +46,7 @@ const MeetPeterSection = () => {
          {/* Link to expanded About page */}
             <div>
               <a
-                href="/about#about-content"
+                href="/about"
                 className="text-gold underline font-semibold"
               >
                 Learn More About E&P Events →
