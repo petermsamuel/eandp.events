@@ -43,6 +43,15 @@ const MeetPeterSection = () => {
               You’ll feel my impact not in what I say—but in how your day flows:
               calm, seamless, and exactly as you hoped.
             </p>
+         {/* Link to expanded About page */}
+            <div>
+              <a
+                href="/about#about-content"
+                className="text-gold underline font-semibold"
+              >
+                Learn More About E&P Events →
+              </a>
+            </div>
           </div>
         </div>
       </div>
