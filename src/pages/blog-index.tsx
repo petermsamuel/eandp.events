@@ -13,17 +13,16 @@ type BlogMetaItem = {
   excerpt?: string;
 };
 
-// Helpers
 const ABSOLUTE_ORIGIN = "https://eandp.events";
 const toAbs = (p: string) => (p.startsWith("http") ? p : `${ABSOLUTE_ORIGIN}${p}`);
 const stripQuery = (u: string) => u.split("?")[0];
 
 const Blog = () => {
-  const pageUrl = `${ABSOLUTE_ORIGIN}/blog`;
+  // ✅ Use trailing slash consistently
+  const pageUrl = `${ABSOLUTE_ORIGIN}/blog/`;
   const heroImage = "/lovable-uploads/IMG_0409.webp";
   const absHero = toAbs(heroImage);
 
-  // ✅ Now reading directly from JSON only
   const blogPosts = (blogMeta as BlogMetaItem[]).map((p) => ({
     title: p.title,
     href: `/blog/${p.slug}`,
@@ -33,7 +32,6 @@ const Blog = () => {
     lastmod: p.lastmod,
   }));
 
-  // JSON-LD
   const blogLd = {
     "@context": "https://schema.org",
     "@type": "Blog",
@@ -72,7 +70,11 @@ const Blog = () => {
           name="description"
           content="Read tips, stories, and expert advice from Atlanta’s leading wedding and corporate event planners."
         />
+        {/* ✅ Canonical with trailing slash */}
         <link rel="canonical" href={pageUrl} />
+        {/* (Optional) be explicit */}
+        <meta name="robots" content="index,follow" />
+
         <link rel="preload" as="image" href={heroImage} type="image/webp" />
 
         {/* OG / Twitter */}
@@ -98,7 +100,6 @@ const Blog = () => {
 
       <div className="min-h-screen bg-[#f7f7f2] flex flex-col">
         <NavBarBlog />
-
         {/* Hero */}
         <section
           id="hero"
