@@ -103,12 +103,13 @@ const AtlantaCorporateEventPlanningMastery = () => {
           </div>
 
           {/* Title */}
-          <h1 className="text-3xl md:text-5xl font-bold mb-6">
-            Atlanta Corporate Event Planning Mastery: The Executive Guide to Excellence
-          </h1>
-          <p className="text-lg mb-8">
-            Delivering excellence through strategic planning, cultural intelligence, and crisis-proof execution.
-          </p>
+         <h1 className="text-3xl md:text-5xl font-bold mb-6">
+Atlanta Corporate Event Planning Mastery: The Executive Guide to Excellence
+</h1>
+<p className="text-lg mb-8">
+Delivering excellence through strategic planning, cultural intelligence, and crisis-proof execution. Learn more about our full range of services on our {" "}
+<a href="https://eandp.events/corporate" className="text-blue-600 underline">Corporate Events page</a>.
+</p>
 
           {/* Foundation */}
           <h2 className="text-2xl md:text-3xl font-semibold mt-10 mb-4">
@@ -289,26 +290,21 @@ const AtlantaCorporateEventPlanningMastery = () => {
           </ul>
 
           {/* 4. Venues & Vendors */}
-          <h2 className="text-2xl md:text-3xl font-semibold mt-10 mb-4">
-            4. Atlanta-Specific Venue and Vendor Excellence
-          </h2>
-
-          <h3 className="text-xl font-semibold mt-6 mb-2">Venue Selection Strategy</h3>
-          <ul className="list-disc pl-6 space-y-2 text-lg mb-4">
-            <li>
-              <strong>Georgia World Congress Center:</strong> Large-scale conferences (500+).
-            </li>
-            <li>
-              <strong>Four Seasons Atlanta:</strong> Executive retreats and VIP client events.
-            </li>
-            <li>
-              <strong>310 Studios ATL:</strong> Industrial-chic corporate celebrations.
-            </li>
-            <li>
-              <strong>Ellis Hotel:</strong> Boutique luxury for intimate C-suite gatherings.
-            </li>
-          </ul>
-
+         <h2 className="text-2xl md:text-3xl font-semibold mt-10 mb-4">4. Atlanta-Specific Venue and Vendor Excellence</h2>
+<ul className="list-disc pl-6 space-y-2 text-lg mb-4">
+<li>
+<strong><a href="https://www.gwcca.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">Georgia World Congress Center</a>:</strong> Large-scale conferences (500+).
+</li>
+<li>
+<strong><a href="https://www.fourseasons.com/atlanta/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">Four Seasons Atlanta</a>:</strong> Executive retreats and VIP client events.
+</li>
+<li>
+<strong><a href="https://310studiosatl.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">310 Studios ATL</a>:</strong> Industrial-chic corporate celebrations.
+</li>
+<li>
+<strong><a href="https://www.ellishotel.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">Ellis Hotel</a>:</strong> Boutique luxury for intimate C-suite gatherings.
+</li>
+</ul>
           <h3 className="text-xl font-semibold mt-6 mb-2">Vendor Vetting Process</h3>
           <ul className="list-disc pl-6 space-y-2 text-lg mb-6">
             <li>Review portfolios for comparable corporate work.</li>
