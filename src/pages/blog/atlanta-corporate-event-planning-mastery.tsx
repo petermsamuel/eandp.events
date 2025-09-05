@@ -594,7 +594,7 @@ Delivering excellence through strategic planning, cultural intelligence, and cri
             </p>
             <a
               href="https://cal.com/eandp.events/corporate-b2b-15"
-              className="inline-block px-6 py-3 rounded-lg bg-[#1c1f2b] text-white font-semibold hover:opacity-90 transition"
+              className="inline-block px-6 py-3 rounded-lg bg-[#1f6feb] text-white font-semibold hover:opacity-90 transition"
             >
               Book a Consultation
             </a>
