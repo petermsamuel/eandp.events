@@ -35,7 +35,7 @@ const AtlantaCorporateEventPlanningChecklist = () => {
   const blogPostingLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "Atlanta Corporate Event Planning Mastery: The Executive Guide to Excellence",
+    headline: "Atlanta Corporate Event Planning Checklist: The Executive Guide to Excellence",
     description,
     image: [`https://eandp.events${heroSrc.replace(/\s/g, "%20")}`],
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
@@ -104,7 +104,7 @@ const AtlantaCorporateEventPlanningChecklist = () => {
 
           {/* Title */}
          <h1 className="text-3xl md:text-5xl font-bold mb-6">
-Atlanta Corporate Event Planning Mastery: The Executive Guide to Excellence
+Atlanta Corporate Event Planning Checklist: The Executive Guide to Excellence
 </h1>
 <p className="text-lg mb-8">
 Delivering excellence through strategic planning, cultural intelligence, and crisis-proof execution. Learn more about our full range of services on our {" "}
