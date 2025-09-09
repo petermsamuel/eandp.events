@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 
-const AtlantaCorporateEventPlanningMastery = () => {
+const AtlantaCorporateEventPlanningChecklist = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   // --- SEO Meta ---
-  const url = "https://eandp.events/blog/atlanta-corporate-event-planning-mastery";
+  const url = "https://eandp.events/blog/atlanta-corporate-event-planning-checklist";
   const title =
-    "Atlanta Corporate Event Planning Mastery: The Executive Guide to Excellence | E&P Events";
+    "Atlanta Corporate Event Planning Checklist: The Executive Guide to Excellence | E&P Events";
   const description =
     "A calm, comprehensive blueprint for Atlanta corporate events: strategy, budgeting, vendors, permits, logistics, engagement tech, cultural intelligence, crisis-proof execution, and ROI follow-up.";
   const heroSrc = "/lovable-uploads/atlanta-corporate-event-planning-mastery.webp";
@@ -25,7 +25,7 @@ const AtlantaCorporateEventPlanningMastery = () => {
       {
         "@type": "ListItem",
         position: 3,
-        name: "Atlanta Corporate Event Planning Mastery: The Executive Guide to Excellence",
+        name: "Atlanta Corporate Event Planning Checklist: The Executive Guide to Excellence",
         item: url,
       },
     ],
@@ -704,4 +704,4 @@ Delivering excellence through strategic planning, cultural intelligence, and cri
   );
 };
 
-export default AtlantaCorporateEventPlanningMastery;
+export default AtlantaCorporateEventPlanningChecklist;
