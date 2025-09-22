@@ -38,8 +38,8 @@ const IndianWeddingCostAtlanta = () => {
       name: "E&P Events",
       logo: { "@type": "ImageObject", url: ogImage }
     },
-    datePublished: "2025-09-21",
-    dateModified: "2025-09-21",
+    datePublished: "2025-09-22",
+    dateModified: "2025-09-22",
     articleSection: "Weddings"
   };
 
@@ -85,7 +85,7 @@ const IndianWeddingCostAtlanta = () => {
 
 <p>After orchestrating hundreds of <a href="/weddings">South Asian weddings in Atlanta</a>, I’ve learned that most couples start their planning journey with wildly unrealistic expectations—either too high or dangerously low. This comprehensive breakdown will give you the clarity you deserve, so you can plan with confidence instead of crossing your fingers and hoping for the best.</p>
 
-<p><strong>Ready for a reality check on your numbers?</strong> <a href="#booking">Book a 15-minute strategy call</a> and let’s ensure your budget aligns with your vision.</p>
+<p><strong>Ready for a reality check on your numbers?</strong> <a href="https://cal.com/eandp.events/corporate-b2b-15">Book a 15-minute strategy call</a> and let’s ensure your budget aligns with your vision.</p>
 
 <hr />
 
@@ -418,7 +418,7 @@ const IndianWeddingCostAtlanta = () => {
 
 <hr />
 
-<p><em>Planning a South Asian celebration in Atlanta? Our team specializes in stress‑free execution of culturally rich weddings with transparent, flat‑fee pricing. Let’s discuss how we can bring your vision to life with confidence and grace.</em></p>
+<p><em>Planning a South Asian celebration in Atlanta? Our team specializes in stress‑free execution of culturally rich weddings with transparent, flat‑fee pricing. <a href="https://cal.com/eandp.events/corporate-b2b-15">Let’s discuss how we can bring your vision to life with confidence and grace.</a></em></p>
 
           ` }} />
           {/* BLOG CONTENT END */}
