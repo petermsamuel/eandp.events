@@ -230,12 +230,12 @@ const IndianWeddingCostAtlanta = () => {
           <p className="text-lg mb-6">
             Industry averages back this up—see{" "}
             <a
-              href="https://www.weddingwire.com/wedding-ideas/how-much-does-an-indian-wedding-cost"
+              href="https://fash.com/costs/indian-wedding-cost"
               target="_blank"
               rel="noopener"
               className="text-blue-600 underline"
             >
-              WeddingWire&apos;s Indian wedding cost overview
+             Fash: Indian wedding cost
             </a>
             .
             And remember--no one wants an "average" wedding.
@@ -247,7 +247,7 @@ const IndianWeddingCostAtlanta = () => {
             Mid-tier banquet halls in the suburbs often land around <strong>$3,500–$5,000</strong> for a six-hour
             rental, while upscale hotel ballrooms in Buckhead (e.g.,{" "}
             <a
-              href="https://www.intercontinental.com/hotels/us/en/atlanta/atlgh/hoteldetail"
+              href="https://www.intercontinentalatlanta.com/"
               target="_blank"
               rel="noopener"
               className="text-blue-600 underline"
@@ -506,13 +506,6 @@ const IndianWeddingCostAtlanta = () => {
             >
               Schedule Your 15-Minute Call
             </a>
-            <p className="text-base mt-4">
-              Want an expert to weigh in on your top venue choices?{" "}
-              <a href="#venue-shortlist" className="text-blue-600 underline">
-                Request a 3-venue shortlist and budget sanity check
-              </a>
-              —on us.
-            </p>
           </div>
 
           {/* FAQ */}
@@ -537,16 +530,7 @@ const IndianWeddingCostAtlanta = () => {
             Can we have traditional open-flame ceremonies at Atlanta venues?
           </h3>
           <p className="text-lg mb-4">
-            Yes, but be prepared for permits and fire-safety costs. For alcohol and special event guidance, review{" "}
-            <a
-              href="https://www.georgia.gov/services/apply-alcohol-license"
-              target="_blank"
-              rel="noopener"
-              className="text-blue-600 underline"
-            >
-              Georgia.gov resources
-            </a>
-            .
+            Yes, but be prepared for permits and fire-safety costs.
           </p>
 
           <h3 className="text-xl font-semibold mt-4 mb-2">How does alcohol service impact costs?</h3>
@@ -572,28 +556,18 @@ const IndianWeddingCostAtlanta = () => {
               </li>
               <li>
                 <a
-                  href="https://www.weddingwire.com/wedding-ideas/how-much-does-an-indian-wedding-cost"
+                  href="https://fash.com/costs/indian-wedding-cost
                   target="_blank"
                   rel="noopener"
                   className="text-blue-600 underline"
                 >
-                  WeddingWire: Indian Wedding Cost Overview
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.atlantaga.gov/government/mayor-s-office/executive-offices/office-of-special-events"
-                  target="_blank"
-                  rel="noopener"
-                  className="text-blue-600 underline"
-                >
-                  City of Atlanta Office of Special Events
+                  Fash: Indian Wedding Cost
                 </a>
               </li>
               <li>
                 <span className="text-[#666]">Venue references: </span>
                 <a
-                  href="https://www.intercontinental.com/hotels/us/en/atlanta/atlgh/hoteldetail"
+                  href="https://www.intercontinentalatlanta.com/
                   target="_blank"
                   rel="noopener"
                   className="text-blue-600 underline"
