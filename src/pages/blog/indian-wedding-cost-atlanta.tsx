@@ -516,7 +516,7 @@ const IndianWeddingCostAtlanta = () => {
           </h3>
           <p className="text-lg mb-4">
             Plan for <strong>$165,000–$250,000</strong> for a multi-event weekend, including alcohol, service fees, travel fees, 
-            planning, and tips.
+            and tips.
           </p>
 
           <h3 className="text-xl font-semibold mt-4 mb-2">
