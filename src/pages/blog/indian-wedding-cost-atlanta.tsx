@@ -556,7 +556,7 @@ const IndianWeddingCostAtlanta = () => {
               </li>
               <li>
                 <a
-                  href="https://fash.com/costs/indian-wedding-cost
+                  href="https://fash.com/costs/indian-wedding-cost"
                   target="_blank"
                   rel="noopener"
                   className="text-blue-600 underline"
@@ -567,7 +567,7 @@ const IndianWeddingCostAtlanta = () => {
               <li>
                 <span className="text-[#666]">Venue references: </span>
                 <a
-                  href="https://www.intercontinentalatlanta.com/
+                  href="https://www.intercontinentalatlanta.com/"
                   target="_blank"
                   rel="noopener"
                   className="text-blue-600 underline"
