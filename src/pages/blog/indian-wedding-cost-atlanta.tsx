@@ -515,8 +515,8 @@ const IndianWeddingCostAtlanta = () => {
             How much should we budget for a 200-guest Indian wedding in Atlanta?
           </h3>
           <p className="text-lg mb-4">
-            Plan for <strong>$165,000–$235,000</strong> for a multi-event weekend, including alcohol, service fees, and
-            planning.
+            Plan for <strong>$165,000–$250,000</strong> for a multi-event weekend, including alcohol, service fees, travel fees, 
+            planning, and tips.
           </p>
 
           <h3 className="text-xl font-semibold mt-4 mb-2">
