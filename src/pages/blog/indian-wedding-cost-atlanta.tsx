@@ -207,9 +207,9 @@ const IndianWeddingCostAtlanta = () => {
               <tbody>
                 <tr className="border-t">
                   <td className="p-3 font-semibold">Hotel Catering</td>
-                  <td className="p-3">$110 – $180</td>
+                  <td className="p-3">$75 – $180</td>
                   <td className="p-3">22–25% + 8–9% tax</td>
-                  <td className="p-3">$145 – $240 per guest</td>
+                  <td className="p-3">$85 – $240 per guest</td>
                 </tr>
                 <tr className="border-t">
                   <td className="p-3 font-semibold">Premium Caterer</td>
@@ -238,13 +238,13 @@ const IndianWeddingCostAtlanta = () => {
              Fash: Indian wedding cost
             </a>
             .
-            And remember--no one wants an "average" wedding.
+            And remember—no one wants an "average" wedding.
           </p>
 
           {/* Venue context */}
           <h3 className="text-xl font-semibold mt-6 mb-2">Atlanta Venue Cost Examples</h3>
           <p className="text-lg mb-6">
-            Mid-tier banquet halls in the suburbs often land around <strong>$3,500–$5,000</strong> for a six-hour
+            Mid-tier banquet halls in the suburbs often land around <strong>$8,000–$20,000</strong> for an all-day 
             rental, while upscale hotel ballrooms in Buckhead (e.g.,{" "}
             <a
               href="https://www.intercontinentalatlanta.com/"
@@ -263,8 +263,8 @@ const IndianWeddingCostAtlanta = () => {
             >
               The Whitley
             </a>
-            ) can reach five figures—especially once F&amp;B minimums apply. Neighborhoods like Buckhead, Midtown, and
-            Alpharetta command different price dynamics and availability.
+            ) can reach five figures—especially once F&amp;B minimums apply. Neighborhoods like Buckhead, Midtown,
+            Alpharetta, etc. command different price dynamics and availability.
           </p>
 
           {/* Essential Categories */}
@@ -284,12 +284,12 @@ const IndianWeddingCostAtlanta = () => {
               <tbody>
                 <tr className="border-t">
                   <td className="p-3 font-semibold">Venue &amp; Space</td>
-                  <td className="p-3">$3,000 – $15,000 / event</td>
+                  <td className="p-3">$15,000 – $45,000 / day</td>
                   <td className="p-3">Location, exclusivity, included amenities</td>
                 </tr>
                 <tr className="border-t">
                   <td className="p-3 font-semibold">Décor &amp; Mandap</td>
-                  <td className="p-3">$12,000 – $25,000 / event</td>
+                  <td className="p-3">$15,000 – $40,000+</td>
                   <td className="p-3">Custom elements, floral density, lighting</td>
                 </tr>
                 <tr className="border-t">
@@ -299,22 +299,22 @@ const IndianWeddingCostAtlanta = () => {
                 </tr>
                 <tr className="border-t">
                   <td className="p-3 font-semibold">Entertainment</td>
-                  <td className="p-3">$4,000 – $12,000</td>
+                  <td className="p-3">$4,000 – $20,000+</td>
                   <td className="p-3">Live music, DJ, dhol, sound systems</td>
                 </tr>
                 <tr className="border-t">
                   <td className="p-3 font-semibold">Planning</td>
-                  <td className="p-3">$6,000 – $18,000</td>
-                  <td className="p-3">Full-service vs. partial, cultural fluency</td>
+                  <td className="p-3">$2,500 – $20,000+</td>
+                  <td className="p-3">Full-service vs. day-of + cultural fluency</td>
                 </tr>
                 <tr className="border-t">
                   <td className="p-3 font-semibold">Hair &amp; Makeup</td>
-                  <td className="p-3">$2,500 – $6,000</td>
-                  <td className="p-3">Trials, travel, multiple looks</td>
+                  <td className="p-3">$1,000 – $6,000</td>
+                  <td className="p-3">Trials, multiple looks, bridal party</td>
                 </tr>
                 <tr className="border-t">
                   <td className="p-3 font-semibold">Transportation</td>
-                  <td className="p-3">$1,500 – $5,000</td>
+                  <td className="p-3">$1,500 – $5,000+</td>
                   <td className="p-3">Baraat, valet, shuttle plans</td>
                 </tr>
               </tbody>
@@ -335,7 +335,7 @@ const IndianWeddingCostAtlanta = () => {
           <h3 className="text-xl font-semibold mt-2 mb-2">Traditional Details</h3>
           <ul className="list-disc pl-6 space-y-2 text-lg mb-4">
             <li>Baraat: $800 – $1,500 (horse/vehicle and PA needs)</li>
-            <li>Mandap customization: $3,000 – $12,000</li>
+            <li>Mandap customization and installation: $8,500 – $15,000</li>
             <li>Classical musicians and dhol players elevate ambiance—and cost</li>
           </ul>
 
@@ -373,12 +373,12 @@ const IndianWeddingCostAtlanta = () => {
                   <td className="p-3">$5,500</td>
                 </tr>
                 <tr className="border-t">
-                  <td className="p-3">Planning buffer (10%)</td>
-                  <td className="p-3">$8,500</td>
+                  <td className="p-3">Tips (15%)</td>
+                  <td className="p-3">$13,000</td>
                 </tr>
                 <tr className="border-t bg-[#fafafa]">
                   <td className="p-3 font-semibold">Total Investment</td>
-                  <td className="p-3 font-semibold">$94,000</td>
+                  <td className="p-3 font-semibold">$99,000</td>
                 </tr>
               </tbody>
             </table>
@@ -407,12 +407,12 @@ const IndianWeddingCostAtlanta = () => {
                   <td className="p-3">$11,500</td>
                 </tr>
                 <tr className="border-t">
-                  <td className="p-3">Planning buffer (12%)</td>
-                  <td className="p-3">$21,000</td>
+                  <td className="p-3">Tips (15%)</td>
+                  <td className="p-3">$27,000</td>
                 </tr>
                 <tr className="border-t bg-[#fafafa]">
                   <td className="p-3 font-semibold">Total Investment</td>
-                  <td className="p-3 font-semibold">$198,500</td>
+                  <td className="p-3 font-semibold">$204,500</td>
                 </tr>
               </tbody>
             </table>
@@ -441,7 +441,7 @@ const IndianWeddingCostAtlanta = () => {
                   <td className="p-3">$18,000</td>
                 </tr>
                 <tr className="border-t">
-                  <td className="p-3">Planning buffer (15%)</td>
+                  <td className="p-3">Tips (15%)</td>
                   <td className="p-3">$41,000</td>
                 </tr>
                 <tr className="border-t bg-[#fafafa]">
