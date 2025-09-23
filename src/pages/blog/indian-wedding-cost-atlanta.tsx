@@ -227,7 +227,7 @@ const IndianWeddingCostAtlanta = () => {
             </table>
           </div>
 
-          <p className="text-base mb-8">
+          <p className="text-lg mb-6">
             Industry averages back this up—see{" "}
             <a
               href="https://www.weddingwire.com/wedding-ideas/how-much-does-an-indian-wedding-cost"
@@ -238,6 +238,7 @@ const IndianWeddingCostAtlanta = () => {
               WeddingWire&apos;s Indian wedding cost overview
             </a>
             .
+            And remember--no one wants an "average" wedding.
           </p>
 
           {/* Venue context */}
