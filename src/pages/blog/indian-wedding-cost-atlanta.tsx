@@ -10,7 +10,7 @@ const IndianWeddingCostAtlanta = () => {
   // --- SEO Meta ---
   const url = "https://eandp.events/blog/indian-wedding-cost-atlanta";
   const title =
-    "What Your Indian Wedding Will Actually Cost in Atlanta (2026 Reality Check) | E&P Events";
+    "Indian Wedding Costs in Atlanta: 2026 Reality Check | E&P Events";
   const description =
     "Get a transparent breakdown of Indian wedding costs in Atlanta for 2026. Learn what a multi-event celebration really costs, how to save, and where to spend.";
   const heroSrc = "/lovable-uploads/atlanta-wedding-budget-guide.webp";
