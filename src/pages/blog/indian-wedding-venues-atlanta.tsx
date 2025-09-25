@@ -337,17 +337,23 @@ const IndianWeddingVenuesAtlanta = () => {
 
 
           <h3 className="text-xl font-semibold mt-6 mb-2">
-          <a href="https://www.swanlakeoverlook.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
+  <a
+    href="https://www.swanlakeoverlook.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-600 underline"
+  >
     Swan Lake Overlook
   </a>
 </h3>
 <ul className="list-disc pl-6 text-base mb-4 space-y-1">
   <li><strong>Capacity:</strong> Up to 300 guests (indoor seating)</li>
-  <li><strong>Catering:</strong> Outside caterers permitted (preferred vendor list; must be full-service and insured):contentReference[oaicite:2]{index=2}</li>
-  <li><strong>On-Site Lodging:</strong> 10-bedroom estate house sleeps ~40 guests – perfect for multi-day family stays:contentReference[oaicite:3]{index=3}:contentReference[oaicite:4]{index=4}</li>
-  <li><strong>Ambiance:</strong> Rustic-elegant mountain estate with 225-acre exotic deer farm backdrop:contentReference[oaicite:5]{index=5}:contentReference[oaicite:6]{index=6}</li>
-  <li><strong>Baraat Consideration:</strong> Expansive open grounds for vibrant processions (note: outside animals are not allowed, to protect the venue’s wildlife):contentReference[oaicite:7]{index=7}</li>
+  <li><strong>Catering:</strong> Outside caterers permitted (preferred vendor list; must be full-service and insured)</li>
+  <li><strong>On-Site Lodging:</strong> 10-bedroom estate house sleeps ~40 guests—ideal for multi-day family stays</li>
+  <li><strong>Ambiance:</strong> Rustic-elegant mountain estate with scenic lake and wildlife backdrop</li>
+  <li><strong>Baraat Consideration:</strong> Expansive grounds for lively processions (note: no outside animals allowed; consider a decorated car or music-led baraat)</li>
 </ul>
+
 
 
           <p className="text-lg mb-8">
