@@ -300,22 +300,55 @@ const IndianWeddingVenuesAtlanta = () => {
             Create a multi-day celebration atmosphere without international travel complications. These venues offer
             comprehensive hosting for extended family gatherings.
           </p>
+          
+<h3 className="text-xl font-semibold mt-6 mb-2">
+  <a
+    href="https://www.chateauelan.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-600 underline"
+  >
+    Château Élan Winery &amp; Resort
+  </a>
+</h3>
+<ul className="list-disc pl-6 text-base mb-4 space-y-1">
+  <li><strong>Capacity:</strong> 600 guests</li>
+  <li><strong>Catering:</strong> In-house culinary team</li>
+  <li><strong>Experience:</strong> Vineyard elegance with spa-level hospitality</li>
+  <li><strong>Advantage:</strong> Complete weekend retreat capability</li>
+</ul>
 
-          <h3 className="text-xl font-semibold mt-6 mb-2">Château Élan Winery &amp; Resort</h3>
-          <ul className="list-disc pl-6 text-base mb-4 space-y-1">
-            <li><strong>Capacity:</strong> 600 guests</li>
-            <li><strong>Catering:</strong> In-house culinary team</li>
-            <li><strong>Experience:</strong> Vineyard elegance with spa-level hospitality</li>
-            <li><strong>Advantage:</strong> Complete weekend retreat capability</li>
-          </ul>
+<h3 className="text-xl font-semibold mt-6 mb-2">
+  <a
+    href="https://www.lanierislands.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-600 underline"
+  >
+    Lanier Islands – Legacy Lodge
+  </a>
+</h3>
+<ul className="list-disc pl-6 text-base mb-6 space-y-1">
+  <li><strong>Capacity:</strong> 350 guests indoor</li>
+  <li><strong>Catering:</strong> Outside vendors permitted with event package upgrade</li>
+  <li><strong>Baraat-Friendly:</strong> Excellent outdoor space and acoustic freedom</li>
+  <li><strong>Appeal:</strong> Lakeside beauty with multi-event hosting capability</li>
+</ul>
 
-          <h3 className="text-xl font-semibold mt-6 mb-2">Lanier Islands – Legacy Lodge</h3>
-          <ul className="list-disc pl-6 text-base mb-6 space-y-1">
-            <li><strong>Capacity:</strong> 350 guests indoor</li>
-            <li><strong>Catering:</strong> Outside vendors permitted with event package upgrade</li>
-            <li><strong>Baraat-Friendly:</strong> Excellent outdoor space and acoustic freedom</li>
-            <li><strong>Appeal:</strong> Lakeside beauty with multi-event hosting capability</li>
-          </ul>
+
+          <h3 className="text-xl font-semibold mt-6 mb-2">
+          <a href="https://www.swanlakeoverlook.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
+    Swan Lake Overlook
+  </a>
+</h3>
+<ul className="list-disc pl-6 text-base mb-4 space-y-1">
+  <li><strong>Capacity:</strong> Up to 300 guests (indoor seating)</li>
+  <li><strong>Catering:</strong> Outside caterers permitted (preferred vendor list; must be full-service and insured):contentReference[oaicite:2]{index=2}</li>
+  <li><strong>On-Site Lodging:</strong> 10-bedroom estate house sleeps ~40 guests – perfect for multi-day family stays:contentReference[oaicite:3]{index=3}:contentReference[oaicite:4]{index=4}</li>
+  <li><strong>Ambiance:</strong> Rustic-elegant mountain estate with 225-acre exotic deer farm backdrop:contentReference[oaicite:5]{index=5}:contentReference[oaicite:6]{index=6}</li>
+  <li><strong>Baraat Consideration:</strong> Expansive open grounds for vibrant processions (note: outside animals are not allowed, to protect the venue’s wildlife):contentReference[oaicite:7]{index=7}</li>
+</ul>
+
 
           <p className="text-lg mb-8">
             <strong>Strategic Value:</strong> Resort venues excel for families seeking comprehensive weekend experiences with
