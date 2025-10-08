@@ -7,43 +7,26 @@
   <link rel="icon" href="/lovable-uploads/77d9a347-7e81-4f55-827e-07598bec637f.png" type="image/png" />
   <link rel="preload" as="image" href="/lovable-uploads/SSTK_asset_small_new.webp" type="image/webp" />
 
-<!-- Cal.com Overlay Loader (robust) -->
-<script>
-  // 1) Stub queue so embed.js can drain it later
-  window.Cal = window.Cal || function () {
-    (window.Cal.q = window.Cal.q || []).push(arguments);
-  };
-
-  // 2) Dynamically inject cal.com script with cache-bust to avoid stale 304s
-  (function loadCal() {
-    var s = document.createElement("script");
-    s.src = "https://cal.com/embed.js?v=" + Date.now();  // cache-buster
-    s.async = true;
-    s.defer = true;
-
-    s.onload = function () {
+  <!-- Cal.com Embed (official host + CSS) -->
+  <link rel="stylesheet" href="https://assets.cal.com/embed.css" />
+  <script src="https://assets.cal.com/embed.js" async></script>
+  <script>
+    // Initialize after the runtime finishes loading
+    window.addEventListener("load", function () {
       try {
-        // 3) Initialize only after the runtime is ready
-        window.Cal("init", { origin: "https://cal.com" });
-        window.Cal("ui", {
+        // Cal global is defined by assets.cal.com/embed.js
+        Cal("init", { origin: "https://cal.com" });
+        Cal("ui", {
           theme: "light",
-          styles: { branding: { brandColor: "#d4af37" } } // E&P gold
+          styles: { branding: { brandColor: "#d4af37" } }, // E&P gold
         });
         window.__calReady = true;
         console.debug("[Cal] overlay ready");
       } catch (e) {
         console.warn("[Cal] init failed", e);
       }
-    };
-
-    s.onerror = function (e) {
-      console.warn("[Cal] script failed to load", e);
-    };
-
-    document.head.appendChild(s);
-  })();
-</script>
-
+    });
+  </script>
 </head>
 
 <body>
@@ -52,7 +35,7 @@
   <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
   <script type="module" src="/src/main.tsx"></script>
 
-  <!-- Google Analytics (non-blocking) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-QMY9ZR38N1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
