@@ -4,6 +4,51 @@ import React, { useEffect, useMemo, useState } from "react";
 
 const CORPORATE_CAL_LINK = "eandp.events/corporate-b2b-15";
 
+// Promise that resolves when Cal script is ready
+let calReadyPromise: Promise<void> | null = null;
+
+function loadCalScript(): Promise<void> {
+  if (typeof window === "undefined") return Promise.resolve();
+  if ((window as any).Cal) return Promise.resolve();
+
+  if (calReadyPromise) return calReadyPromise;
+
+  calReadyPromise = new Promise<void>((resolve, reject) => {
+    // If script already in DOM, wait for it
+    const existing = document.querySelector<HTMLScriptElement>('script[src="https://cal.com/embed.js"]');
+    if (existing) {
+      const check = () => {
+        if ((window as any).Cal) {
+          try {
+            (window as any).Cal("init", { origin: "https://cal.com" });
+          } catch {}
+          resolve();
+        } else {
+          // poll briefly until available
+          setTimeout(check, 50);
+        }
+      };
+      check();
+      return;
+    }
+
+    // Inject script
+    const script = document.createElement("script");
+    script.src = "https://cal.com/embed.js";
+    script.async = true;
+    script.onload = () => {
+      try {
+        (window as any).Cal?.("init", { origin: "https://cal.com" });
+      } catch {}
+      resolve();
+    };
+    script.onerror = () => reject(new Error("Failed to load Cal embed script"));
+    document.head.appendChild(script);
+  });
+
+  return calReadyPromise;
+}
+
 const NavBarCorporate = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,15 +67,21 @@ const NavBarCorporate = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const openCal = (e?: React.MouseEvent) => {
+  const openCal = async (e?: React.MouseEvent) => {
     e?.preventDefault?.();
-    const w = window as any;
-    if (!w.Cal) {
-      // Fallback if Cal script hasn’t loaded or JS blocked
+    try {
+      await loadCalScript();
+      const w = window as any;
+      if (w?.Cal) {
+        w.Cal("open", { calLink: calLinkWithUtm });
+        return;
+      }
+      // Fallback if somehow still unavailable
       window.location.href = `https://cal.com/${calLinkWithUtm}`;
-      return;
+    } catch {
+      // Script blocked or failed → fallback
+      window.location.href = `https://cal.com/${calLinkWithUtm}`;
     }
-    w.Cal("open", { calLink: calLinkWithUtm });
   };
 
   return (
