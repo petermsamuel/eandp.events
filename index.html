@@ -5,33 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="E&P Events" />
   <link rel="icon" href="/lovable-uploads/77d9a347-7e81-4f55-827e-07598bec637f.png" type="image/png" />
-
-  <!-- Optional image preloads -->
   <link rel="preload" as="image" href="/lovable-uploads/SSTK_asset_small_new.webp" type="image/webp" />
 
-  <!-- Cal.com Overlay (stub + script). Do NOT add embed.css to avoid MIME nosniff block -->
+  <!-- 🔒 Cal.com overlay bootstrap: put the STUB FIRST so embed.js always finds it -->
   <script>
-    // Create a stub so Cal’s embed.js has a queue to attach to
+    // Define Cal queue before any other script runs (prevents "Cal is not defined")
     window.Cal = window.Cal || function () {
       (window.Cal.q = window.Cal.q || []).push(arguments);
     };
   </script>
+  <!-- Load the embed runtime. (No embed.css to avoid MIME nosniff warnings you saw) -->
   <script src="https://cal.com/embed.js" async></script>
   <script>
-    // Initialize Cal UI after page loads
+    // Initialize once the page is ready; safe if embed.js hasn't attached yet (it will drain the queue)
     window.addEventListener("load", function () {
-      if (!window.Cal) return;
       try {
-        window.Cal("init", { origin: "https://cal.com" });
-        window.Cal("ui", {
-          theme: "light",
-          styles: { branding: { brandColor: "#d4af37" } }, // E&P gold
-        });
+        if (window.Cal) {
+          window.Cal("init", { origin: "https://cal.com" });
+          window.Cal("ui", {
+            theme: "light",
+            styles: { branding: { brandColor: "#d4af37" } } // E&P gold
+          });
+        }
       } catch (e) {
-        console.debug("Cal UI init skipped:", e);
+        console.debug("Cal init skipped:", e);
       }
     });
   </script>
+  <!-- End Cal.com overlay bootstrap -->
 </head>
 
 <body>
