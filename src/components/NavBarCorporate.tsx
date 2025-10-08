@@ -2,6 +2,13 @@
 
 import React, { useEffect, useMemo, useState } from "react";
 
+declare global {
+  interface Window {
+    Cal?: (...args: any[]) => void;
+    __calReady?: boolean;
+  }
+}
+
 const CORPORATE_CAL_LINK = "eandp.events/corporate-b2b-15";
 
 const NavBarCorporate: React.FC = () => {
@@ -21,6 +28,16 @@ const NavBarCorporate: React.FC = () => {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const handleOpen = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    // Prefer overlay; fall back to direct URL if runtime not ready
+    if (typeof window.Cal === "function" && window.__calReady) {
+      window.Cal("open", { calLink: calLinkWithUtm });
+    } else {
+      window.location.href = `https://cal.com/${calLinkWithUtm}`;
+    }
+  };
 
   return (
     <nav
@@ -44,7 +61,13 @@ const NavBarCorporate: React.FC = () => {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
             {isMenuOpen ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             ) : (
@@ -80,10 +103,10 @@ const NavBarCorporate: React.FC = () => {
             </div>
           </div>
 
-          {/* Book a Call — Cal overlay trigger (no redirect) */}
+          {/* Book a Call — Cal overlay trigger */}
           <a
             href="#"
-            data-cal-link={calLinkWithUtm}
+            onClick={handleOpen}
             className="ml-6 inline-flex items-center rounded-md bg-gold px-5 py-2 text-sm font-semibold text-[#2a2a2a] shadow-md hover:bg-[#d4af37] hover:shadow-lg transition-all duration-200"
           >
             Book a Call
@@ -95,19 +118,37 @@ const NavBarCorporate: React.FC = () => {
       {isMenuOpen && (
         <div className="absolute top-full left-0 right-0 bg-white shadow-md py-4 md:hidden">
           <div className="flex flex-col space-y-4 px-4">
-            <a href="/" className="text-black hover:text-gold transition-colors" onClick={() => setIsMenuOpen(false)}>Home</a>
-            <a href="#what-we-do" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>What We Do</a>
-            <a href="#how-it-works" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>How It Works</a>
-            <a href="#testimonials" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>Testimonials</a>
-            <a href="#partners" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>Partners</a>
-            <a href="#cta" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>Contact</a>
+            <a
+              href="/"
+              className="text-black hover:text-gold transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Home
+            </a>
+            <a href="#what-we-do" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>
+              What We Do
+            </a>
+            <a href="#how-it-works" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>
+              How It Works
+            </a>
+            <a href="#testimonials" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>
+              Testimonials
+            </a>
+            <a href="#partners" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>
+              Partners
+            </a>
+            <a href="#cta" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>
+              Contact
+            </a>
 
             {/* Mobile Book a Call — overlay trigger */}
             <a
               href="#"
-              data-cal-link={calLinkWithUtm}
-              onClick={() => setIsMenuOpen(false)}
-              className="mt-2 inline-flex items-center justify-center rounded-md bg-gold px-5 py-3 text-sm font-semibold text-[#2a2a2a] shadow-md"
+              onClick={(e) => {
+                handleOpen(e);
+                setIsMenuOpen(false);
+              }}
+              className="mt-2 inline-flex items-center justify-center rounded-md bg-gold px-5 py-3 text-sm font-semibold text-[#2a2a2a] shadow-md hover:bg-[#d4af37]"
             >
               Book a Call
             </a>
