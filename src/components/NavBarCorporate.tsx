@@ -1,46 +1,72 @@
-"use client";
-
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 
 const CORPORATE_CAL_LINK = "eandp.events/corporate-b2b-15";
 
-// Promise that resolves when Cal script is ready
+// Shared loader so we don't re-inject repeatedly
 let calReadyPromise: Promise<void> | null = null;
 
 function loadCalScript(): Promise<void> {
   if (typeof window === "undefined") return Promise.resolve();
-  if ((window as any).Cal) return Promise.resolve();
-
+  const w = window as any;
+  if (w.Cal && typeof w.Cal === "function") {
+    // Already present
+    try {
+      w.Cal("init", { origin: "https://cal.com" });
+      w.Cal("ui", { theme: "light", styles: { branding: { brandColor: "#d4af37" } } });
+    } catch {}
+    return Promise.resolve();
+  }
   if (calReadyPromise) return calReadyPromise;
 
   calReadyPromise = new Promise<void>((resolve, reject) => {
-    // If script already in DOM, wait for it
     const existing = document.querySelector<HTMLScriptElement>('script[src="https://cal.com/embed.js"]');
+
+    const ready = () => {
+      const w2 = window as any;
+      if (w2.Cal) {
+        try {
+          w2.Cal("init", { origin: "https://cal.com" });
+          w2.Cal("ui", { theme: "light", styles: { branding: { brandColor: "#d4af37" } } });
+        } catch {}
+        resolve();
+        return true;
+      }
+      return false;
+    };
+
     if (existing) {
-      const check = () => {
-        if ((window as any).Cal) {
-          try {
-            (window as any).Cal("init", { origin: "https://cal.com" });
-          } catch {}
-          resolve();
-        } else {
-          // poll briefly until available
-          setTimeout(check, 50);
+      // Poll briefly until Cal is attached
+      const start = Date.now();
+      const tick = () => {
+        if (ready()) return;
+        if (Date.now() - start > 5000) {
+          reject(new Error("Cal embed did not initialize in time"));
+          return;
         }
+        setTimeout(tick, 50);
       };
-      check();
+      tick();
       return;
     }
 
-    // Inject script
+    // Inject fresh
     const script = document.createElement("script");
     script.src = "https://cal.com/embed.js";
     script.async = true;
     script.onload = () => {
-      try {
-        (window as any).Cal?.("init", { origin: "https://cal.com" });
-      } catch {}
-      resolve();
+      if (!ready()) {
+        // One more short poll if load event fires before global attaches
+        const start = Date.now();
+        const tick = () => {
+          if (ready()) return;
+          if (Date.now() - start > 3000) {
+            reject(new Error("Cal embed attached but UI not ready"));
+            return;
+          }
+          setTimeout(tick, 50);
+        };
+        tick();
+      }
     };
     script.onerror = () => reject(new Error("Failed to load Cal embed script"));
     document.head.appendChild(script);
@@ -49,22 +75,32 @@ function loadCalScript(): Promise<void> {
   return calReadyPromise;
 }
 
-const NavBarCorporate = () => {
+const NavBarCorporate: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isEventsOpen, setIsEventsOpen] = useState(false);
 
-  // Append current UTM params to Cal link for attribution
+  // Hidden anchor fallback (attribute-based open)
+  const hiddenAnchorRef = useRef<HTMLAnchorElement | null>(null);
+
+  // UTM passthrough
   const calLinkWithUtm = useMemo(() => {
     if (typeof window === "undefined") return CORPORATE_CAL_LINK;
     const qs = window.location.search.replace(/^\?/, "");
     return qs ? `${CORPORATE_CAL_LINK}?${qs}` : CORPORATE_CAL_LINK;
   }, []);
 
+  // Preload Cal on mount so it's ready before the first click
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 50);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    loadCalScript().catch(() => {
+      // Non-fatal; we still have href fallback
+    });
+  }, []);
+
+  useEffect(() => {
+    const onScroll = () => setIsScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   const openCal = async (e?: React.MouseEvent) => {
@@ -72,14 +108,20 @@ const NavBarCorporate = () => {
     try {
       await loadCalScript();
       const w = window as any;
-      if (w?.Cal) {
+      if (w.Cal) {
+        // Try API overlay first
         w.Cal("open", { calLink: calLinkWithUtm });
         return;
       }
-      // Fallback if somehow still unavailable
+      // If API missed, try attribute-based fallback click
+      if (hiddenAnchorRef.current) {
+        hiddenAnchorRef.current.click();
+        return;
+      }
+      // Final fallback: navigate
       window.location.href = `https://cal.com/${calLinkWithUtm}`;
     } catch {
-      // Script blocked or failed → fallback
+      // Script blocked or failed → navigate
       window.location.href = `https://cal.com/${calLinkWithUtm}`;
     }
   };
@@ -106,13 +148,7 @@ const NavBarCorporate = () => {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             {isMenuOpen ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             ) : (
@@ -148,13 +184,25 @@ const NavBarCorporate = () => {
             </div>
           </div>
 
-          {/* Book a Call Button (desktop only) — opens Cal modal */}
+          {/* Book a Call (desktop) — overlay + fallbacks */}
           <a
-            href={`https://cal.com/${calLinkWithUtm}`}  // graceful fallback if JS is disabled
+            href={`https://cal.com/${calLinkWithUtm}`}  // final fallback if JS blocked
             onClick={openCal}
             className="ml-6 inline-flex items-center rounded-md bg-gold px-5 py-2 text-sm font-semibold text-[#2a2a2a] shadow-md hover:bg-[#d4af37] hover:shadow-lg transition-all duration-200"
           >
             Book a Call
+          </a>
+
+          {/* Hidden attribute-based trigger (secondary fallback) */}
+          <a
+            href={`https://cal.com/${calLinkWithUtm}`}
+            data-cal-link={calLinkWithUtm}
+            ref={hiddenAnchorRef}
+            style={{ position: "absolute", left: "-99999px", opacity: 0 }}
+            aria-hidden="true"
+            tabIndex={-1}
+          >
+            &nbsp;
           </a>
         </div>
       </div>
@@ -195,13 +243,24 @@ const NavBarCorporate = () => {
               </div>
             )}
 
-            {/* Mobile CTA — opens Cal modal */}
+            {/* Book a Call (mobile) — overlay + fallbacks */}
             <a
               href={`https://cal.com/${calLinkWithUtm}`}
               onClick={(e) => { setIsMenuOpen(false); openCal(e); }}
               className="mt-2 inline-flex items-center justify-center rounded-md bg-gold px-5 py-3 text-sm font-semibold text-[#2a2a2a] shadow-md"
             >
               Book a Call
+            </a>
+
+            {/* Hidden attribute-based trigger (mobile) */}
+            <a
+              href={`https://cal.com/${calLinkWithUtm}`}
+              data-cal-link={calLinkWithUtm}
+              style={{ position: "absolute", left: "-99999px", opacity: 0 }}
+              aria-hidden="true"
+              tabIndex={-1}
+            >
+              &nbsp;
             </a>
           </div>
         </div>
