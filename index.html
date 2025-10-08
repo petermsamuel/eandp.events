@@ -8,17 +8,19 @@
   <link rel="preload" as="image" href="/lovable-uploads/SSTK_asset_small_new.webp" type="image/webp" />
 
   <!-- Cal.com Embed (official host + CSS) -->
+  <link rel="dns-prefetch" href="https://assets.cal.com" />
+  <link rel="preconnect" href="https://assets.cal.com" crossorigin />
   <link rel="stylesheet" href="https://assets.cal.com/embed.css" />
   <script src="https://assets.cal.com/embed.js" async></script>
   <script>
     // Initialize after the runtime finishes loading
     window.addEventListener("load", function () {
+      if (!window.Cal) return;
       try {
-        // Cal global is defined by assets.cal.com/embed.js
         Cal("init", { origin: "https://cal.com" });
         Cal("ui", {
           theme: "light",
-          styles: { branding: { brandColor: "#d4af37" } }, // E&P gold
+          styles: { branding: { brandColor: "#d4af37" } } // E&P gold
         });
         window.__calReady = true;
         console.debug("[Cal] overlay ready");
