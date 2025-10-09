@@ -12,8 +12,8 @@ const WeddingContentCreatorsArticle = () => {
     "Should You Hire A Wedding Content Creator? The Question No One’s Asking — Who Is Your South Asian Wedding Really For?";
   const description =
     "Wedding content creators promise instant reels and real‑time memories—but do they align with your vision? Explore what South Asian couples need to consider before deciding if this trend truly serves their celebration.";
-  const heroSrc = "/path-to-your-hero-image.webp";  // replace with your hero image URL
-  const ogImage = "https://eandp.events/path-to-og-image.webp";  // replace with OG image full URL
+  const heroSrc = "lovable-uploads/wedding-content-creators.webp";  // replace with your hero image URL
+  const ogImage = "https://eandp.events/lovable-uploads/77d9a347-7e81-4f55-827e-07598bec637f.png";  // replace with OG image full URL
   const clarityUrl = "https://cal.com/eandp.events/15min";  // same or updated call link
 
   const breadcrumbLd = {
