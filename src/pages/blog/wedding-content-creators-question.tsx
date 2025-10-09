@@ -300,10 +300,19 @@ const WeddingContentCreatorArticle = () => {
           <p className="text-lg mb-6">
             Choose clarity over trends. Choose vendors who protect your vision. Own the direction of your celebration.
           </p>
-          <p className="text-lg mb-6">
-            If you’re evaluating a vendor or need help applying this in your planning, I’m here to help you make it strategic.
-          </p>
-        </div>
+           <div className="mt-4 p-6 bg-white rounded-xl shadow-md mb-10">
+            <h3 className="text-xl md:text-2xl font-semibold mb-3">Ready to plan with clarity?</h3>
+            <p className="mb-4">
+              Schedule a quick strategy call and get a budget aligned with your goals—without compromising culture or
+              experience.
+            </p>
+            <a
+              href={clarityUrl}
+              className="inline-block px-6 py-3 rounded-lg bg-[#1f6feb] text-white font-semibold hover:opacity-90 transition"
+            >
+              Schedule Your 15-Minute Call
+            </a>
+          </div>
       </article>
     </>
   );
