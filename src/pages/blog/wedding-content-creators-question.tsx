@@ -9,7 +9,7 @@ const WeddingContentCreatorsArticle = () => {
   // --- SEO Meta ---
   const url = "https://eandp.events/blog/wedding-content-creators-question";  // adjust slug as needed
   const title =
-    "Should You Hire A Wedding Content Creator? The Question No One’s Asking — Who Is Your South Asian Wedding Really For?";
+    "Wedding Content Creators: Should You Hire One — Or Ask Who Your Wedding Is Really For?";
   const description =
     "Wedding content creators promise instant reels and real‑time memories—but do they align with your vision? Explore what South Asian couples need to consider before deciding if this trend truly serves their celebration.";
   const heroSrc = "lovable-uploads/wedding-content-creators.webp";  // replace with your hero image URL
