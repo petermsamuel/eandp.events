@@ -303,7 +303,7 @@ const WeddingContentCreatorArticle = () => {
            <div className="mt-4 p-6 bg-white rounded-xl shadow-md mb-10">
             <h3 className="text-xl md:text-2xl font-semibold mb-3">Ready to plan with clarity?</h3>
             <p className="mb-4">
-              Schedule a quick strategy call and get a budget aligned with your goals—without compromising culture or
+              Schedule a quick strategy call to get aligned with your goals—without compromising culture or
               experience.
             </p>
             <a
