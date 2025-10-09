@@ -169,7 +169,7 @@ const WeddingContentCreatorArticle = () => {
           <p className="text-lg mb-6"><strong>Contract Clarity Requirements</strong><br />
             You’ll want airtight definitions around timelines, file ownership, posting permissions, music licensing, guest privacy, and vendor liability.
           </p>
-          <p classReact="text-lg mb-6"><strong>The Memory Question</strong><br />
+          <p className="text-lg mb-6"><strong>The Memory Question</strong><br />
             If parts of your wedding are shaped to create content, you risk the viral clip overshadowing deeper, more meaningful moments. Your memory becomes the reel, rather than your lived story.
           </p>
 
@@ -313,6 +313,7 @@ const WeddingContentCreatorArticle = () => {
               Schedule Your 15-Minute Call
             </a>
           </div>
+          </div> 
       </article>
     </>
   );
