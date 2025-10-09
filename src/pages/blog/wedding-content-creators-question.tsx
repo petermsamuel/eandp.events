@@ -25,7 +25,7 @@ const WeddingContentCreatorsArticle = () => {
       {
         "@type": "ListItem",
         position: 3,
-        name: "Wedding Content Creators & the Question No One’s Asking",
+        name: "Wedding Content Creators: Should You Hire One — Or Ask Who Your Wedding Is Really For?",
         item: url,
       },
     ],
