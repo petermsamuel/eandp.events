@@ -7,27 +7,38 @@
   <link rel="icon" href="/lovable-uploads/77d9a347-7e81-4f55-827e-07598bec637f.png" type="image/png" />
   <link rel="preload" as="image" href="/lovable-uploads/SSTK_asset_small_new.webp" type="image/webp" />
 
-  <!-- Cal.com Embed (official host + CSS) -->
-  <link rel="dns-prefetch" href="https://assets.cal.com" />
-  <link rel="preconnect" href="https://assets.cal.com" crossorigin />
-  <link rel="stylesheet" href="https://assets.cal.com/embed.css" />
-  <script src="https://assets.cal.com/embed.js" async></script>
-  <script>
-    // Initialize after the runtime finishes loading
-    window.addEventListener("load", function () {
-      if (!window.Cal) return;
-      try {
-        Cal("init", { origin: "https://cal.com" });
-        Cal("ui", {
-          theme: "light",
-          styles: { branding: { brandColor: "#d4af37" } } // E&P gold
-        });
-        window.__calReady = true;
-        console.debug("[Cal] overlay ready");
-      } catch (e) {
-        console.warn("[Cal] init failed", e);
-      }
-    });
+  <!-- Cal element-click embed (global loader) -->
+  <script type="text/javascript">
+    (function (C, A, L) {
+      let p = function (api, args) { api.q.push(args); };
+      let d = C.document;
+      C.Cal = C.Cal || function () {
+        let cal = C.Cal, args = arguments;
+        if (!cal.loaded) {
+          cal.ns = {}; cal.q = cal.q || [];
+          d.head.appendChild(d.createElement("script")).src = A;
+          cal.loaded = true;
+        }
+        if (args[0] === L) {
+          const api = function () { p(api, arguments); };
+          const ns = args[1];
+          api.q = api.q || [];
+          if (typeof ns === "string") {
+            cal.ns[ns] = cal.ns[ns] || api;
+            p(cal.ns[ns], args);
+            p(cal, ["initNamespace", ns]);
+          } else {
+            p(cal, args);
+          }
+          return;
+        }
+        p(cal, args);
+      };
+    })(window, "https://app.cal.com/embed/embed.js", "init");
+
+    // Simple, no-namespace global init (Option B)
+    Cal("init", { origin: "https://app.cal.com" });
+    Cal("ui", { layout: "month_view" });
   </script>
 </head>
 
