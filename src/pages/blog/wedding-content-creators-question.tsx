@@ -312,6 +312,35 @@ const WeddingContentCreatorArticle = () => {
             >
               Schedule Your 15-Minute Call
             </a>
+
+             
+             {/* FAQ */}
+<h2 className="text-2xl font-semibold mt-10 mb-4">Frequently Asked Questions</h2>
+
+<h3 className="text-xl font-semibold mb-2">What does a wedding content creator do?</h3>
+<p className="text-base mb-4">
+  <strong>A:</strong> A wedding content creator captures real-time, social media–ready moments—like behind-the-scenes clips, Stories, and short-form videos—often delivered within 24 hours. They focus on documenting your day for platforms like Instagram and TikTok, not replacing your professional videographer or photographer.
+</p>
+
+<h3 className="text-xl font-semibold mb-2">Should you hire a wedding content creator?</h3>
+<p className="text-base mb-4">
+  <strong>A:</strong> If you value fast-turnaround content and social media storytelling, a content creator might be a great fit. But if your focus is presence, cultural depth, or cinematic documentation, it may be more of a distraction than an enhancement.
+</p>
+
+<h3 className="text-xl font-semibold mb-2">Are wedding content creators worth it for South Asian weddings?</h3>
+<p className="text-base mb-4">
+  <strong>A:</strong> Only if they understand the cultural nuances. South Asian and fusion weddings involve sacred rituals and layered meaning. A good content creator respects those elements and works collaboratively with your core media team.
+</p>
+
+<h3 className="text-xl font-semibold mb-2">Is a wedding content creator the same as a videographer?</h3>
+<p className="text-base mb-4">
+  <strong>A:</strong> No. A videographer captures cinematic, long-form storytelling for your wedding film. A content creator provides short, social-first content meant for immediate sharing. They serve complementary—but different—purposes.
+</p>
+
+<h3 className="text-xl font-semibold mb-2">How much does a wedding content creator cost?</h3>
+<p className="text-base mb-4">
+  <strong>A:</strong> Pricing typically ranges from $500 to $2,500+ based on experience, hours of coverage, and deliverables. Always confirm exact scope, timelines, and rights in a clear contract before booking.
+</p>
           </div>
           </div> 
       </article>
