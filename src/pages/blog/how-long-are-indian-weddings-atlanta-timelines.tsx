@@ -141,6 +141,51 @@ const HowLongAreIndianWeddingsAtlanta: React.FC = () => {
             How Long Are Indian Weddings? A Multi-Day Timeline (Atlanta)
           </h1>
 
+          {/* SUMMARY & JUMP LINKS (place after the H1, before the intro section) */}
+<section
+  id="summary"
+  className="scroll-mt-24 md:scroll-mt-28 mb-8"
+  aria-labelledby="summary-heading"
+>
+  <div className="bg-white border rounded-xl shadow-sm p-5 md:p-6">
+    <h2 id="summary-heading" className="text-xl md:text-2xl font-semibold mb-3">
+      Summary: How Long Are Indian Weddings in Atlanta?
+    </h2>
+
+    {/* Quick facts */}
+    <ul className="list-disc pl-6 space-y-2 text-base mb-5">
+      <li>
+        <strong>Typical Length:</strong> <span>2–4 days</span> (Mehndi, Haldi/Maiyan, Sangeet/Garba, Ceremony, Reception)
+      </li>
+      <li>
+        <strong>Ceremonies:</strong> Pheras / Anand Karaj / Nikah run ~<span>45–90 min</span> (traditions vary)
+      </li>
+      <li>
+        <strong>Buffers:</strong> Micro <span>15–30 min</span> between segments; Macro <span>4–8 hrs</span> for flips
+      </li>
+      <li>
+        <strong>Atlanta Notes:</strong> Fire & sound policies differ by venue/county; hotel load-ins and curfews are common
+      </li>
+    </ul>
+
+    {/* Jump links */}
+    <div className="text-sm md:text-base">
+      <span className="font-semibold mr-2">Jump to:</span>
+      <a href="#why" onClick={jump("why")} className="text-blue-600 underline">Why Timelines Matter</a>{" • "}
+      <a href="#hindu" onClick={jump("hindu")} className="text-blue-600 underline">Hindu</a>{" • "}
+      <a href="#sikh" onClick={jump("sikh")} className="text-blue-600 underline">Sikh</a>{" • "}
+      <a href="#muslim" onClick={jump("muslim")} className="text-blue-600 underline">Muslim</a>{" • "}
+      <a href="#fusion" onClick={jump("fusion")} className="text-blue-600 underline">Fusion</a>{" • "}
+      <a href="#behind" onClick={jump("behind")} className="text-blue-600 underline">Behind the Scenes</a>{" • "}
+      <a href="#logistics" onClick={jump("logistics")} className="text-blue-600 underline">Atlanta Logistics</a>{" • "}
+      <a href="#engineering" onClick={jump("engineering")} className="text-blue-600 underline">Engineering the Timeline</a>{" • "}
+      <a href="#checklist" onClick={jump("checklist")} className="text-blue-600 underline">Checklist</a>{" • "}
+      <a href="#closing" onClick={jump("closing")} className="text-blue-600 underline">Closing</a>
+    </div>
+  </div>
+</section>
+
+
           {/* INTRO */}
           <p className="text-lg mb-6">
             In Atlanta, most Indian and South Asian weddings span <strong>2–4 days</strong>. The exact length depends on
