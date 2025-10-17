@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+  import React, { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 
 const HowLongAreIndianWeddingsAtlanta: React.FC = () => {
@@ -47,48 +47,15 @@ const HowLongAreIndianWeddingsAtlanta: React.FC = () => {
     articleSection: "Weddings",
   };
 
-  // FAQ (surfacing the primary query + variants)
-  const faqLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "How long are Indian weddings?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text:
-            "Most U.S.-based Indian weddings run 2–4 days. A common flow is Day 1 Mehndi, Day 2 Haldi + Sangeet, Day 3 Ceremony + Reception. Atlanta venues often require 4–8 hour flips between major events.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "How many days is a Hindu wedding in Atlanta?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text:
-            "Three days is typical: Mehndi, Haldi/Sangeet, and Ceremony + Reception. Build 60–90 minute macro-buffers around décor flips and 15–30 minute micro-buffers between segments.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "How long is a Sikh Anand Karaj and reception?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text:
-            "Anand Karaj with kirtan is usually 60–90 minutes in the morning, followed by langar. Receptions later that day run ~3–4 hours. Plan 45–60 minutes travel from Norcross gurdwara to Buckhead/Midtown venues.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "How long is a Nikah and Walima?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text:
-            "Nikah typically runs 30–60 minutes (readings, contract, prayers), with Walima that evening for 3–4 hours. Consider gendered seating and halal catering policies at Atlanta venues.",
-        },
-      },
-    ],
+  // Smooth scroll for jump links (prevents first-click bug with fixed header)
+  const jump = (id: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const el = document.getElementById(id);
+    if (!el) return;
+    const headerH = (document.querySelector("nav") as HTMLElement)?.offsetHeight || 96;
+    const y = el.getBoundingClientRect().top + window.scrollY - headerH - 8;
+    window.scrollTo({ top: y, behavior: "smooth" });
+    history.replaceState(null, "", `#${id}`);
   };
 
   return (
@@ -118,7 +85,6 @@ const HowLongAreIndianWeddingsAtlanta: React.FC = () => {
         {/* JSON-LD */}
         <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
         <script type="application/ld+json">{JSON.stringify(blogPostingLd)}</script>
-        <script type="application/ld+json">{JSON.stringify(faqLd)}</script>
       </Helmet>
 
       <article className="bg-[#f7f7f2] pt-28 pb-20 px-4">
@@ -185,31 +151,67 @@ const HowLongAreIndianWeddingsAtlanta: React.FC = () => {
   </div>
 </section>
 
+          {/* INTRO (your original text) */}
+          <section id="intro" className="scroll-mt-24 md:scroll-mt-28">
+            <p className="text-lg mb-6">
+              South Asian weddings in Atlanta are extraordinary celebrations—multiple days of ritual, joy, and connection. They're
+              also complex orchestrations that deserve thoughtful planning, especially in a city with its own unique venue
+              landscape, permitting requirements, and cultural community.
+            </p>
+            <p className="text-lg mb-6">
+              Here's what we know after years of guiding couples through these celebrations via our metro Atlanta wedding planning
+              studio: a detailed timeline isn't about rigidity—it's about freedom. When every vendor, transition, and ritual has
+              its proper space in the schedule, you're free to be present. Your family can focus on emotion, not logistics. Your
+              guests experience seamless flow, not confusion.
+            </p>
+            <p className="text-lg mb-8">
+              This guide shares the framework we use to create stress-free, culturally intelligent timelines for Hindu, Sikh, Muslim,
+              and fusion weddings throughout the Atlanta area. You'll find traditional flows, local vendor coordination strategies,
+              realistic buffers for Atlanta venues, and practical templates you can adapt to your celebration.
+            </p>
+          </section>
 
-          {/* INTRO */}
-          <p className="text-lg mb-6">
-            In Atlanta, most Indian and South Asian weddings span <strong>2–4 days</strong>. The exact length depends on
-            your traditions, venues, and how you sequence events like Mehndi, Haldi, Sangeet/Garba, the ceremony
-            (Pheras/Anand Karaj/Nikah), and your reception. The guide below shows realistic durations, buffers,
-            and vendor call-times so your weekend flows with calm precision.
-          </p>
-          <p className="text-lg mb-8">
-            Want help mapping your weekend?{" "}
-            <a href={clarityUrl} className="text-blue-600 underline">
-              Book a quick clarity call
-            </a>{" "}
-            or browse our{" "}
-            <a href="https://eandp.events/weddings" className="text-blue-600 underline">
-              wedding planning services
-            </a>{" "}
-            and{" "}
-            <a href="https://eandp.events/blog/indian-wedding-venues-atlanta" className="text-blue-600 underline">
-              Atlanta venue guide
-            </a>
-            .
+          {/* JUMP LINKS */}
+          <p className="text-base mb-8">
+            Jump to:{" "}
+            <a href="#why" onClick={jump("why")} className="text-blue-600 underline">Why Timelines Matter</a>{" • "}
+            <a href="#hindu" onClick={jump("hindu")} className="text-blue-600 underline">Hindu</a>{" • "}
+            <a href="#sikh" onClick={jump("sikh")} className="text-blue-600 underline">Sikh</a>{" • "}
+            <a href="#muslim" onClick={jump("muslim")} className="text-blue-600 underline">Muslim</a>{" • "}
+            <a href="#fusion" onClick={jump("fusion")} className="text-blue-600 underline">Fusion</a>{" • "}
+            <a href="#behind" onClick={jump("behind")} className="text-blue-600 underline">Behind the Scenes</a>{" • "}
+            <a href="#logistics" onClick={jump("logistics")} className="text-blue-600 underline">Atlanta Logistics</a>{" • "}
+            <a href="#engineering" onClick={jump("engineering")} className="text-blue-600 underline">Engineering the Timeline</a>{" • "}
+            <a href="#checklist" onClick={jump("checklist")} className="text-blue-600 underline">Checklist</a>{" • "}
+            <a href="#closing" onClick={jump("closing")} className="text-blue-600 underline">Closing</a>
           </p>
 
-          {/* H2: Primary SEO block */}
+          {/* WHY YOUR TIMELINE DESERVES ATTENTION */}
+          <section id="why" className="scroll-mt-24 md:scroll-mt-28">
+            <h2 className="text-2xl md:text-3xl font-semibold mt-2 mb-4">Why Your Timeline Deserves This Level of Attention</h2>
+            <h3 className="text-xl font-semibold mb-2">Cultural complexity meets high emotional stakes</h3>
+            <p className="mb-4">
+              When you're coordinating 3–4 ceremonies, multiple outfit changes, venue transformations, and guests moving between
+              spaces, small delays compound quickly. A thoughtful timeline prevents that cascade.
+            </p>
+            <h3 className="text-xl font-semibold mb-2">Vendor harmony</h3>
+            <p className="mb-4">
+              Your hair and makeup artist, florist, AV team, and caterer each work on different rhythms. Your timeline becomes the
+              common language that keeps everyone aligned—especially important in Atlanta's diverse vendor community.
+            </p>
+            <h3 className="text-xl font-semibold mb-2">Built-in breathing room</h3>
+            <p className="mb-4">
+              No ceremony ends exactly on schedule. Room flips take longer than expected. Atlanta weather changes plans (hello,
+              afternoon thunderstorms). Strategic buffers—both small and substantial—absorb these realities without creating stress.
+            </p>
+            <h3 className="text-xl font-semibold mb-2">Guest experience</h3>
+            <p className="mb-6">
+              Clear schedules enable smooth transitions, helpful signage, and comfortable pacing. Your guests feel cared for, not
+              confused—whether they're driving from Alpharetta, Decatur, or out of state.
+            </p>
+          </section>
+
+          {/* PRIMARY SEO TABLE: Typical Length */}
           <h2 className="text-2xl md:text-3xl font-semibold mt-2 mb-4">
             Typical Length: 2–4 Days — What Each Day Usually Includes
           </h2>
@@ -246,7 +248,7 @@ const HowLongAreIndianWeddingsAtlanta: React.FC = () => {
                   <td className="px-4 py-3">Day 3 (AM)</td>
                   <td className="px-4 py-3">Baraat + Milni</td>
                   <td className="px-4 py-3">45–60 + 15–30 min</td>
-                  <td className="px-4 py-3">Route + permits if public; hydration & shade April–Sept</td>
+                  <td className="px-4 py-3">Route + permits if public; hydration &amp; shade April–Sept</td>
                 </tr>
                 <tr className="border-t">
                   <td className="px-4 py-3">Day 3 (late AM)</td>
@@ -276,480 +278,525 @@ const HowLongAreIndianWeddingsAtlanta: React.FC = () => {
             </table>
           </div>
 
-{/* JUMP LINKS (custom scroll to avoid first-click bug) */}
-<p className="text-base mb-8">
-  Jump to:{" "}
-  <a
-    href="#hindu"
-    className="text-blue-600 underline"
-    onClick={(e) => {
-      e.preventDefault();
-      const id = "hindu";
-      const el = document.getElementById(id);
-      if (!el) return;
-      const headerH = (document.querySelector("nav") as HTMLElement)?.offsetHeight || 96; // your fixed header
-      const y = el.getBoundingClientRect().top + window.scrollY - headerH - 8; // extra 8px breathing room
-      window.scrollTo({ top: y, behavior: "smooth" });
-      history.replaceState(null, "", `#${id}`);
-    }}
-  >
-    Hindu
-  </a>{" • "}
-  <a
-    href="#sikh"
-    className="text-blue-600 underline"
-    onClick={(e) => {
-      e.preventDefault();
-      const id = "sikh";
-      const el = document.getElementById(id);
-      if (!el) return;
-      const headerH = (document.querySelector("nav") as HTMLElement)?.offsetHeight || 96;
-      const y = el.getBoundingClientRect().top + window.scrollY - headerH - 8;
-      window.scrollTo({ top: y, behavior: "smooth" });
-      history.replaceState(null, "", `#${id}`);
-    }}
-  >
-    Sikh
-  </a>{" • "}
-  <a
-    href="#muslim"
-    className="text-blue-600 underline"
-    onClick={(e) => {
-      e.preventDefault();
-      const id = "muslim";
-      const el = document.getElementById(id);
-      if (!el) return;
-      const headerH = (document.querySelector("nav") as HTMLElement)?.offsetHeight || 96;
-      const y = el.getBoundingClientRect().top + window.scrollY - headerH - 8;
-      window.scrollTo({ top: y, behavior: "smooth" });
-      history.replaceState(null, "", `#${id}`);
-    }}
-  >
-    Muslim
-  </a>{" • "}
-  <a
-    href="#fusion"
-    className="text-blue-600 underline"
-    onClick={(e) => {
-      e.preventDefault();
-      const id = "fusion";
-      const el = document.getElementById(id);
-      if (!el) return;
-      const headerH = (document.querySelector("nav") as HTMLElement)?.offsetHeight || 96;
-      const y = el.getBoundingClientRect().top + window.scrollY - headerH - 8;
-      window.scrollTo({ top: y, behavior: "smooth" });
-      history.replaceState(null, "", `#${id}`);
-    }}
-  >
-    Fusion
-  </a>{" • "}
-  <a
-    href="#vendors"
-    className="text-blue-600 underline"
-    onClick={(e) => {
-      e.preventDefault();
-      const id = "vendors";
-      const el = document.getElementById(id);
-      if (!el) return;
-      const headerH = (document.querySelector("nav") as HTMLElement)?.offsetHeight || 96;
-      const y = el.getBoundingClientRect().top + window.scrollY - headerH - 8;
-      window.scrollTo({ top: y, behavior: "smooth" });
-      history.replaceState(null, "", `#${id}`);
-    }}
-  >
-    Vendor Call-Times
-  </a>{" • "}
-  <a
-    href="#logistics"
-    className="text-blue-600 underline"
-    onClick={(e) => {
-      e.preventDefault();
-      const id = "logistics";
-      const el = document.getElementById(id);
-      if (!el) return;
-      const headerH = (document.querySelector("nav") as HTMLElement)?.offsetHeight || 96;
-      const y = el.getBoundingClientRect().top + window.scrollY - headerH - 8;
-      window.scrollTo({ top: y, behavior: "smooth" });
-      history.replaceState(null, "", `#${id}`);
-    }}
-  >
-    Atlanta Logistics
-  </a>
-</p>
+          {/* HINDU */}
+          <h2 id="hindu" className="scroll-mt-24 md:scroll-mt-28 text-2xl md:text-3xl font-semibold mt-10 mb-4">
+            Hindu Weddings (Typical 3-Day Flow)
+          </h2>
+          <div className="overflow-x-auto rounded-lg border bg-white mb-6">
+            <table className="min-w-full text-left text-sm">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th className="px-4 py-3 font-semibold">Day</th>
+                  <th className="px-4 py-3 font-semibold">Event</th>
+                  <th className="px-4 py-3 font-semibold">Duration</th>
+                  <th className="px-4 py-3 font-semibold">What You Need to Know</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-t">
+                  <td className="px-4 py-3">Day 1</td>
+                  <td className="px-4 py-3">Mehndi (Open House)</td>
+                  <td className="px-4 py-3">3–5 hours</td>
+                  <td className="px-4 py-3">
+                    Artists arrive up to 12 hours early to ensure the set-up is done perfectly. Choose darker linens and "stain-friendly"
+                    décor. Keep wet wipes and hand towels accessible. Popular venues: private homes, community centers, hotel ballrooms.
+                  </td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3">Day 2 Morning</td>
+                  <td className="px-4 py-3">Haldi</td>
+                  <td className="px-4 py-3">2–3 hours</td>
+                  <td className="px-4 py-3">
+                    This ritual gets messy—prepare showers, protect surfaces, have fresh towels ready. Often held at home, decorators
+                    will arrive up to 8 hours before.
+                  </td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3">Day 2 Evening</td>
+                  <td className="px-4 py-3">Sangeet/Garba</td>
+                  <td className="px-4 py-3">4–5 hours</td>
+                  <td className="px-4 py-3">
+                    Decorators will need up to 12 hours to set up, depending on the complexity of the design selection. Allocate 1–2 hours
+                    for soundcheck. Assign a stage manager and create detailed performance cue sheets. Consider venues with outdoor space
+                    for overflow.
+                  </td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3">Day 3 Morning</td>
+                  <td className="px-4 py-3">Baraat + Milni</td>
+                  <td className="px-4 py-3">45–60 min + 15–30 min</td>
+                  <td className="px-4 py-3">
+                    Map the procession route carefully—Atlanta traffic matters. If needed Atlanta PD will need to be contracted for the
+                    event if utilizing roadways. Coordinate arrival times, plan hydration breaks (especially April–September).
+                  </td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3">Late Morning</td>
+                  <td className="px-4 py-3">Wedding Ceremony</td>
+                  <td className="px-4 py-3">60 min - 4 Hours</td>
+                  <td className="px-4 py-3">
+                    Secure fire permits for the mandap (requirements vary by county). Decorators can use up to 12 hours for set up.
+                  </td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3">Midday</td>
+                  <td className="px-4 py-3">Lunch &amp; Portraits</td>
+                  <td className="px-4 py-3">~1 hour</td>
+                  <td className="px-4 py-3">
+                    Your photo team needs uninterrupted time for family portraits. Many Atlanta venues have beautiful outdoor spaces—factor
+                    in weather backup.
+                  </td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3">Early Afternoon</td>
+                  <td className="px-4 py-3">Vidaai &amp; Couple Portraits</td>
+                  <td className="px-4 py-3">30–45 min</td>
+                  <td className="px-4 py-3">
+                    This emotional moment deserves space. Consider dual photo coverage. Atlanta's golden hour is stunning for portraits,
+                    work with photographers for best Golden hour pictures.
+                  </td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3">Afternoon</td>
+                  <td className="px-4 py-3">Reception Transformation</td>
+                  <td className="px-4 py-3">7–9 Hours Min</td>
+                  <td className="px-4 py-3">
+                    The venue flip requires substantial time—décor tear-down, reset, lighting changes, stage setup. Factor in Atlanta
+                    venue access restrictions. If using the same room the room flip can take up to 9 hours, but if reusing stage decor
+                    from the ceremony it can take less time to flip.
+                  </td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3">Evening</td>
+                  <td className="px-4 py-3">Reception</td>
+                  <td className="px-4 py-3">~4 hours</td>
+                  <td className="px-4 py-3">
+                    Guests seated by 7 pm. Include toasts, performances, and natural breaks in the flow. Most Atlanta venues have
+                    11 pm–midnight noise curfews, some being at 10pm..
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
+          <h3 className="text-xl font-semibold mb-2">Atlanta-specific vendor coordination essentials:</h3>
+          <ul className="list-disc pl-6 space-y-2 mb-10">
+            <li><strong>Hair &amp; Makeup:</strong> 3–3.5 hours for bride, plus buffer time. Many Atlanta HMUA artists travel to you—confirm location fees.</li>
+            <li><strong>Décor/Floral:</strong> Mandap setup often requires 10-12 hours; the ceremony-to-reception flip takes 7-9 hours. Atlanta venues like The Biltmore Ballrooms, Grand Hyatt Buckhead, or The Georgian Terrace have specific load-in windows.</li>
+            <li><strong>AV/DJ:</strong> Separate soundchecks for baraat and evening events—1–2 hours before each. Outdoor baraats at venues like Chateau Elan need wireless mic systems.</li>
+            <li><strong>Priest/Officiant:</strong> Arrives 30–45 minutes early for setup and mic check. Atlanta's Hindu Temple of Atlanta and other local temples can provide referrals.</li>
+            <li><strong>Photography/Video:</strong> On-site 2-3 hours before ceremony for details and preparation coverage, getting ready pictures, first look and/or wedding party pictures. Popular Atlanta photo locations: Piedmont Park, Swan House, Ponce City Market rooftop.</li>
+          </ul>
 
-{/* =========================
-   HINDU (3-DAY BASELINE)
-   ========================= */}
-<h2 id="hindu" className="scroll-mt-24 md:scroll-mt-28 text-2xl md:text-3xl font-semibold mt-10 mb-4">
-  Hindu (3-Day Baseline)
-</h2>
-<div className="overflow-x-auto rounded-lg border bg-white mb-6">
-  <table className="min-w-full text-left text-sm">
-    <thead className="bg-gray-50">
-      <tr>
-        <th className="px-4 py-3 font-semibold">Day / Time</th>
-        <th className="px-4 py-3 font-semibold">Segment</th>
-        <th className="px-4 py-3 font-semibold">Duration</th>
-        <th className="px-4 py-3 font-semibold">What to Know (Atlanta)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr className="border-t">
-        <td className="px-4 py-3">Day 1 (PM)</td>
-        <td className="px-4 py-3">Mehndi (Open House)</td>
-        <td className="px-4 py-3">3–5 hrs</td>
-        <td className="px-4 py-3">
-          Artists arrive early; stain-friendly décor; wipes/towels handy. Venues: homes, community halls, hotel salons.
-        </td>
-      </tr>
-      <tr className="border-t">
-        <td className="px-4 py-3">Day 2 (AM)</td>
-        <td className="px-4 py-3">Haldi</td>
-        <td className="px-4 py-3">2–3 hrs</td>
-        <td className="px-4 py-3">
-          Protect floors/walls; showers prepped; decorators often pre-load. Frequently hosted at home.
-        </td>
-      </tr>
-      <tr className="border-t">
-        <td className="px-4 py-3">Day 2 (PM)</td>
-        <td className="px-4 py-3">Sangeet / Garba</td>
-        <td className="px-4 py-3">4–5 hrs</td>
-        <td className="px-4 py-3">
-          Allow 1–2 hr soundcheck; stage manager & cue sheets. Consider overflow space; Atlanta traffic for arrivals.
-        </td>
-      </tr>
-      <tr className="border-t">
-        <td className="px-4 py-3">Day 3 (AM)</td>
-        <td className="px-4 py-3">Baraat + Milni</td>
-        <td className="px-4 py-3">45–60 + 15–30 min</td>
-        <td className="px-4 py-3">
-          Map route; shade/water Apr–Sep; public routes may require APD coordination & permits.
-        </td>
-      </tr>
-      <tr className="border-t">
-        <td className="px-4 py-3">Late Morning</td>
-        <td className="px-4 py-3">Ceremony (Pheras)</td>
-        <td className="px-4 py-3">60–90 min (region varies)</td>
-        <td className="px-4 py-3">
-          Fire policies differ by county/venue; decorators often need 10–12 hrs for mandap.
-        </td>
-      </tr>
-      <tr className="border-t">
-        <td className="px-4 py-3">Midday</td>
-        <td className="px-4 py-3">Lunch & Portraits</td>
-        <td className="px-4 py-3">~60–90 min</td>
-        <td className="px-4 py-3">
-          Dedicated family photo block; outdoor portrait backup for weather.
-        </td>
-      </tr>
-      <tr className="border-t">
-        <td className="px-4 py-3">Afternoon</td>
-        <td className="px-4 py-3">Vidaai & Couple Portraits</td>
-        <td className="px-4 py-3">30–45 min</td>
-        <td className="px-4 py-3">Give emotional buffer; consider golden hour portraits.</td>
-      </tr>
-      <tr className="border-t">
-        <td className="px-4 py-3">Late Afternoon–Eve</td>
-        <td className="px-4 py-3">Room Flip to Reception</td>
-        <td className="px-4 py-3">7–9 hrs (same room)</td>
-        <td className="px-4 py-3">
-          Service-elevator windows; strict loading docks at major hotels; reuse ceremony décor where possible.
-        </td>
-      </tr>
-      <tr className="border-t">
-        <td className="px-4 py-3">Evening</td>
-        <td className="px-4 py-3">Reception</td>
-        <td className="px-4 py-3">~4 hrs</td>
-        <td className="px-4 py-3">
-          Most venues end 11pm–midnight (some 10pm). Sequence entrances, toasts, first dances, and open dancing.
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+          {/* SIKH */}
+          <h2 id="sikh" className="scroll-mt-24 md:scroll-mt-28 text-2xl md:text-3xl font-semibold mt-10 mb-4">
+            Sikh Weddings (Typical 2–3 Day Flow)
+          </h2>
+          <div className="overflow-x-auto rounded-lg border bg-white mb-6">
+            <table className="min-w-full text-left text-sm">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th className="px-4 py-3 font-semibold">Day</th>
+                  <th className="px-4 py-3 font-semibold">Event</th>
+                  <th className="px-4 py-3 font-semibold">Duration</th>
+                  <th className="px-4 py-3 font-semibold">Considerations</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-t">
+                  <td className="px-4 py-3">Day 1</td>
+                  <td className="px-4 py-3">Maiyan/Haldi (optional)</td>
+                  <td className="px-4 py-3">2–3 hours</td>
+                  <td className="px-4 py-3">Intimate ritual setting the tone for the celebration.</td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3">Day 2 Morning</td>
+                  <td className="px-4 py-3">Anand Karaj Ceremony</td>
+                  <td className="px-4 py-3">1–1.5 hours</td>
+                  <td className="px-4 py-3">
+                    Typically scheduled for 9–10 am at Gurdwara. Coordinate with Gurudwara Sahib of Atlanta (Norcross) for timing and logistics.
+                  </td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3">Midday</td>
+                  <td className="px-4 py-3">Langar (Communal Meal)</td>
+                  <td className="px-4 py-3">~45 min</td>
+                  <td className="px-4 py-3">Vegetarian lunch served to all. Plan efficient buffet flow and quick transition.</td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3">Afternoon</td>
+                  <td className="px-4 py-3">Doli/Vidaai</td>
+                  <td className="px-4 py-3">30–45 min</td>
+                  <td className="px-4 py-3">Create quiet space for this emotional send-off. Build in buffer time.</td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3">Afternoon</td>
+                  <td className="px-4 py-3">Portraits &amp; Refresh</td>
+                  <td className="px-4 py-3">1–1.5 hours</td>
+                  <td className="px-4 py-3">Outfit changes and photos before evening celebration. Consider drive time from Norcross to evening venue.</td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3">Evening</td>
+                  <td className="px-4 py-3">Reception</td>
+                  <td className="px-4 py-3">3–4 hours</td>
+                  <td className="px-4 py-3">Similar format to Hindu reception. Account for Atlanta traffic—Norcross to Buckhead/Midtown can be 45+ minutes during peak times.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-<ul className="list-disc pl-6 text-base space-y-2 mb-10">
-  <li><strong>Hair &amp; Makeup:</strong> 3–3.5 hrs bridal + buffer; many ATL artists travel—confirm fees.</li>
-  <li><strong>Décor:</strong> Mandap 10–12 hrs; ceremony→reception flip 7–9 hrs if same space.</li>
-  <li><strong>AV/DJ:</strong> Separate soundchecks for baraat &amp; evening (1–2 hrs each).</li>
-  <li><strong>Priest/Officiant:</strong> Arrive 30–45 min early for setup &amp; mic test.</li>
-  <li><strong>Photo/Video:</strong> On-site 2–3 hrs pre-ceremony; plan family sets post-ceremony.</li>
-</ul>
+          <h3 className="text-xl font-semibold mb-2">Atlanta Gurdwara considerations:</h3>
+          <ul className="list-disc pl-6 space-y-2 mb-10">
+            <li>Gurudwara Sahib of Atlanta (Norcross) is the primary location</li>
+            <li>Morning ceremony times are required</li>
+            <li>All food must be vegetarian</li>
+            <li>Shoes must be removed; heads covered</li>
+            <li>Build in 45–60 minutes travel time to evening reception venues in Buckhead, Midtown, or downtown Atlanta</li>
+            <li>I-85 and I-285 traffic can significantly impact timing—plan accordingly</li>
+          </ul>
 
-{/* =========================
-   SIKH (2–3 DAYS)
-   ========================= */}
-<h2 id="sikh" className="scroll-mt-24 md:scroll-mt-28 text-2xl md:3xl font-semibold mt-10 mb-4">
-  Sikh (2–3 Days)
-</h2>
-<div className="overflow-x-auto rounded-lg border bg-white mb-6">
-  <table className="min-w-full text-left text-sm">
-    <thead className="bg-gray-50">
-      <tr>
-        <th className="px-4 py-3 font-semibold">Day / Time</th>
-        <th className="px-4 py-3 font-semibold">Segment</th>
-        <th className="px-4 py-3 font-semibold">Duration</th>
-        <th className="px-4 py-3 font-semibold">Notes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr className="border-t">
-        <td className="px-4 py-3">Day 1</td>
-        <td className="px-4 py-3">Maiyan/Haldi (optional)</td>
-        <td className="px-4 py-3">2–3 hrs</td>
-        <td className="px-4 py-3">Intimate ritual at home/venue.</td>
-      </tr>
-      <tr className="border-t">
-        <td className="px-4 py-3">Day 2 (AM)</td>
-        <td className="px-4 py-3">Anand Karaj (Laavan)</td>
-        <td className="px-4 py-3">1–1.5 hrs</td>
-        <td className="px-4 py-3">Common start 9–10am at Norcross gurdwara; head coverings, no shoes, vegetarian rules.</td>
-      </tr>
-      <tr className="border-t">
-        <td className="px-4 py-3">Midday</td>
-        <td className="px-4 py-3">Langar</td>
-        <td className="px-4 py-3">~45–90 min</td>
-        <td className="px-4 py-3">Communal vegetarian meal; plan efficient service.</td>
-      </tr>
-      <tr className="border-t">
-        <td className="px-4 py-3">Afternoon</td>
-        <td className="px-4 py-3">Doli/Vidaai</td>
-        <td className="px-4 py-3">30–45 min</td>
-        <td className="px-4 py-3">Space for a quiet, emotional send-off.</td>
-      </tr>
-      <tr className="border-t">
-        <td className="px-4 py-3">Evening</td>
-        <td className="px-4 py-3">Reception</td>
-        <td className="px-4 py-3">3–4 hrs</td>
-        <td className="px-4 py-3">Plan 45–60 min travel to Buckhead/Midtown venues from Norcross.</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+          {/* MUSLIM */}
+          <h2 id="muslim" className="scroll-mt-24 md:scroll-mt-28 text-2xl md:text-3xl font-semibold mt-10 mb-4">
+            Muslim Weddings (Typical 2–3 Day Flow)
+          </h2>
+          <div className="overflow-x-auto rounded-lg border bg-white mb-6">
+            <table className="min-w-full text-left text-sm">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th className="px-4 py-3 font-semibold">Day</th>
+                  <th className="px-4 py-3 font-semibold">Event</th>
+                  <th className="px-4 py-3 font-semibold">Duration</th>
+                  <th className="px-4 py-3 font-semibold">Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-t">
+                  <td className="px-4 py-3">Day 1</td>
+                  <td className="px-4 py-3">Mehndi (optional)</td>
+                  <td className="px-4 py-3">2–3 hours</td>
+                  <td className="px-4 py-3">Often a lighter, more intimate version.</td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3">Day 2 Noon</td>
+                  <td className="px-4 py-3">Nikah Ceremony</td>
+                  <td className="px-4 py-3">30–45 min</td>
+                  <td className="px-4 py-3">May require separate seating areas. Confirm mic and livestream setup. Popular locations: Al-Farooq Masjid (downtown), Masjid Al-Hedaya (Decatur), or private venues.</td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3">Afternoon</td>
+                  <td className="px-4 py-3">Rukhsati</td>
+                  <td className="px-4 py-3">20–40 min</td>
+                  <td className="px-4 py-3">Emotional send-off immediately following Nikah. Ensure photo coverage.</td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3">Evening</td>
+                  <td className="px-4 py-3">Walimah Reception</td>
+                  <td className="px-4 py-3">3–4 hours</td>
+                  <td className="px-4 py-3">Doors typically open 1 hour after Nikah. Dinner, toasts, and celebration. Account for Atlanta traffic between ceremony and reception venues.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-{/* =========================
-   MUSLIM (2–3 DAYS)
-   ========================= */}
-<h2 id="muslim" className="scroll-mt-24 md:scroll-mt-28 text-2xl md:text-3xl font-semibold mt-10 mb-4">
-  Muslim (2–3 Days)
-</h2>
-<div className="overflow-x-auto rounded-lg border bg-white mb-6">
-  <table className="min-w-full text-left text-sm">
-    <thead className="bg-gray-50">
-      <tr>
-        <th className="px-4 py-3 font-semibold">Day / Time</th>
-        <th className="px-4 py-3 font-semibold">Segment</th>
-        <th className="px-4 py-3 font-semibold">Duration</th>
-        <th className="px-4 py-3 font-semibold">Notes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr className="border-t">
-        <td className="px-4 py-3">Day 1 (PM)</td>
-        <td className="px-4 py-3">Mehndi (optional)</td>
-        <td className="px-4 py-3">2–3 hrs</td>
-        <td className="px-4 py-3">Smaller, social gathering.</td>
-      </tr>
-      <tr className="border-t">
-        <td className="px-4 py-3">Day 2 (Noon)</td>
-        <td className="px-4 py-3">Nikah Ceremony</td>
-        <td className="px-4 py-3">30–60 min</td>
-        <td className="px-4 py-3">Readings, contract, prayers; optional gendered seating; livestream common.</td>
-      </tr>
-      <tr className="border-t">
-        <td className="px-4 py-3">Afternoon</td>
-        <td className="px-4 py-3">Rukhsati</td>
-        <td className="px-4 py-3">20–40 min</td>
-        <td className="px-4 py-3">Immediate send-off; ensure photo coverage.</td>
-      </tr>
-      <tr className="border-t">
-        <td className="px-4 py-3">Evening</td>
-        <td className="px-4 py-3">Walima</td>
-        <td className="px-4 py-3">3–4 hrs</td>
-        <td className="px-4 py-3">Dinner & celebration; plan travel buffers between venues.</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+          <h3 className="text-xl font-semibold mb-2">Atlanta Muslim wedding considerations:</h3>
+          <ul className="list-disc pl-6 space-y-2 mb-10">
+            <li>Al-Farooq Masjid, Masjid Al-Hedaya, and other Atlanta mosques have specific requirements</li>
+            <li>Some couples combine Nikah + Walimah into one extended event; others prefer separation</li>
+            <li>Gendered seating and prayer areas may be required</li>
+            <li>Livestreaming is common—ensure your AV team is prepared</li>
+            <li>Halal catering requirements: Atlanta has excellent options including Zyka, Madina Grill, and specialized wedding caterers</li>
+          </ul>
 
-{/* =========================
-   FUSION / DUAL CEREMONY
-   ========================= */}
-<h2 id="fusion" className="scroll-mt-24 md:scroll-mt-28 text-2xl md:text-3xl font-semibold mt-10 mb-4">
-  Fusion / Dual Ceremony (Compressed Day)
-</h2>
-<div className="overflow-x-auto rounded-lg border bg-white mb-6">
-  <table className="min-w-full text-left text-sm">
-    <thead className="bg-gray-50">
-      <tr>
-        <th className="px-4 py-3 font-semibold">Time</th>
-        <th className="px-4 py-3 font-semibold">Segment</th>
-        <th className="px-4 py-3 font-semibold">Duration</th>
-        <th className="px-4 py-3 font-semibold">Key Details</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr className="border-t">
-        <td className="px-4 py-3">AM</td>
-        <td className="px-4 py-3">Hindu Ceremony (Baraat + Pheras)</td>
-        <td className="px-4 py-3">1–1.5 hrs</td>
-        <td className="px-4 py-3">Often starts 9–10am; confirm fire policies.</td>
-      </tr>
-      <tr className="border-t">
-        <td className="px-4 py-3">Late AM</td>
-        <td className="px-4 py-3">Family Portraits & Lunch</td>
-        <td className="px-4 py-3">~60 min</td>
-        <td className="px-4 py-3">Buffer for guest transition & refresh.</td>
-      </tr>
-      <tr className="border-t">
-        <td className="px-4 py-3">Midday</td>
-        <td className="px-4 py-3">Bridal Refresh & Outfit Change</td>
-        <td className="px-4 py-3">2–2.5 hrs</td>
-        <td className="px-4 py-3">HMUA on standby recommended.</td>
-      </tr>
-      <tr className="border-t">
-        <td className="px-4 py-3">Afternoon</td>
-        <td className="px-4 py-3">Western Ceremony</td>
-        <td className="px-4 py-3">30–45 min</td>
-        <td className="px-4 py-3">Guest reseating & second ceremony.</td>
-      </tr>
-      <tr className="border-t">
-        <td className="px-4 py-3">Late Afternoon</td>
-        <td className="px-4 py-3">Cocktail Hour & Setup</td>
-        <td className="px-4 py-3">~60 min</td>
-        <td className="px-4 py-3">Room prep for reception.</td>
-      </tr>
-      <tr className="border-t">
-        <td className="px-4 py-3">Evening</td>
-        <td className="px-4 py-3">Reception</td>
-        <td className="px-4 py-3">4+ hrs</td>
-        <td className="px-4 py-3">Typical close 11pm–midnight.</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+          {/* FUSION */}
+          <h2 id="fusion" className="scroll-mt-24 md:scroll-mt-28 text-2xl md:text-3xl font-semibold mt-10 mb-4">
+            Fusion/Dual Ceremonies (Compressed 1–2 Day Format)
+          </h2>
+          <div className="overflow-x-auto rounded-lg border bg-white mb-6">
+            <table className="min-w-full text-left text-sm">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th className="px-4 py-3 font-semibold">Time</th>
+                  <th className="px-4 py-3 font-semibold">Event</th>
+                  <th className="px-4 py-3 font-semibold">Duration</th>
+                  <th className="px-4 py-3 font-semibold">Key Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-t">
+                  <td className="px-4 py-3">Early Morning</td>
+                  <td className="px-4 py-3">Hindu Ceremony (Baraat + Pheras)</td>
+                  <td className="px-4 py-3">1–1.5 hours</td>
+                  <td className="px-4 py-3">Typically starts 9–10 am</td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3">Late Morning</td>
+                  <td className="px-4 py-3">Family Portraits &amp; Lunch</td>
+                  <td className="px-4 py-3">~1 hour</td>
+                  <td className="px-4 py-3">Buffer for guest transition and refreshment. Use Atlanta's outdoor spaces if weather permits.</td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3">Midday</td>
+                  <td className="px-4 py-3">Bridal Refresh &amp; Change</td>
+                  <td className="px-4 py-3">2–2.5 hours</td>
+                  <td className="px-4 py-3">Hair, makeup touch-up, outfit change. Consider having HMUA on standby.</td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3">Afternoon</td>
+                  <td className="px-4 py-3">Western Ceremony</td>
+                  <td className="px-4 py-3">30–45 min</td>
+                  <td className="px-4 py-3">Guest reseating and second ceremony</td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3">Late Afternoon</td>
+                  <td className="px-4 py-3">Cocktail Hour &amp; Setup</td>
+                  <td className="px-4 py-3">~1 hour</td>
+                  <td className="px-4 py-3">Venue preparation for evening reception</td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3">Evening</td>
+                  <td className="px-4 py-3">Reception</td>
+                  <td className="px-4 py-3">4+ hours</td>
+                  <td className="px-4 py-3">Dinner, dances, toasts, celebration. Plan for 11 pm–midnight venue close time.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-<ul className="list-disc pl-6 text-base space-y-2 mb-10">
-  <li>Build 30–45 min buffers between ceremonies.</li>
-  <li>Clear signage & ushers for guest routing.</li>
-  <li>Design décor that transitions (e.g., mandap as backdrop).</li>
-</ul>
+          <h3 className="text-xl font-semibold mb-2">Atlanta fusion wedding success strategies:</h3>
+          <ul className="list-disc pl-6 space-y-2 mb-10">
+            <li>Build 30–45 minute buffers between ceremonies for transitions</li>
+            <li>Use clear signage and ushers to guide guests between spaces</li>
+            <li>Design décor that works across both ceremonies (mandap doubling as ceremony backdrop)</li>
+            <li>Popular Atlanta fusion venues: The Estate, Flourish Atlanta, 550 Trackside, The Fernbank Museum</li>
+            <li>Communicate the day's flow clearly to guests in advance—many will be unfamiliar with South Asian wedding traditions</li>
+          </ul>
 
-{/* =========================
-   VENDOR CALL-TIMES
-   ========================= */}
-<h2 id="vendors" className="scroll-mt-24 md:scroll-mt-28 text-2xl md:text-3xl font-semibold mt-10 mb-4">
-  Vendor Call-Times & Staffing (Atlanta)
-</h2>
-<div className="overflow-x-auto rounded-lg border bg-white mb-6">
-  <table className="min-w-full text-left text-sm">
-    <thead className="bg-gray-50">
-      <tr>
-        <th className="px-4 py-3 font-semibold">Event</th>
-        <th className="px-4 py-3 font-semibold">HMUA</th>
-        <th className="px-4 py-3 font-semibold">Décor/Floral</th>
-        <th className="px-4 py-3 font-semibold">AV/DJ</th>
-        <th className="px-4 py-3 font-semibold">Officiant</th>
-        <th className="px-4 py-3 font-semibold">Photo/Video</th>
-        <th className="px-4 py-3 font-semibold">Notes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr className="border-t">
-        <td className="px-4 py-3">Mehndi</td>
-        <td className="px-4 py-3">2–3 hrs prior</td>
-        <td className="px-4 py-3">~2 hrs prior</td>
-        <td className="px-4 py-3">—</td>
-        <td className="px-4 py-3">—</td>
-        <td className="px-4 py-3">~1 hr prior</td>
-        <td className="px-4 py-3">Snacks/tea service.</td>
-      </tr>
-      <tr className="border-t">
-        <td className="px-4 py-3">Haldi</td>
-        <td className="px-4 py-3">~2 hrs prior</td>
-        <td className="px-4 py-3">~1 hr prior</td>
-        <td className="px-4 py-3">—</td>
-        <td className="px-4 py-3">—</td>
-        <td className="px-4 py-3">~1 hr prior</td>
-        <td className="px-4 py-3">Protective floor coverings.</td>
-      </tr>
-      <tr className="border-t">
-        <td className="px-4 py-3">Sangeet</td>
-        <td className="px-4 py-3">2–3 hrs prior</td>
-        <td className="px-4 py-3">3+ hrs prior</td>
-        <td className="px-4 py-3">1–2 hrs soundcheck</td>
-        <td className="px-4 py-3">—</td>
-        <td className="px-4 py-3">~2 hrs prior</td>
-        <td className="px-4 py-3">Cue sheets & program captain.</td>
-      </tr>
-      <tr className="border-t">
-        <td className="px-4 py-3">Baraat</td>
-        <td className="px-4 py-3">—</td>
-        <td className="px-4 py-3">Route pre-load</td>
-        <td className="px-4 py-3">1 hr prior</td>
-        <td className="px-4 py-3">—</td>
-        <td className="px-4 py-3">~1 hr prior</td>
-        <td className="px-4 py-3">APD/permits if public; hydration.</td>
-      </tr>
-      <tr className="border-t">
-        <td className="px-4 py-3">Ceremony</td>
-        <td className="px-4 py-3">3 hrs prior</td>
-        <td className="px-4 py-3">4–6 hrs prior</td>
-        <td className="px-4 py-3">2 hrs prior</td>
-        <td className="px-4 py-3">30–45 min early</td>
-        <td className="px-4 py-3">~2 hrs prior</td>
-        <td className="px-4 py-3">Fire policy checks; mic tests.</td>
-      </tr>
-      <tr className="border-t">
-        <td className="px-4 py-3">Reception</td>
-        <td className="px-4 py-3">Flip-aligned</td>
-        <td className="px-4 py-3">Full flip crew</td>
-        <td className="px-4 py-3">1 hr tech run</td>
-        <td className="px-4 py-3">—</td>
-        <td className="px-4 py-3">~2 hrs prior</td>
-        <td className="px-4 py-3">Sequence entrances/toasts/dances.</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+          {/* BEHIND THE SCENES */}
+          <h2 id="behind" className="scroll-mt-24 md:scroll-mt-28 text-2xl md:text-3xl font-semibold mt-10 mb-4">
+            Behind the Scenes: Atlanta Vendor Timing &amp; Coordination
+          </h2>
+          <p className="mb-4">
+            Getting the vendor schedule right is what separates smooth celebrations from stressful ones in Atlanta's competitive wedding market.
+          </p>
+          <h3 className="text-xl font-semibold mb-2">Hair &amp; Makeup Artists</h3>
+          <p className="mb-4">
+            Book 3–3.5 hours for the bride, plus 30–45 minute buffer. Bridesmaids need ~1-1.5 hours each. Atlanta's top South Asian HMUA artists
+            book 12–18 months out for peak wedding season (April- –November).
+          </p>
+          <h3 className="text-xl font-semibold mb-2">Décor &amp; Floral Teams</h3>
+          <ul className="list-disc pl-6 space-y-1 mb-4">
+            <li>Mandap installation and Room Set up: 10-12 hours</li>
+            <li>Ceremony-to-reception transformation: 7-9 hours minimum</li>
+            <li>Note: Many Atlanta venues (The Biltmore, St. Regis, Four Seasons) have strict load-in schedules—coordinate early.</li>
+          </ul>
+          <h3 className="text-xl font-semibold mb-2">AV &amp; DJ Teams</h3>
+          <p className="mb-4">
+            Soundcheck 1–2 hours before each event. Run separate checks for outdoor (baraat) and indoor functions. Atlanta venues with outdoor
+            ceremony spaces (Callanwolde Fine Arts Center, Summerour Studio) require wireless systems.
+          </p>
+          <h3 className="text-xl font-semibold mb-2">Officiants (Priests/Imams/Pandits)</h3>
+          <p className="mb-4">
+            Arrive 30–45 minutes early for setup, mic testing, and final coordination. Book Atlanta-based officiants well in advance during peak season.
+          </p>
+          <h3 className="text-xl font-semibold mb-2">Photography &amp; Videography</h3>
+          <p className="mb-4">
+            On-site 3 hours before the first ritual. Account for detail shots, portrait blocks, and transition coverage. Factor in travel time between
+            Atlanta photo locations and venue.
+          </p>
+          <h3 className="text-xl font-semibold mb-2">Catering &amp; Banquet Staff</h3>
+          <p className="mb-4">
+            On-site 1-4 hours before meal service, depending if making food on site or bringing in hot food in hot boxes. Atlanta's top South Asian
+            caterers synchronize timing so buffet lines open exactly as planned.
+          </p>
+          <h3 className="text-xl font-semibold mb-2">Transportation &amp; Security</h3>
+          <p className="mb-4">
+            Brief teams 60–90 minutes prior. For baraat processions on Atlanta streets, coordinate with venue security. If including animals (horses,
+            elephants), note that permits and insurance vary by county (Fulton, Gwinnett, Cobb have different requirements). Additional security or
+            police will may be needed to be hired. Every city or venue functions differently.
+          </p>
+          <h3 className="text-xl font-semibold mb-2">Support Staff &amp; Coordination</h3>
+          <p className="mb-8">
+            Assign ceremony captains, ushers, and floaters. Use radio channels and color-coded roles. Pre-event huddles to keep everyone aligned should
+            have taken place before event weekend to ensure everyone knows exactly the flow of events, and where designated people should be at what time.
+          </p>
 
-<ul className="list-disc pl-6 text-base space-y-2 mb-10">
-  <li><strong>Strike:</strong> 2–4 hrs post-event (venue curfews enforced).</li>
-  <li><strong>Staffing ratios (guideline):</strong> Bars 1/40–60 guests; Ushers 1/50–75; Security 1/150–200.</li>
-</ul>
+          {/* ATLANTA LOGISTICS */}
+          <h2 id="logistics" className="scroll-mt-24 md:scroll-mt-28 text-2xl md:text-3xl font-semibold mt-10 mb-4">
+            Atlanta Venue Logistics: What You Must Know
+          </h2>
+          <h3 className="text-xl font-semibold mb-2">Fire Permits &amp; Open Flames</h3>
+          <p className="mb-4">
+            Fulton County, Gwinnett County, Cobb County, and DeKalb County each have different requirements for mandap sacred fires. Many Atlanta venues
+            require fire-watch staff or only allow enclosed flame systems. Confirm requirements 3–6 months ahead at least—this isn't something to handle last-minute.
+          </p>
+          <h3 className="text-xl font-semibold mb-2">Sound Permits &amp; Noise Ordinances</h3>
+          <ul className="list-disc pl-6 space-y-1 mb-4">
+            <li>Most Atlanta venues have 11 pm or midnight noise curfews</li>
+            <li>Outdoor venues (Ashton Gardens, Chateau Elan) may require sound permits for amplified music, or have an earlier cut of time depending on the day of the week</li>
+            <li>Buckhead and Midtown have stricter noise ordinances than suburban venues</li>
+            <li>Baraat processions with dhol drums typically don't require permits on private property, but check with venues</li>
+          </ul>
+          <h3 className="text-xl font-semibold mb-2">Procession Routes &amp; Public Spaces</h3>
+          <p className="mb-4">
+            Baraats in public areas (Piedmont Park, downtown Atlanta streets) require special event permits from the City of Atlanta. Suburban venues with
+            private roads (Chateau Elan, The Estate at Cherokee Dock) don't typically require permits. Map routes early and assign crowd marshals.
+          </p>
+          <h3 className="text-xl font-semibold mb-2">Load-In Access &amp; Timing</h3>
+          <p className="mb-4">
+            Atlanta venue loading docks and elevators have restricted windows due to the space, and can not accommodate multiple vendors unloading trucks at the same time:
+          </p>
+          <ul className="list-disc pl-6 space-y-1 mb-4">
+            <li><strong>Downtown venues (Fox Theatre, The Georgian Terrace):</strong> Often require night-before or early-morning load-in</li>
+            <li><strong>Hotel venues (Grand Hyatt Buckhead, St. Regis, Four Seasons):</strong> Strict service elevator schedules</li>
+            <li><strong>Suburban venues (The Estate, Ashton Gardens):</strong> More flexible but still require advance coordination</li>
+          </ul>
+          <h3 className="text-xl font-semibold mb-2">Weather Contingency Plans</h3>
+          <p className="mb-4">
+            Atlanta weather is unpredictable, especially:
+          </p>
+          <ul className="list-disc pl-6 space-y-1 mb-4">
+            <li>Spring (March–May): Thunderstorms, tornado warnings</li>
+            <li>Summer (June–August): Afternoon storms, extreme heat and humidity (95°F+)</li>
+            <li>Fall (September–November): Generally stable but thunderstorms are not uncommon</li>
+          </ul>
+          <p className="mb-4">
+            Always secure indoor backup space or tent options for outdoor events. Establish clear decision triggers (rain, lightning, heat index over 100°F) and have the
+            adjusted schedule ready. Moving location of event(s) due to weather is typically called 48-72 hours prior to the event.
+          </p>
+          <h3 className="text-xl font-semibold mb-2">Religious Venue Requirements</h3>
+          <ul className="list-disc pl-6 space-y-1 mb-6">
+            <li><strong>Hindu Temple of Atlanta (Riverdale):</strong> Specific ceremony timing windows, vegetarian food only</li>
+            <li><strong>Gurudwara Sahib of Atlanta (Norcross):</strong> Morning ceremonies only, no shoes, vegetarian food, head coverings required</li>
+            <li><strong>Al-Farooq Masjid &amp; other Atlanta mosques:</strong> Gendered seating, modest décor, halal catering required</li>
+          </ul>
+          <p className="mb-6">Verify all requirements well in advance—assumptions create problems.</p>
+          <h3 className="text-xl font-semibold mb-2">Atlanta Traffic Considerations</h3>
+          <ul className="list-disc pl-6 space-y-1 mb-10">
+            <li>I-285 perimeter: Can add 30–60 minutes during rush hour</li>
+            <li>I-85 North (to Gwinnett venues): Heavy traffic 3–7 pm</li>
+            <li>Downtown to suburbs: Factor 45–75 minutes depending on time of day</li>
+            <li>Weekend traffic: Less predictable but still significant for events, estimate 45–75 minutes</li>
+          </ul>
 
-{/* =========================
-   ATLANTA LOGISTICS
-   ========================= */}
-<h2 id="logistics" className="scroll-mt-24 md:scroll-mt-28 text-2xl md:text-3xl font-semibold mt-10 mb-4">
-  Atlanta Venue Logistics: Permits, Curfews, Load-In, Weather & Traffic
-</h2>
+          {/* ENGINEERING THE TIMELINE */}
+          <h2 id="engineering" className="scroll-mt-24 md:scroll-mt-28 text-2xl md:text-3xl font-semibold mt-10 mb-4">
+            Engineering the Timeline: Strategy &amp; Flow
+          </h2>
+          <h3 className="text-xl font-semibold mb-2">Micro Buffers (15–30 minutes)</h3>
+          <p className="mb-4">Between small segments: ceremony to photos, photos to lunch</p>
+          <h3 className="text-xl font-semibold mb-2">Macro Buffers (4-8 hours)</h3>
+          <p className="mb-4">
+            For major transformations: ceremony to reception, stage changes, décor flips. Atlanta venues often have shorter flip windows than other cities—plan conservatively.
+          </p>
+          <h3 className="text-xl font-semibold mb-2">Dual-Purpose Design</h3>
+          <p className="mb-4">Plan mandap elements that transition into reception décor. Choose florals that work day-to-night and withstand Atlanta humidity.</p>
+          <h3 className="text-xl font-semibold mb-2">Guest Flow &amp; Wayfinding</h3>
+          <p className="mb-4">
+            Printed maps, bilingual signage, designated ushers, separate entrances to prevent bottlenecks. For venues with multiple floors (The Biltmore, Grand Hyatt),
+            elevator capacity becomes critical.
+          </p>
+          <h3 className="text-xl font-semibold mb-2">Accessibility &amp; Comfort</h3>
+          <p className="mb-4">
+            Ramps, reserved seating near exits, quiet rooms, large-print programs. Atlanta summers are hot—ensure adequate AC, hydration stations, and outdoor shade for baraats.
+          </p>
+          <h3 className="text-xl font-semibold mb-2">Team Coordination Framework</h3>
+          <ul className="list-disc pl-6 space-y-1 mb-10">
+            <li>Assign lead captains per segment (ceremony captain, reception captain)</li>
+            <li>Distribute radios and color-coded badges</li>
+            <li>Hold 10-minute pre-event huddles ("Event starts in 10")</li>
+            <li>Establish contingency signals for delays</li>
+            <li>Account for Atlanta venue-specific quirks (parking validation, elevator schedules, load-out deadlines)</li>
+          </ul>
 
-<ul className="list-disc pl-6 text-base space-y-3 mb-8">
-  <li><strong>Open Flame:</strong> County rules vary (Fulton, Gwinnett, Cobb, DeKalb). Some venues require fire-watch or enclosed systems. Confirm 3–6 months out.</li>
-  <li><strong>Sound & Curfews:</strong> Most venues end 11pm–midnight; some 10pm. Outdoor spaces may need sound permits or have decibel caps.</li>
-  <li><strong>Baraat Routes:</strong> Private property preferred; public routes may require City of Atlanta permits & police coordination.</li>
-  <li><strong>Load-In Windows:</strong> Downtown hotels/theatres enforce strict dock & service-elevator schedules; plan vendor staging.</li>
-  <li><strong>Weather:</strong> Spring storms; summer heat/humidity (95°F+); maintain indoor/tent backup and decision triggers (48–72 hrs out).</li>
-  <li><strong>Traffic Buffers:</strong> I-285 & I-85 can add 30–60+ minutes at peaks; plan 45–75 minutes for cross-city travel.</li>
-</ul>
+          {/* SAMPLE (kept short as an example) */}
+          <h3 className="text-xl font-semibold mb-3">Sample 2-Day Fusion Wedding at Buckhead Venue (Hour-by-Hour)</h3>
+          <div className="overflow-x-auto rounded-lg border bg-white mb-10">
+            <table className="min-w-full text-left text-sm">
+              <tbody>
+                <tr className="border-t"><td className="px-4 py-3 w-40">4 am</td><td className="px-4 py-3">Bridal hair &amp; makeup begins (hotel suite or getting-ready venue)</td></tr>
+                <tr className="border-t"><td className="px-4 py-3">10 am</td><td className="px-4 py-3">Hindu ceremony—Baraat + Pheras (Grand Hyatt Buckhead Conservatory)</td></tr>
+                <tr className="border-t"><td className="px-4 py-3">11:30 am</td><td className="px-4 py-3">Family portraits, guest photos</td></tr>
+                <tr className="border-t"><td className="px-4 py-3">12:15 pm</td><td className="px-4 py-3">Lunch break (allow for Atlanta heat if outdoor space)</td></tr>
+                <tr className="border-t"><td className="px-4 py-3">2 pm</td><td className="px-4 py-3">Bride's refresh &amp; outfit change</td></tr>
+                <tr className="border-t"><td className="px-4 py-3">5 pm</td><td className="px-4 py-3">Cocktail hour</td></tr>
+                <tr className="border-t"><td className="px-4 py-3">6:30 pm</td><td className="px-4 py-3">Reception begins</td></tr>
+                <tr className="border-t"><td className="px-4 py-3">10:30 pm</td><td className="px-4 py-3">Event close, strike begins (11 pm hard curfew)</td></tr>
+              </tbody>
+            </table>
+          </div>
 
-{/* CTA */}
-<div className="mt-10 p-6 bg-white rounded-xl shadow-md">
-  <h3 className="text-xl md:text-2xl font-semibold mb-2">Plan with clarity, not guesswork.</h3>
-  <p className="mb-4">
-    We build culturally fluent, crisis-proof timelines for Atlanta weddings—so you can be fully present.
-  </p>
-  <a
-    href={clarityUrl}
-    className="inline-block px-6 py-3 rounded-lg bg-[#1f6feb] text-white font-semibold hover:opacity-90 transition"
-  >
-    Book a 30-Minute Clarity Call
-  </a>
-</div>
-</div>
-        </article> 
+          {/* CHECKLIST */}
+          <h2 id="checklist" className="scroll-mt-24 md:scroll-mt-28 text-2xl md:text-3xl font-semibold mt-10 mb-4">
+            Your Atlanta Wedding Planning Checklist
+          </h2>
+
+          <h3 className="text-xl font-semibold mb-2">6–9 Months Before:</h3>
+          <ul className="list-disc pl-6 space-y-1 mb-4">
+            <li>Book Atlanta venue (peak season books 12–18 months out)</li>
+            <li>Confirm county-specific fire permits for mandap (Fulton, Gwinnett, Cobb, DeKalb)</li>
+            <li>Verify venue noise curfews and sound restrictions</li>
+            <li>Reserve baraat procession permits if using public Atlanta spaces</li>
+            <li>Build micro and macro buffer times into schedule</li>
+          </ul>
+
+          <h3 className="text-xl font-semibold mb-2">3–6 Months Before:</h3>
+          <ul className="list-disc pl-6 space-y-1 mb-4">
+            <li>Book all Atlanta vendors with buffer times included</li>
+            <li>Finalize guest counts per event</li>
+            <li>Confirm venue load-in windows and vendor access schedules</li>
+            <li>Create signage and guest flow maps (include Atlanta traffic warnings)</li>
+            <li>Reserve weather backup or indoor alternate space</li>
+          </ul>
+
+          <h3 className="text-xl font-semibold mb-2">1–2 Months Before:</h3>
+          <ul className="list-disc pl-6 space-y-1 mb-4">
+            <li>Run coordination briefings with all vendor teams</li>
+            <li>Distribute radio channels and assign roles</li>
+            <li>Conduct final walkthrough with venue management</li>
+            <li>Confirm strike/tear-down aligns with venue curfew</li>
+            <li>Send guests Atlanta-specific information (parking, traffic routes, weather prep)</li>
+          </ul>
+
+          <h3 className="text-xl font-semibold mb-2">1 Week Before:</h3>
+          <ul className="list-disc pl-6 space-y-1 mb-10">
+            <li>Check Atlanta weather forecast and activate contingency plans if needed</li>
+            <li>Reconfirm all vendor arrival times accounting for Atlanta traffic</li>
+            <li>Final venue walkthrough with day-of coordinator</li>
+            <li>Distribute final timeline to all vendors and family VIPs</li>
+          </ul>
+
+          {/* CTA */}
+          <div className="mt-10 p-6 bg-white rounded-xl shadow-md">
+            <h3 className="text-xl md:text-2xl font-semibold mb-2">Plan with clarity, not guesswork.</h3>
+            <p className="mb-4">
+              We build culturally fluent, crisis-proof timelines for Atlanta weddings—so you can be fully present.
+            </p>
+            <a
+              href={clarityUrl}
+              className="inline-block px-6 py-3 rounded-lg bg-[#1f6feb] text-white font-semibold hover:opacity-90 transition"
+            >
+              Book a 30-Minute Clarity Call
+            </a>
+          </div>
+
+          {/* CLOSING */}
+          <h2 id="closing" className="scroll-mt-24 md:scroll-mt-28 text-2xl md:text-3xl font-semibold mt-10 mb-4">
+            Moving Forward: Your Atlanta Wedding Journey
+          </h2>
+          <p className="mb-4">
+            Multiday South Asian weddings in Atlanta are intricate celebrations where tradition, emotion, and logistics intersect. When
+            you approach your timeline as a strategic framework—not just a schedule—you create space for what matters: meaningful rituals,
+            genuine connection, and joy without stress.
+          </p>
+          <p className="mb-4">
+            The difference between a good timeline and a great one? Built-in resilience. Room to breathe. Cultural intelligence in every detail. And intimate knowledge of Atlanta's venues, vendors, and unique requirements.
+          </p>
+          <p className="mb-6">
+            If you're planning a multiday South Asian or fusion wedding and want a partner who understands both the cultural significance
+            and logistical complexity, explore our wedding planning services or book a call to get started.
+          </p>
+        </div>
+      </article>
     </>
   );
 };
