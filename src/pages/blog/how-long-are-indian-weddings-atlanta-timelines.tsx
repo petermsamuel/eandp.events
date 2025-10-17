@@ -613,6 +613,7 @@ const HowLongAreIndianWeddingsAtlanta: React.FC = () => {
   </a>
 </div>
 </div>
+        </article> 
     </>
   );
 };
