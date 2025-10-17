@@ -183,7 +183,7 @@ const WeddingContentCreatorArticle = () => {
 
           <h3 className="text-xl font-semibold mt-6 mb-3">Part 1: Budget Reality Check</h3>
           <p className="text-lg mb-6">
-            <strong>Calculate true cost vs. value.</strong> Content creators often charge <strong>$500–$2,500+</strong>, depending on experience and deliverables. To put that in context, check our analysis on full wedding budgets in Atlanta in <a href="/blog/indian-wedding-cost-atlanta" className="text-blue-600 underline">Indian wedding cost in Atlanta</a>.
+            <strong>Calculate true cost vs. value.</strong> How much to wedding content creators charge? Content creators often charge <strong>$500–$2,500+</strong>, depending on experience and deliverables. To put that in context, check our analysis on full wedding budgets in Atlanta in <a href="/blog/indian-wedding-cost-atlanta" className="text-blue-600 underline">Indian wedding cost in Atlanta</a>.
           </p>
           <ul className="list-disc pl-6 mb-6">
             <li>What’s your total media budget, and what percentage would this vendor take?</li>
