@@ -231,21 +231,112 @@ const HowLongAreIndianWeddingsAtlanta: React.FC = () => {
             </table>
           </div>
 
-{/* JUMP LINKS */}
+{/* JUMP LINKS (custom scroll to avoid first-click bug) */}
 <p className="text-base mb-8">
   Jump to:{" "}
-  <a href="#hindu" className="text-blue-600 underline">Hindu</a>{" • "}
-  <a href="#sikh" className="text-blue-600 underline">Sikh</a>{" • "}
-  <a href="#muslim" className="text-blue-600 underline">Muslim</a>{" • "}
-  <a href="#fusion" className="text-blue-600 underline">Fusion</a>{" • "}
-  <a href="#vendors" className="text-blue-600 underline">Vendor Call-Times</a>{" • "}
-  <a href="#logistics" className="text-blue-600 underline">Atlanta Logistics</a>
+  <a
+    href="#hindu"
+    className="text-blue-600 underline"
+    onClick={(e) => {
+      e.preventDefault();
+      const id = "hindu";
+      const el = document.getElementById(id);
+      if (!el) return;
+      const headerH = (document.querySelector("nav") as HTMLElement)?.offsetHeight || 96; // your fixed header
+      const y = el.getBoundingClientRect().top + window.scrollY - headerH - 8; // extra 8px breathing room
+      window.scrollTo({ top: y, behavior: "smooth" });
+      history.replaceState(null, "", `#${id}`);
+    }}
+  >
+    Hindu
+  </a>{" • "}
+  <a
+    href="#sikh"
+    className="text-blue-600 underline"
+    onClick={(e) => {
+      e.preventDefault();
+      const id = "sikh";
+      const el = document.getElementById(id);
+      if (!el) return;
+      const headerH = (document.querySelector("nav") as HTMLElement)?.offsetHeight || 96;
+      const y = el.getBoundingClientRect().top + window.scrollY - headerH - 8;
+      window.scrollTo({ top: y, behavior: "smooth" });
+      history.replaceState(null, "", `#${id}`);
+    }}
+  >
+    Sikh
+  </a>{" • "}
+  <a
+    href="#muslim"
+    className="text-blue-600 underline"
+    onClick={(e) => {
+      e.preventDefault();
+      const id = "muslim";
+      const el = document.getElementById(id);
+      if (!el) return;
+      const headerH = (document.querySelector("nav") as HTMLElement)?.offsetHeight || 96;
+      const y = el.getBoundingClientRect().top + window.scrollY - headerH - 8;
+      window.scrollTo({ top: y, behavior: "smooth" });
+      history.replaceState(null, "", `#${id}`);
+    }}
+  >
+    Muslim
+  </a>{" • "}
+  <a
+    href="#fusion"
+    className="text-blue-600 underline"
+    onClick={(e) => {
+      e.preventDefault();
+      const id = "fusion";
+      const el = document.getElementById(id);
+      if (!el) return;
+      const headerH = (document.querySelector("nav") as HTMLElement)?.offsetHeight || 96;
+      const y = el.getBoundingClientRect().top + window.scrollY - headerH - 8;
+      window.scrollTo({ top: y, behavior: "smooth" });
+      history.replaceState(null, "", `#${id}`);
+    }}
+  >
+    Fusion
+  </a>{" • "}
+  <a
+    href="#vendors"
+    className="text-blue-600 underline"
+    onClick={(e) => {
+      e.preventDefault();
+      const id = "vendors";
+      const el = document.getElementById(id);
+      if (!el) return;
+      const headerH = (document.querySelector("nav") as HTMLElement)?.offsetHeight || 96;
+      const y = el.getBoundingClientRect().top + window.scrollY - headerH - 8;
+      window.scrollTo({ top: y, behavior: "smooth" });
+      history.replaceState(null, "", `#${id}`);
+    }}
+  >
+    Vendor Call-Times
+  </a>{" • "}
+  <a
+    href="#logistics"
+    className="text-blue-600 underline"
+    onClick={(e) => {
+      e.preventDefault();
+      const id = "logistics";
+      const el = document.getElementById(id);
+      if (!el) return;
+      const headerH = (document.querySelector("nav") as HTMLElement)?.offsetHeight || 96;
+      const y = el.getBoundingClientRect().top + window.scrollY - headerH - 8;
+      window.scrollTo({ top: y, behavior: "smooth" });
+      history.replaceState(null, "", `#${id}`);
+    }}
+  >
+    Atlanta Logistics
+  </a>
 </p>
+
 
 {/* =========================
    HINDU (3-DAY BASELINE)
    ========================= */}
-<h2 id="hindu" className="text-2xl md:text-3xl font-semibold mt-10 mb-4">
+<h2 id="hindu" className="scroll-mt-24 md:scroll-mt-28 text-2xl md:text-3xl font-semibold mt-10 mb-4">
   Hindu (3-Day Baseline)
 </h2>
 <div className="overflow-x-auto rounded-lg border bg-white mb-6">
@@ -344,7 +435,7 @@ const HowLongAreIndianWeddingsAtlanta: React.FC = () => {
 {/* =========================
    SIKH (2–3 DAYS)
    ========================= */}
-<h2 id="sikh" className="text-2xl md:text-3xl font-semibold mt-10 mb-4">
+<h2 id="sikh" className="scroll-mt-24 md:scroll-mt-28 text-2xl md:3xl font-semibold mt-10 mb-4">
   Sikh (2–3 Days)
 </h2>
 <div className="overflow-x-auto rounded-lg border bg-white mb-6">
@@ -395,7 +486,7 @@ const HowLongAreIndianWeddingsAtlanta: React.FC = () => {
 {/* =========================
    MUSLIM (2–3 DAYS)
    ========================= */}
-<h2 id="muslim" className="text-2xl md:text-3xl font-semibold mt-10 mb-4">
+<h2 id="muslim" className="scroll-mt-24 md:scroll-mt-28 text-2xl md:text-3xl font-semibold mt-10 mb-4">
   Muslim (2–3 Days)
 </h2>
 <div className="overflow-x-auto rounded-lg border bg-white mb-6">
@@ -440,7 +531,7 @@ const HowLongAreIndianWeddingsAtlanta: React.FC = () => {
 {/* =========================
    FUSION / DUAL CEREMONY
    ========================= */}
-<h2 id="fusion" className="text-2xl md:text-3xl font-semibold mt-10 mb-4">
+<h2 id="fusion" className="scroll-mt-24 md:scroll-mt-28 text-2xl md:text-3xl font-semibold mt-10 mb-4">
   Fusion / Dual Ceremony (Compressed Day)
 </h2>
 <div className="overflow-x-auto rounded-lg border bg-white mb-6">
@@ -503,7 +594,7 @@ const HowLongAreIndianWeddingsAtlanta: React.FC = () => {
 {/* =========================
    VENDOR CALL-TIMES
    ========================= */}
-<h2 id="vendors" className="text-2xl md:text-3xl font-semibold mt-10 mb-4">
+<h2 id="vendors" className="scroll-mt-24 md:scroll-mt-28 text-2xl md:text-3xl font-semibold mt-10 mb-4">
   Vendor Call-Times & Staffing (Atlanta)
 </h2>
 <div className="overflow-x-auto rounded-lg border bg-white mb-6">
@@ -586,7 +677,7 @@ const HowLongAreIndianWeddingsAtlanta: React.FC = () => {
 {/* =========================
    ATLANTA LOGISTICS
    ========================= */}
-<h2 id="logistics" className="text-2xl md:text-3xl font-semibold mt-10 mb-4">
+<h2 id="logistics" className="scroll-mt-24 md:scroll-mt-28 text-2xl md:text-3xl font-semibold mt-10 mb-4">
   Atlanta Venue Logistics: Permits, Curfews, Load-In, Weather & Traffic
 </h2>
 
