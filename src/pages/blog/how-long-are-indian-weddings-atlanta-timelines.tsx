@@ -32,7 +32,7 @@ const HowLongAreIndianWeddingsAtlanta: React.FC = () => {
   const blogPostingLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "How Long Are Indian Weddings? Atlanta Timeline Guide",
+    headline: "How Long Are Indian Weddings? Atlanta Ultimate Guide",
     description,
     image: [`https://eandp.events${heroSrc.replace(/\s/g, "%20")}`],
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
@@ -231,53 +231,388 @@ const HowLongAreIndianWeddingsAtlanta: React.FC = () => {
             </table>
           </div>
 
-          {/* JUMP LINKS */}
-          <p className="text-base mb-8">
-            Jump to:{" "}
-            <a href="#hindu" className="text-blue-600 underline">Hindu</a>{" • "}
-            <a href="#sikh" className="text-blue-600 underline">Sikh</a>{" • "}
-            <a href="#muslim" className="text-blue-600 underline">Muslim</a>{" • "}
-            <a href="#fusion" className="text-blue-600 underline">Fusion</a>{" • "}
-            <a href="#vendors" className="text-blue-600 underline">Vendor Call-Times</a>{" • "}
-            <a href="#logistics" className="text-blue-600 underline">Atlanta Logistics</a>
-          </p>
+{/* JUMP LINKS */}
+<p className="text-base mb-8">
+  Jump to:{" "}
+  <a href="#hindu" className="text-blue-600 underline">Hindu</a>{" • "}
+  <a href="#sikh" className="text-blue-600 underline">Sikh</a>{" • "}
+  <a href="#muslim" className="text-blue-600 underline">Muslim</a>{" • "}
+  <a href="#fusion" className="text-blue-600 underline">Fusion</a>{" • "}
+  <a href="#vendors" className="text-blue-600 underline">Vendor Call-Times</a>{" • "}
+  <a href="#logistics" className="text-blue-600 underline">Atlanta Logistics</a>
+</p>
 
-          {/* ---- FROM HERE DOWN: your existing Atlanta timelines content ---- */}
-          {/* You can paste the fully formatted article body you approved earlier. */}
-          {/* The section IDs below match the jump-links above. */}
+{/* =========================
+   HINDU (3-DAY BASELINE)
+   ========================= */}
+<h2 id="hindu" className="text-2xl md:text-3xl font-semibold mt-10 mb-4">
+  Hindu (3-Day Baseline)
+</h2>
+<div className="overflow-x-auto rounded-lg border bg-white mb-6">
+  <table className="min-w-full text-left text-sm">
+    <thead className="bg-gray-50">
+      <tr>
+        <th className="px-4 py-3 font-semibold">Day / Time</th>
+        <th className="px-4 py-3 font-semibold">Segment</th>
+        <th className="px-4 py-3 font-semibold">Duration</th>
+        <th className="px-4 py-3 font-semibold">What to Know (Atlanta)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr className="border-t">
+        <td className="px-4 py-3">Day 1 (PM)</td>
+        <td className="px-4 py-3">Mehndi (Open House)</td>
+        <td className="px-4 py-3">3–5 hrs</td>
+        <td className="px-4 py-3">
+          Artists arrive early; stain-friendly décor; wipes/towels handy. Venues: homes, community halls, hotel salons.
+        </td>
+      </tr>
+      <tr className="border-t">
+        <td className="px-4 py-3">Day 2 (AM)</td>
+        <td className="px-4 py-3">Haldi</td>
+        <td className="px-4 py-3">2–3 hrs</td>
+        <td className="px-4 py-3">
+          Protect floors/walls; showers prepped; decorators often pre-load. Frequently hosted at home.
+        </td>
+      </tr>
+      <tr className="border-t">
+        <td className="px-4 py-3">Day 2 (PM)</td>
+        <td className="px-4 py-3">Sangeet / Garba</td>
+        <td className="px-4 py-3">4–5 hrs</td>
+        <td className="px-4 py-3">
+          Allow 1–2 hr soundcheck; stage manager & cue sheets. Consider overflow space; Atlanta traffic for arrivals.
+        </td>
+      </tr>
+      <tr className="border-t">
+        <td className="px-4 py-3">Day 3 (AM)</td>
+        <td className="px-4 py-3">Baraat + Milni</td>
+        <td className="px-4 py-3">45–60 + 15–30 min</td>
+        <td className="px-4 py-3">
+          Map route; shade/water Apr–Sep; public routes may require APD coordination & permits.
+        </td>
+      </tr>
+      <tr className="border-t">
+        <td className="px-4 py-3">Late Morning</td>
+        <td className="px-4 py-3">Ceremony (Pheras)</td>
+        <td className="px-4 py-3">60–90 min (region varies)</td>
+        <td className="px-4 py-3">
+          Fire policies differ by county/venue; decorators often need 10–12 hrs for mandap.
+        </td>
+      </tr>
+      <tr className="border-t">
+        <td className="px-4 py-3">Midday</td>
+        <td className="px-4 py-3">Lunch & Portraits</td>
+        <td className="px-4 py-3">~60–90 min</td>
+        <td className="px-4 py-3">
+          Dedicated family photo block; outdoor portrait backup for weather.
+        </td>
+      </tr>
+      <tr className="border-t">
+        <td className="px-4 py-3">Afternoon</td>
+        <td className="px-4 py-3">Vidaai & Couple Portraits</td>
+        <td className="px-4 py-3">30–45 min</td>
+        <td className="px-4 py-3">Give emotional buffer; consider golden hour portraits.</td>
+      </tr>
+      <tr className="border-t">
+        <td className="px-4 py-3">Late Afternoon–Eve</td>
+        <td className="px-4 py-3">Room Flip to Reception</td>
+        <td className="px-4 py-3">7–9 hrs (same room)</td>
+        <td className="px-4 py-3">
+          Service-elevator windows; strict loading docks at major hotels; reuse ceremony décor where possible.
+        </td>
+      </tr>
+      <tr className="border-t">
+        <td className="px-4 py-3">Evening</td>
+        <td className="px-4 py-3">Reception</td>
+        <td className="px-4 py-3">~4 hrs</td>
+        <td className="px-4 py-3">
+          Most venues end 11pm–midnight (some 10pm). Sequence entrances, toasts, first dances, and open dancing.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-          <h2 id="hindu" className="text-2xl md:text-3xl font-semibold mt-10 mb-4">Hindu (3-Day Baseline)</h2>
-          {/* ... paste your Hindu schedule & tables ... */}
+<ul className="list-disc pl-6 text-base space-y-2 mb-10">
+  <li><strong>Hair &amp; Makeup:</strong> 3–3.5 hrs bridal + buffer; many ATL artists travel—confirm fees.</li>
+  <li><strong>Décor:</strong> Mandap 10–12 hrs; ceremony→reception flip 7–9 hrs if same space.</li>
+  <li><strong>AV/DJ:</strong> Separate soundchecks for baraat &amp; evening (1–2 hrs each).</li>
+  <li><strong>Priest/Officiant:</strong> Arrive 30–45 min early for setup &amp; mic test.</li>
+  <li><strong>Photo/Video:</strong> On-site 2–3 hrs pre-ceremony; plan family sets post-ceremony.</li>
+</ul>
 
-          <h2 id="sikh" className="text-2xl md:text-3xl font-semibold mt-10 mb-4">Sikh (2–3 Days)</h2>
-          {/* ... paste your Sikh schedule ... */}
+{/* =========================
+   SIKH (2–3 DAYS)
+   ========================= */}
+<h2 id="sikh" className="text-2xl md:text-3xl font-semibold mt-10 mb-4">
+  Sikh (2–3 Days)
+</h2>
+<div className="overflow-x-auto rounded-lg border bg-white mb-6">
+  <table className="min-w-full text-left text-sm">
+    <thead className="bg-gray-50">
+      <tr>
+        <th className="px-4 py-3 font-semibold">Day / Time</th>
+        <th className="px-4 py-3 font-semibold">Segment</th>
+        <th className="px-4 py-3 font-semibold">Duration</th>
+        <th className="px-4 py-3 font-semibold">Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr className="border-t">
+        <td className="px-4 py-3">Day 1</td>
+        <td className="px-4 py-3">Maiyan/Haldi (optional)</td>
+        <td className="px-4 py-3">2–3 hrs</td>
+        <td className="px-4 py-3">Intimate ritual at home/venue.</td>
+      </tr>
+      <tr className="border-t">
+        <td className="px-4 py-3">Day 2 (AM)</td>
+        <td className="px-4 py-3">Anand Karaj (Laavan)</td>
+        <td className="px-4 py-3">1–1.5 hrs</td>
+        <td className="px-4 py-3">Common start 9–10am at Norcross gurdwara; head coverings, no shoes, vegetarian rules.</td>
+      </tr>
+      <tr className="border-t">
+        <td className="px-4 py-3">Midday</td>
+        <td className="px-4 py-3">Langar</td>
+        <td className="px-4 py-3">~45–90 min</td>
+        <td className="px-4 py-3">Communal vegetarian meal; plan efficient service.</td>
+      </tr>
+      <tr className="border-t">
+        <td className="px-4 py-3">Afternoon</td>
+        <td className="px-4 py-3">Doli/Vidaai</td>
+        <td className="px-4 py-3">30–45 min</td>
+        <td className="px-4 py-3">Space for a quiet, emotional send-off.</td>
+      </tr>
+      <tr className="border-t">
+        <td className="px-4 py-3">Evening</td>
+        <td className="px-4 py-3">Reception</td>
+        <td className="px-4 py-3">3–4 hrs</td>
+        <td className="px-4 py-3">Plan 45–60 min travel to Buckhead/Midtown venues from Norcross.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-          <h2 id="muslim" className="text-2xl md:text-3xl font-semibold mt-10 mb-4">Muslim (2–3 Days)</h2>
-          {/* ... paste your Muslim schedule ... */}
+{/* =========================
+   MUSLIM (2–3 DAYS)
+   ========================= */}
+<h2 id="muslim" className="text-2xl md:text-3xl font-semibold mt-10 mb-4">
+  Muslim (2–3 Days)
+</h2>
+<div className="overflow-x-auto rounded-lg border bg-white mb-6">
+  <table className="min-w-full text-left text-sm">
+    <thead className="bg-gray-50">
+      <tr>
+        <th className="px-4 py-3 font-semibold">Day / Time</th>
+        <th className="px-4 py-3 font-semibold">Segment</th>
+        <th className="px-4 py-3 font-semibold">Duration</th>
+        <th className="px-4 py-3 font-semibold">Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr className="border-t">
+        <td className="px-4 py-3">Day 1 (PM)</td>
+        <td className="px-4 py-3">Mehndi (optional)</td>
+        <td className="px-4 py-3">2–3 hrs</td>
+        <td className="px-4 py-3">Smaller, social gathering.</td>
+      </tr>
+      <tr className="border-t">
+        <td className="px-4 py-3">Day 2 (Noon)</td>
+        <td className="px-4 py-3">Nikah Ceremony</td>
+        <td className="px-4 py-3">30–60 min</td>
+        <td className="px-4 py-3">Readings, contract, prayers; optional gendered seating; livestream common.</td>
+      </tr>
+      <tr className="border-t">
+        <td className="px-4 py-3">Afternoon</td>
+        <td className="px-4 py-3">Rukhsati</td>
+        <td className="px-4 py-3">20–40 min</td>
+        <td className="px-4 py-3">Immediate send-off; ensure photo coverage.</td>
+      </tr>
+      <tr className="border-t">
+        <td className="px-4 py-3">Evening</td>
+        <td className="px-4 py-3">Walima</td>
+        <td className="px-4 py-3">3–4 hrs</td>
+        <td className="px-4 py-3">Dinner & celebration; plan travel buffers between venues.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-          <h2 id="fusion" className="text-2xl md:text-3xl font-semibold mt-10 mb-4">Fusion / Dual Ceremony</h2>
-          {/* ... paste your fusion schedule ... */}
+{/* =========================
+   FUSION / DUAL CEREMONY
+   ========================= */}
+<h2 id="fusion" className="text-2xl md:text-3xl font-semibold mt-10 mb-4">
+  Fusion / Dual Ceremony (Compressed Day)
+</h2>
+<div className="overflow-x-auto rounded-lg border bg-white mb-6">
+  <table className="min-w-full text-left text-sm">
+    <thead className="bg-gray-50">
+      <tr>
+        <th className="px-4 py-3 font-semibold">Time</th>
+        <th className="px-4 py-3 font-semibold">Segment</th>
+        <th className="px-4 py-3 font-semibold">Duration</th>
+        <th className="px-4 py-3 font-semibold">Key Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr className="border-t">
+        <td className="px-4 py-3">AM</td>
+        <td className="px-4 py-3">Hindu Ceremony (Baraat + Pheras)</td>
+        <td className="px-4 py-3">1–1.5 hrs</td>
+        <td className="px-4 py-3">Often starts 9–10am; confirm fire policies.</td>
+      </tr>
+      <tr className="border-t">
+        <td className="px-4 py-3">Late AM</td>
+        <td className="px-4 py-3">Family Portraits & Lunch</td>
+        <td className="px-4 py-3">~60 min</td>
+        <td className="px-4 py-3">Buffer for guest transition & refresh.</td>
+      </tr>
+      <tr className="border-t">
+        <td className="px-4 py-3">Midday</td>
+        <td className="px-4 py-3">Bridal Refresh & Outfit Change</td>
+        <td className="px-4 py-3">2–2.5 hrs</td>
+        <td className="px-4 py-3">HMUA on standby recommended.</td>
+      </tr>
+      <tr className="border-t">
+        <td className="px-4 py-3">Afternoon</td>
+        <td className="px-4 py-3">Western Ceremony</td>
+        <td className="px-4 py-3">30–45 min</td>
+        <td className="px-4 py-3">Guest reseating & second ceremony.</td>
+      </tr>
+      <tr className="border-t">
+        <td className="px-4 py-3">Late Afternoon</td>
+        <td className="px-4 py-3">Cocktail Hour & Setup</td>
+        <td className="px-4 py-3">~60 min</td>
+        <td className="px-4 py-3">Room prep for reception.</td>
+      </tr>
+      <tr className="border-t">
+        <td className="px-4 py-3">Evening</td>
+        <td className="px-4 py-3">Reception</td>
+        <td className="px-4 py-3">4+ hrs</td>
+        <td className="px-4 py-3">Typical close 11pm–midnight.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-          <h2 id="vendors" className="text-2xl md:text-3xl font-semibold mt-10 mb-4">Vendor Call-Times & Staffing</h2>
-          {/* ... paste vendor matrix ... */}
+<ul className="list-disc pl-6 text-base space-y-2 mb-10">
+  <li>Build 30–45 min buffers between ceremonies.</li>
+  <li>Clear signage & ushers for guest routing.</li>
+  <li>Design décor that transitions (e.g., mandap as backdrop).</li>
+</ul>
 
-          <h2 id="logistics" className="text-2xl md:text-3xl font-semibold mt-10 mb-4">Atlanta Venue Logistics</h2>
-          {/* ... paste ATL permits, curfews, load-in, weather, traffic ... */}
+{/* =========================
+   VENDOR CALL-TIMES
+   ========================= */}
+<h2 id="vendors" className="text-2xl md:text-3xl font-semibold mt-10 mb-4">
+  Vendor Call-Times & Staffing (Atlanta)
+</h2>
+<div className="overflow-x-auto rounded-lg border bg-white mb-6">
+  <table className="min-w-full text-left text-sm">
+    <thead className="bg-gray-50">
+      <tr>
+        <th className="px-4 py-3 font-semibold">Event</th>
+        <th className="px-4 py-3 font-semibold">HMUA</th>
+        <th className="px-4 py-3 font-semibold">Décor/Floral</th>
+        <th className="px-4 py-3 font-semibold">AV/DJ</th>
+        <th className="px-4 py-3 font-semibold">Officiant</th>
+        <th className="px-4 py-3 font-semibold">Photo/Video</th>
+        <th className="px-4 py-3 font-semibold">Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr className="border-t">
+        <td className="px-4 py-3">Mehndi</td>
+        <td className="px-4 py-3">2–3 hrs prior</td>
+        <td className="px-4 py-3">~2 hrs prior</td>
+        <td className="px-4 py-3">—</td>
+        <td className="px-4 py-3">—</td>
+        <td className="px-4 py-3">~1 hr prior</td>
+        <td className="px-4 py-3">Snacks/tea service.</td>
+      </tr>
+      <tr className="border-t">
+        <td className="px-4 py-3">Haldi</td>
+        <td className="px-4 py-3">~2 hrs prior</td>
+        <td className="px-4 py-3">~1 hr prior</td>
+        <td className="px-4 py-3">—</td>
+        <td className="px-4 py-3">—</td>
+        <td className="px-4 py-3">~1 hr prior</td>
+        <td className="px-4 py-3">Protective floor coverings.</td>
+      </tr>
+      <tr className="border-t">
+        <td className="px-4 py-3">Sangeet</td>
+        <td className="px-4 py-3">2–3 hrs prior</td>
+        <td className="px-4 py-3">3+ hrs prior</td>
+        <td className="px-4 py-3">1–2 hrs soundcheck</td>
+        <td className="px-4 py-3">—</td>
+        <td className="px-4 py-3">~2 hrs prior</td>
+        <td className="px-4 py-3">Cue sheets & program captain.</td>
+      </tr>
+      <tr className="border-t">
+        <td className="px-4 py-3">Baraat</td>
+        <td className="px-4 py-3">—</td>
+        <td className="px-4 py-3">Route pre-load</td>
+        <td className="px-4 py-3">1 hr prior</td>
+        <td className="px-4 py-3">—</td>
+        <td className="px-4 py-3">~1 hr prior</td>
+        <td className="px-4 py-3">APD/permits if public; hydration.</td>
+      </tr>
+      <tr className="border-t">
+        <td className="px-4 py-3">Ceremony</td>
+        <td className="px-4 py-3">3 hrs prior</td>
+        <td className="px-4 py-3">4–6 hrs prior</td>
+        <td className="px-4 py-3">2 hrs prior</td>
+        <td className="px-4 py-3">30–45 min early</td>
+        <td className="px-4 py-3">~2 hrs prior</td>
+        <td className="px-4 py-3">Fire policy checks; mic tests.</td>
+      </tr>
+      <tr className="border-t">
+        <td className="px-4 py-3">Reception</td>
+        <td className="px-4 py-3">Flip-aligned</td>
+        <td className="px-4 py-3">Full flip crew</td>
+        <td className="px-4 py-3">1 hr tech run</td>
+        <td className="px-4 py-3">—</td>
+        <td className="px-4 py-3">~2 hrs prior</td>
+        <td className="px-4 py-3">Sequence entrances/toasts/dances.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-          {/* CTA */}
-          <div className="mt-10 p-6 bg-white rounded-xl shadow-md">
-            <h3 className="text-xl md:text-2xl font-semibold mb-2">Plan with clarity, not guesswork.</h3>
-            <p className="mb-4">
-              We build culturally fluent, crisis-proof timelines for Atlanta weddings—so you can be fully present.
-            </p>
-            <a
-              href={clarityUrl}
-              className="inline-block px-6 py-3 rounded-lg bg-[#1f6feb] text-white font-semibold hover:opacity-90 transition"
-            >
-              Book a 30-Minute Clarity Call
-            </a>
-          </div>
-        </div>
+<ul className="list-disc pl-6 text-base space-y-2 mb-10">
+  <li><strong>Strike:</strong> 2–4 hrs post-event (venue curfews enforced).</li>
+  <li><strong>Staffing ratios (guideline):</strong> Bars 1/40–60 guests; Ushers 1/50–75; Security 1/150–200.</li>
+</ul>
+
+{/* =========================
+   ATLANTA LOGISTICS
+   ========================= */}
+<h2 id="logistics" className="text-2xl md:text-3xl font-semibold mt-10 mb-4">
+  Atlanta Venue Logistics: Permits, Curfews, Load-In, Weather & Traffic
+</h2>
+
+<ul className="list-disc pl-6 text-base space-y-3 mb-8">
+  <li><strong>Open Flame:</strong> County rules vary (Fulton, Gwinnett, Cobb, DeKalb). Some venues require fire-watch or enclosed systems. Confirm 3–6 months out.</li>
+  <li><strong>Sound & Curfews:</strong> Most venues end 11pm–midnight; some 10pm. Outdoor spaces may need sound permits or have decibel caps.</li>
+  <li><strong>Baraat Routes:</strong> Private property preferred; public routes may require City of Atlanta permits & police coordination.</li>
+  <li><strong>Load-In Windows:</strong> Downtown hotels/theatres enforce strict dock & service-elevator schedules; plan vendor staging.</li>
+  <li><strong>Weather:</strong> Spring storms; summer heat/humidity (95°F+); maintain indoor/tent backup and decision triggers (48–72 hrs out).</li>
+  <li><strong>Traffic Buffers:</strong> I-285 & I-85 can add 30–60+ minutes at peaks; plan 45–75 minutes for cross-city travel.</li>
+</ul>
+
+{/* CTA */}
+<div className="mt-10 p-6 bg-white rounded-xl shadow-md">
+  <h3 className="text-xl md:text-2xl font-semibold mb-2">Plan with clarity, not guesswork.</h3>
+  <p className="mb-4">
+    We build culturally fluent, crisis-proof timelines for Atlanta weddings—so you can be fully present.
+  </p>
+  <a
+    href={clarityUrl}
+    className="inline-block px-6 py-3 rounded-lg bg-[#1f6feb] text-white font-semibold hover:opacity-90 transition"
+  >
+    Book a 30-Minute Clarity Call
+  </a>
+</div>
+
       </article>
     </>
   );
