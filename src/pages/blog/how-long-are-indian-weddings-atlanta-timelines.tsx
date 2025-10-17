@@ -6,7 +6,7 @@ const HowLongAreIndianWeddingsAtlanta: React.FC = () => {
 
   // ====== PAGE META ======
   const url = "https://eandp.events/blog/how-long-are-indian-weddings-atlanta-timelines";
-  const title = "How Long Are Indian Weddings? Atlanta Timeline Guide | E&P Events";
+  const title = "How Long Are Indian Weddings? Atlanta Ultimate Guide | E&P Events";
   const description =
     "Plan a multi-day Indian wedding in Atlanta with realistic 2–4 day timelines, buffers, vendor call times, and venue tips for Hindu, Sikh, Muslim & fusion.";
   const heroSrc = "/lovable-uploads/atlanta-south-asian-multiday-wedding-timelines-hero.webp"; // swap to your preferred hero
