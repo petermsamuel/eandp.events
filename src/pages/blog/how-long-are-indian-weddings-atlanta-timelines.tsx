@@ -612,8 +612,7 @@ const HowLongAreIndianWeddingsAtlanta: React.FC = () => {
     Book a 30-Minute Clarity Call
   </a>
 </div>
-
-      </article>
+</div>
     </>
   );
 };
