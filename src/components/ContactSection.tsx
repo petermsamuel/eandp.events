@@ -43,7 +43,7 @@ const ContactSection = () => {
         </div>
 
         {/* Email CTA */}
-        <div className="mt-8">
+        <div className="mt-10">
           <p className="text-base text-white/80 max-w-md mx-auto">
             Prefer email?{" "}
             <a
