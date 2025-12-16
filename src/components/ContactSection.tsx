@@ -47,8 +47,7 @@ const ContactSection = () => {
           <p className="text-base text-white/80 max-w-md mx-auto">
             Prefer email?{" "}
             <a
-              href="mailto:info@eandp.events?subject=Clarity%20Request&body=Hey%20E%26P%2C%0A%0AI%E2%80%99d%20love%20some%20clarity%20around%3A%20%5Bquick%20summary%5D%0A%0AHere%E2%80%99s%20the%20best%20way%20to%20reach%20me%3A%20%5Byour%20phone%2Femail%5D%0A%0AThanks!"
-              className="text-gold hover:underline"
+href="mailto:info@eandp.events?subject=Clarity%20Request&body=Hey%20Peter%2C%0D%0A%0D%0AWe'd%20love%20some%20clarity%20around%3A%20%5Bquick%20summary%5D%0D%0A%0D%0AHere%27s%20the%20best%20way%20to%20reach%20me%3A%20%5Byour%20phone%2Femail%5D%0D%0A%0D%0AThanks%21"              className="text-gold hover:underline"
               onClick={() => {
                 window.gtag?.("event", "cta_click", {
                   button_text: "Email Us",
