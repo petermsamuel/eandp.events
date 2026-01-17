@@ -66,7 +66,7 @@ const Navbar = () => {
   <a href="#testimonials" className="text-black hover:text-gold transition-colors">Testimonials</a>
   <a href="#meet-peter" className="text-black hover:text-gold transition-colors">Meet Peter</a>
   <a href="#contact" className="text-black hover:text-gold transition-colors">Contact</a>
-  <a href="#featured" className="text-black hover:text-gold transition-colors">Featured In</a>
+  <a href="/blog" className="text-black hover:text-gold transition-colors">Blog</a>
   <div className="relative group">
     <button className="text-black hover:text-gold transition-colors flex items-center">
       Events
@@ -105,7 +105,7 @@ const Navbar = () => {
            <a href="#testimonials" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>Testimonials</a>
           <a href="#meet-peter" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>Meet Peter</a>
          <a href="#contact" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>Contact</a>
-              <a href="#featured" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>Featured In</a>
+             <a href="/blog" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>Blog</a>
           
               {/* Collapsible Events dropdown */}
               <button
