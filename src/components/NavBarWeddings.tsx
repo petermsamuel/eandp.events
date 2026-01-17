@@ -69,14 +69,14 @@ const NavbarWeddings = () => {
           <a href="#what-we-do" className="text-black hover:text-gold">
             What We Do
           </a>
-          <a href="#how-it-works" className="text-black hover:text-gold">
-            How It Works
-          </a>
           <a href="#testimonials" className="text-black hover:text-gold">
             Testimonials
           </a>
           <a href="#cta" className="text-black hover:text-gold">
             Contact
+          </a>
+           <a href="/blog" className="text-black hover:text-gold">
+            Blog
           </a>
 
           {/* Events Dropdown */}
@@ -149,13 +149,6 @@ const NavbarWeddings = () => {
               What We Do
             </a>
             <a
-              href="#how-it-works"
-              className="text-black hover:text-gold"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              How It Works
-            </a>
-            <a
               href="#testimonials"
               className="text-black hover:text-gold"
               onClick={() => setIsMenuOpen(false)}
@@ -168,6 +161,13 @@ const NavbarWeddings = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
+            </a>
+            <a
+              href="/blog"
+              className="text-black hover:text-gold"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Blog
             </a>
 
             {/* Mobile Events Dropdown */}
