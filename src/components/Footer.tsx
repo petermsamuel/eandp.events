@@ -102,9 +102,6 @@ const Footer = () => {
    <p className="text-gray-300 mb-2">
               Phone: <a href="tel:17704108302" className="text-gold hover:underline">(770) 410-8302</a>
             </p>
-            <p className="text-gray-300">
-             Hoschton, GA
-            </p>
           </div>
         </div>
         
