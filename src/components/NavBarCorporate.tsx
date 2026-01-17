@@ -80,10 +80,10 @@ const NavBarCorporate: React.FC = () => {
         <div className="hidden md:flex space-x-8 items-center">
           <a href="/" className="text-black hover:text-gold transition-colors">Home</a>
           <a href="#what-we-do" className="text-black hover:text-gold">What We Do</a>
-          <a href="#how-it-works" className="text-black hover:text-gold">How It Works</a>
           <a href="#testimonials" className="text-black hover:text-gold">Testimonials</a>
           <a href="#partners" className="text-black hover:text-gold">Partners</a>
           <a href="#cta" className="text-black hover:text-gold">Contact</a>
+           <a href="/blog" className="text-black hover:text-gold transition-colors">Blog</a>
 
           {/* Events Dropdown */}
           <div className="relative group">
@@ -128,9 +128,6 @@ const NavBarCorporate: React.FC = () => {
             <a href="#what-we-do" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>
               What We Do
             </a>
-            <a href="#how-it-works" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>
-              How It Works
-            </a>
             <a href="#testimonials" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>
               Testimonials
             </a>
@@ -139,6 +136,9 @@ const NavBarCorporate: React.FC = () => {
             </a>
             <a href="#cta" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>
               Contact
+            </a>
+            <a href="/blog" className="text-black hover:text-gold" onClick={() => setIsMenuOpen(false)}>
+              Blog
             </a>
 
             {/* Mobile Book a Call — overlay trigger */}
