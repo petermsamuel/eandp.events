@@ -45,19 +45,19 @@ const AccordionCard = ({
 
       {/* Animated Details */}
       <div
-        className={clsx(
-          "overflow-hidden transition-all duration-300 ease-in-out w-full",
-          isOpen
-            ? "mt-4 opacity-100 max-h-[20rem] h-[20rem]"
-            : "mt-0 opacity-0 max-h-0 h-0"
-        )}
-      >
-        <div className="h-full flex items-start justify-center">
-          <p className="text-base text-gray-700 leading-relaxed">
-            {details}
-          </p>
-        </div>
-      </div>
+  className={clsx(
+    "overflow-hidden transition-all duration-300 ease-in-out w-full",
+    isOpen
+      ? "mt-4 opacity-100 max-h-[13rem]"
+      : "mt-0 opacity-0 max-h-0"
+  )}
+>
+  <div className="h-[13rem] flex items-start justify-center">
+    <p className="text-base text-gray-700 leading-relaxed">
+      {details}
+    </p>
+  </div>
+</div>
     </div>
   );
 };
