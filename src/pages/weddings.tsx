@@ -201,6 +201,46 @@ const Weddings = () => {
   </div>
 </section>
 
+        {/* Peerspace Recognition */}
+<section
+  id="featured"
+  className="py-12 px-6 md:px-12 lg:px-16 bg-transparent"
+>
+  <div className="max-w-3xl mx-auto text-center">
+
+    <a
+      href="https://www.peerspace.com/resources/indian-wedding-planners-in-atlanta/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Read the Peerspace article naming E&P Events one of Atlanta's Top 5 Indian Wedding Planners for 2026"
+      className="inline-block transition-transform duration-300 hover:scale-[1.02]"
+    >
+      <img
+        loading="lazy"
+        src="/lovable-uploads/peerspace_badge_black.png"
+        alt="Peerspace Top 5 Indian Wedding Planners in Atlanta 2026"
+        className="h-40 md:h-48 w-auto mx-auto"
+      />
+    </a>
+
+    <p className="mt-6 text-base text-gray-700">
+      Named one of Atlanta's{" "}
+      <strong>Top 5 Indian Wedding Planners for 2026</strong> by Peerspace.
+    </p>
+
+    <a
+      href="https://www.peerspace.com/resources/indian-wedding-planners-in-atlanta/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block mt-4 text-gold font-semibold underline hover:no-underline"
+    >
+      See why E&amp;P Events made the list →
+    </a>
+
+  </div>
+</section>
+        
+
         {/* Gallery Section */}
         <section id="gallery" className="py-20 px-6 md:px-12 lg:px-16 bg-transparent">
           <div className="text-center mb-12">
