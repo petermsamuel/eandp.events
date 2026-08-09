@@ -132,7 +132,7 @@ const Weddings = () => {
   }}
 >
   {/* Dark Overlay */}
-  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent z-0" />
+  <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/35 to-black/15 z-0" />
 
   <div className="relative z-10 text-center w-full px-4">
     {/* SEO-friendly Eyebrow */}
@@ -148,24 +148,24 @@ const Weddings = () => {
     {/* Hero Copy */}
     <div className="max-w-3xl mx-auto mb-10 text-white/90 space-y-8 text-shadow">
       <p className="text-lg md:text-xl">
-        The most challenging parts of planning an Indian, South Asian, or
-        fusion wedding rarely have anything to do with the timeline.
-      </p>
-
-      <p className="text-lg md:text-xl">
-        Even the perfect timeline can’t navigate the conversations that shape
-        your wedding: balancing family expectations, honoring meaningful
+        Even the perfect timeline can&apos;t navigate the conversations that
+        shape your wedding: balancing family expectations, honoring meaningful
         traditions, and creating a celebration that still feels like yours.
       </p>
 
-      <p className="text-lg md:text-xl font-semibold">
-        You deserve someone who can. From the sangeet to the send-off, your joy
-        stays front and center.
-      </p>
+      <div>
+        <p className="text-lg md:text-xl font-semibold mb-2">
+          You deserve someone who can.
+        </p>
+
+        <p className="text-lg md:text-xl">
+          From the sangeet to the send-off, your joy stays front and center.
+        </p>
+      </div>
     </div>
 
     {/* CTA */}
-    <div className="flex justify-center mb-8">
+    <div className="flex justify-center">
       <a
         href="#cta"
         className="btn btn-primary bg-navy text-white text-lg sm:text-base whitespace-nowrap rounded-full px-6 py-3 inline-flex items-center justify-center"
@@ -173,41 +173,11 @@ const Weddings = () => {
         Your Vision. Our Plan.
       </a>
     </div>
-     </div>
-
-    {/* Testimonial */}
-    <div className="opacity-0 animate-fade-in text-white/80 italic text-base max-w-xl mx-auto text-shadow">
-      “From all the wedding expenses, this was the most valuable. Even my
-      family, friends, and vendors—who were skeptical at first—were raving by
-      the end.”
-      <br />
-      — Sana, Bride
-    </div>
   </div>
 
   {/* Scroll Arrow */}
   <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
     <a href="#gallery" aria-label="Scroll down">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-6 w-6 text-white"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M19 14l-7 7m0 0l-7-7m7 7V3"
-        />
-      </svg>
-    </a>
-  </div>
-</section>
-
-  <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-    <a href="#what-we-do" aria-label="Scroll down">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-6 w-6 text-white"
