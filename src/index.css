@@ -1,97 +1,228 @@
-import React from "react";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:wght@300;400;500;600;700&display=swap');
 
-const HeroSection = () => {
-  return (
-    <section
-      id="hero"
-      className="relative min-h-screen flex flex-col justify-center pt-24 pb-12 px-4 text-white overflow-hidden"
-    >
-      {/* Hero Image */}
-      <img
-        src="/lovable-uploads/SSTK_asset_small_new.webp"
-        alt="Indian wedding and corporate event planner in Atlanta"
-        width={1920}
-        height={1080}
-        fetchPriority="high"
-        decoding="async"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
+/* --- Tailwind Directives --- */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/30 z-0" />
+/* --- Base Typography Overrides --- */
+@layer base {
+  html {
+    font-family: "Sorts Mill Goudy", serif;
+  }
 
-      {/* Headline */}
-      <div className="relative z-10 text-center w-full px-4">
-        <h1 className="text-3xl md:text-5xl font-bold mb-8 md:mb-10 text-white leading-snug max-w-[75rem] mx-auto text-shadow-heading">
-          Some Moments Are Too Important to Spend Managing Them.
-        </h1>
-      </div>
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Cinzel", serif;
+  }
 
-      {/* Mobile */}
-      <div className="container mx-auto max-w-3xl text-center z-10 block md:hidden mb-6">
-        <p className="text-white text-lg mb-5 text-shadow">
-          The event is yours. Carrying it alone shouldn't be.
-        </p>
+  strong, b {
+    font-weight: 700;
+  }
+}
 
-        <p className="text-white text-lg mb-8 text-shadow">
-          Whether you're navigating family traditions or stakeholder expectations,
-          we lead with calm, precision, and cultural fluency so you can simply be
-          present.
-        </p>
+/* --- Custom Component Styles --- */
+@layer components {
+  .btn-primary {
+    @apply bg-[#1a1a26] text-white border-2 border-[#1a1a26] px-6 py-3 font-semibold;
+  }
 
-        <div className="flex justify-center">
-          <a
-            href="#contact"
-            className="btn btn-primary bg-navy text-white text-base whitespace-nowrap rounded-full px-6 py-3 inline-flex items-center justify-center"
-          >
-            Plan It Right. Remember It Forever.
-          </a>
-        </div>
-      </div>
+  .btn-primary:hover {
+    @apply bg-[#2a2a3a] text-white;
+  }
 
-      {/* Desktop */}
-      <div className="container mx-auto max-w-4xl text-center z-10 hidden md:block animate-fade-in">
-        <p className="text-lg md:text-xl mb-6 text-white max-w-3xl mx-auto text-shadow">
-          The event is yours. Carrying it alone shouldn't be.
-        </p>
+  .glow-button-wrapper {
+    @apply relative inline-flex items-center justify-center p-1 rounded-full text-center transition-colors bg-transparent;
+  }
 
-        <p className="text-lg md:text-xl mb-10 text-white max-w-3xl mx-auto text-shadow">
-          Whether you're navigating family traditions or stakeholder expectations,
-          we lead with calm, precision, and cultural fluency so you can simply be
-          present.
-        </p>
+  .glow-ring {
+    position: absolute;
+    inset: 0;
+    border-radius: 9999px;
+    background: conic-gradient(
+      from 0deg,
+      #c9a75d 0%,
+      transparent 25%,
+      #c9a75d 50%,
+      transparent 75%,
+      #c9a75d 100%
+    );
+    animation: borderOrbit 2.5s linear infinite;
+    filter: blur(4px);
+    z-index: 0;
+    pointer-events: none;
+    max-width: 100%;
+    overflow: hidden;
+  }
 
-        <div className="flex justify-center">
-          <a
-            href="#contact"
-            className="btn btn-primary bg-navy text-white text-lg sm:text-base whitespace-nowrap rounded-full px-6 py-3 inline-flex items-center justify-center text-center leading-snug"
-          >
-            Plan It Right. Remember It Forever.
-          </a>
-        </div>
-      </div>
+  .glow-button-inner {
+    @apply relative z-10 bg-[#1c1f2b] text-white px-6 py-3 font-semibold rounded-full text-center inline-block no-underline transition-colors;
+  }
 
-      {/* Down Arrow */}
-      <div className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <a href="#what-we-do" aria-label="Scroll down">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 text-white"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M19 14l-7 7m0 0l-7-7m7 7V3"
-            />
-          </svg>
-        </a>
-      </div>
-    </section>
-  );
-};
+  .glow-button-inner:hover {
+    @apply bg-[#2a2a2a];
+  }
 
-export default HeroSection;
+  .section-title {
+    @apply text-4xl font-extrabold text-foreground leading-snug tracking-tight pb-2 relative block text-center;
+  }
+
+  .section-title::after {
+    content: "";
+    display: block;
+    width: 6rem;
+    height: 0.25rem;
+    background-color: #c9a75d;
+    margin: 0.75rem auto 1.5rem auto;
+    border-radius: 9999px;
+  }
+}
+
+/* --- Utilities Layer --- */
+@layer utilities {
+  .bg-glow {
+    background: radial-gradient(
+      circle at center,
+      rgba(255, 0, 0, 0.6) 0%,
+      rgba(255, 0, 0, 0.3) 40%,
+      transparent 70%
+    );
+    animation: pulseGlow 2.5s ease-in-out infinite;
+  }
+
+  .lion-watermark {
+    background-image: url('/lovable-uploads/lion-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: clamp(200px, 60%, 800px);
+    opacity: 0.15;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+
+  .contain-layout {
+    contain: layout paint;
+  }
+
+  /* --- Text Shadow Utilities --- */
+  .text-shadow {
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+  }
+
+  .text-shadow-heading {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+  }
+
+  @media (max-width: 768px) {
+    .lion-watermark {
+      display: none !important;
+      width: 0 !important;
+      height: 0 !important;
+      overflow: hidden !important;
+      background: none !important;
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 120s linear infinite;
+  }
+
+  .animate-marquee-reverse {
+    animation: marquee 120s linear infinite reverse;
+  }
+
+  .marquee-wrapper {
+    transform: translateZ(0);
+    will-change: transform;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+/* --- Global Keyframes --- */
+@keyframes borderOrbit {
+  0% {
+    background: conic-gradient(
+      from 0deg,
+      #c9a75d 0%,
+      transparent 25%,
+      #c9a75d 50%,
+      transparent 75%,
+      #c9a75d 100%
+    );
+  }
+
+  100% {
+    background: conic-gradient(
+      from 360deg,
+      #c9a75d 0%,
+      transparent 25%,
+      #c9a75d 50%,
+      transparent 75%,
+      #c9a75d 100%
+    );
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes spinGlow {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1.4s ease-out 0.5s forwards;
+}
+
+/* --- Mobile Hero Image Position Fix --- */
+@media (max-width: 768px) {
+  #hero img {
+    object-position: 40% center;
+  }
+}
