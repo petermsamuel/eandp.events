@@ -5,14 +5,14 @@ const WhatWeDoSection = () => {
   return (
     <section
       id="what-we-do"
-      className="relative z-10 section-container bg-transparent py-20"
+      className="relative z-10 section-container bg-charcoal text-white py-20"
     >
       <div className="max-w-4xl mx-auto text-center px-4">
-        <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 section-title">
+        <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white section-title">
           What Are You Planning?
         </h2>
 
-        <p className="text-lg mt-6 text-gray-700 max-w-3xl mx-auto">
+        <p className="text-lg mt-6 text-white/90 max-w-3xl mx-auto">
           Every event is different. The way we lead isn't. Choose the path that's
           right for you.
         </p>
@@ -24,7 +24,7 @@ const WhatWeDoSection = () => {
         {/* Weddings */}
         <a
           href="/weddings"
-          className="group block bg-white/80 p-10 rounded-lg shadow-md border border-transparent hover:border-gold hover:bg-[#fcfaf5] hover:shadow-lg transition-all duration-300"
+          className="group block bg-white p-10 rounded-lg shadow-md border border-transparent hover:border-gold hover:bg-[#fcfaf5] hover:shadow-lg transition-all duration-300"
         >
           <div className="flex items-start gap-4">
             <div className="h-10 w-10 bg-[#fdf6e3] rounded-full flex items-center justify-center transition-colors duration-300">
@@ -55,7 +55,7 @@ const WhatWeDoSection = () => {
         {/* Corporate */}
         <a
           href="/corporate"
-          className="group block bg-white/80 p-10 rounded-lg shadow-md border border-transparent hover:border-gold hover:bg-[#fcfaf5] hover:shadow-lg transition-all duration-300"
+          className="group block bg-white p-10 rounded-lg shadow-md border border-transparent hover:border-gold hover:bg-[#fcfaf5] hover:shadow-lg transition-all duration-300"
         >
           <div className="flex items-start gap-4">
             <div className="h-10 w-10 bg-[#e6e6ea] rounded-full flex items-center justify-center transition-colors duration-300">
