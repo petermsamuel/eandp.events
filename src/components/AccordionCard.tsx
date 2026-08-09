@@ -16,13 +16,13 @@ const AccordionCard = ({
   isOpen: boolean;
   onToggle: () => void;
 }) => {
-
-
   return (
     <div
       className={clsx(
-        "flex flex-col items-center text-center p-6 bg-white text-[#2a2a3a] shadow-sm rounded-lg transition-all cursor-pointer hover:shadow-md hover:scale-[1.02]",
-        isOpen && "border-2 border-gold"
+        "flex flex-col items-center text-center p-6 bg-white text-[#2a2a3a] rounded-lg shadow-sm cursor-pointer hover:shadow-md transition-all duration-300 ease-in-out",
+        isOpen
+          ? "border-2 border-gold min-h-[430px]"
+          : "border border-transparent min-h-[260px]"
       )}
       onClick={onToggle}
     >
@@ -34,12 +34,13 @@ const AccordionCard = ({
       >
         <Icon className="h-7 w-7" />
       </div>
+
       <h3 className="text-xl font-semibold mb-1">{title}</h3>
+
       <p className="text-lg text-clay">{short}</p>
 
-      {/* Only show if isOpen is true */}
       {isOpen && (
-        <div className="mt-4 text-sm text-gray-700 leading-relaxed">
+        <div className="mt-4 text-base text-gray-700 leading-relaxed">
           {details}
         </div>
       )}
