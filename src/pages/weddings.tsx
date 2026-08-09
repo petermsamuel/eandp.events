@@ -63,7 +63,7 @@ const Weddings = () => {
   <title>Indian & South Asian Wedding Planner in Atlanta | E&P Events</title>
   <meta
     name="description"
-    content="Culturally fluent planning for Indian & South Asian weddings in Atlanta. We deliver high-touch, detail-driven celebrations that honor tradition and style."
+    content="Indian & South Asian wedding planner in Atlanta specializing in Hindu, Sikh, Pakistani, Bangladeshi, and fusion weddings. We bring calm to complex celebrations through cultural fluency, thoughtful planning, and confident leadership."
   />
 
   {/* Canonical */}
@@ -81,13 +81,13 @@ const Weddings = () => {
   <meta property="og:url" content="https://eandp.events/weddings" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Indian & South Asian Wedding Planner in Atlanta | E&P Events" />
-  <meta property="og:description" content="Culturally fluent planning for Indian & South Asian weddings in Atlanta. We deliver high-touch, detail-driven celebrations that honor tradition and style." />
+  <meta property="og:description" content="Indian & South Asian wedding planner in Atlanta specializing in Hindu, Sikh, Pakistani, Bangladeshi, and fusion weddings. We bring calm to complex celebrations through cultural fluency, thoughtful planning, and confident leadership." />
   <meta property="og:image" content="https://eandp.events/og/weddings.jpg" />
 
   {/* Twitter Card */}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Indian & South Asian Wedding Planner in Atlanta | E&P Events" />
-  <meta name="twitter:description" content="Culturally fluent planning for Indian & South Asian weddings in Atlanta. We deliver high-touch, detail-driven celebrations that honor tradition and style." />
+  <meta name="twitter:title" content="Indian & South Asian WeddingIndian & South Asian wedding planner in Atlanta specializing in Hindu, Sikh, Pakistani, Bangladeshi, and fusion weddings. We bring calm to complex celebrations through cultural fluency, thoughtful planning, and confident leadership. Planner in Atlanta | E&P Events" />
+  <meta name="twitter:description" content="" />
   <meta name="twitter:image" content="https://eandp.events/og/weddings.jpg" />
 </Helmet>
 
@@ -100,7 +100,7 @@ const Weddings = () => {
         serviceUrl="https://eandp.events/weddings"
         telephone="+1-770-410-8302"
         serviceType="Indian / South Asian Wedding Planning"
-        description="Luxury Indian, South Asian, and fusion wedding planning in Atlanta with culturally fluent coordination and full-service execution."
+        description="Indian, South Asian, and fusion wedding planning in Atlanta. We help couples navigate traditions, family expectations, and complex celebrations through cultural fluency, calm leadership, and thoughtful execution."
         areaServedName="Atlanta, GA"
       />
 
@@ -122,73 +122,90 @@ const Weddings = () => {
       <div className="min-h-screen bg-transparent flex flex-col">
         <NavBarWeddings />
 
-        {/* Hero Section */}
-        <section
-          id="hero"
-          className="relative min-h-screen flex flex-col justify-center pt-24 pb-12 px-6 md:px-12 lg:px-16 bg-cover bg-center text-white"
-          style={{
-            backgroundImage:
-              "url('/lovable-uploads/89a4d798-f07a-42c8-bba9-15123f9d6ecb.webp')",
-          }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent z-0" />
+{/* Hero Section */}
+<section
+  id="hero"
+  className="relative min-h-screen flex flex-col justify-center pt-24 pb-12 px-6 md:px-12 lg:px-16 bg-cover bg-center text-white"
+  style={{
+    backgroundImage:
+      "url('/lovable-uploads/89a4d798-f07a-42c8-bba9-15123f9d6ecb.webp')",
+  }}
+>
+  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent z-0" />
 
-          <div className="relative z-10 text-center w-full px-4">
-            {/* SEO-friendly eyebrow H1 */}
-            <h1 className="text-sm md:text-base tracking-widest uppercase text-white/80 mb-3">
-              Indian &amp; South Asian Wedding Planner in Atlanta
-            </h1>
+  <div className="relative z-10 text-center w-full px-4">
+    {/* SEO-friendly eyebrow H1 */}
+    <h1 className="text-sm md:text-base tracking-widest uppercase text-white/80 mb-3">
+      Indian &amp; South Asian Wedding Planner in Atlanta
+    </h1>
 
-            {/* Your existing hero headline becomes H2 */}
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-snug max-w-[75rem] mx-auto">
-              You Deserve a Wedding That Feels as Beautiful as It Looks.
-            </h2>
+    {/* Hero headline */}
+    <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-snug max-w-[75rem] mx-auto">
+      You Deserve a Wedding That Feels as Beautiful as It Looks.
+    </h2>
 
-            <p className="text-lg md:text-xl max-w-3xl mb-10 text-white/90 mx-auto">
-              As your <strong>Atlanta South Asian wedding planner</strong>, we do more than coordinate — we lead with clarity, protect your culture, and bring fusion wedding planning expertise grounded in lived experience.
-              From the sangeet to the send-off, your joy stays front and center.
-            </p>
+    {/* Hero copy */}
+    <div className="max-w-3xl mx-auto mb-10 text-white/90 space-y-6">
+      <p className="text-lg md:text-xl">
+        The most challenging parts of planning an Indian, South Asian, or fusion
+        wedding rarely have anything to do with the timeline.
+      </p>
 
-            <div className="flex justify-center mb-6">
-              <a
-                href="#cta"
-                className="btn btn-primary bg-navy text-white text-lg sm:text-base whitespace-nowrap rounded-full px-6 py-3 inline-flex items-center justify-center"
-              >
-                Your Vision. Our Plan.
-              </a>
-            </div>
+      <p className="text-lg md:text-xl">
+        Even the perfect timeline can't navigate the conversations that shape
+        your wedding long before the celebration begins: balancing family
+        expectations, honoring meaningful traditions, and creating a wedding
+        that still feels like yours.
+      </p>
 
-            <div className="opacity-0 animate-fade-in text-white/80 italic text-base max-w-xl mx-auto">
-              “From all the wedding expenses, this was the most valuable. Even my family, friends, and vendors—who were skeptical at first—were raving by the end.”
-              <br />— Sana, Bride
-            </div>
-          </div>
+      <p className="text-lg md:text-xl">
+        <strong>You deserve someone who can.</strong> From the sangeet to the
+        send-off, your joy stays front and center.
+      </p>
+    </div>
 
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-            <a href="#what-we-do" aria-label="Scroll down">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
-                />
-              </svg>
-            </a>
-          </div>
-        </section>
+    <div className="flex justify-center mb-6">
+      <a
+        href="#cta"
+        className="btn btn-primary bg-navy text-white text-lg sm:text-base whitespace-nowrap rounded-full px-6 py-3 inline-flex items-center justify-center"
+      >
+        Your Vision. Our Plan.
+      </a>
+    </div>
+
+    <div className="opacity-0 animate-fade-in text-white/80 italic text-base max-w-xl mx-auto">
+      “From all the wedding expenses, this was the most valuable. Even my
+      family, friends, and vendors—who were skeptical at first—were raving by
+      the end.”
+      <br />— Sana, Bride
+    </div>
+  </div>
+
+  <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+    <a href="#what-we-do" aria-label="Scroll down">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-6 w-6 text-white"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M19 14l-7 7m0 0l-7-7m7 7V3"
+        />
+      </svg>
+    </a>
+  </div>
+</section>
 
         {/* Gallery Section */}
         <section id="gallery" className="py-20 px-6 md:px-12 lg:px-16 bg-transparent">
           <div className="text-center mb-12">
-            <h2 className="section-title">Real weddings. Real emotion.</h2>
-            <p className="text-lg">Cultural beauty meets seamless coordination.</p>
+            <h2 className="section-title">This is what it feels like.</h2>
+            <p className="text-lg">The conversations happen before the celebration. These are the moments they make possible.</p>
           </div>
 
           <div className="space-y-10 overflow-hidden">
@@ -246,101 +263,149 @@ const Weddings = () => {
           </div>
         </section>
 
-        {/* What We Do Section */}
-        <section id="what-we-do" className="py-20 px-6 md:px-12 lg:px-16 bg-[#2a2a2a] text-white">
-          <div className="text-center mb-16">
-            <h2 className="section-title text-white">What You Need, What We Do</h2>
-            <p className="text-lg max-w-3xl mx-auto">
-              As an experienced <strong>Indian wedding planner in Atlanta</strong>, we specialize in South Asian and fusion weddings layered with culture, complexity, and tradition.
-              From baraats and sangeets to elegant receptions, our team brings lived experience, calm execution, and cultural fluency to every celebration.
-            </p>
-          </div>
+        {/* Beyond the Timeline Section */}
+<section id="what-we-do" className="py-20 px-6 md:px-12 lg:px-16 bg-[#2a2a2a] text-white">
+  <div className="text-center mb-16">
+    <h2 className="section-title text-white">Beyond the Timeline.</h2>
+  </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-            <AccordionCard
-              icon={Check}
-              title="Multiday timelines?"
-              short="Covered."
-              details="From sangeet to reception, we manage the flow of your South Asian wedding with precision. Whether it's a Hindu, Sikh, or fusion celebration, we coordinate each event with cultural fluency and seamless communication. We ensure everyone knows what’s happening, when, and why."
-              isOpen={openCards.includes(0)}
-              onToggle={() =>
-                setOpenCards((prev) =>
-                  prev.includes(0) ? prev.filter((i) => i !== 0) : [...prev, 0]
-                )}
-            />
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+    <AccordionCard
+      icon={Check}
+      title="Plans Change?"
+      short="Anticipated."
+      details="From the sangeet to the send-off, plans evolve. Whether your wedding includes Hindu ceremonies, Sikh traditions, or a fusion of cultures, we anticipate what's ahead and coordinate every vendor, every transition, and every detail so you can be fully present for every celebration."
+      isOpen={openCards.includes(0)}
+      onToggle={() =>
+        setOpenCards((prev) =>
+          prev.includes(0) ? prev.filter((i) => i !== 0) : [...prev, 0]
+        )
+      }
+    />
 
-            <AccordionCard
-              icon={Globe}
-              title="Cultural nuances?"
-              short="Fluent."
-              details="As experienced South Asian wedding planners — including Indian, Pakistani, Bangladeshi, and fusion traditions — we honor the rituals that matter most. Whether it’s a baraat, nikah, sangeet, or other sacred event, we help you blend tradition with modern elegance."
-              isOpen={openCards.includes(1)}
-              onToggle={() =>
-                setOpenCards((prev) =>
-                  prev.includes(1) ? prev.filter((i) => i !== 1) : [...prev, 1]
-                )}
-            />
+    <AccordionCard
+      icon={Globe}
+      title="Tradition or Expectation?"
+      short="Fluent."
+      details="Not every expectation is rooted in tradition, and not every tradition looks the same. As experienced South Asian wedding planners, we bring cultural fluency across Indian, Pakistani, Bangladeshi, and fusion celebrations. Whether it's a baraat, nikah, sangeet, or another meaningful ceremony, we understand the significance behind each moment so nothing meaningful gets lost along the way."
+      isOpen={openCards.includes(1)}
+      onToggle={() =>
+        setOpenCards((prev) =>
+          prev.includes(1) ? prev.filter((i) => i !== 1) : [...prev, 1]
+        )
+      }
+    />
 
-            <AccordionCard
-              icon={Users}
-              title="Family dynamics?"
-              short="Navigated."
-              details="South Asian weddings often involve large families and layered expectations. Our Atlanta-based wedding planning team brings empathy, diplomacy, and structure to every interaction. We balance emotional needs with logistical demands, so your joy - and your guest experience - stays protected."
-              isOpen={openCards.includes(2)}
-              onToggle={() =>
-                setOpenCards((prev) =>
-                  prev.includes(2) ? prev.filter((i) => i !== 2) : [...prev, 2]
-                )}
-            />
+    <AccordionCard
+      icon={Users}
+      title="Your Wedding. Their Expectations?"
+      short="Navigated."
+      details="South Asian weddings often bring together large families, different perspectives, and deeply held expectations. Our Atlanta-based wedding planning team brings empathy, diplomacy, and calm leadership to those conversations, helping families move forward together while protecting your joy—and your guests' experience."
+      isOpen={openCards.includes(2)}
+      onToggle={() =>
+        setOpenCards((prev) =>
+          prev.includes(2) ? prev.filter((i) => i !== 2) : [...prev, 2]
+        )
+      }
+    />
 
-            <AccordionCard
-              icon={Plane}
-              title="Not in Atlanta?"
-              short="Anywhere."
-              details="While we're proudly based in Atlanta, we plan and manage South Asian and multicultural weddings where you need us. Whether you're organizing a destination wedding or a multi-city celebration, we’re ready to lead wherever your love story takes us."
-              isOpen={openCards.includes(3)}
-              onToggle={() =>
-                setOpenCards((prev) =>
-                  prev.includes(3) ? prev.filter((i) => i !== 3) : [...prev, 3]
-                )}
-            />
-          </div>
-        </section>
-
-        {/* How It Works Section */}
-        <section id="how-it-works" className="bg-transparent py-20 px-6 md:px-12 lg:px-16 bg-[#2a2a2a]">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="section-title">How It Works</h2>
-            <div className="space-y-16">
-              {["Plan with Precision", "Align the Details", "Execute with Calm Authority"].map((title, index) => (
-                <div key={title} className="flex flex-col md:flex-row items-start gap-6">
-                  <div className="h-14 w-14 bg-black rounded-full flex items-center justify-center flex-shrink-0 md:mt-2">
-                    <span className="text-white text-xl font-bold">{index + 1}</span>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-semibold mb-3">{title}</h3>
-                    <p className="text-lg">
-                      {index === 0 && "We start with your vision, then build a plan that respects tradition and ensures calm, not stress."}
-                      {index === 1 && "From vendors to venues, every moving part gets locked into place."}
-                      {index === 2 && "You’re not managing your wedding — you’re experiencing it. With a seasoned wedding planner guiding every moment, you stay calm, connected, and fully present."}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+    <AccordionCard
+      icon={Plane}
+      title="Not in Atlanta?"
+      short="Anywhere."
+      details="While we're proudly based in Atlanta, our approach isn't limited by geography. Whether you're planning a destination wedding, a multi-city celebration, or hosting guests traveling from around the world, we provide the same calm leadership, cultural fluency, and thoughtful execution wherever your celebration takes place."
+      isOpen={openCards.includes(3)}
+      onToggle={() =>
+        setOpenCards((prev) =>
+          prev.includes(3) ? prev.filter((i) => i !== 3) : [...prev, 3]
+        )
+      }
+    />
+  </div>
+</section>
 
         {/* Testimonial Section */}
         <section id="testimonials">
           <TestimonialSection
             testimonials={weddingTestimonials}
-            title="What They're Saying"
+            title="The Difference, In Their Words."
             backgroundColor="bg-[#2a2a2a]"
             titleColor="text-white"
             minHeight="h-[800px] md:h-[580px]" // ✅ fixed height instead of min-height
           />
         </section>
+
+{/* Working Together Section */}
+<section
+  id="how-it-works"
+  className="bg-transparent py-20 px-6 md:px-12 lg:px-16 bg-[#2a2a2a]"
+>
+  <div className="max-w-5xl mx-auto">
+    <h2 className="section-title">Working Together</h2>
+
+    <div className="relative mt-16">
+      {/* Continuous vertical gold line */}
+      <div className="hidden md:block absolute left-2 top-0 bottom-0 w-[2px] bg-gold" />
+
+      <div className="space-y-16">
+        <div className="flex items-start gap-8">
+          <div className="hidden md:block w-5 flex-shrink-0" />
+
+          <div>
+            <h3 className="text-2xl font-semibold mb-4">
+              You'll Always Know What's Next.
+            </h3>
+
+            <p className="text-lg">
+              Planning a South Asian wedding comes with countless decisions,
+              traditions, and moving pieces. You'll never wonder what comes next
+              or feel like you're carrying the weight of planning by yourself.
+              You'll always know what's happening, what needs your attention,
+              and what's already been handled.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex items-start gap-8">
+          <div className="hidden md:block w-5 flex-shrink-0" />
+
+          <div>
+            <h3 className="text-2xl font-semibold mb-4">
+              You'll Never Carry the Planning Alone.
+            </h3>
+
+            <p className="text-lg">
+              From vendor coordination and timeline management to family
+              conversations and cultural traditions, we're with you every step
+              of the way. We anticipate challenges before they become yours,
+              helping you navigate every decision with calm leadership and
+              steady support.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex items-start gap-8">
+          <div className="hidden md:block w-5 flex-shrink-0" />
+
+          <div>
+            <h3 className="text-2xl font-semibold mb-4">
+              You'll Be Fully Present.
+            </h3>
+
+            <p className="text-lg">
+              When your wedding weekend arrives, your focus shouldn't be on
+              logistics. It should be on celebrating with the people you love.
+              While we quietly lead every detail behind the scenes, you get to
+              experience every ceremony, every tradition, and every
+              unforgettable moment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        
 
         {/* CTA Section */}
         <section id="cta" className="relative bg-[#2c2c2c] py-20 px-6 md:px-12 lg:px-16 text-white overflow-hidden">
@@ -348,9 +413,9 @@ const Weddings = () => {
             <div className="w-[300px] h-[300px] bg-gold/10 rounded-full blur-[100px]" />
           </div>
           <div className="relative z-10 max-w-4xl mx-auto text-center">
-            <h2 className="section-title text-white">Feel Seen. Feel Ready. Feel Present.</h2>
+            <h2 className="section-title text-white">Let’s Create It Together.</h2>
             <p className="text-lg mb-10 max-w-2xl mx-auto text-white/90">
-              Let's create a wedding experience you'll remember for how it felt — not just how it looked.
+            We’ll take care of the planning, so you can be fully present.
             </p>
 
             <div className="glow-button-wrapper mx-auto">
@@ -399,7 +464,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">E&P Events</h3>
             <p className="text-gray-300 mb-4">
-              Experts in South Asian wedding planning, fusion weddings, corporate events, and more.<br />
+              Thoughtful planning for Indian, South Asian, and fusion weddings + corporate events.<br />
               <br />
               Based in Atlanta, trusted across Georgia and beyond.
             </p>
