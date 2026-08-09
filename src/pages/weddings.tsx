@@ -241,75 +241,89 @@ const Weddings = () => {
 </section>
         
 
-        {/* Gallery Section */}
-        <section id="gallery" className="py-20 px-6 md:px-12 lg:px-16 bg-transparent">
-          <div className="text-center mb-12">
-            <h2 className="section-title">This is what it feels like.</h2>
-            <p className="text-lg">The conversations happen before the celebration. These are the moments they make possible.</p>
-          </div>
+      {/* Gallery Section */}
+<section
+  id="gallery"
+  className="py-20 px-6 md:px-12 lg:px-16 bg-[#2a2a2a] text-white"
+>
+  <div className="text-center mb-12">
+    <h2 className="section-title text-white">
+      This Is What It Feels Like.
+    </h2>
 
-          <div className="space-y-10 overflow-hidden">
-            {/* TOP ROW */}
-            <div className="w-full overflow-hidden">
-              <div className="marquee-wrapper">
-                <div className="flex animate-marquee gap-6 w-max">
-                  {[...topRowImages, ...topRowImages].map((image, index) => (
-                    <div
-                      key={`top-${index}`}
-                      className="relative flex-shrink-0 rounded-md overflow-hidden aspect-[3/2] h-72"
-                    >
-                      <img
-                        src={image.src}
-                        srcSet={`
-                          ${image.src.replace('.webp', '-small.webp')} 600w,
-                          ${image.src.replace('.webp', '-medium.webp')} 900w,
-                          ${image.src} 1200w
-                        `}
-                        sizes="(max-width: 640px) 600px, (max-width: 1024px) 900px, 1200px"
-                        alt={image.alt}
-                        loading="lazy"
-                        width="432"
-                        height="288"
-                        className="w-full h-full object-cover rounded-md"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* BOTTOM ROW */}
-            <div className="w-full overflow-hidden">
-              <div className="marquee-wrapper">
-                <div className="flex animate-marquee-reverse gap-6 w-max">
-                  {[...bottomRowImages, ...bottomRowImages].map((image, index) => (
-                    <div
-                      key={`bottom-${index}`}
-                      className="relative flex-shrink-0 rounded-md overflow-hidden aspect-[3/2] h-72"
-                    >
-                      <img
-                        src={image.src}
-                        alt={image.alt}
-                        loading="lazy"
-                        width="432"
-                        height="288"
-                        className="w-full h-full object-cover rounded-md"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Beyond the Timeline Section */}
-<section id="what-we-do" className="py-20 px-6 md:px-12 lg:px-16 bg-[#2a2a2a] text-white">
-  <div className="text-center mb-16">
-    <h2 className="section-title text-white">Beyond the Timeline.</h2>
+    <p className="text-lg text-white/90">
+      The conversations happen before the celebration. These are the moments they make possible.
+    </p>
   </div>
 
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 items-start">
+  <div className="space-y-10 overflow-hidden">
+    {/* TOP ROW */}
+    <div className="w-full overflow-hidden">
+      <div className="marquee-wrapper">
+        <div className="flex animate-marquee gap-6 w-max">
+          {[...topRowImages, ...topRowImages].map((image, index) => (
+            <div
+              key={`top-${index}`}
+              className="relative flex-shrink-0 rounded-md overflow-hidden aspect-[3/2] h-72"
+            >
+              <img
+                src={image.src}
+                srcSet={`
+                  ${image.src.replace(".webp", "-small.webp")} 600w,
+                  ${image.src.replace(".webp", "-medium.webp")} 900w,
+                  ${image.src} 1200w
+                `}
+                sizes="(max-width: 640px) 600px, (max-width: 1024px) 900px, 1200px"
+                alt={image.alt}
+                loading="lazy"
+                width="432"
+                height="288"
+                className="w-full h-full object-cover rounded-md"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    {/* BOTTOM ROW */}
+    <div className="w-full overflow-hidden">
+      <div className="marquee-wrapper">
+        <div className="flex animate-marquee-reverse gap-6 w-max">
+          {[...bottomRowImages, ...bottomRowImages].map((image, index) => (
+            <div
+              key={`bottom-${index}`}
+              className="relative flex-shrink-0 rounded-md overflow-hidden aspect-[3/2] h-72"
+            >
+              <img
+                src={image.src}
+                alt={image.alt}
+                loading="lazy"
+                width="432"
+                height="288"
+                className="w-full h-full object-cover rounded-md"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        
+
+        {/* Beyond the Timeline Section */}
+<section
+  id="what-we-do"
+  className="py-20 px-6 md:px-12 lg:px-16 bg-transparent"
+>
+  <div className="text-center mb-16">
+    <h2 className="section-title">
+      Beyond the Timeline.
+    </h2>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 items-start">
     <AccordionCard
       icon={Check}
       title="Plans Change?"
