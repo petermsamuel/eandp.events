@@ -225,7 +225,7 @@ const Weddings = () => {
 
     <p className="mt-6 text-base text-gray-700">
       Named one of Atlanta's{" "}
-      <strong>Top 5 Indian Wedding Planners for 2026</strong> by Peerspace.
+      <strong>Top 5 Indian Wedding Planners of 2026</strong> by Peerspace.
     </p>
 
     <a
