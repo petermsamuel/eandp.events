@@ -13,7 +13,7 @@ const FeaturedSection = () => {
 
         <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-10">
           Named one of Atlanta's{" "}
-          <strong>Top 5 Indian Wedding Planners for 2026</strong> by
+          <strong>Top 5 Indian Wedding Planners of 2026</strong> by
           {" "}Peerspace.
         </p>
 
