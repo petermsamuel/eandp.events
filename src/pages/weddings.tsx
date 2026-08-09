@@ -269,7 +269,7 @@ const Weddings = () => {
     <h2 className="section-title text-white">Beyond the Timeline.</h2>
   </div>
 
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 items-start">
     <AccordionCard
       icon={Check}
       title="Plans Change?"
