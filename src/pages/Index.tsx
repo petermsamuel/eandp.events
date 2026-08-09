@@ -57,31 +57,33 @@ const Index = () => {
         <Navbar />
         <main className="flex-1 relative z-10">
           <HeroSection />
-          <WhatWeDoSection />
+             <FeaturedSection />
+
+          <Suspense fallback={<div>Loading featured logos...</div>}>
+              <WhatWeDoSection />
+          </Suspense>
+
+              <Suspense fallback={<div>Loading call-to-action...</div>}>
+            <AdditionalCtaSection />
+          </Suspense>
 
           <Suspense fallback={<div>Loading gallery...</div>}>
             <GallerySection />
           </Suspense>
 
-          <Suspense fallback={<div>Loading call-to-action...</div>}>
-            <AdditionalCtaSection />
+                <Suspense fallback={<div>Loading Meet Peter...</div>}>
+            <MeetPeterSection />
           </Suspense>
 
           <Suspense fallback={<div>Loading testimonials...</div>}>
             <TestimonialSection />
           </Suspense>
 
-          <Suspense fallback={<div>Loading Meet Peter...</div>}>
-            <MeetPeterSection />
-          </Suspense>
-
           <Suspense fallback={<div>Loading contact...</div>}>
             <ContactSection />
           </Suspense>
 
-          <Suspense fallback={<div>Loading featured logos...</div>}>
-            <FeaturedSection />
-          </Suspense>
+          
         </main>
 
         <Footer />
