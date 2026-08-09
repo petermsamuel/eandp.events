@@ -147,15 +147,7 @@ const Weddings = () => {
     {/* Hero copy */}
     <div className="max-w-3xl mx-auto mb-10 text-white/90 space-y-6">
       <p className="text-lg md:text-xl">
-        The most challenging parts of planning an Indian, South Asian, or fusion
-        wedding rarely have anything to do with the timeline.
-      </p>
-
-      <p className="text-lg md:text-xl">
-        Even the perfect timeline can't navigate the conversations that shape
-        your wedding long before the celebration begins: balancing family
-        expectations, honoring meaningful traditions, and creating a wedding
-        that still feels like yours.
+     Even the perfect timeline can’t navigate the conversations that shape your wedding: balancing family expectations, honoring meaningful traditions, and creating a celebration that still feels like yours.
       </p>
 
       <p className="text-lg md:text-xl">
@@ -171,13 +163,6 @@ const Weddings = () => {
       >
         Your Vision. Our Plan.
       </a>
-    </div>
-
-    <div className="opacity-0 animate-fade-in text-white/80 italic text-base max-w-xl mx-auto">
-      “From all the wedding expenses, this was the most valuable. Even my
-      family, friends, and vendors—who were skeptical at first—were raving by
-      the end.”
-      <br />— Sana, Bride
     </div>
   </div>
 
