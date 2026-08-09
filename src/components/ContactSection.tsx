@@ -13,11 +13,11 @@ const ContactSection = () => {
 
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <h2 className="section-title text-center text-white">
-          Still Here? That Says Something.
+          Ready When You Are.
         </h2>
 
         <p className="text-lg mb-10 max-w-2xl mx-auto text-white/90">
-          If you're ready for clarity, let's talk.
+          Let’s talk about what matters most to you. We’ll take it from there.
           <br />
           Let’s make your next move clear and stress-free.
         </p>
