@@ -39,7 +39,7 @@ const FeaturedSection = () => {
             rel="noopener noreferrer"
             className="text-gold font-semibold underline hover:no-underline transition-colors duration-300"
           >
-            Read why E&amp;P Events made the list →
+            See why E&amp;P Events made the list →
           </a>
         </div>
       </div>
