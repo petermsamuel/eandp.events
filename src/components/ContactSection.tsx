@@ -18,8 +18,6 @@ const ContactSection = () => {
 
         <p className="text-lg mb-10 max-w-2xl mx-auto text-white/90">
           Let’s talk about what matters most to you. We’ll take it from there.
-          <br />
-          Let’s make your next move clear and stress-free.
         </p>
 
         {/* Glow CTA Button */}
