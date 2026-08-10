@@ -22,7 +22,7 @@ const Index = () => {
   <title>Indian Wedding & Corporate Event Planner in Atlanta | E&P Events</title>
   <meta
     name="description"
-    content="E&P Events is Atlanta’s premier planner for Indian, South Asian, and fusion weddings — plus luxury corporate events."
+    content="Indian, South Asian, fusion wedding + corporate event planning that lets you be fully present. Based in Atlanta. Trusted worldwide."
   />
 
   {/* Canonical */}
@@ -40,13 +40,13 @@ const Index = () => {
   <meta property="og:url" content="https://eandp.events" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Indian Wedding & Corporate Event Planner in Atlanta | E&P Events" />
-  <meta property="og:description" content="Atlanta’s premier planner for Indian, South Asian, and fusion weddings — and luxury corporate events." />
+  <meta property="og:description" content="Indian, South Asian, fusion wedding + corporate event planning that lets you be fully present. Based in Atlanta. Trusted worldwide." />
   <meta property="og:image" content="https://eandp.events/og/homepage.jpg" />
 
   {/* Twitter Card */}
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Indian Wedding & Corporate Event Planner in Atlanta | E&P Events" />
-  <meta name="twitter:description" content="Atlanta’s premier planner for Indian, South Asian, and fusion weddings — and luxury corporate events." />
+  <meta name="twitter:description" content="Indian, South Asian, fusion wedding + corporate event planning that lets you be fully present. Based in Atlanta. Trusted worldwide." />
   <meta name="twitter:image" content="https://eandp.events/og/homepage.jpg" />
 </Helmet>
 
