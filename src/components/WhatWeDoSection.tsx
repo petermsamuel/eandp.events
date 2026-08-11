@@ -1,5 +1,5 @@
 import React from "react";
-import { Presentation, Diamond } from "lucide-react";
+import { Presentation, Gem } from "lucide-react";
 
 const WhatWeDoSection = () => {
   return (
@@ -28,7 +28,7 @@ const WhatWeDoSection = () => {
         >
           <div className="flex items-start gap-4">
             <div className="h-10 w-10 bg-[#fdf6e3] rounded-full flex items-center justify-center transition-colors duration-300">
-              <Diamond className="h-6 w-6 text-gold" />
+              <Gem className="h-6 w-6 text-gold" />
             </div>
 
             <div>
@@ -92,7 +92,7 @@ const WhatWeDoSection = () => {
           href="/weddings"
           className="block bg-white p-6 rounded-lg shadow border border-gray-100 hover:border-gold hover:bg-[#fcfaf5] hover:shadow-lg transition-all duration-300"
         >
-          <Diamond className="h-6 w-6 text-gold mb-3" />
+          <Gem className="h-6 w-6 text-gold mb-3" />
 
           <h3 className="text-xl font-bold text-[#2a2a2a] mb-2">
             Let&apos;s Plan Your Wedding
