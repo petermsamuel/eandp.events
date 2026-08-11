@@ -28,7 +28,7 @@ const WhatWeDoSection = () => {
         >
           <div className="flex items-start gap-4">
             <div className="h-10 w-10 bg-[#fdf6e3] rounded-full flex items-center justify-center transition-colors duration-300">
-              <Sparkles className="h-6 w-6 text-gold" />
+              <Ring className="h-6 w-6 text-gold" />
             </div>
 
             <div>
