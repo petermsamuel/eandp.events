@@ -1,5 +1,5 @@
 import React from "react";
-import { Presentation, Sparkles } from "lucide-react";
+import { Presentation, Diamond } from "lucide-react";
 
 const WhatWeDoSection = () => {
   return (
