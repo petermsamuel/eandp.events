@@ -334,10 +334,9 @@ const Weddings = () => {
 
     <AccordionCard
       icon={Globe}
-      title="Tradition or Expectation?"
-      short="Fluent."
-      details="Not every expectation is rooted in tradition, and not every tradition looks the same. As experienced South Asian wedding planners, we bring cultural fluency across Indian, Pakistani, Bangladeshi, and fusion celebrations. Whether it's a baraat, nikah, sangeet, or another meaningful ceremony, we understand the significance behind each moment so nothing meaningful gets lost along the way."
-      isOpen={openCards.includes(1)}
+      title="Every Tradition?"
+      short="Honored."
+      details="Not every tradition looks the same. As experienced South Asian wedding planners, we bring cultural fluency across Indian, Pakistani, Bangladeshi, and fusion celebrations. Whether it's a baraat, nikah, sangeet, or another meaningful ceremony, we understand the significance behind each moment so nothing meaningful gets lost along the way."
       onToggle={() =>
         setOpenCards((prev) =>
           prev.includes(1) ? prev.filter((i) => i !== 1) : [...prev, 1]
