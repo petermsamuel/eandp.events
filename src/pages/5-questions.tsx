@@ -42,7 +42,7 @@ const LeadMagnetPage = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ name, email }),
+        body: JSON.stringify({ name, email, id }),
       });
 
       setSubmitted(true);
