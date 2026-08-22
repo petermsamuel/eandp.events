@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const UnsubscribePage = () => {
-  /* useEffect(() => {
+  useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const id = params.get("id");
 
@@ -17,7 +17,7 @@ const UnsubscribePage = () => {
     }).catch((error) => {
       console.error("Error sending unsubscribe request:", error);
     });
-  }, []); */
+  }, []);
 
   return (
     <section className="min-h-screen bg-white py-20 px-6 md:px-12 lg:px-16 text-[#2a2a2a]">
@@ -62,12 +62,16 @@ const UnsubscribePage = () => {
           </p>
 
           <div className="flex justify-center gap-6 flex-wrap">
-            <Link
-              to="https://eandp.events"
-              className="font-medium text-blue-600 hover:underline"
-            >
-              Home
-            </Link>
+            
+            <button
+  onClick={() => {
+    window.location.href = "/";
+  }}
+  className="font-medium text-blue-600 hover:underline"
+>
+  Home
+</button>
+
 
             <Link
               to="/about"
