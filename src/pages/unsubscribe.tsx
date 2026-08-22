@@ -1,7 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const UnsubscribePage = () => {
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+
+    if (!id) return;
+
+    fetch("https://hook.us1.make.com/upu8cqhl4bjd254yiyr127l8d9x965kf", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ id }),
+    }).catch((error) => {
+      console.error("Error sending unsubscribe request:", error);
+    });
+  }, []);
+
   return (
     <section className="min-h-screen bg-white py-20 px-6 md:px-12 lg:px-16 text-[#2a2a2a]">
       <div className="max-w-3xl mx-auto text-center">
@@ -15,7 +32,7 @@ const UnsubscribePage = () => {
 
         <div className="bg-[#f9f6f0] rounded-lg p-8 shadow-sm mb-10">
           <h2 className="text-2xl font-bold mb-4">
-            No hard feelings.
+           We're not the one.
           </h2>
 
           <p className="text-gray-700 mb-4">
