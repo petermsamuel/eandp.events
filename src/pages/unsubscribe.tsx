@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const UnsubscribePage = () => {
-  useEffect(() => {
+  /* useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const id = params.get("id");
 
@@ -17,7 +17,7 @@ const UnsubscribePage = () => {
     }).catch((error) => {
       console.error("Error sending unsubscribe request:", error);
     });
-  }, []);
+  }, []); */
 
   return (
     <section className="min-h-screen bg-white py-20 px-6 md:px-12 lg:px-16 text-[#2a2a2a]">
