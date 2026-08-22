@@ -18,52 +18,77 @@ const FeaturedSection = React.lazy(() => import("../components/FeaturedSection")
 const Index = () => {
   return (
     <div className="relative overflow-x-hidden">
-     <Helmet>
-  <title>Indian Wedding & Corporate Event Planner in Atlanta | E&P Events</title>
-  <meta
-    name="description"
-    content="Indian, South Asian, fusion wedding + corporate event planning that lets you be fully present. Based in Atlanta. Trusted worldwide."
-  />
+      <Helmet>
+        <title>
+          Indian Wedding & Corporate Event Planner in Atlanta | E&P Events
+        </title>
 
-  {/* Canonical */}
-  <link rel="canonical" href="https://eandp.events" />
+        <meta
+          name="description"
+          content="Indian, South Asian, fusion wedding + corporate event planning that lets you be fully present. Based in Atlanta. Trusted worldwide."
+        />
 
-  {/* Preload Hero */}
-  <link
-    rel="preload"
-    as="image"
-    href="/lovable-uploads/homepage-hero.webp"
-    type="image/webp"
-  />
+        {/* Canonical */}
+        <link rel="canonical" href="https://eandp.events" />
 
-  {/* Open Graph */}
-  <meta property="og:url" content="https://eandp.events" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Indian Wedding & Corporate Event Planner in Atlanta | E&P Events" />
-  <meta property="og:description" content="Indian, South Asian, fusion wedding + corporate event planning that lets you be fully present. Based in Atlanta. Trusted worldwide." />
-  <meta property="og:image" content="https://eandp.events/og/homepage.jpg" />
+        {/* Preload Hero */}
+        <link
+          rel="preload"
+          as="image"
+          href="/lovable-uploads/homepage-hero.webp"
+          type="image/webp"
+        />
 
-  {/* Twitter Card */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Indian Wedding & Corporate Event Planner in Atlanta | E&P Events" />
-  <meta name="twitter:description" content="Indian, South Asian, fusion wedding + corporate event planning that lets you be fully present. Based in Atlanta. Trusted worldwide." />
-  <meta name="twitter:image" content="https://eandp.events/og/homepage.jpg" />
-</Helmet>
+        {/* Open Graph */}
+        <meta property="og:url" content="https://eandp.events" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Indian Wedding & Corporate Event Planner in Atlanta | E&P Events"
+        />
+        <meta
+          property="og:description"
+          content="Indian, South Asian, fusion wedding + corporate event planning that lets you be fully present. Based in Atlanta. Trusted worldwide."
+        />
+        <meta
+          property="og:image"
+          content="https://eandp.events/og/homepage.jpg"
+        />
 
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Indian Wedding & Corporate Event Planner in Atlanta | E&P Events"
+        />
+        <meta
+          name="twitter:description"
+          content="Indian, South Asian, fusion wedding + corporate event planning that lets you be fully present. Based in Atlanta. Trusted worldwide."
+        />
+        <meta
+          name="twitter:image"
+          content="https://eandp.events/og/homepage.jpg"
+        />
+      </Helmet>
 
       <div className="lion-watermark" />
+
       <div className="min-h-screen flex flex-col">
         <SchemaMarkup />
         <Navbar />
+
         <main className="flex-1 relative z-10">
           <HeroSection />
-             <FeaturedSection />
 
           <Suspense fallback={<div>Loading featured logos...</div>}>
-              <WhatWeDoSection />
+            <FeaturedSection />
           </Suspense>
 
-              <Suspense fallback={<div>Loading call-to-action...</div>}>
+          <Suspense fallback={<div>Loading services...</div>}>
+            <WhatWeDoSection />
+          </Suspense>
+
+          <Suspense fallback={<div>Loading call-to-action...</div>}>
             <AdditionalCtaSection />
           </Suspense>
 
@@ -71,7 +96,7 @@ const Index = () => {
             <GallerySection />
           </Suspense>
 
-                <Suspense fallback={<div>Loading Meet Peter...</div>}>
+          <Suspense fallback={<div>Loading Meet Peter...</div>}>
             <MeetPeterSection />
           </Suspense>
 
@@ -82,8 +107,6 @@ const Index = () => {
           <Suspense fallback={<div>Loading contact...</div>}>
             <ContactSection />
           </Suspense>
-
-          
         </main>
 
         <Footer />
