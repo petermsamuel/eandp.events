@@ -7,6 +7,7 @@ import WeddingsPage from "./pages/weddings";
 import CorporatePage from "./pages/corporate";
 import AboutPage from "./pages/about";
 import PrivacyPolicyPage from "./pages/privacy-policy";
+import UnsubscribePage from "./pages/unsubscribe";
 import BlogIndex from './pages/blog-index';
 import BlogArticleLayout from './BlogArticleLayout';
 import FiveQuestionsPage from "./pages/5-questions";
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="/corporate" element={<CorporatePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/unsubscribe" element={<UnsubscribePage />} />
           <Route path="/blog" element={<BlogIndex />} />
           <Route path="/blog/:slug" element={<BlogArticleLayout />} />
           <Route path="/5-questions" element={<FiveQuestionsPage />} />
