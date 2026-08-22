@@ -63,7 +63,7 @@ const UnsubscribePage = () => {
 
           <div className="flex justify-center gap-6 flex-wrap">
             <Link
-              to="/"
+              to="https://eandp.events"
               className="font-medium text-blue-600 hover:underline"
             >
               Home
