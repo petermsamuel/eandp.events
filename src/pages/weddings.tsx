@@ -598,14 +598,20 @@ const Footer = () => {
   <p className="text-gray-300 mb-2">
               Phone: <a href="tel:17704108302" className="text-gold hover:underline">(770) 410-8302</a>
             </p>
-            <p className="text-gray-300">
-              Hoschton, GA
-            </p>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-6 text-center text-sm text-gray-400">
-          <p>&copy; {currentYear} E&P Events. All rights reserved.</p>
+         <div className="border-t border-gray-800 mt-12 pt-6 text-center text-sm text-gray-400">
+  <p className="flex flex-wrap justify-center items-center gap-2">
+    <span>&copy; {currentYear} E&amp;P Events. All rights reserved.</span>
+    <span className="text-gray-600">|</span>
+    <a
+      href="/privacy-policy"
+      className="text-gold hover:underline"
+    >
+      Privacy Policy
+    </a>
+  </p>
         </div>
       </div>
     </footer>
