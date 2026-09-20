@@ -20,7 +20,7 @@ const GallerySection = () => {
           Now, See for Yourself.
         </h2>
 
-        <p className="text-lg md:text-xl mb-12 text-center text-white">
+        <p className="text-center text-white text-lg md:text-xl mb-12">
           Real moments. Real memories.
         </p>
 
