@@ -263,7 +263,7 @@ const IndianWeddingCostAtlanta: React.FC = () => {
           {/* Title + Intro */}
           <h1 className="text-3xl md:text-5xl font-bold mb-6">
             What Your Indian Wedding Will Actually
-            Cost in Atlanta (2026 Reality Check)
+            Cost in Atlanta (2027 Reality Check)
           </h1>
 
           <p className="text-lg mb-6">
